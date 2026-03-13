@@ -1,6 +1,9 @@
-# 🚀 DSA Java Placement Preparation
+<h1 align="center">🚀 DSA Java Placement Preparation</h1>
+<p align="center">
+Daily Data Structures & Algorithms practice using <b>Java</b> for coding interviews.
+</p>
 
-![DSA Progress](https://img.shields.io/badge/DSA-Problems%20Solved-1%2F300-blue)
+![DSA Progress](https://img.shields.io/badge/DSA%20Solved-1%2F300-blue)
 ![Language](https://img.shields.io/badge/Language-Java-orange)
 ![Goal](https://img.shields.io/badge/Goal-Placement%20Preparation-green)
 
