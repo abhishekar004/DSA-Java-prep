@@ -24,16 +24,16 @@ This repository documents my **daily DSA practice using Java** to prepare for **
 
 # 📅 Daily Progress Tracker
 
-| Day   | Problem | Platform | Topic            |
-| ----- | ------- | -------- | ---------------- |
-| Day 1 | Two Sum | LeetCode | Arrays + HashMap |
+| Day   | Problem                   | Platform | Topic            |
+| ----- | ------------------------- | -------- | ---------------- |
+| Day 1 | Two Sum                   | LeetCode | Arrays + HashMap |
+| Day 2 | Squares Of A Sorted Array | LeetCode | Arrays + Two Pointers |
 
 ---
 
 # 📊 Progress Stats
 
-* ✅ Problems Solved: **1 / 300**
-* 🔥 Current Streak: **1 Day**
+* ✅ Problems Solved: **2 / 300**
 * 💻 Language Used: **Java**
 
 ---
@@ -67,6 +67,27 @@ Each folder contains **Java solutions categorized by topic**.
 
 **Tip:**
 Store previously visited numbers in a HashMap so we can find the complement in **O(1)** time.
+
+**Time Complexity:** `O(n)`
+**Space Complexity:** `O(n)`
+
+
+### Squares of a Sorted Array
+
+💡 **Concept:** Classic Two Pointer Approach
+
+**Tip**
+This problem is a classic Two Pointer Pattern.
+
+Whenever you see:
+
+Sorted array
+
+Compare values from both ends
+
+Build a result array
+
+👉 Immediately think Two Pointers.
 
 **Time Complexity:** `O(n)`
 **Space Complexity:** `O(n)`
