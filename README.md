@@ -3,7 +3,7 @@
 Daily Data Structures & Algorithms practice using <b>Java</b> for coding interviews.
 </p>
 
-![DSA Progress](https://img.shields.io/badge/DSA%20Solved-1%2F300-blue)
+![DSA Progress](https://img.shields.io/badge/DSA%20Solved-2%2F300-blue)
 ![Language](https://img.shields.io/badge/Language-Java-orange)
 ![Goal](https://img.shields.io/badge/Goal-Placement%20Preparation-green)
 
@@ -26,8 +26,8 @@ This repository documents my **daily DSA practice using Java** to prepare for **
 
 | Day   | Problem                   | Platform | Topic            |
 | ----- | ------------------------- | -------- | ---------------- |
-| Day 1 | Two Sum                   | LeetCode | Arrays + HashMap |
-| Day 2 | Squares Of A Sorted Array | LeetCode | Arrays + Two Pointers |
+| Day 1 | Two Sum                   | [Leetcode #1](https://leetcode.com/problems/two-sum/)| Arrays + HashMap |
+| Day 2 | Squares Of A Sorted Array | [Leetcode #977](https://leetcode.com/problems/squares-of-a-sorted-array/description/) | Arrays + Two Pointers |
 
 ---
 
@@ -59,40 +59,6 @@ Each folder contains **Java solutions categorized by topic**.
 
 ---
 
-# 🧠 Learning Notes
-
-### Two Sum
-
-💡 **Concept:** HashMap for constant-time lookup
-
-**Tip:**
-Store previously visited numbers in a HashMap so we can find the complement in **O(1)** time.
-
-**Time Complexity:** `O(n)`
-**Space Complexity:** `O(n)`
-
-
-### Squares of a Sorted Array
-
-💡 **Concept:** Classic Two Pointer Approach
-
-**Tip**
-This problem is a classic Two Pointer Pattern.
-
-Whenever you see:
-
-Sorted array
-
-Compare values from both ends
-
-Build a result array
-
-👉 Immediately think Two Pointers.
-
-**Time Complexity:** `O(n)`
-**Space Complexity:** `O(n)`
-
----
 
 # 🧩 DSA Topic Progress
 
