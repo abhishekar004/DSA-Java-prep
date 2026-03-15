@@ -3,7 +3,7 @@
 Daily Data Structures & Algorithms practice using <b>Java</b> for coding interviews.
 </p>
 
-![DSA Progress](https://img.shields.io/badge/DSA%20Solved-2%2F300-blue)
+![DSA Progress](https://img.shields.io/badge/DSA%20Solved-3%2F300-blue)
 ![Language](https://img.shields.io/badge/Language-Java-orange)
 ![Goal](https://img.shields.io/badge/Goal-Placement%20Preparation-green)
 
@@ -28,12 +28,13 @@ This repository documents my **daily DSA practice using Java** to prepare for **
 | ----- | ------------------------- | -------- | ---------------- |
 | Day 1 | Two Sum                   | [Leetcode #1](https://leetcode.com/problems/two-sum/)| Arrays + HashMap |
 | Day 2 | Squares Of A Sorted Array | [Leetcode #977](https://leetcode.com/problems/squares-of-a-sorted-array/description/) | Arrays + Two Pointers |
+| Day 3 | Best Time to Buy and Sell Stock | [Leetcode #121](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/) | Arrays + Greedy/Minimum Tracking |
 
 ---
 
 # 📊 Progress Stats
 
-* ✅ Problems Solved: **2 / 300**
+* ✅ Problems Solved: **3 / 300**
 * 💻 Language Used: **Java**
 
 ---
