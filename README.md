@@ -3,7 +3,7 @@
 Daily Data Structures & Algorithms practice using <b>Java</b> for coding interviews.
 </p>
 
-![DSA Progress](https://img.shields.io/badge/DSA%20Solved-3%2F300-blue)
+![DSA Progress](https://img.shields.io/badge/DSA%20Solved-5%2F300-blue)
 ![Language](https://img.shields.io/badge/Language-Java-orange)
 ![Goal](https://img.shields.io/badge/Goal-Placement%20Preparation-green)
 
@@ -24,17 +24,20 @@ This repository documents my **daily DSA practice using Java** to prepare for **
 
 # 📅 Daily Progress Tracker
 
-| Day   | Problem                   | Platform | Topic            |
-| ----- | ------------------------- | -------- | ---------------- |
-| Day 1 | Two Sum                   | [Leetcode #1](https://leetcode.com/problems/two-sum/)| Arrays + HashMap |
-| Day 2 | Squares Of A Sorted Array | [Leetcode #977](https://leetcode.com/problems/squares-of-a-sorted-array/description/) | Arrays + Two Pointers |
-| Day 3 | Best Time to Buy and Sell Stock | [Leetcode #121](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/) | Arrays + Greedy/Minimum Tracking |
+| Day   | Problem                         | Platform                                                                        | Topic                 | Difficulty                                             |
+| ----- | ------------------------------- | ------------------------------------------------------------------------------- | --------------------- | ------------------------------------------------------ |
+| Day 1 | Two Sum                         | [LeetCode #1](https://leetcode.com/problems/two-sum/)                           | Arrays + HashMap      | ![Easy](https://img.shields.io/badge/Easy-brightgreen) |
+| Day 2 | Squares Of A Sorted Array       | [LeetCode #977](https://leetcode.com/problems/squares-of-a-sorted-array/)       | Arrays + Two Pointers | ![Easy](https://img.shields.io/badge/Easy-brightgreen) |
+| Day 3 | Best Time to Buy and Sell Stock | [LeetCode #121](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | Arrays + Greedy       | ![Easy](https://img.shields.io/badge/Easy-brightgreen) |
+| Day 3 | Contains Duplicate              | [LeetCode #217](https://leetcode.com/problems/contains-duplicate/)              | Arrays + HashSet      | ![Easy](https://img.shields.io/badge/Easy-brightgreen) |
+| Day 3 | Product Of Array Except Self    | [LeetCode #238](https://leetcode.com/problems/product-of-array-except-self/)    | Prefix + Suffix       | ![Medium](https://img.shields.io/badge/Medium-orange)  |
+
 
 ---
 
 # 📊 Progress Stats
 
-* ✅ Problems Solved: **3 / 300**
+* ✅ Problems Solved: **5 / 300**
 * 💻 Language Used: **Java**
 
 ---
