@@ -11,6 +11,7 @@ This folder contains **Array-based problems solved in Java** as part of my **DSA
 | 1 | Two Sum                         | LeetCode #1   | HashMap               |
 | 2 | Squares of a Sorted Array       | LeetCode #977 | Two Pointers          |
 | 3 | Best Time to Buy and Sell Stock | LeetCode #121 | Greedy / Min Tracking |
+| 4 | Contains Duplicate              | LeetCode #217 | HashSet               |
 
 ---
 
@@ -73,6 +74,20 @@ Update the maximum profit while traversing the array.
 
 **Time Complexity:** `O(n)`
 **Space Complexity:** `O(1)`
+
+---
+
+4️⃣ HashSet Lookup
+
+Used in:
+- Contains Duplicate
+
+Concept:
+Use a HashSet to track seen elements. If the element already exists,
+a duplicate is found.
+
+Time Complexity: O(n)
+Space Complexity: O(n)
 
 ---
 
