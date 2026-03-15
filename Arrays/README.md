@@ -13,6 +13,7 @@ This folder contains **Array-based problems solved in Java** as part of my **DSA
 | 3 | Best Time to Buy and Sell Stock | LeetCode #121 | Greedy / Min Tracking |
 | 4 | Contains Duplicate              | LeetCode #217 | HashSet               |
 | 5 | Product Of Array Except Self    | LeetCode #238 | Prefix + Suffix       |
+| 6 | Rotate Array                    | LeetCode #189 | Reversal Technique    |
 
 ---
 
@@ -119,6 +120,29 @@ Instead of storing two arrays, we can compute:
 * Multiply by a running **right product**
 
 This achieves **O(1) extra space**.
+
+**Time Complexity:** `O(n)`
+**Space Complexity:** `O(1)`
+
+---
+
+6️⃣ Array Reversal Technique
+
+Used in:
+
+Rotate Array
+
+Concept
+
+To rotate an array to the right by k steps without extra space, we can use the array reversal trick.
+
+Steps:
+
+Reverse the first n-k elements
+
+Reverse the last k elements
+
+Reverse the entire array
 
 **Time Complexity:** `O(n)`
 **Space Complexity:** `O(1)`
