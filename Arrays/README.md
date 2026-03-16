@@ -16,7 +16,7 @@ This folder contains **Array-based problems solved in Java** as part of my **DSA
 | 6 | Rotate Array                    | LeetCode #189 | Reversal Technique    |
 | 7 | Maximum Subarray                | LeetCode #53  | Kadane's Algorithm    |
 | 8 | Valid Sudoku                    | LeetCode #36  | HashSet               |
-
+| 9 | Merge Intervals                 | LeetCode #56  | Sorting +Greedy       |
 
 ---
 
@@ -92,8 +92,6 @@ Update the maximum profit while traversing the array.
 
 * Contains Duplicate
 
-* Valid Sudoku
-
 **Concept**
 
 Use a HashSet to track already seen elements.
@@ -101,32 +99,13 @@ Use a HashSet to track already seen elements.
 If inserting an element into the set fails, it means the element already exists, indicating a duplicate or invalid placement.
 
 **Examples:**
-
-* Contains Duplicate
 ```
 Store numbers in a HashSet.
 
 If a number already exists → duplicate found.
 ```
-* Valid Sudoku
-```
-Store unique identifiers for:
 
-row
-
-column
-
-3×3 box
-
-Example representation:
-
-num + " in row " + i
-num + " in column " + j
-num + " in box i" + i/3 + "-" + j/3
-
-If any of these identifiers already exist in the set → the board is invalid.
-```
-**Time Complexity:** `O(n)` (array problems) / **Time Complexity:** `O(1)` for fixed-size grids like Sudoku
+**Time Complexity:** `O(n)` 
 **Space Complexity:** `O(n)`
 
 
@@ -160,9 +139,9 @@ This achieves **O(1) extra space**.
 
 ## 6️⃣ Array Reversal Technique
 
-Used in:
+**Used in:**
 
-Rotate Array
+* Rotate Array
 
 Concept
 
@@ -185,7 +164,7 @@ Reverse the entire array
 
 **Used in:**
 
-- Maximum Subarray
+* Maximum Subarray
 
 **Concept**
 
@@ -202,7 +181,62 @@ maxSum = max(maxSum, currentSum)
 **Time Complexity:** `O(n)`
 **Space Complexity:** `O(1)`
 
+---
 
+## 8️⃣ Hashing for Grid Validation
+
+**Used in:**
+
+* Valid Sudoku
+
+**Concept**
+
+Use a **HashSet** to track seen values for:
+```
+- rows
+- columns
+- 3×3 sub-boxes
+```
+Each element is encoded as a string:
+```
+num + " in row " + i
+num + " in column " + j
+num + " in box i" + i/3 + "-" + j/3
+```
+
+If inserting into the set fails, it means the number already exists
+in that row, column, or box.
+
+**Time Complexity:** `O(1)` (board size is fixed 9×9)  
+**Space Complexity:** `O(1)`
+
+---
+
+## 9️⃣ Interval Merging (Sorting + Greedy)
+
+**Used in:**
+
+* Merge Intervals
+
+**Concept**
+
+When dealing with intervals:
+
+1. First **sort intervals by start time**
+2. Compare the current interval with the previous one
+3. If they overlap → merge them
+4. Otherwise → add a new interval
+
+Example:
+```
+intervals = [[1,3],[2,6],[8,10],[15,18]]
+
+After merging:
+
+[[1,6],[8,10],[15,18]]
+```
+**Time Complexity:** `O(n log n)`  
+**Space Complexity:** `O(n)`
 
 # 🎯 Key Takeaways
 
