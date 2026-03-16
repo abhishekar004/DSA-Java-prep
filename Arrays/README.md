@@ -14,6 +14,8 @@ This folder contains **Array-based problems solved in Java** as part of my **DSA
 | 4 | Contains Duplicate              | LeetCode #217 | HashSet               |
 | 5 | Product Of Array Except Self    | LeetCode #238 | Prefix + Suffix       |
 | 6 | Rotate Array                    | LeetCode #189 | Reversal Technique    |
+| 7 | Maximum Subarray                | LeetCode #53  | Kadane's Algorithm    |
+
 
 ---
 
@@ -126,7 +128,7 @@ This achieves **O(1) extra space**.
 
 ---
 
-6️⃣ Array Reversal Technique
+## 6️⃣ Array Reversal Technique
 
 Used in:
 
@@ -148,6 +150,29 @@ Reverse the entire array
 **Space Complexity:** `O(1)`
 
 ---
+
+## 7️⃣ Kadane's Algorithm
+
+**Used in:**
+
+- Maximum Subarray
+
+**Concept**
+
+Kadane's Algorithm finds the **maximum sum contiguous subarray**.
+
+At each step we decide:
+
+Start a new subarray OR extend the existing one.
+
+```
+currentSum = max(nums[i], currentSum + nums[i])
+maxSum = max(maxSum, currentSum)
+```
+**Time Complexity:** `O(n)`
+**Space Complexity:** `O(1)`
+
+
 
 # 🎯 Key Takeaways
 
