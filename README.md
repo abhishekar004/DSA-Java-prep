@@ -3,7 +3,7 @@
 Daily Data Structures & Algorithms practice using <b>Java</b> for coding interviews.
 </p>
 
-![DSA Progress](https://img.shields.io/badge/DSA%20Solved-6%2F300-blue)
+![DSA Progress](https://img.shields.io/badge/DSA%20Solved-10%2F300-blue)
 ![Language](https://img.shields.io/badge/Language-Java-orange)
 ![Goal](https://img.shields.io/badge/Goal-Placement%20Preparation-green)
 
@@ -32,13 +32,17 @@ This repository documents my **daily DSA practice using Java** to prepare for **
 | Day 3 | Contains Duplicate              | [LeetCode #217](https://leetcode.com/problems/contains-duplicate/)              | HashSet               | ![Easy](https://img.shields.io/badge/Easy-brightgreen) |
 | Day 3 | Product Of Array Except Self    | [LeetCode #238](https://leetcode.com/problems/product-of-array-except-self/)    | Prefix + Suffix       | ![Medium](https://img.shields.io/badge/Medium-orange)  |
 | Day 3 | Rotate Array                    | [LeetCode #189](https://leetcode.com/problems/rotate-array/)                    | Reversal technique    | ![Medium](https://img.shields.io/badge/Medium-orange)  |
+| Day 4 | Maximum SubArray                | [LeetCode #53](https://leetcode.com/problems/maximum-subarray/)                 | Kadane's Algorithm    | ![Medium](https://img.shields.io/badge/Medium-orange)  |
+| Day 4 | Valid Sudoku                    | [LeetCode #36](https://leetcode.com/problems/valid-sudoku/)                     | HashSet + Grid        | ![Medium](https://img.shields.io/badge/Medium-orange)  |
+| Day 4 | Merge Intervals                 | [LeetCode #56](https://leetcode.com/problems/merge-intervals/)                  | Sorting + Greedy      | ![Medium](https://img.shields.io/badge/Medium-orange)  |
+| Day 4 | Insert Intervals                | [LeetCode #57](https://leetcode.com/problems/insert-interval/)                  | Interval Insertion    | ![Medium](https://img.shields.io/badge/Medium-orange)  |
 
 
 ---
 
 # 📊 Progress Stats
 
-* ✅ Problems Solved: **6 / 300**
+* ✅ Problems Solved: **10 / 300**
 * 💻 Language Used: **Java**
 
 ---
