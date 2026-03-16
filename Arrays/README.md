@@ -15,6 +15,7 @@ This folder contains **Array-based problems solved in Java** as part of my **DSA
 | 5 | Product Of Array Except Self    | LeetCode #238 | Prefix + Suffix       |
 | 6 | Rotate Array                    | LeetCode #189 | Reversal Technique    |
 | 7 | Maximum Subarray                | LeetCode #53  | Kadane's Algorithm    |
+| 8 | Valid Sudoku                    | LeetCode #36  | HashSet               |
 
 
 ---
@@ -91,14 +92,44 @@ Update the maximum profit while traversing the array.
 
 * Contains Duplicate
 
+* Valid Sudoku
+
 **Concept**
 
-Use a **HashSet** to track visited elements.
+Use a HashSet to track already seen elements.
 
-If an element already exists in the set → duplicate found.
+If inserting an element into the set fails, it means the element already exists, indicating a duplicate or invalid placement.
 
-**Time Complexity:** `O(n)`
-**Space Complexity:** `O(n)`
+Examples:
+```
+Contains Duplicate
+
+Store numbers in a HashSet.
+
+If a number already exists → duplicate found.
+```
+```
+Valid Sudoku
+
+Store unique identifiers for:
+
+row
+
+column
+
+3×3 box
+
+Example representation:
+
+num + " in row i"
+num + " in column j"
+num + " in box i/3-j/3"
+
+If any of these identifiers already exist in the set → the board is invalid.
+```
+**Time Complexity: **`O(n)` (array problems) / `O(1)` for fixed-size grids like Sudoku
+**Space Complexity: **`O(n)`
+
 
 ---
 
