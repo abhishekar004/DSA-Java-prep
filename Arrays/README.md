@@ -100,17 +100,16 @@ Use a HashSet to track already seen elements.
 
 If inserting an element into the set fails, it means the element already exists, indicating a duplicate or invalid placement.
 
-Examples:
-```
-Contains Duplicate
+**Examples:**
 
+* Contains Duplicate
+```
 Store numbers in a HashSet.
 
 If a number already exists → duplicate found.
 ```
+* Valid Sudoku
 ```
-Valid Sudoku
-
 Store unique identifiers for:
 
 row
@@ -121,14 +120,14 @@ column
 
 Example representation:
 
-num + " in row i"
-num + " in column j"
-num + " in box i/3-j/3"
+num + " in row " + i
+num + " in column " + j
+num + " in box i" + i/3 + "-" + j/3
 
 If any of these identifiers already exist in the set → the board is invalid.
 ```
-**Time Complexity: **`O(n)` (array problems) / `O(1)` for fixed-size grids like Sudoku
-**Space Complexity: **`O(n)`
+**Time Complexity:** `O(n)` (array problems) / **Time Complexity:** `O(1)` for fixed-size grids like Sudoku
+**Space Complexity:** `O(n)`
 
 
 ---
