@@ -6,17 +6,18 @@ This folder contains **Array-based problems solved in Java** as part of my **DSA
 
 # 🧩 Problems Solved
 
-| # | Problem                         | Platform      | Pattern               |
-| - | ------------------------------- | ------------- | --------------------- |
-| 1 | Two Sum                         | LeetCode #1   | HashMap               |
-| 2 | Squares of a Sorted Array       | LeetCode #977 | Two Pointers          |
-| 3 | Best Time to Buy and Sell Stock | LeetCode #121 | Greedy / Min Tracking |
-| 4 | Contains Duplicate              | LeetCode #217 | HashSet               |
-| 5 | Product Of Array Except Self    | LeetCode #238 | Prefix + Suffix       |
-| 6 | Rotate Array                    | LeetCode #189 | Reversal Technique    |
-| 7 | Maximum Subarray                | LeetCode #53  | Kadane's Algorithm    |
-| 8 | Valid Sudoku                    | LeetCode #36  | HashSet               |
-| 9 | Merge Intervals                 | LeetCode #56  | Sorting +Greedy       |
+| #  | Problem                         | Platform      | Pattern               |
+| -  | ------------------------------- | ------------- | --------------------- |
+| 1  | Two Sum                         | LeetCode #1   | HashMap               |
+| 2  | Squares of a Sorted Array       | LeetCode #977 | Two Pointers          |
+| 3  | Best Time to Buy and Sell Stock | LeetCode #121 | Greedy / Min Tracking |
+| 4  | Contains Duplicate              | LeetCode #217 | HashSet               |
+| 5  | Product Of Array Except Self    | LeetCode #238 | Prefix + Suffix       |
+| 6  | Rotate Array                    | LeetCode #189 | Reversal Technique    |
+| 7  | Maximum Subarray                | LeetCode #53  | Kadane's Algorithm    |
+| 8  | Valid Sudoku                    | LeetCode #36  | HashSet               |
+| 9  | Merge Intervals                 | LeetCode #56  | Interval Merging      |
+| 10 | Insert Intervals                | LeetCode #57  | Interval Insertion    |
 
 ---
 
@@ -221,22 +222,40 @@ in that row, column, or box.
 **Concept**
 
 When dealing with intervals:
-
+```
 1. First **sort intervals by start time**
 2. Compare the current interval with the previous one
 3. If they overlap → merge them
 4. Otherwise → add a new interval
-
-Example:
 ```
-intervals = [[1,3],[2,6],[8,10],[15,18]]
 
-After merging:
-
-[[1,6],[8,10],[15,18]]
-```
 **Time Complexity:** `O(n log n)`  
 **Space Complexity:** `O(n)`
+
+---
+
+## 🔟 Interval Insertion
+
+**Used in:**
+
+- Insert Interval
+
+**Concept**
+
+Given sorted non-overlapping intervals, insert a new interval and merge overlaps.
+
+While iterating:
+```
+1. If current interval ends before new interval → add it
+2. If current interval starts after new interval → add new interval
+3. If intervals overlap → merge them
+```
+
+
+**Time Complexity:** `O(n)`
+**Space Complexity:** `O(n)`
+
+---
 
 # 🎯 Key Takeaways
 
