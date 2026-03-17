@@ -82,25 +82,21 @@ This repository showcases my **consistent DSA practice in Java** aimed at master
 ---
 
 # 📂 Repository Structure
-DSA-Java-Placement-Prep
-│
-├── Arrays
-├── Strings
-├── HashMap
-├── Stack
-├── Queue
-├── LinkedList
-├── Trees
-├── Graphs
-├── DynamicProgramming
-└── README.md
-Each folder contains **Java solutions categorized by topic**.
+
+- Arrays  
+- Strings  
+- HashMap  
+- Stack  
+- Queue  
+- LinkedList  
+- Trees  
+- Graphs  
+- Dynamic Programming  
 
 📌 Each folder contains:
 - Clean Java solutions  
 - Optimized approaches  
 - Well-commented code  
-
 ---
 
 # 🧩 Topic Progress
