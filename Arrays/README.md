@@ -38,6 +38,8 @@ This folder contains **Array-based problems solved in Java** as part of my **DSA
 | 12 | 4Sum                            | LeetCode #18  | k-Sum Pattern         |
 | 13 | 3Sum Closest                    | LeetCode #16  | Two Pointers          |
 | 14 | Move Zeroes                     | LeetCode #283 | Two Pointers          |
+| 15 | Find All Numbers Disappeared in an Array| LeetCode #448 | In-Place Marking   |
+
 
 ---
 
@@ -326,6 +328,33 @@ If element is valid (non-zero):
 Key idea:
 Shift non-zero elements forward, push zeroes to the end
 
+
+**Time Complexity:** `O(n)`  
+**Space Complexity:** `O(1)`
+
+---
+
+## 1️⃣4️⃣ Index Marking (In-Place Hashing)
+
+**Used in:**
+
+- Find All Numbers Disappeared in an Array
+
+**Concept**
+
+Use array indices as a **hashing mechanism**.
+
+Since values are from `1 → n`, map them to indices:
+
+index = value - 1
+
+Mark visited elements by making them negative.
+
+- If index is negative → number exists  
+- If index is positive → number is missing  
+
+Key idea:
+Use array itself as a hash structure
 
 **Time Complexity:** `O(n)`  
 **Space Complexity:** `O(1)`
