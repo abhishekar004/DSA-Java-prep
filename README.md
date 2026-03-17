@@ -16,21 +16,21 @@
 
 # 📌 About This Repository
 
-This repository tracks my **daily Data Structures and Algorithms (DSA)** practice using **Java**.
+This repository showcases my **consistent DSA practice in Java** aimed at mastering problem-solving for **technical interviews**.
 
-💡 The goal is to:
-- Strengthen **problem-solving ability**
-- Master **coding interview patterns**
-- Prepare for **product-based company placements**
+💡 It highlights:
+- Structured learning of **DSA patterns**
+- Clean & optimized **Java implementations**
+- Strong focus on **interview preparation**
 
 ---
 
 # 🎯 Goals
 
-- 🚀 Solve **300+ DSA problems**
-- 🧠 Master **core patterns (Sliding Window, DP, Graphs, etc.)**
-- ⚡ Improve **speed + accuracy**
-- 💼 Crack **top tech placements**
+- 🚀 Solve **300+ problems**
+- 🧠 Master **core DSA patterns**
+- ⚡ Improve **speed & accuracy**
+- 💼 Crack **product-based company placements**
 
 ---
 
@@ -77,13 +77,11 @@ This repository tracks my **daily Data Structures and Algorithms (DSA)** practic
 - ✅ Problems Solved: **16 / 300+**
 - 🔥 Current Streak: **5 Days**
 - 💻 Language: **Java**
-- 🎯 Target: **Software Engineer (Product-based Company)**
+- 🎯 Target Role: **Software Engineer**
 
 ---
 
 # 📂 Repository Structure
-
-
 DSA-Java-Placement-Prep
 │
 ├── Arrays
@@ -96,12 +94,12 @@ DSA-Java-Placement-Prep
 ├── Graphs
 ├── DynamicProgramming
 └── README.md
+Each folder contains **Java solutions categorized by topic**.
 
-
-Each folder contains:
-- ✔️ Clean Java code
-- ✔️ Optimized solutions
-- ✔️ Comments for understanding
+📌 Each folder contains:
+- Clean Java solutions  
+- Optimized approaches  
+- Well-commented code  
 
 ---
 
@@ -121,12 +119,6 @@ Each folder contains:
 
 ---
 
-# 📈 GitHub Activity
-
-![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=abhishekar004&theme=tokyo-night)
-
----
-
 # 🧭 Roadmap
 
 ✔ Arrays → ✔ Hashing → ✔ Two Pointers  
@@ -142,22 +134,19 @@ Each folder contains:
 # 🏁 Final Goal
 
 > 💼 Become a **strong problem solver**  
-> 🚀 Crack **product-based companies**  
-> 🧠 Build **deep DSA intuition**
+> 🚀 Crack **top tech companies**  
+> 🧠 Build deep **DSA intuition**
 
 ---
 
-# ⭐ Motivation
+# 🙌 Connect With Me
 
-> *“Consistency beats intensity.”*  
-> *Solve daily. Improve daily. Win eventually.*
-
----
-
-# 🙌 Let's Connect
-
-- 🔗 LinkedIn: https://www.linkedin.com/in/abhishekar004
+- 🔗 LinkedIn: https://www.linkedin.com/in/abhishekar004  
 - 💻 GitHub: https://github.com/abhishekar004  
+
+---
+
+<img src="https://leetcard.jacoblin.cool/abhishekar004?theme=dark&font=Nunito" />
 
 ---
 
