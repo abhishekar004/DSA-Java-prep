@@ -37,6 +37,7 @@ This folder contains **Array-based problems solved in Java** as part of my **DSA
 | 11 | 3Sum                            | LeetCode #15  | Two Pointers          |
 | 12 | 4Sum                            | LeetCode #18  | k-Sum Pattern         |
 | 13 | 3Sum Closest                    | LeetCode #16  | Two Pointers          |
+| 14 | Move Zeroes                     | LeetCode #283 | Two Pointers          |
 
 ---
 
@@ -301,6 +302,32 @@ if(abs(sum - target) < bestDiff)
 ```
 
 **Time Complexity:** `O(n²)`
+**Space Complexity:** `O(1)`
+
+---
+
+## 1️⃣3️⃣ Two Pointers (In-Place Rearrangement)
+
+**Used in:**
+
+- Move Zeroes
+
+**Concept**
+
+Use two pointers to rearrange elements **in-place** while maintaining order.
+
+- `left` → position for next valid element  
+- `right` → iterate through array  
+
+If element is valid (non-zero):
+- Swap with `left`
+- Move `left++`
+
+Key idea:
+Shift non-zero elements forward, push zeroes to the end
+
+
+**Time Complexity:** `O(n)`  
 **Space Complexity:** `O(1)`
 
 ---
