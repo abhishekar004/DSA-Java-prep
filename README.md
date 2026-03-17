@@ -3,7 +3,7 @@
 Daily Data Structures & Algorithms practice using <b>Java</b> for coding interviews.
 </p>
 
-![DSA Progress](https://img.shields.io/badge/DSA%20Solved-10%2F300-blue)
+![DSA Progress](https://img.shields.io/badge/DSA%20Solved-16%2F300-blue)
 ![Language](https://img.shields.io/badge/Language-Java-orange)
 ![Goal](https://img.shields.io/badge/Goal-Placement%20Preparation-green)
 
@@ -36,13 +36,19 @@ This repository documents my **daily DSA practice using Java** to prepare for **
 | Day 4 | Valid Sudoku                    | [LeetCode #36](https://leetcode.com/problems/valid-sudoku/)                     | HashSet + Grid        | ![Medium](https://img.shields.io/badge/Medium-orange)  |
 | Day 4 | Merge Intervals                 | [LeetCode #56](https://leetcode.com/problems/merge-intervals/)                  | Sorting + Greedy      | ![Medium](https://img.shields.io/badge/Medium-orange)  |
 | Day 4 | Insert Intervals                | [LeetCode #57](https://leetcode.com/problems/insert-interval/)                  | Interval Insertion    | ![Medium](https://img.shields.io/badge/Medium-orange)  |
+| Day 5 | 3Sum                            | [LeetCode #15](https://leetcode.com/problems/3sum/)                             | Sorting + Two Pointers| ![Medium](https://img.shields.io/badge/Medium-orange)  |
+| Day 5 | 4Sum                            | [LeetCode #18](https://leetcode.com/problems/4sum/)                             | k-sum Pattern         | ![Medium](https://img.shields.io/badge/Medium-orange)  |
+| Day 5 | 3Sum Closest                    | [LeetCode #16](https://leetcode.com/problems/3sum-closest/)                     | Two Pointers          | ![Medium](https://img.shields.io/badge/Medium-orange)  |
+| Day 5 | Move Zeroes                     | [LeetCode #283](https://leetcode.com/problems/move-zeroes/)                     | Two Pointers          | ![Easy](https://img.shields.io/badge/Easy-brightgreen) |
+| Day 5 | Find All Numbers Disappeared in an Array| [LeetCode #448](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/) | In-Place Hashing    | ![Easy](https://img.shields.io/badge/Easy-brightgreen)  |
+| Day 5 | First Missing Positve            | [LeetCode #41](https://leetcode.com/problems/first-missing-positive/)          | Cyclic Sort           | ![Hard](https://img.shields.io/badge/Hard-red)  |
 
 
 ---
 
 # 📊 Progress Stats
 
-* ✅ Problems Solved: **10 / 300**
+* ✅ Problems Solved: **16 / 300+**
 * 💻 Language Used: **Java**
 
 ---
