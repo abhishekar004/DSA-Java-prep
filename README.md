@@ -1,61 +1,89 @@
 <h1 align="center">🚀 DSA Java Placement Preparation</h1>
+
 <p align="center">
-Daily Data Structures & Algorithms practice using <b>Java</b> for coding interviews.
+  <b>Cracking Coding Interviews with Consistent DSA Practice in Java</b><br>
+  Building strong problem-solving skills for product-based companies 💻
 </p>
 
-![DSA Progress](https://img.shields.io/badge/DSA%20Solved-16%2F300-blue)
-![Language](https://img.shields.io/badge/Language-Java-orange)
-![Goal](https://img.shields.io/badge/Goal-Placement%20Preparation-green)
+<p align="center">
+  <img src="https://img.shields.io/badge/DSA%20Solved-16%2F300-blue" />
+  <img src="https://img.shields.io/badge/Language-Java-orange" />
+  <img src="https://img.shields.io/badge/Focus-Problem%20Solving-success" />
+  <img src="https://img.shields.io/badge/Goal-Software%20Engineer-green" />
+</p>
 
-Welcome to my **Data Structures and Algorithms (DSA) practice repository**.
+---
 
-This repository documents my **daily DSA practice using Java** to prepare for **coding interviews and product-based company placements**.
+# 📌 About This Repository
+
+This repository tracks my **daily Data Structures and Algorithms (DSA)** practice using **Java**.
+
+💡 The goal is to:
+- Strengthen **problem-solving ability**
+- Master **coding interview patterns**
+- Prepare for **product-based company placements**
 
 ---
 
 # 🎯 Goals
 
-* Solve **300+ DSA problems**
-* Master **important coding interview patterns**
-* Improve **problem-solving skills**
-* Prepare for **software engineering placements**
+- 🚀 Solve **300+ DSA problems**
+- 🧠 Master **core patterns (Sliding Window, DP, Graphs, etc.)**
+- ⚡ Improve **speed + accuracy**
+- 💼 Crack **top tech placements**
+
+---
+
+# 🧠 DSA Patterns Covered
+
+| Pattern                | Status |
+|-----------------------|--------|
+| Two Pointers          | 🟢     |
+| Sliding Window        | ⚪     |
+| Prefix Sum            | 🟢     |
+| Binary Search         | ⚪     |
+| Recursion & Backtracking | ⚪ |
+| Greedy                | 🟢     |
+| Dynamic Programming   | ⚪     |
+| Graph Algorithms      | ⚪     |
 
 ---
 
 # 📅 Daily Progress Tracker
 
-| Day   | Problem                         | Platform                                                                        | Topic                 | Difficulty                                             |
-| ----- | ------------------------------- | ------------------------------------------------------------------------------- | --------------------- | ------------------------------------------------------ |
-| Day 1 | Two Sum                         | [LeetCode #1](https://leetcode.com/problems/two-sum/)                           | HashMap               | ![Easy](https://img.shields.io/badge/Easy-brightgreen) |
-| Day 2 | Squares Of A Sorted Array       | [LeetCode #977](https://leetcode.com/problems/squares-of-a-sorted-array/)       | Two Pointers          | ![Easy](https://img.shields.io/badge/Easy-brightgreen) |
-| Day 3 | Best Time to Buy and Sell Stock | [LeetCode #121](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | Greedy                | ![Easy](https://img.shields.io/badge/Easy-brightgreen) |
-| Day 3 | Contains Duplicate              | [LeetCode #217](https://leetcode.com/problems/contains-duplicate/)              | HashSet               | ![Easy](https://img.shields.io/badge/Easy-brightgreen) |
-| Day 3 | Product Of Array Except Self    | [LeetCode #238](https://leetcode.com/problems/product-of-array-except-self/)    | Prefix + Suffix       | ![Medium](https://img.shields.io/badge/Medium-orange)  |
-| Day 3 | Rotate Array                    | [LeetCode #189](https://leetcode.com/problems/rotate-array/)                    | Reversal technique    | ![Medium](https://img.shields.io/badge/Medium-orange)  |
-| Day 4 | Maximum SubArray                | [LeetCode #53](https://leetcode.com/problems/maximum-subarray/)                 | Kadane's Algorithm    | ![Medium](https://img.shields.io/badge/Medium-orange)  |
-| Day 4 | Valid Sudoku                    | [LeetCode #36](https://leetcode.com/problems/valid-sudoku/)                     | HashSet + Grid        | ![Medium](https://img.shields.io/badge/Medium-orange)  |
-| Day 4 | Merge Intervals                 | [LeetCode #56](https://leetcode.com/problems/merge-intervals/)                  | Sorting + Greedy      | ![Medium](https://img.shields.io/badge/Medium-orange)  |
-| Day 4 | Insert Intervals                | [LeetCode #57](https://leetcode.com/problems/insert-interval/)                  | Interval Insertion    | ![Medium](https://img.shields.io/badge/Medium-orange)  |
-| Day 5 | 3Sum                            | [LeetCode #15](https://leetcode.com/problems/3sum/)                             | Sorting + Two Pointers| ![Medium](https://img.shields.io/badge/Medium-orange)  |
-| Day 5 | 4Sum                            | [LeetCode #18](https://leetcode.com/problems/4sum/)                             | k-sum Pattern         | ![Medium](https://img.shields.io/badge/Medium-orange)  |
-| Day 5 | 3Sum Closest                    | [LeetCode #16](https://leetcode.com/problems/3sum-closest/)                     | Two Pointers          | ![Medium](https://img.shields.io/badge/Medium-orange)  |
-| Day 5 | Move Zeroes                     | [LeetCode #283](https://leetcode.com/problems/move-zeroes/)                     | Two Pointers          | ![Easy](https://img.shields.io/badge/Easy-brightgreen) |
-| Day 5 | Find All Numbers Disappeared in an Array| [LeetCode #448](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/) | In-Place Hashing    | ![Easy](https://img.shields.io/badge/Easy-brightgreen)  |
-| Day 5 | First Missing Positve            | [LeetCode #41](https://leetcode.com/problems/first-missing-positive/)          | Cyclic Sort           | ![Hard](https://img.shields.io/badge/Hard-red)  |
-
+| Day   | Problem | Topic | Difficulty |
+|-------|--------|------|-----------|
+| Day 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | HashMap | Easy |
+| Day 2 | [Squares of Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/) | Two Pointers | Easy |
+| Day 3 | [Best Time to Buy & Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | Greedy | Easy |
+| Day 3 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) | HashSet | Easy |
+| Day 3 | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | Prefix + Suffix | Medium |
+| Day 3 | [Rotate Array](https://leetcode.com/problems/rotate-array/) | Reversal | Medium |
+| Day 4 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | Kadane's Algo | Medium |
+| Day 4 | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) | Hashing | Medium |
+| Day 4 | [Merge Intervals](https://leetcode.com/problems/merge-intervals/) | Sorting | Medium |
+| Day 4 | [Insert Interval](https://leetcode.com/problems/insert-interval/) | Intervals | Medium |
+| Day 5 | [3Sum](https://leetcode.com/problems/3sum/) | Two Pointers | Medium |
+| Day 5 | [4Sum](https://leetcode.com/problems/4sum/) | k-Sum | Medium |
+| Day 5 | [3Sum Closest](https://leetcode.com/problems/3sum-closest/) | Two Pointers | Medium |
+| Day 5 | [Move Zeroes](https://leetcode.com/problems/move-zeroes/) | Two Pointers | Easy |
+| Day 5 | [Find Disappeared Numbers](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/) | In-place Hashing | Easy |
+| Day 5 | [First Missing Positive](https://leetcode.com/problems/first-missing-positive/) | Cyclic Sort | Hard |
 
 ---
 
 # 📊 Progress Stats
 
-* ✅ Problems Solved: **16 / 300+**
-* 💻 Language Used: **Java**
+- ✅ Problems Solved: **16 / 300+**
+- 🔥 Current Streak: **5 Days**
+- 💻 Language: **Java**
+- 🎯 Target: **Software Engineer (Product-based Company)**
 
 ---
 
 # 📂 Repository Structure
 
-```
+
 DSA-Java-Placement-Prep
 │
 ├── Arrays
@@ -68,39 +96,69 @@ DSA-Java-Placement-Prep
 ├── Graphs
 ├── DynamicProgramming
 └── README.md
-```
 
-Each folder contains **Java solutions categorized by topic**.
+
+Each folder contains:
+- ✔️ Clean Java code
+- ✔️ Optimized solutions
+- ✔️ Comments for understanding
 
 ---
 
-
-# 🧩 DSA Topic Progress
+# 🧩 Topic Progress
 
 | Topic               | Status        |
-| ------------------- | ------------- |
-| Arrays              | 🟢 Started    |
-| Strings             | ⚪ Not Started |
-| HashMap             | ⚪ Not Started |
-| Stack               | ⚪ Not Started |
-| Queue               | ⚪ Not Started |
-| LinkedList          | ⚪ Not Started |
-| Trees               | ⚪ Not Started |
-| Graphs              | ⚪ Not Started |
-| Dynamic Programming | ⚪ Not Started |
+|--------------------|--------------|
+| Arrays              | 🟢 Strong     |
+| Strings             | ⚪ Pending    |
+| HashMap             | 🟢 Started    |
+| Stack               | ⚪ Pending    |
+| Queue               | ⚪ Pending    |
+| LinkedList          | ⚪ Pending    |
+| Trees               | ⚪ Pending    |
+| Graphs              | ⚪ Pending    |
+| Dynamic Programming | ⚪ Pending    |
 
 ---
 
 # 📈 GitHub Activity
 
-![Abhi's GitHub activity graph](https://github-readme-activity-graph.vercel.app/graph?username=abhishekar004\&theme=tokyo-night)
+![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=abhishekar004&theme=tokyo-night)
+
+---
+
+# 🧭 Roadmap
+
+✔ Arrays → ✔ Hashing → ✔ Two Pointers  
+⬜ Sliding Window  
+⬜ Binary Search  
+⬜ Recursion & Backtracking  
+⬜ Trees  
+⬜ Graphs  
+⬜ Dynamic Programming  
 
 ---
 
 # 🏁 Final Goal
 
-Become strong in **DSA + Problem Solving** and secure a **Software Engineer role in a product-based company**.
+> 💼 Become a **strong problem solver**  
+> 🚀 Crack **product-based companies**  
+> 🧠 Build **deep DSA intuition**
 
 ---
 
-⭐ *Consistency beats intensity — solve problems every day.*
+# ⭐ Motivation
+
+> *“Consistency beats intensity.”*  
+> *Solve daily. Improve daily. Win eventually.*
+
+---
+
+# 🙌 Let's Connect
+
+- 🔗 LinkedIn: https://www.linkedin.com/in/abhishekar004
+- 💻 GitHub: https://github.com/abhishekar004  
+
+---
+
+⭐ If you like this repo, give it a star!
