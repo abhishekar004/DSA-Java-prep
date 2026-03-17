@@ -19,6 +19,7 @@ This folder contains **Array-based problems solved in Java** as part of my **DSA
 | 9  | Merge Intervals                 | LeetCode #56  | Interval Merging      |
 | 10 | Insert Intervals                | LeetCode #57  | Interval Insertion    |
 | 11 | 3Sum                            | LeetCode #15  | Sorting + Two Pointers|
+| 12 | 4Sum                            | LeetCode #18  | K-Sum Pattern         |
 
 ---
 
@@ -277,6 +278,39 @@ Fix nums[i] → find pair (left, right) such that sum = 0
 ```
 **Time Complexity:** `O(n^2)`  
 **Space Complexity:** `O(1)`
+
+---
+
+## 1️⃣2️⃣ k-Sum Pattern (Generalized Two Pointers)
+
+**Used in:**
+
+- 3Sum
+- 4Sum
+
+**Concept**
+
+1. Sort the array
+2. Fix k-2 elements using loops
+3. Use two pointers for remaining 2 elements
+4. Skip duplicates
+
+Example:
+
+3Sum → fix 1 element  
+4Sum → fix 2 elements  
+
+Key idea:
+```
+Reduce k-Sum → (k-1)-Sum → ... → 2Sum
+```
+**Time Complexity:**  
+- 3Sum → `O(n^2)`  
+- 4Sum → `O(n^3)`
+
+**Space Complexity:** `O(1)`
+
+---
 
 # 🎯 Key Takeaways
 
