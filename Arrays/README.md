@@ -39,6 +39,7 @@ This folder contains **Array-based problems solved in Java** as part of my **DSA
 | 13 | 3Sum Closest                    | LeetCode #16  | Two Pointers          |
 | 14 | Move Zeroes                     | LeetCode #283 | Two Pointers          |
 | 15 | Find All Numbers Disappeared in an Array| LeetCode #448 | In-Place Marking   |
+| 16 | First Missing Positive          | LeetCode #41  | Cyclic Sort           |
 
 
 ---
@@ -355,6 +356,29 @@ Mark visited elements by making them negative.
 
 Key idea:
 Use array itself as a hash structure
+
+**Time Complexity:** `O(n)`  
+**Space Complexity:** `O(1)`
+
+---
+## 1️⃣5️⃣ Cyclic Sort (Index Placement)
+
+**Used in:**
+
+- First Missing Positive
+
+**Concept**
+
+Place each element at its correct index:
+value → index = value - 1
+
+Steps:
+1. Ignore numbers ≤ 0 or > n
+2. Swap elements to correct positions
+3. First index where nums[i] != i+1 is the answer
+
+Key idea:
+nums[i] should be equal to i+1
 
 **Time Complexity:** `O(n)`  
 **Space Complexity:** `O(1)`
