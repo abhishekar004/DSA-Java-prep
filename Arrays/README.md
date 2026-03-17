@@ -18,6 +18,7 @@ This folder contains **Array-based problems solved in Java** as part of my **DSA
 | 8  | Valid Sudoku                    | LeetCode #36  | HashSet               |
 | 9  | Merge Intervals                 | LeetCode #56  | Interval Merging      |
 | 10 | Insert Intervals                | LeetCode #57  | Interval Insertion    |
+| 11 | 3Sum                            | LeetCode #15  | Sorting + Two Pointers|
 
 ---
 
@@ -256,6 +257,26 @@ While iterating:
 **Space Complexity:** `O(n)`
 
 ---
+
+## 1️⃣1️⃣ Two Pointers with Sorting (3Sum Pattern)
+
+**Used in:**
+
+* 3Sum
+
+**Concept**
+
+1. Sort the array
+2. Fix one element
+3. Use two pointers to find remaining two elements
+4. Skip duplicates to avoid repeated triplets
+
+Key idea:
+```
+Fix nums[i] → find pair (left, right) such that sum = 0
+```
+**Time Complexity:** `O(n^2)`  
+**Space Complexity:** `O(1)`
 
 # 🎯 Key Takeaways
 
