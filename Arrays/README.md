@@ -40,7 +40,7 @@ This folder contains **Array-based problems solved in Java** as part of my **DSA
 | 14 | Move Zeroes                     | LeetCode #283 | Two Pointers          |
 | 15 | Find All Numbers Disappeared in an Array| LeetCode #448 | In-Place Marking   |
 | 16 | First Missing Positive          | LeetCode #41  | Cyclic Sort           |
-
+| 17 | Missing Number                  | LeetCode #268 | Math / Cyclic Sort    |
 
 ---
 
@@ -383,6 +383,25 @@ nums[i] should be equal to i+1
 **Time Complexity:** `O(n)`  
 **Space Complexity:** `O(1)`
 
+---
+## 1️⃣6️⃣ Mathematical Sum Trick
+
+**Used in:**
+
+- Missing Number
+
+**Concept**
+
+Use formula:
+
+n * (n + 1) / 2
+
+Subtract actual sum from expected sum.
+```
+missing = totalSum - actualSum
+```
+**Time Complexity:** `O(n)`  
+**Space Complexity:** `O(1)`
 ---
 
 # 🚧 Upcoming Patterns
