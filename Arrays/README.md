@@ -365,22 +365,44 @@ Use array itself as a hash structure
 
 **Used in:**
 
-- First Missing Positive
+* First Missing Positive
+* Missing Number
 
 **Concept**
 
 Place each element at its correct index:
+
+```
 value → index = value - 1
+```
 
-Steps:
-1. Ignore numbers ≤ 0 or > n
-2. Swap elements to correct positions
-3. First index where nums[i] != i+1 is the answer
+**Steps**
+1. Ignore numbers ≤ 0 or out of range
+2. Swap elements to their correct positions
+3. After placement, check for mismatch
 
-Key idea:
-nums[i] should be equal to i+1
+---
 
-**Time Complexity:** `O(n)`  
+### 🔹 Variations
+
+**First Missing Positive**
+```
+Find first index where nums[i] != i+1
+```
+
+**Missing Number**
+```
+Find first index where nums[i] != i
+```
+---
+
+**Key Idea**
+
+```
+Correct placement reveals missing numbers
+```
+
+**Time Complexity:** `O(n)`
 **Space Complexity:** `O(1)`
 
 ---
