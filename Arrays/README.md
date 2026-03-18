@@ -43,7 +43,7 @@ This folder contains **Array-based problems solved in Java** as part of my **DSA
 | 17 | Missing Number                  | LeetCode #268 | Math / Cyclic Sort    |
 | 18 | Find the Duplicate Number       | LeetCode #287 | Floyd Cycle Detection |
 | 19 | Set Mismatch                    | LeetCode #645 | Cyclic Sort           |
-
+| 20 | Reverse an Array                | GeekforGeeks  | Two Pointers          |
 ---
 
 # 🧠 Important Patterns
@@ -188,6 +188,15 @@ Steps:
 **Time Complexity:** `O(n)`
 **Space Complexity:** `O(1)`
 
+### 🔹 Simple Reversal
+
+**Used in:**
+- Reverse Array
+**Concept:**
+Swap elements from both ends moving inward.
+```
+left++ and right-- until they meet
+```
 ---
 
 ## 7️⃣ Kadane's Algorithm
