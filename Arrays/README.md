@@ -45,6 +45,7 @@ This folder contains **Array-based problems solved in Java** as part of my **DSA
 | 19 | Set Mismatch                    | LeetCode #645 | Cyclic Sort           |
 | 20 | Reverse an Array                | GeekforGeeks  | Two Pointers          |
 | 21 | Remove Duplicates from Sorted Array | Leetcode #26  | Two Pointers          |
+| 22 | Remove Duplicates from Sorted Array II | LeetCode #80  | Two Pointers       |
 
 ---
 
@@ -489,6 +490,31 @@ If nums[j] != nums[i]:
 
 **Time Complexity:** O(n)  
 **Space Complexity:** O(1)
+
+---
+
+## 1️⃣9️⃣ Two Pointers (Allow K Duplicates)
+
+**Used in:**
+
+- Remove Duplicates from Sorted Array II
+
+**Concept**
+
+Allow at most K duplicates using index comparison.
+
+For K = 2:
+```
+if(i < 2 || nums[i] != nums[i-2])
+```
+General idea:
+Compare current element with element K positions before.
+
+If different → allow insertion
+
+**Time Complexity:** O(n)  
+**Space Complexity:** O(1)
+
 ---
 
 # 🎯 Key Takeaways
