@@ -41,6 +41,7 @@ This folder contains **Array-based problems solved in Java** as part of my **DSA
 | 15 | Find All Numbers Disappeared in an Array| LeetCode #448 | In-Place Marking   |
 | 16 | First Missing Positive          | LeetCode #41  | Cyclic Sort           |
 | 17 | Missing Number                  | LeetCode #268 | Math / Cyclic Sort    |
+| 18 | Find the Duplicate Number       | LeetCode #287 | Floyd Cycle Detection |
 
 ---
 
@@ -438,6 +439,30 @@ missing = totalSum - actualSum
 
 * Sliding Window
 * Prefix Sum + HashMap
+
+---
+
+## 1️⃣7️⃣ Floyd’s Cycle Detection (Tortoise & Hare)
+
+**Used in:**
+
+- Find the Duplicate Number
+
+**Concept**
+
+Treat array as a linked list:
+```
+nums[i] → next index
+```
+Since duplicate exists → cycle forms.
+
+Steps:
+
+1. Detect cycle using slow & fast pointers  
+2. Find cycle start → duplicate number  
+
+**Time Complexity:** `O(n)`  
+**Space Complexity:** `O(1)`
 
 ---
 
