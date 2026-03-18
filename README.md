@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/DSA%20Solved-16%2F300-blue" />
+  <img src="https://img.shields.io/badge/DSA%20Solved-22%2F300-blue" />
   <img src="https://img.shields.io/badge/Language-Java-orange" />
   <img src="https://img.shields.io/badge/Focus-Problem%20Solving-success" />
   <img src="https://img.shields.io/badge/Goal-Software%20Engineer-green" />
@@ -69,13 +69,20 @@ This repository showcases my **consistent DSA practice in Java** aimed at master
 | Day 5 | [Move Zeroes](https://leetcode.com/problems/move-zeroes/) | Two Pointers | Easy |
 | Day 5 | [Find Disappeared Numbers](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/) | In-place Hashing | Easy |
 | Day 5 | [First Missing Positive](https://leetcode.com/problems/first-missing-positive/) | Cyclic Sort | Hard |
+| Day 6 | [Missing Number](https://leetcode.com/problems/missing-number/) | Math / Cyclic Sort | Easy |
+| Day 6 | [Find Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) | Floyd Cycle Detection | Medium |
+| Day 6 | [Set Mismatch](https://leetcode.com/problems/set-mismatch/) | Cyclic Sort | Easy |
+| Day 6 | [Reverse An Array](https://www.geeksforgeeks.org/problems/reverse-an-array/1) | Two Pointers | Easy |
+| Day 6 | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | Two Pointers | Easy |
+| Day 6 | [Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/) | Two Pointers | Medium |
+
 
 ---
 
 # 📊 Progress Stats
 
-- ✅ Problems Solved: **16 / 300+**
-- 🔥 Current Streak: **5 Days**
+- ✅ Problems Solved: **22 / 300+**
+- 🔥 Current Streak: **6 Days**
 - 💻 Language: **Java**
 - 🎯 Target Role: **Software Engineer**
 
