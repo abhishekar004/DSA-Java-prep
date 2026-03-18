@@ -44,6 +44,8 @@ This folder contains **Array-based problems solved in Java** as part of my **DSA
 | 18 | Find the Duplicate Number       | LeetCode #287 | Floyd Cycle Detection |
 | 19 | Set Mismatch                    | LeetCode #645 | Cyclic Sort           |
 | 20 | Reverse an Array                | GeekforGeeks  | Two Pointers          |
+| 21 | Remove Duplicates from Sorted Array | Leetcode #26  | Two Pointers          |
+
 ---
 
 # 🧠 Important Patterns
@@ -466,6 +468,27 @@ Steps:
 **Time Complexity:** `O(n)`  
 **Space Complexity:** `O(1)`
 
+---
+## 1️⃣8️⃣ Two Pointers (Unique Elements)
+
+**Used in:**
+
+- Remove Duplicates from Sorted Array
+
+**Concept**
+
+Since array is sorted, duplicates are adjacent.
+
+Use two pointers:
+
+- i → last unique element  
+- j → traverse array  
+
+If nums[j] != nums[i]:
+    move nums[j] forward
+
+**Time Complexity:** O(n)  
+**Space Complexity:** O(1)
 ---
 
 # 🎯 Key Takeaways
