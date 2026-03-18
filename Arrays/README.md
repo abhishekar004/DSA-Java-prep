@@ -42,6 +42,7 @@ This folder contains **Array-based problems solved in Java** as part of my **DSA
 | 16 | First Missing Positive          | LeetCode #41  | Cyclic Sort           |
 | 17 | Missing Number                  | LeetCode #268 | Math / Cyclic Sort    |
 | 18 | Find the Duplicate Number       | LeetCode #287 | Floyd Cycle Detection |
+| 19 | Set Mismatch                    | LeetCode #645 | Cyclic Sort           |
 
 ---
 
@@ -374,44 +375,36 @@ Use sign (+/-) to mark visited elements
 
 **Used in:**
 
-* First Missing Positive
-* Missing Number
+- First Missing Positive  
+- Missing Number  
+- Set Mismatch  
 
 **Concept**
 
 Place each element at its correct index:
-
 ```
 value → index = value - 1
 ```
-
-**Steps**
-1. Ignore numbers ≤ 0 or out of range
-2. Swap elements to their correct positions
-3. After placement, check for mismatch
-
 ---
 
 ### 🔹 Variations
 
 **First Missing Positive**
-```
-Find first index where nums[i] != i+1
-```
+- Find first index where nums[i] != i+1  
 
 **Missing Number**
-```
-Find first index where nums[i] != i
-```
+- Find index where nums[i] != i  
+
+**Set Mismatch**
+- nums[i] → duplicate  
+- i+1 → missing  
+
 ---
 
 **Key Idea**
+Correct placement reveals errors in the array
 
-```
-Correct placement reveals missing numbers
-```
-
-**Time Complexity:** `O(n)`
+**Time Complexity:** `O(n)`  
 **Space Complexity:** `O(1)`
 
 ---
