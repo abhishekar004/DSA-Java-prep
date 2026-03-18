@@ -339,28 +339,36 @@ Shift non-zero elements forward, push zeroes to the end
 
 **Used in:**
 
-- Find All Numbers Disappeared in an Array
+- Find Disappeared Numbers  
+- Find Duplicates  
 
 **Concept**
 
-Use array indices as a **hashing mechanism**.
-
-Since values are from `1 → n`, map them to indices:
-
+Use array indices as a **hashing structure**.
+```
 index = value - 1
+```
+---
 
-Mark visited elements by making them negative.
+### 🔹 Variations
 
-- If index is negative → number exists  
-- If index is positive → number is missing  
+**Find Missing Numbers**
+- Positive index → missing  
 
-Key idea:
-Use array itself as a hash structure
-
-**Time Complexity:** `O(n)`  
-**Space Complexity:** `O(1)`
+**Find Duplicates**
+- Already negative → duplicate  
 
 ---
+
+**Key Idea**
+```
+Use sign (+/-) to mark visited elements
+```
+**Time Complexity:** `O(n)`  
+**Space Complexity:** `O(1)`
+---
+
+
 ## 1️⃣5️⃣ Cyclic Sort (Index Placement)
 
 **Used in:**
