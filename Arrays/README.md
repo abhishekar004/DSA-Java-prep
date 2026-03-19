@@ -48,6 +48,7 @@ This folder contains **Array-based problems solved in Java** as part of my **DSA
 | 22 | Remove Duplicates from Sorted Array II | LeetCode #80  | Two Pointers       |
 | 23 | Check if Array is Sorted and Rotated   | LeetCode #1752 | Circular Array Check |
 | 24 | Single Element in a Sorted Array       | LeetCode #540  | Binary Search   |
+| 25 | Non-Decreasing Array            | LeetCode #665  | Greedy   |
 
 ---
 
@@ -563,6 +564,33 @@ Compare:
 - else → move left  
 
 **Time Complexity:** O(log n)  
+**Space Complexity:** O(1)
+
+---
+
+## 2️⃣2️⃣ Greedy (Local Fix Strategy)
+
+**Used in:**
+
+- Non-decreasing Array
+
+**Concept**
+
+When violation occurs:
+```
+nums[i] > nums[i+1]
+```
+Fix locally by modifying one element.
+
+Decision:
+
+- If nums[i-1] > nums[i+1] → modify nums[i+1]
+- Else → modify nums[i]
+
+Key idea:
+Fix locally while minimizing impact on future elements
+
+**Time Complexity:** O(n)  
 **Space Complexity:** O(1)
 
 ---
