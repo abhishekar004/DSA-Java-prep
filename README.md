@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/DSA%20Solved-22%2F300-blue" />
+  <img src="https://img.shields.io/badge/DSA%20Solved-26%2F300-blue" />
   <img src="https://img.shields.io/badge/Language-Java-orange" />
   <img src="https://img.shields.io/badge/Focus-Problem%20Solving-success" />
   <img src="https://img.shields.io/badge/Goal-Software%20Engineer-green" />
@@ -75,14 +75,17 @@ This repository showcases my **consistent DSA practice in Java** aimed at master
 | Day 6 | [Reverse An Array](https://www.geeksforgeeks.org/problems/reverse-an-array/1) | Two Pointers | Easy |
 | Day 6 | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | Two Pointers | Easy |
 | Day 6 | [Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/) | Two Pointers | Medium |
-
+| Day 7 | [Check if Array is Sorted and Rotated](https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/?envType=problem-list-v2&envId=array) | Circular Array Check | Easy |
+| Day 7 | [Single Element in a Sorted Array](https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/) | Binary Search | Medium |
+| Day 7 | [Non-Decreasing Array](https://leetcode.com/problems/non-decreasing-array/) | Greedy | Medium |
+| Day 7 | [Global and Local Inversions](https://leetcode.com/problems/global-and-local-inversions/) | Greedy | Medium |
 
 ---
 
 # 📊 Progress Stats
 
-- ✅ Problems Solved: **22 / 300+**
-- 🔥 Current Streak: **6 Days**
+- ✅ Problems Solved: **26 / 300+**
+- 🔥 Current Streak: **7 Days**
 - 💻 Language: **Java**
 - 🎯 Target Role: **Software Engineer**
 
