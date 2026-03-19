@@ -46,6 +46,7 @@ This folder contains **Array-based problems solved in Java** as part of my **DSA
 | 20 | Reverse an Array                | GeekforGeeks  | Two Pointers          |
 | 21 | Remove Duplicates from Sorted Array | Leetcode #26  | Two Pointers          |
 | 22 | Remove Duplicates from Sorted Array II | LeetCode #80  | Two Pointers       |
+| 23 | Check if Array is Sorted and Rotated   | LeetCode #1752 | Circular Array Check |
 
 ---
 
@@ -511,6 +512,28 @@ General idea:
 Compare current element with element K positions before.
 
 If different → allow insertion
+
+**Time Complexity:** O(n)  
+**Space Complexity:** O(1)
+
+---
+
+## 2️⃣0️⃣ Circular Array Check
+
+**Used in:**
+
+- Check if Array is Sorted and Rotated
+
+**Concept**
+
+A sorted rotated array has at most one point where order breaks.
+```
+nums[i] > nums[(i+1) % n]
+```
+If count of such breaks ≤ 1 → valid
+
+Key idea:
+Treat array as circular using modulo.
 
 **Time Complexity:** O(n)  
 **Space Complexity:** O(1)
