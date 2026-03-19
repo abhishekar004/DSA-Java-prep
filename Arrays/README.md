@@ -47,6 +47,7 @@ This folder contains **Array-based problems solved in Java** as part of my **DSA
 | 21 | Remove Duplicates from Sorted Array | Leetcode #26  | Two Pointers          |
 | 22 | Remove Duplicates from Sorted Array II | LeetCode #80  | Two Pointers       |
 | 23 | Check if Array is Sorted and Rotated   | LeetCode #1752 | Circular Array Check |
+| 24 | Single Element in a Sorted Array       | LeetCode #540  | Binary Search   |
 
 ---
 
@@ -536,6 +537,32 @@ Key idea:
 Treat array as circular using modulo.
 
 **Time Complexity:** O(n)  
+**Space Complexity:** O(1)
+
+---
+
+## 2️⃣1️⃣ Binary Search on Pattern (Index Parity)
+
+**Used in:**
+
+- Single Element in a Sorted Array
+
+**Concept**
+
+Use binary search with index parity:
+
+- Before single → pairs start at even index  
+- After single → pairs shift  
+
+Force mid to even:
+```
+if(mid % 2 == 1) mid--
+```
+Compare:
+- nums[mid] == nums[mid+1] → move right  
+- else → move left  
+
+**Time Complexity:** O(log n)  
 **Space Complexity:** O(1)
 
 ---
