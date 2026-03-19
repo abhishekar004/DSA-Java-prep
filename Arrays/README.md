@@ -49,6 +49,7 @@ This folder contains **Array-based problems solved in Java** as part of my **DSA
 | 23 | Check if Array is Sorted and Rotated   | LeetCode #1752 | Circular Array Check |
 | 24 | Single Element in a Sorted Array       | LeetCode #540  | Binary Search   |
 | 25 | Non-Decreasing Array            | LeetCode #665  | Greedy   |
+| 26 | Global and Local Inversions     | LeetCode #775  | Greedy   |
 
 ---
 
@@ -589,6 +590,27 @@ Decision:
 
 Key idea:
 Fix locally while minimizing impact on future elements
+
+**Time Complexity:** O(n)  
+**Space Complexity:** O(1)
+
+---
+
+## 2️⃣3️⃣ Greedy (Index Distance Constraint)
+
+**Used in:**
+
+- Global and Local Inversions
+
+**Concept**
+
+For global inversions to equal local inversions:
+
+Each element must be at most 1 position away from its correct index.
+```
+Math.abs(nums[i] - i) <= 1
+```
+If any element violates this → non-local inversion exists.
 
 **Time Complexity:** O(n)  
 **Space Complexity:** O(1)
