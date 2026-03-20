@@ -52,6 +52,7 @@ This folder contains **Array-based problems solved in Java** as part of my **DSA
 | 26 | Global and Local Inversions     | LeetCode #775  | Greedy   |
 | 27 | Escape the Ghosts               | LeetCode #789  | Greedy   |
 | 28 | Maximize Distance to Closest Person    | LeetCode #849  | Greedy   |
+| 29 | Peak Index in a Mountain Array  | LeetCode #852  | Binary Search   |
 
 ---
 
@@ -660,6 +661,27 @@ Key idea:
 Choose position maximizing minimum distance.
 
 **Time Complexity:** O(n)  
+**Space Complexity:** O(1)
+
+---
+
+## 2️⃣6️⃣ Binary Search on Peak (Slope Method)
+
+**Used in:**
+
+- Peak Index in Mountain Array
+
+**Concept**
+
+Use binary search based on slope direction.
+```
+if(arr[mid] < arr[mid+1]) → go right
+else → go left
+```
+Key idea:
+Peak is where increasing turns into decreasing.
+
+**Time Complexity:** O(log n)  
 **Space Complexity:** O(1)
 
 ---
