@@ -50,6 +50,7 @@ This folder contains **Array-based problems solved in Java** as part of my **DSA
 | 24 | Single Element in a Sorted Array       | LeetCode #540  | Binary Search   |
 | 25 | Non-Decreasing Array            | LeetCode #665  | Greedy   |
 | 26 | Global and Local Inversions     | LeetCode #775  | Greedy   |
+| 27 | Escape the Ghosts               | LeetCode #789  | Greedy   |
 
 ---
 
@@ -611,6 +612,28 @@ Each element must be at most 1 position away from its correct index.
 Math.abs(nums[i] - i) <= 1
 ```
 If any element violates this → non-local inversion exists.
+
+**Time Complexity:** O(n)  
+**Space Complexity:** O(1)
+
+---
+
+## 2️⃣4️⃣ Greedy (Distance Comparison)
+
+**Used in:**
+
+- Escape The Ghosts
+
+**Concept**
+
+Use Manhattan distance to compare reachability.
+```
+|x1 - x2| + |y1 - y2|
+```
+If any opponent can reach target earlier or at same time → fail.
+
+Key idea:
+Compare distances instead of simulating movement.
 
 **Time Complexity:** O(n)  
 **Space Complexity:** O(1)
