@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/DSA%20Solved-26%2F300-blue" />
+  <img src="https://img.shields.io/badge/DSA%20Solved-31%2F300-blue" />
   <img src="https://img.shields.io/badge/Language-Java-orange" />
   <img src="https://img.shields.io/badge/Focus-Problem%20Solving-success" />
   <img src="https://img.shields.io/badge/Goal-Software%20Engineer-green" />
@@ -79,13 +79,18 @@ This repository showcases my **consistent DSA practice in Java** aimed at master
 | Day 7 | [Single Element in a Sorted Array](https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/) | Binary Search | Medium |
 | Day 7 | [Non-Decreasing Array](https://leetcode.com/problems/non-decreasing-array/) | Greedy | Medium |
 | Day 7 | [Global and Local Inversions](https://leetcode.com/problems/global-and-local-inversions/) | Greedy | Medium |
+| Day 8 | [Escape the Ghosts](https://leetcode.com/problems/escape-the-ghosts/) | Greedy | Medium |
+| Day 8 | [Maximize Distance to Closest person](https://leetcode.com/problems/maximize-distance-to-closest-person/) | Greedy | Medium |
+| Day 8 | [Peak Index in a Mountain Array](https://leetcode.com/problems/peak-index-in-a-mountain-array/) | Binary Search | Medium |
+| Day 8 | [Find Peak Element](https://leetcode.com/problems/find-peak-element/) | Binary Search | Medium |
+| Day 8 | [Find in Mountain Array](https://leetcode.com/problems/find-in-mountain-array/) | Binary Search | Hard |
 
 ---
 
 # 📊 Progress Stats
 
-- ✅ Problems Solved: **26 / 300+**
-- 🔥 Current Streak: **7 Days**
+- ✅ Problems Solved: **31 / 300+**
+- 🔥 Current Streak: **8 Days**
 - 💻 Language: **Java**
 - 🎯 Target Role: **Software Engineer**
 
