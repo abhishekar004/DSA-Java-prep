@@ -54,6 +54,7 @@ This folder contains **Array-based problems solved in Java** as part of my **DSA
 | 28 | Maximize Distance to Closest Person    | LeetCode #849  | Greedy   |
 | 29 | Peak Index in a Mountain Array  | LeetCode #852  | Binary Search   |
 | 30 | Find Peak Element               | LeetCode #162  | Binary Search   |
+| 31 | Find in Mountain Array          | LeetCode #1095 | Binary Search   |
 
 ---
 
@@ -684,6 +685,27 @@ Key idea:
 Peak exists where increasing turns into decreasing.
 
 Works even if multiple peaks exist.
+
+**Time Complexity:** O(log n)  
+**Space Complexity:** O(1)
+
+---
+
+## 2️⃣7️⃣ Binary Search on Mountain Array
+
+**Used in:**
+
+- Find in Mountain Array
+
+**Concept**
+
+1. Find peak using binary search  
+2. Apply binary search on:
+   - Left side (ascending)
+   - Right side (descending)
+
+Key idea:
+Split problem into monotonic parts.
 
 **Time Complexity:** O(log n)  
 **Space Complexity:** O(1)
