@@ -51,6 +51,7 @@ This folder contains **Array-based problems solved in Java** as part of my **DSA
 | 25 | Non-Decreasing Array            | LeetCode #665  | Greedy   |
 | 26 | Global and Local Inversions     | LeetCode #775  | Greedy   |
 | 27 | Escape the Ghosts               | LeetCode #789  | Greedy   |
+| 28 | Maximize Distance to Closest Person    | LeetCode #849  | Greedy   |
 
 ---
 
@@ -634,6 +635,29 @@ If any opponent can reach target earlier or at same time → fail.
 
 Key idea:
 Compare distances instead of simulating movement.
+
+**Time Complexity:** O(n)  
+**Space Complexity:** O(1)
+
+---
+
+## 2️⃣5️⃣ Greedy (Gap Analysis)
+
+**Used in:**
+
+- Maximize Distance to Closest Person
+
+**Concept**
+
+Analyze gaps between occupied seats.
+
+Cases:
+1. Leading zeros → distance = index  
+2. Middle gap → distance = gap / 2  
+3. Trailing zeros → distance = length - lastIndex  
+
+Key idea:
+Choose position maximizing minimum distance.
 
 **Time Complexity:** O(n)  
 **Space Complexity:** O(1)
