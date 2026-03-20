@@ -53,6 +53,7 @@ This folder contains **Array-based problems solved in Java** as part of my **DSA
 | 27 | Escape the Ghosts               | LeetCode #789  | Greedy   |
 | 28 | Maximize Distance to Closest Person    | LeetCode #849  | Greedy   |
 | 29 | Peak Index in a Mountain Array  | LeetCode #852  | Binary Search   |
+| 30 | Find Peak Element               | LeetCode #162  | Binary Search   |
 
 ---
 
@@ -669,17 +670,20 @@ Choose position maximizing minimum distance.
 
 **Used in:**
 
-- Peak Index in Mountain Array
+- Peak Index in Mountain Array  
+- Find Peak Element  
 
 **Concept**
 
-Use binary search based on slope direction.
+Use binary search based on slope:
 ```
-if(arr[mid] < arr[mid+1]) → go right
+if(nums[mid] < nums[mid+1]) → go right
 else → go left
 ```
 Key idea:
-Peak is where increasing turns into decreasing.
+Peak exists where increasing turns into decreasing.
+
+Works even if multiple peaks exist.
 
 **Time Complexity:** O(log n)  
 **Space Complexity:** O(1)
