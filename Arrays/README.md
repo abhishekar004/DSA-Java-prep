@@ -65,6 +65,7 @@ This folder contains **Array-based problems solved in Java** as part of my **DSA
 | 39 | Median of an Array              | GeeksforGeeks  | Sorting         |
 | 40 | Palindromic Array               | GeeksforGeeks  | Number Manipulation   |
 | 41 | Sales by Match                  | HackerRank     | HashMap         |
+| 42 | Simple Array Sum                | HackerRank     | Basic Iteration |
 
 ---
 
@@ -895,6 +896,26 @@ if(freq % 2 == 0) → pair formed
 ```
 **Time Complexity:** O(n)  
 **Space Complexity:** O(n)
+
+---
+
+## 3️⃣6️⃣ Basic Array Traversal
+
+**Used in:**
+
+- Simple Array Sum
+
+**Concept**
+
+Traverse array and accumulate result.
+```
+sum += element
+```
+Key idea:
+Linear scan for aggregation.
+
+**Time Complexity:** O(n)  
+**Space Complexity:** O(1)
 
 ---
 
