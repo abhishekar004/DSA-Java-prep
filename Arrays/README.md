@@ -59,6 +59,7 @@ This folder contains **Array-based problems solved in Java** as part of my **DSA
 | 33 | Capacity To Ship Packages Within D Days | LeetCode #1011  | Binary Search   |
 | 34 | Find the Smallest Divisor Given a Threshold | LeetCode #1283  | Binary Search   |
 | 35 | Array Subset                    | GeeksforGeeks  | HashMap         |
+| 36 | Subarray With 0 Sum             | GeeksforGeeks  | Prefix + HashSet  |
 
 ---
 
@@ -763,6 +764,29 @@ Key idea:
 Subset must satisfy frequency condition.
 
 **Time Complexity:** O(n + m)  
+**Space Complexity:** O(n)
+
+---
+
+## 3️⃣0️⃣ Prefix Sum + HashSet
+
+**Used in:**
+
+- Subarray with 0 Sum
+
+**Concept**
+
+If two prefix sums are equal:
+```
+prefix[i] == prefix[j]
+→ subarray sum = 0
+```
+Steps:
+1. Maintain running sum
+2. Store prefix sums in HashSet
+3. If prefix repeats → subarray exists
+
+**Time Complexity:** O(n)  
 **Space Complexity:** O(n)
 
 ---
