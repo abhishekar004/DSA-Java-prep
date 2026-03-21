@@ -58,6 +58,7 @@ This folder contains **Array-based problems solved in Java** as part of my **DSA
 | 32 | Koko Eat Bananas                | LeetCode #875  | Binary Search   |
 | 33 | Capacity To Ship Packages Within D Days | LeetCode #1011  | Binary Search   |
 | 34 | Find the Smallest Divisor Given a Threshold | LeetCode #1283  | Binary Search   |
+| 35 | Array Subset                    | GeeksforGeeks  | HashMap         |
 
 ---
 
@@ -741,6 +742,28 @@ ceil(a / b) = (a + b - 1) / b
 ```
 **Time Complexity:** O(n log n)  
 **Space Complexity:** O(1)
+
+---
+
+## 2️⃣9️⃣ Frequency Matching (HashMap)
+
+**Used in:**
+
+- Array Subset
+
+**Concept**
+
+Use HashMap to track frequency of elements.
+
+Steps:
+1. Count elements of main array
+2. Reduce count while checking subset array
+
+Key idea:
+Subset must satisfy frequency condition.
+
+**Time Complexity:** O(n + m)  
+**Space Complexity:** O(n)
 
 ---
 
