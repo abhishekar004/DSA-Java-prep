@@ -57,6 +57,7 @@ This folder contains **Array-based problems solved in Java** as part of my **DSA
 | 31 | Find in Mountain Array          | LeetCode #1095 | Binary Search   |
 | 32 | Koko Eat Bananas                | LeetCode #875  | Binary Search   |
 | 33 | Capacity To Ship Packages Within D Days | LeetCode #1011  | Binary Search   |
+| 34 | Find the Smallest Divisor Given a Threshold | LeetCode #1283  | Binary Search   |
 
 ---
 
@@ -720,19 +721,24 @@ Split problem into monotonic parts.
 
 - Koko Eating Bananas  
 - Capacity To Ship Packages  
+- Smallest Divisor Given Threshold  
 
 **Concept**
 
-Search for minimum valid answer using binary search.
+Search for minimum/maximum valid answer.
 
 Steps:
-1. Define search range
-2. Pick mid
+1. Define search space
+2. Pick mid as candidate
 3. Check feasibility
-
-Key idea:
-Convert problem into YES/NO decision.
-
+```
+if(valid(mid)) → search left
+else → search right
+```
+**Common Trick**
+```
+ceil(a / b) = (a + b - 1) / b
+```
 **Time Complexity:** O(n log n)  
 **Space Complexity:** O(1)
 
