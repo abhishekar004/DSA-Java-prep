@@ -717,20 +717,18 @@ Split problem into monotonic parts.
 
 **Used in:**
 
-- Koko Eating Bananas
+- Koko Eating Bananas  
+- Capacity To Ship Packages  
 
 **Concept**
 
-Search for minimum/maximum valid answer.
+Search for minimum valid answer using binary search.
 
 Steps:
-1. Define search space
-2. Pick mid as candidate
-3. Check if valid
-```
-if(valid(mid)) → search left
-else → search right
-```
+1. Define search range
+2. Pick mid
+3. Check feasibility
+
 Key idea:
 Convert problem into YES/NO decision.
 
