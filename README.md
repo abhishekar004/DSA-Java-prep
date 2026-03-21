@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/DSA%20Solved-31%2F300-blue" />
+  <img src="https://img.shields.io/badge/DSA%20Solved-43%2F300-blue" />
   <img src="https://img.shields.io/badge/Language-Java-orange" />
   <img src="https://img.shields.io/badge/Focus-Problem%20Solving-success" />
   <img src="https://img.shields.io/badge/Goal-Software%20Engineer-green" />
@@ -84,13 +84,25 @@ This repository showcases my **consistent DSA practice in Java** aimed at master
 | Day 8 | [Peak Index in a Mountain Array](https://leetcode.com/problems/peak-index-in-a-mountain-array/) | Binary Search | Medium |
 | Day 8 | [Find Peak Element](https://leetcode.com/problems/find-peak-element/) | Binary Search | Medium |
 | Day 8 | [Find in Mountain Array](https://leetcode.com/problems/find-in-mountain-array/) | Binary Search | Hard |
+| Day 9 | [Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/) | Binary Search Answer | Medium |
+| Day 9 | [Capacity to Ship Packages Within D Days](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/) | Binary Search Answer | Medium |
+| Day 9 | [ Find the Smallest Divisor Given a Threshold](https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/) | Binary Search Answer | Medium |
+| Day 9 | [Array Subset of Another Array](https://www.geeksforgeeks.org/problems/array-subset-of-another-array2317/1) | HashMap | Easy |
+| Day 9 | [Subarray with 0 Sum](https://www.geeksforgeeks.org/problems/subarray-with-0-sum-1587115621/1) | Prefix Sum | Medium |
+| Day 9 | [Kadane's Algorithm](https://www.geeksforgeeks.org/problems/kadanes-algorithm-1587115620/1) | Kadane's Algorithm | Medium |
+| Day 9 | [Kth Smallest](https://www.geeksforgeeks.org/problems/kth-smallest-element5635/1) | Heap | Medium |
+| Day 9 | [Median Of an Array](https://www.geeksforgeeks.org/problems/find-the-median0527/1) | Sorting | Easy |
+| Day 9 | [Palindromic Array](https://www.geeksforgeeks.org/problems/palindromic-array-1587115620/1) | Number Manipulation | Easy |
+| Day 9 | [Sales by Match](https://www.hackerrank.com/challenges/sock-merchant/problem) | HashMap | Easy |
+| Day 9 | [Simple Array Sum](https://www.hackerrank.com/challenges/simple-array-sum/problem) | Basic Iteration | Easy |
+| Day 9 | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/description/) | Prefix Sum + HashMap | Medium |
 
 ---
 
 # 📊 Progress Stats
 
-- ✅ Problems Solved: **31 / 300+**
-- 🔥 Current Streak: **8 Days**
+- ✅ Problems Solved: **43 / 300+**
+- 🔥 Current Streak: **9 Days**
 - 💻 Language: **Java**
 - 🎯 Target Role: **Software Engineer**
 
