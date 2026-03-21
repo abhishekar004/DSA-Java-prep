@@ -64,6 +64,7 @@ This folder contains **Array-based problems solved in Java** as part of my **DSA
 | 38 | Kth Smallest                    | GeeksforGeeks  | Heap (Priority Queue) |
 | 39 | Median of an Array              | GeeksforGeeks  | Sorting         |
 | 40 | Palindromic Array               | GeeksforGeeks  | Number Manipulation   |
+| 41 | Sales by Match                  | HackerRank     | HashMap         |
 
 ---
 
@@ -873,6 +874,27 @@ A number is palindrome if reversed == original
 
 **Time Complexity:** O(digits)  
 **Space Complexity:** O(1)
+
+---
+
+## 3️⃣5️⃣ Frequency Counting (Pairs)
+
+**Used in:**
+
+- Sock Merchant
+
+**Concept**
+
+Count frequency of elements and form pairs.
+```
+pairs += freq / 2
+```
+OR
+```
+if(freq % 2 == 0) → pair formed
+```
+**Time Complexity:** O(n)  
+**Space Complexity:** O(n)
 
 ---
 
