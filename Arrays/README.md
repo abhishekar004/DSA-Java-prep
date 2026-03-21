@@ -60,6 +60,7 @@ This folder contains **Array-based problems solved in Java** as part of my **DSA
 | 34 | Find the Smallest Divisor Given a Threshold | LeetCode #1283  | Binary Search   |
 | 35 | Array Subset                    | GeeksforGeeks  | HashMap         |
 | 36 | Subarray With 0 Sum             | GeeksforGeeks  | Prefix + HashSet  |
+| 37 | Kadane's Algorithm              | GeeksforGeeks  | Kadane's ALgorithm |
 
 ---
 
@@ -788,6 +789,29 @@ Steps:
 
 **Time Complexity:** O(n)  
 **Space Complexity:** O(n)
+
+---
+
+## 3️⃣1️⃣ Kadane’s Algorithm (Maximum Subarray)
+
+**Used in:**
+
+- Maximum Subarray
+- Kadane's Algorithm (GFG)
+
+**Concept**
+
+At each step:
+- Extend previous subarray OR
+- Start new subarray
+```
+currentSum = max(arr[i], currentSum + arr[i])
+```
+Key idea:
+Drop negative prefix sums.
+
+**Time Complexity:** O(n)  
+**Space Complexity:** O(1)
 
 ---
 
