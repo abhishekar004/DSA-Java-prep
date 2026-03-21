@@ -61,6 +61,7 @@ This folder contains **Array-based problems solved in Java** as part of my **DSA
 | 35 | Array Subset                    | GeeksforGeeks  | HashMap         |
 | 36 | Subarray With 0 Sum             | GeeksforGeeks  | Prefix + HashSet  |
 | 37 | Kadane's Algorithm              | GeeksforGeeks  | Kadane's ALgorithm |
+| 38 | Kth Smallest                    | GeeksforGeeks  | Heap (Priority Queue) |
 
 ---
 
@@ -812,6 +813,29 @@ Drop negative prefix sums.
 
 **Time Complexity:** O(n)  
 **Space Complexity:** O(1)
+
+---
+
+## 3️⃣2️⃣ Heap (Top K Elements)
+
+**Used in:**
+
+- Kth Smallest Element
+
+**Concept**
+
+Use a max heap of size k:
+
+- Keep k smallest elements
+- Remove largest when size exceeds k
+```
+If heap size > k → remove max
+```
+Key idea:
+Maintain only required elements instead of sorting entire array.
+
+**Time Complexity:** O(n log k)  
+**Space Complexity:** O(k)
 
 ---
 
