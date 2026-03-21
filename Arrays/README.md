@@ -62,6 +62,7 @@ This folder contains **Array-based problems solved in Java** as part of my **DSA
 | 36 | Subarray With 0 Sum             | GeeksforGeeks  | Prefix + HashSet  |
 | 37 | Kadane's Algorithm              | GeeksforGeeks  | Kadane's ALgorithm |
 | 38 | Kth Smallest                    | GeeksforGeeks  | Heap (Priority Queue) |
+| 39 | Median of an Array              | GeeksforGeeks  | Sorting         |
 
 ---
 
@@ -836,6 +837,21 @@ Maintain only required elements instead of sorting entire array.
 
 **Time Complexity:** O(n log k)  
 **Space Complexity:** O(k)
+
+---
+
+## 3️⃣3️⃣ Sorting for Order Statistics
+
+**Used in:**
+
+- Median of Array
+
+**Concept**
+
+Sort the array and pick middle element(s).
+
+**Time Complexity:** O(n log n)  
+**Space Complexity:** O(1)
 
 ---
 
