@@ -66,6 +66,7 @@ This folder contains **Array-based problems solved in Java** as part of my **DSA
 | 40 | Palindromic Array               | GeeksforGeeks  | Number Manipulation   |
 | 41 | Sales by Match                  | HackerRank     | HashMap         |
 | 42 | Simple Array Sum                | HackerRank     | Basic Iteration |
+| 43 | Subarray Sum Equals K           | Leetcode #560  | Prefix Sum + HashMap |
 
 ---
 
@@ -916,6 +917,27 @@ Linear scan for aggregation.
 
 **Time Complexity:** O(n)  
 **Space Complexity:** O(1)
+
+---
+
+## 3️⃣7️⃣ Prefix Sum + HashMap (Subarray Sum K)
+
+**Used in:**
+
+- Subarray Sum Equals K
+
+**Concept**
+```
+prefix[j] - prefix[i] = k
+→ prefix[i] = prefix[j] - k
+```
+Steps:
+1. Maintain prefix sum
+2. Check if (sum - k) exists
+3. Add frequency
+
+**Time Complexity:** O(n)  
+**Space Complexity:** O(n)
 
 ---
 
