@@ -4,952 +4,314 @@ This folder contains **Array-based problems solved in Java** as part of my **DSA
 
 ---
 
-## 📊 Pattern Coverage
+# 🚀 📘 Arrays Mastery Notes (DSA Placement Preparation)
 
-| Pattern            | Status      |
-| ------------------ | ----------- |
-| HashMap            | ✅ Covered   |
-| Two Pointers       | ✅ Covered   |
-| Greedy             | ✅ Covered   |
-| Prefix/Suffix      | ✅ Covered   |
-| Interval Problems  | ✅ Covered   |
-| Kadane's Algorithm | ✅ Covered   |
-| Grid Hashing       | ✅ Covered   |
-| Sliding Window     | 🔜 Upcoming |
-| Prefix Sum         | 🔜 Upcoming |
+> 💡 “Don’t just solve problems — recognize patterns instantly.”
+
+This repository is a **complete revision system** for:
+
+- ⚡ Pattern Recognition  
+- 🎯 Interview Preparation  
+- 🔁 Fast Recall  
+
+---
+
+# 🎯 Goals
+
+- ✅ Solve 300+ DSA problems  
+- ✅ Master core patterns  
+- ✅ Crack product-based companies  
+
+---
+
+# 🧠 How to Use
+
+### 🔥 3 Modes
+
+- Learning Mode  
+- Revision Mode  
+- Interview Mode (Pattern in <30 sec)
+
+---
+
+# 📊 Pattern Coverage
+
+| Pattern | Status |
+|--------|-------|
+| HashMap | ✅ Covered |
+| Two Pointers | ✅ Covered |
+| Greedy | ✅ Covered |
+| Prefix/Suffix | ✅ Covered |
+| Interval Problems | ✅ Covered |
+| Kadane's Algorithm | ✅ Covered |
+| Grid Hashing | ✅ Covered |
+| Sliding Window | 🔜 Upcoming |
+| Prefix Sum | 🔜 Upcoming |
 
 ---
 
 # 🧩 Problems Solved
 
-| #  | Problem                         | Platform      | Pattern               |
-| -- | ------------------------------- | ------------- | --------------------- |
-| 1  | Two Sum                         | LeetCode #1   | HashMap               |
-| 2  | Squares of a Sorted Array       | LeetCode #977 | Two Pointers          |
-| 3  | Best Time to Buy and Sell Stock | LeetCode #121 | Greedy / Min Tracking |
-| 4  | Contains Duplicate              | LeetCode #217 | HashSet               |
-| 5  | Product Of Array Except Self    | LeetCode #238 | Prefix + Suffix       |
-| 6  | Rotate Array                    | LeetCode #189 | Reversal Technique    |
-| 7  | Maximum Subarray                | LeetCode #53  | Kadane's Algorithm    |
-| 8  | Valid Sudoku                    | LeetCode #36  | Grid Hashing          |
-| 9  | Merge Intervals                 | LeetCode #56  | Interval Merging      |
-| 10 | Insert Intervals                | LeetCode #57  | Interval Insertion    |
-| 11 | 3Sum                            | LeetCode #15  | Two Pointers          |
-| 12 | 4Sum                            | LeetCode #18  | k-Sum Pattern         |
-| 13 | 3Sum Closest                    | LeetCode #16  | Two Pointers          |
-| 14 | Move Zeroes                     | LeetCode #283 | Two Pointers          |
-| 15 | Find All Numbers Disappeared in an Array| LeetCode #448 | In-Place Marking   |
-| 16 | First Missing Positive          | LeetCode #41  | Cyclic Sort           |
-| 17 | Missing Number                  | LeetCode #268 | Math / Cyclic Sort    |
-| 18 | Find the Duplicate Number       | LeetCode #287 | Floyd Cycle Detection |
-| 19 | Set Mismatch                    | LeetCode #645 | Cyclic Sort           |
-| 20 | Reverse an Array                | GeekforGeeks  | Two Pointers          |
-| 21 | Remove Duplicates from Sorted Array | Leetcode #26  | Two Pointers          |
-| 22 | Remove Duplicates from Sorted Array II | LeetCode #80  | Two Pointers       |
-| 23 | Check if Array is Sorted and Rotated   | LeetCode #1752 | Circular Array Check |
-| 24 | Single Element in a Sorted Array       | LeetCode #540  | Binary Search   |
-| 25 | Non-Decreasing Array            | LeetCode #665  | Greedy   |
-| 26 | Global and Local Inversions     | LeetCode #775  | Greedy   |
-| 27 | Escape the Ghosts               | LeetCode #789  | Greedy   |
-| 28 | Maximize Distance to Closest Person    | LeetCode #849  | Greedy   |
-| 29 | Peak Index in a Mountain Array  | LeetCode #852  | Binary Search   |
-| 30 | Find Peak Element               | LeetCode #162  | Binary Search   |
-| 31 | Find in Mountain Array          | LeetCode #1095 | Binary Search   |
-| 32 | Koko Eat Bananas                | LeetCode #875  | Binary Search   |
-| 33 | Capacity To Ship Packages Within D Days | LeetCode #1011  | Binary Search   |
-| 34 | Find the Smallest Divisor Given a Threshold | LeetCode #1283  | Binary Search   |
-| 35 | Array Subset                    | GeeksforGeeks  | HashMap         |
-| 36 | Subarray With 0 Sum             | GeeksforGeeks  | Prefix + HashSet  |
-| 37 | Kadane's Algorithm              | GeeksforGeeks  | Kadane's ALgorithm |
-| 38 | Kth Smallest                    | GeeksforGeeks  | Heap (Priority Queue) |
-| 39 | Median of an Array              | GeeksforGeeks  | Sorting         |
-| 40 | Palindromic Array               | GeeksforGeeks  | Number Manipulation   |
-| 41 | Sales by Match                  | HackerRank     | HashMap         |
-| 42 | Simple Array Sum                | HackerRank     | Basic Iteration |
-| 43 | Subarray Sum Equals K           | Leetcode #560  | Prefix Sum + HashMap |
+| # | Problem | Platform | Pattern |
+|--|--------|----------|--------|
+| 1 | Two Sum | LeetCode #1 | HashMap |
+| 2 | Squares of Sorted Array | LC #977 | Two Pointers |
+| 3 | Buy & Sell Stock | LC #121 | Greedy |
+| 4 | Contains Duplicate | LC #217 | HashSet |
+| 5 | Product Except Self | LC #238 | Prefix/Suffix |
+| 6 | Rotate Array | LC #189 | Reversal |
+| 7 | Maximum Subarray | LC #53 | Kadane |
+| 8 | Valid Sudoku | LC #36 | Grid Hashing |
+| 9 | Merge Intervals | LC #56 | Interval |
+| 10 | Insert Interval | LC #57 | Interval |
+| 11 | 3Sum | LC #15 | Two Pointers |
+| 12 | 4Sum | LC #18 | k-Sum |
+| 13 | 3Sum Closest | LC #16 | Two Pointers |
+| 14 | Move Zeroes | LC #283 | Two Pointers |
+| 15 | Missing Numbers | LC #448 | Index Marking |
+| 16 | First Missing Positive | LC #41 | Cyclic Sort |
+| 17 | Missing Number | LC #268 | Math |
+| 18 | Find Duplicate | LC #287 | Cycle |
+| 19 | Set Mismatch | LC #645 | Cyclic |
+| 20 | Reverse Array | GFG | Two Pointers |
+| 21 | Remove Duplicates I | LC #26 | Two Pointers |
+| 22 | Remove Duplicates II | LC #80 | Two Pointers |
+| 23 | Sorted Rotated Check | LC #1752 | Circular |
+| 24 | Single Element | LC #540 | Binary Search |
+| 25 | Non-Decreasing Array | LC #665 | Greedy |
+| 26 | Global vs Local Inversion | LC #775 | Greedy |
+| 27 | Escape Ghosts | LC #789 | Greedy |
+| 28 | Max Distance | LC #849 | Greedy |
+| 29 | Peak Index | LC #852 | Binary Search |
+| 30 | Find Peak | LC #162 | Binary Search |
+| 31 | Mountain Array | LC #1095 | Binary Search |
+| 32 | Koko Bananas | LC #875 | BS Answer |
+| 33 | Ship Packages | LC #1011 | BS Answer |
+| 34 | Smallest Divisor | LC #1283 | BS Answer |
+| 35 | Array Subset | GFG | HashMap |
+| 36 | Subarray 0 Sum | GFG | Prefix |
+| 37 | Kadane (GFG) | GFG | Kadane |
+| 38 | Kth Smallest | GFG | Heap |
+| 39 | Median | GFG | Sorting |
+| 40 | Palindromic Array | GFG | Math |
+| 41 | Sock Merchant | HR | HashMap |
+| 42 | Simple Sum | HR | Basic |
+| 43 | Subarray Sum K | LC #560 | Prefix |
 
 ---
 
-# 🧠 Important Patterns
+# ⚡ Pattern Recognition Cheat Sheet
+
+| If you see… | Use |
+|------------|-----|
+| Pair / target | HashMap |
+| Sorted array | Two Pointers |
+| Max sum | Kadane |
+| Subarray sum | Prefix |
+| Missing/duplicate | Cyclic |
+| Overlap | Interval |
+| Min/Max answer | Binary Search |
+
+---
+
+# 🧠 Important Patterns (WITH PROBLEMS + FORMULAS)
+
+---
 
 ## 1️⃣ HashMap Lookup
 
-**Used in:**
+### 📌 Problems
+- Two Sum  
+- Array Subset  
+- Sock Merchant  
 
-* Two Sum
+### 💡 Concept
+Store complement for O(1) lookup
 
-**Concept**
+### 🔑 Formula
 
-Store numbers in a HashMap to check the complement in **O(1)** time.
+target - num
 
-```
-target - currentNumber
-```
-
-If it already exists → solution found.
-
-**Time Complexity:** `O(n)`
-**Space Complexity:** `O(n)`
 
 ---
 
-## 2️⃣ Two Pointer Techniques (Core Pattern)
+## 2️⃣ Two Pointers
 
-**Used in:**
+### 📌 Problems
+- Squares Sorted  
+- 3Sum  
+- 4Sum  
+- Move Zeroes  
+- Remove Duplicates  
 
-* Squares of a Sorted Array
-* 3Sum
-* 4Sum
-* 3Sum Closest
+### 💡 Concept
+Use left & right on sorted array
 
-**Concept**
+### 🔑 Rule
 
-Use two pointers (`left`, `right`) on a **sorted array** to reduce time complexity.
+sum < target → left++
+sum > target → right--
 
-Instead of brute force:
-
-* If sum < target → move `left++`
-* If sum > target → move `right--`
-
----
-
-### 🔹 Variations
-
-**Pair Problems (2Sum Sorted)**
-
-* Time: `O(n)`
-
-**Triplets (3Sum)**
-
-* Fix one element + two pointers
-* Time: `O(n²)`
-
-**Quadruplets (4Sum)**
-
-* Fix two elements + two pointers
-* Time: `O(n³)`
-
-**Closest Sum Problems**
-
-* Track minimum difference instead of exact match
-
-**Space Complexity:** `O(1)`
 
 ---
 
-## 3️⃣ Greedy (Minimum Tracking)
+## 3️⃣ Greedy
 
-**Used in:**
+### 📌 Problems
+- Buy Sell Stock  
+- Non-Decreasing Array  
+- Escape Ghosts  
+- Max Distance  
 
-* Best Time to Buy and Sell Stock
+### 💡 Concept
+Make locally optimal choice
 
-**Concept**
+### 🔑 Formula
 
-Track the **minimum value so far** and compute profit dynamically.
+profit = price - min
 
-```
-profit = currentPrice - minPrice
-```
-
-**Time Complexity:** `O(n)`
-**Space Complexity:** `O(1)`
-
----
-
-## 4️⃣ HashSet Lookup
-
-**Used in:**
-
-* Contains Duplicate
-
-**Concept**
-
-Use a HashSet to track visited elements.
-
-If insertion fails → duplicate found.
-
-**Time Complexity:** `O(n)`
-**Space Complexity:** `O(n)`
 
 ---
 
-## 5️⃣ Prefix + Suffix Product
+## 4️⃣ Prefix + Suffix
 
-**Used in:**
+### 📌 Problems
+- Product Except Self  
 
-* Product of Array Except Self
+### 🔑 Formula
 
-**Concept**
+res[i] = left * right
 
-```
-result[i] = leftProduct × rightProduct
-```
-
-Optimized using:
-
-* Left stored in result[]
-* Right tracked using variable
-
-**Time Complexity:** `O(n)`
-**Space Complexity:** `O(1)`
 
 ---
 
-## 6️⃣ Array Reversal Technique
+## 5️⃣ Kadane’s Algorithm
 
-**Used in:**
+### 📌 Problems
+- Maximum Subarray  
 
-* Rotate Array
+### 🔑 Formula
 
-**Concept**
+curr = max(num, curr + num)
+max = max(max, curr)
 
-Steps:
-
-1. Reverse first `n-k`
-2. Reverse last `k`
-3. Reverse entire array
-
-**Time Complexity:** `O(n)`
-**Space Complexity:** `O(1)`
-
-### 🔹 Simple Reversal
-
-**Used in:**
-- Reverse Array
-**Concept:**
-Swap elements from both ends moving inward.
-```
-left++ and right-- until they meet
-```
----
-
-## 7️⃣ Kadane's Algorithm
-
-**Used in:**
-
-* Maximum Subarray
-
-**Concept**
-
-```
-currentSum = max(nums[i], currentSum + nums[i])
-maxSum = max(maxSum, currentSum)
-```
-
-**Time Complexity:** `O(n)`
-**Space Complexity:** `O(1)`
 
 ---
 
-## 8️⃣ Hashing for Grid Validation
+## 6️⃣ Cyclic Sort
 
-**Used in:**
-
-* Valid Sudoku
-
-**Concept**
-
-Track:
-
-* Rows
-* Columns
-* 3×3 Boxes
-
-```
-num + " in row " + i
-num + " in column " + j
-num + " in box " + (i/3) + "-" + (j/3)
-```
-
-**Time Complexity:** `O(1)`
-**Space Complexity:** `O(1)`
-
----
-
-## 9️⃣ Interval Merging (Sorting + Greedy)
-
-**Used in:**
-
-* Merge Intervals
-
-**Concept**
-
-1. Sort intervals
-2. Merge overlapping ones
-
-**Time Complexity:** `O(n log n)`
-**Space Complexity:** `O(n)`
-
----
-
-## 🔟 Interval Insertion
-
-**Used in:**
-
-* Insert Interval
-
-**Concept**
-
-```
-1. If no overlap → add interval
-2. If overlap → merge
-```
-
-**Time Complexity:** `O(n)`
-**Space Complexity:** `O(n)`
-
----
-
-## 1️⃣1️⃣ k-Sum Pattern
-
-**Used in:**
-
-* 3Sum
-* 4Sum
-
-**Concept**
-
-Reduce problem:
-
-```
-k-Sum → (k-1)-Sum → ... → 2Sum
-```
-
-**Time Complexity:**
-
-* 3Sum → `O(n²)`
-* 4Sum → `O(n³)`
-
-**Space Complexity:** `O(1)`
-
----
-
-## 1️⃣2️⃣ Closest Sum Optimization
-
-**Used in:**
-
-* 3Sum Closest
-
-**Concept**
-
-Track the closest value instead of exact match:
-
-```
-if(abs(sum - target) < bestDiff)
-    update answer
-```
-
-**Time Complexity:** `O(n²)`
-**Space Complexity:** `O(1)`
-
----
-
-## 1️⃣3️⃣ Two Pointers (In-Place Rearrangement)
-
-**Used in:**
-
-- Move Zeroes
-
-**Concept**
-
-Use two pointers to rearrange elements **in-place** while maintaining order.
-
-- `left` → position for next valid element  
-- `right` → iterate through array  
-
-If element is valid (non-zero):
-- Swap with `left`
-- Move `left++`
-
-Key idea:
-Shift non-zero elements forward, push zeroes to the end
-
-
-**Time Complexity:** `O(n)`  
-**Space Complexity:** `O(1)`
-
----
-
-## 1️⃣4️⃣ Index Marking (In-Place Hashing)
-
-**Used in:**
-
-- Find Disappeared Numbers  
-- Find Duplicates  
-
-**Concept**
-
-Use array indices as a **hashing structure**.
-```
-index = value - 1
-```
----
-
-### 🔹 Variations
-
-**Find Missing Numbers**
-- Positive index → missing  
-
-**Find Duplicates**
-- Already negative → duplicate  
-
----
-
-**Key Idea**
-```
-Use sign (+/-) to mark visited elements
-```
-**Time Complexity:** `O(n)`  
-**Space Complexity:** `O(1)`
----
-
-
-## 1️⃣5️⃣ Cyclic Sort (Index Placement)
-
-**Used in:**
-
+### 📌 Problems
 - First Missing Positive  
 - Missing Number  
 - Set Mismatch  
 
-**Concept**
+### 🔑 Formula
 
-Place each element at its correct index:
-```
-value → index = value - 1
-```
----
+nums[i] → index = nums[i] - 1
 
-### 🔹 Variations
-
-**First Missing Positive**
-- Find first index where nums[i] != i+1  
-
-**Missing Number**
-- Find index where nums[i] != i  
-
-**Set Mismatch**
-- nums[i] → duplicate  
-- i+1 → missing  
 
 ---
 
-**Key Idea**
-Correct placement reveals errors in the array
+## 7️⃣ Binary Search
 
-**Time Complexity:** `O(n)`  
-**Space Complexity:** `O(1)`
+### 📌 Problems
+- Peak Element  
+- Single Element  
+- Mountain Array  
 
----
-## 1️⃣6️⃣ Mathematical Sum Trick
+### 🔑 Rule
 
-**Used in:**
+mid = (low + high)/2
 
-- Missing Number
-
-**Concept**
-
-Use formula:
-
-n * (n + 1) / 2
-
-Subtract actual sum from expected sum.
-```
-missing = totalSum - actualSum
-```
-**Time Complexity:** `O(n)`  
-**Space Complexity:** `O(1)`
----
-
-# 🚧 Upcoming Patterns
-
-* Sliding Window
-* Prefix Sum + HashMap
 
 ---
 
-## 1️⃣7️⃣ Floyd’s Cycle Detection (Tortoise & Hare)
+## 8️⃣ Binary Search on Answer
 
-**Used in:**
+### 📌 Problems
+- Koko Bananas  
+- Ship Packages  
+- Smallest Divisor  
 
-- Find the Duplicate Number
+### 🔑 Formula
 
-**Concept**
+if(valid(mid)) → left else right
 
-Treat array as a linked list:
-```
-nums[i] → next index
-```
-Since duplicate exists → cycle forms.
 
-Steps:
+### 🔥 Ceil Trick
 
-1. Detect cycle using slow & fast pointers  
-2. Find cycle start → duplicate number  
+(a + b - 1) / b
 
-**Time Complexity:** `O(n)`  
-**Space Complexity:** `O(1)`
-
----
-## 1️⃣8️⃣ Two Pointers (Unique Elements)
-
-**Used in:**
-
-- Remove Duplicates from Sorted Array
-
-**Concept**
-
-Since array is sorted, duplicates are adjacent.
-
-Use two pointers:
-
-- i → last unique element  
-- j → traverse array  
-
-If nums[j] != nums[i]:
-    move nums[j] forward
-
-**Time Complexity:** O(n)  
-**Space Complexity:** O(1)
 
 ---
 
-## 1️⃣9️⃣ Two Pointers (Allow K Duplicates)
+## 9️⃣ Prefix Sum
 
-**Used in:**
+### 📌 Problems
+- Subarray Sum K  
+- Subarray 0 Sum  
 
-- Remove Duplicates from Sorted Array II
+### 🔑 Formula
 
-**Concept**
-
-Allow at most K duplicates using index comparison.
-
-For K = 2:
-```
-if(i < 2 || nums[i] != nums[i-2])
-```
-General idea:
-Compare current element with element K positions before.
-
-If different → allow insertion
-
-**Time Complexity:** O(n)  
-**Space Complexity:** O(1)
-
----
-
-## 2️⃣0️⃣ Circular Array Check
-
-**Used in:**
-
-- Check if Array is Sorted and Rotated
-
-**Concept**
-
-A sorted rotated array has at most one point where order breaks.
-```
-nums[i] > nums[(i+1) % n]
-```
-If count of such breaks ≤ 1 → valid
-
-Key idea:
-Treat array as circular using modulo.
-
-**Time Complexity:** O(n)  
-**Space Complexity:** O(1)
-
----
-
-## 2️⃣1️⃣ Binary Search on Pattern (Index Parity)
-
-**Used in:**
-
-- Single Element in a Sorted Array
-
-**Concept**
-
-Use binary search with index parity:
-
-- Before single → pairs start at even index  
-- After single → pairs shift  
-
-Force mid to even:
-```
-if(mid % 2 == 1) mid--
-```
-Compare:
-- nums[mid] == nums[mid+1] → move right  
-- else → move left  
-
-**Time Complexity:** O(log n)  
-**Space Complexity:** O(1)
-
----
-
-## 2️⃣2️⃣ Greedy (Local Fix Strategy)
-
-**Used in:**
-
-- Non-decreasing Array
-
-**Concept**
-
-When violation occurs:
-```
-nums[i] > nums[i+1]
-```
-Fix locally by modifying one element.
-
-Decision:
-
-- If nums[i-1] > nums[i+1] → modify nums[i+1]
-- Else → modify nums[i]
-
-Key idea:
-Fix locally while minimizing impact on future elements
-
-**Time Complexity:** O(n)  
-**Space Complexity:** O(1)
-
----
-
-## 2️⃣3️⃣ Greedy (Index Distance Constraint)
-
-**Used in:**
-
-- Global and Local Inversions
-
-**Concept**
-
-For global inversions to equal local inversions:
-
-Each element must be at most 1 position away from its correct index.
-```
-Math.abs(nums[i] - i) <= 1
-```
-If any element violates this → non-local inversion exists.
-
-**Time Complexity:** O(n)  
-**Space Complexity:** O(1)
-
----
-
-## 2️⃣4️⃣ Greedy (Distance Comparison)
-
-**Used in:**
-
-- Escape The Ghosts
-
-**Concept**
-
-Use Manhattan distance to compare reachability.
-```
-|x1 - x2| + |y1 - y2|
-```
-If any opponent can reach target earlier or at same time → fail.
-
-Key idea:
-Compare distances instead of simulating movement.
-
-**Time Complexity:** O(n)  
-**Space Complexity:** O(1)
-
----
-
-## 2️⃣5️⃣ Greedy (Gap Analysis)
-
-**Used in:**
-
-- Maximize Distance to Closest Person
-
-**Concept**
-
-Analyze gaps between occupied seats.
-
-Cases:
-1. Leading zeros → distance = index  
-2. Middle gap → distance = gap / 2  
-3. Trailing zeros → distance = length - lastIndex  
-
-Key idea:
-Choose position maximizing minimum distance.
-
-**Time Complexity:** O(n)  
-**Space Complexity:** O(1)
-
----
-
-## 2️⃣6️⃣ Binary Search on Peak (Slope Method)
-
-**Used in:**
-
-- Peak Index in Mountain Array  
-- Find Peak Element  
-
-**Concept**
-
-Use binary search based on slope:
-```
-if(nums[mid] < nums[mid+1]) → go right
-else → go left
-```
-Key idea:
-Peak exists where increasing turns into decreasing.
-
-Works even if multiple peaks exist.
-
-**Time Complexity:** O(log n)  
-**Space Complexity:** O(1)
-
----
-
-## 2️⃣7️⃣ Binary Search on Mountain Array
-
-**Used in:**
-
-- Find in Mountain Array
-
-**Concept**
-
-1. Find peak using binary search  
-2. Apply binary search on:
-   - Left side (ascending)
-   - Right side (descending)
-
-Key idea:
-Split problem into monotonic parts.
-
-**Time Complexity:** O(log n)  
-**Space Complexity:** O(1)
-
----
-
-## 2️⃣8️⃣ Binary Search on Answer
-
-**Used in:**
-
-- Koko Eating Bananas  
-- Capacity To Ship Packages  
-- Smallest Divisor Given Threshold  
-
-**Concept**
-
-Search for minimum/maximum valid answer.
-
-Steps:
-1. Define search space
-2. Pick mid as candidate
-3. Check feasibility
-```
-if(valid(mid)) → search left
-else → search right
-```
-**Common Trick**
-```
-ceil(a / b) = (a + b - 1) / b
-```
-**Time Complexity:** O(n log n)  
-**Space Complexity:** O(1)
-
----
-
-## 2️⃣9️⃣ Frequency Matching (HashMap)
-
-**Used in:**
-
-- Array Subset
-
-**Concept**
-
-Use HashMap to track frequency of elements.
-
-Steps:
-1. Count elements of main array
-2. Reduce count while checking subset array
-
-Key idea:
-Subset must satisfy frequency condition.
-
-**Time Complexity:** O(n + m)  
-**Space Complexity:** O(n)
-
----
-
-## 3️⃣0️⃣ Prefix Sum + HashSet
-
-**Used in:**
-
-- Subarray with 0 Sum
-
-**Concept**
-
-If two prefix sums are equal:
-```
-prefix[i] == prefix[j]
-→ subarray sum = 0
-```
-Steps:
-1. Maintain running sum
-2. Store prefix sums in HashSet
-3. If prefix repeats → subarray exists
-
-**Time Complexity:** O(n)  
-**Space Complexity:** O(n)
-
----
-
-## 3️⃣1️⃣ Kadane’s Algorithm (Maximum Subarray)
-
-**Used in:**
-
-- Maximum Subarray
-- Kadane's Algorithm (GFG)
-
-**Concept**
-
-At each step:
-- Extend previous subarray OR
-- Start new subarray
-```
-currentSum = max(arr[i], currentSum + arr[i])
-```
-Key idea:
-Drop negative prefix sums.
-
-**Time Complexity:** O(n)  
-**Space Complexity:** O(1)
-
----
-
-## 3️⃣2️⃣ Heap (Top K Elements)
-
-**Used in:**
-
-- Kth Smallest Element
-
-**Concept**
-
-Use a max heap of size k:
-
-- Keep k smallest elements
-- Remove largest when size exceeds k
-```
-If heap size > k → remove max
-```
-Key idea:
-Maintain only required elements instead of sorting entire array.
-
-**Time Complexity:** O(n log k)  
-**Space Complexity:** O(k)
-
----
-
-## 3️⃣3️⃣ Sorting for Order Statistics
-
-**Used in:**
-
-- Median of Array
-
-**Concept**
-
-Sort the array and pick middle element(s).
-
-**Time Complexity:** O(n log n)  
-**Space Complexity:** O(1)
-
----
-
-## 3️⃣4️⃣ Number Reversal (Palindrome Check)
-
-**Used in:**
-
-- Palindromic Array
-
-**Concept**
-
-Reverse the number and compare with original.
-```
-reverse = reverse * 10 + digit
-```
-Key idea:
-A number is palindrome if reversed == original
-
-**Time Complexity:** O(digits)  
-**Space Complexity:** O(1)
-
----
-
-## 3️⃣5️⃣ Frequency Counting (Pairs)
-
-**Used in:**
-
-- Sock Merchant
-
-**Concept**
-
-Count frequency of elements and form pairs.
-```
-pairs += freq / 2
-```
-OR
-```
-if(freq % 2 == 0) → pair formed
-```
-**Time Complexity:** O(n)  
-**Space Complexity:** O(n)
-
----
-
-## 3️⃣6️⃣ Basic Array Traversal
-
-**Used in:**
-
-- Simple Array Sum
-
-**Concept**
-
-Traverse array and accumulate result.
-```
-sum += element
-```
-Key idea:
-Linear scan for aggregation.
-
-**Time Complexity:** O(n)  
-**Space Complexity:** O(1)
-
----
-
-## 3️⃣7️⃣ Prefix Sum + HashMap (Subarray Sum K)
-
-**Used in:**
-
-- Subarray Sum Equals K
-
-**Concept**
-```
 prefix[j] - prefix[i] = k
-→ prefix[i] = prefix[j] - k
-```
-Steps:
-1. Maintain prefix sum
-2. Check if (sum - k) exists
-3. Add frequency
 
-**Time Complexity:** O(n)  
-**Space Complexity:** O(n)
 
 ---
 
-# 🎯 Key Takeaways
+## 🔟 Floyd Cycle Detection
 
-Array problems often revolve around:
+### 📌 Problems
+- Find Duplicate  
 
-* HashMap Lookup
-* Two Pointers
-* Greedy Techniques
-* Prefix & Suffix
-* Interval Handling
-* Kadane’s Algorithm
+### 🔑 Formula
 
-Mastering these patterns makes **most interview problems easier to solve** 🚀
+slow = nums[slow]
+fast = nums[nums[fast]]
+
+
+---
+
+# 🧪 Revision Strategy
+
+### 🔁 Level 1
+- Solve 3/day  
+
+### 🔁 Level 2
+- Revise patterns  
+
+### 🔁 Level 3
+- Only this README  
+
+---
+
+# 🏢 Company Focus
+
+### Amazon
+- Sliding Window  
+- Two Pointers  
+- Kadane  
+
+### Google
+- 3Sum / 4Sum  
+- Binary Search  
+
+### Microsoft
+- Prefix Sum  
+- Greedy  
+
+---
+
+# 🎯 Final Takeaways
+
+- Arrays = Pattern Recognition  
+- Same patterns repeat  
+- Speed = Practice + Memory  
+
+---
+
+# ⚡ Final Advice
+
+“If you can identify pattern in 30 sec,  
+you can solve problem in 5 minutes.”
+
+🚀 This README = Your Placement Weapon
