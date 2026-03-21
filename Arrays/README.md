@@ -55,6 +55,7 @@ This folder contains **Array-based problems solved in Java** as part of my **DSA
 | 29 | Peak Index in a Mountain Array  | LeetCode #852  | Binary Search   |
 | 30 | Find Peak Element               | LeetCode #162  | Binary Search   |
 | 31 | Find in Mountain Array          | LeetCode #1095 | Binary Search   |
+| 32 | Koko Eat Bananas                | LeetCode #875  | Binary Search   |
 
 ---
 
@@ -708,6 +709,32 @@ Key idea:
 Split problem into monotonic parts.
 
 **Time Complexity:** O(log n)  
+**Space Complexity:** O(1)
+
+---
+
+## 2️⃣8️⃣ Binary Search on Answer
+
+**Used in:**
+
+- Koko Eating Bananas
+
+**Concept**
+
+Search for minimum/maximum valid answer.
+
+Steps:
+1. Define search space
+2. Pick mid as candidate
+3. Check if valid
+```
+if(valid(mid)) → search left
+else → search right
+```
+Key idea:
+Convert problem into YES/NO decision.
+
+**Time Complexity:** O(n log n)  
 **Space Complexity:** O(1)
 
 ---
