@@ -63,6 +63,7 @@ This folder contains **Array-based problems solved in Java** as part of my **DSA
 | 37 | Kadane's Algorithm              | GeeksforGeeks  | Kadane's ALgorithm |
 | 38 | Kth Smallest                    | GeeksforGeeks  | Heap (Priority Queue) |
 | 39 | Median of an Array              | GeeksforGeeks  | Sorting         |
+| 40 | Palindromic Array               | GeeksforGeeks  | Number Manipulation   |
 
 ---
 
@@ -851,6 +852,26 @@ Maintain only required elements instead of sorting entire array.
 Sort the array and pick middle element(s).
 
 **Time Complexity:** O(n log n)  
+**Space Complexity:** O(1)
+
+---
+
+## 3️⃣4️⃣ Number Reversal (Palindrome Check)
+
+**Used in:**
+
+- Palindromic Array
+
+**Concept**
+
+Reverse the number and compare with original.
+```
+reverse = reverse * 10 + digit
+```
+Key idea:
+A number is palindrome if reversed == original
+
+**Time Complexity:** O(digits)  
 **Space Complexity:** O(1)
 
 ---
