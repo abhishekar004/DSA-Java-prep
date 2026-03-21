@@ -56,6 +56,7 @@ This folder contains **Array-based problems solved in Java** as part of my **DSA
 | 30 | Find Peak Element               | LeetCode #162  | Binary Search   |
 | 31 | Find in Mountain Array          | LeetCode #1095 | Binary Search   |
 | 32 | Koko Eat Bananas                | LeetCode #875  | Binary Search   |
+| 33 | Capacity To Ship Packages Within D Days | LeetCode #1011  | Binary Search   |
 
 ---
 
