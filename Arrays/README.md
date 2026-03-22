@@ -270,6 +270,26 @@ fast = nums[nums[fast]]
 
 ---
 
+## 🔹 Greedy (Min/Max Tracking)
+
+**Used in:**
+- Breaking the Records
+- Best Time to Buy & Sell Stock
+
+**Trigger**
+- Track highest/lowest value dynamically
+
+**Concept**
+Update min/max while iterating
+
+**Template**
+min = max = arr[0]
+for each element:
+    update min/max
+
+
+---
+
 # 🧪 Revision Strategy
 
 ### 🔁 Level 1 → Solve
