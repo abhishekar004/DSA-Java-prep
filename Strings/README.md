@@ -1,4 +1,5 @@
 ---
+
 pattern tip for ReverseString.java
 🧠 Pattern Tip
 
