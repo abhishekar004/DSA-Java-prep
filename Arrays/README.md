@@ -56,6 +56,7 @@ arrays/
 ├── SubarraySumEqualsK.java
 ├── BreakingTheRecords.java
 └── NumberLineJumps.java
+└── FindTheClosestPairFromTwoArrays.java
 ```
 
 ---
@@ -305,6 +306,30 @@ ceil(a / b) = (a + b - 1) / b
 | [Palindromic Array](https://www.geeksforgeeks.org/problems/palindromic-array-1587115620/1) | GFG | 🟢 Easy |
 | [Simple Array Sum](https://www.hackerrank.com/challenges/simple-array-sum/problem) | HackerRank | 🟢 Easy |
 | [Number Line Jumps](https://www.hackerrank.com/contests/mountblue-technologies/challenges/kangaroo) | HackerRank | 🟢 Easy |
+
+---
+pattern tip for FindTheClosestPairFromTwoArrays.java
+🧠 Pattern Tip
+
+👉 When you see:
+
+Two sorted arrays
+Need pair with target / closest sum
+
+💡 Trigger:
+
+Two pointers from opposite ends
+
+⚙️ Approach (Short)
+Start:
+i = 0 (arr1)
+j = n-1 (arr2)
+Compute sum
+Update closest pair
+Move:
+sum > x → move left (j--)
+sum < x → move right (i++)
+
 
 ---
 
