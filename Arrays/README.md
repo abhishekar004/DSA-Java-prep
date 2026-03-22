@@ -83,6 +83,8 @@ This is a **pattern-based DSA revision system** designed for:
 | 41 | Sock Merchant           | HR       | HashMap              | 🟢         |
 | 42 | Simple Sum              | HR       | Basic                | 🟢         |
 | 43 | Subarray Sum K          | LC #560  | Prefix Sum + HashMap | 🟠         |
+| 44 | Breaking The Records    | HR       | Greedy               | 🟢         |
+| 45 | Number Line Jumps       | HR       | Math Equation        | 🟢         |
 
 ---
 
