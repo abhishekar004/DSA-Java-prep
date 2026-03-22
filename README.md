@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/DSA%20Solved-43%2F300-blue" />
+  <img src="https://img.shields.io/badge/DSA%20Solved-45%2F300-blue" />
   <img src="https://img.shields.io/badge/Language-Java-orange" />
   <img src="https://img.shields.io/badge/Focus-Problem%20Solving-success" />
   <img src="https://img.shields.io/badge/Goal-Software%20Engineer-green" />
@@ -96,13 +96,15 @@ This repository showcases my **consistent DSA practice in Java** aimed at master
 | Day 9 | [Sales by Match](https://www.hackerrank.com/challenges/sock-merchant/problem) | HashMap | Easy |
 | Day 9 | [Simple Array Sum](https://www.hackerrank.com/challenges/simple-array-sum/problem) | Basic Iteration | Easy |
 | Day 9 | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/description/) | Prefix Sum + HashMap | Medium |
+| Day 10| [Breaking The Records](https://www.hackerrank.com/contests/mountblue-technologies/challenges/breaking-best-and-worst-records) | Arrays | Easy |
+| Day 10| [Number Line Jumps](https://www.hackerrank.com/contests/mountblue-technologies/challenges/kangaroo) | Algebra | Easy |
 
 ---
 
 # 📊 Progress Stats
 
-- ✅ Problems Solved: **43 / 300+**
-- 🔥 Current Streak: **9 Days**
+- ✅ Problems Solved: **45 / 300+**
+- 🔥 Current Streak: **10 Days**
 - 💻 Language: **Java**
 - 🎯 Target Role: **Software Engineer**
 
