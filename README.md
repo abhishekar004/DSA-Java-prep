@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Problems%20Solved-45%2F300-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Problems%20Solved-47%2F300-blue?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Language-Java-orange?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Streak-10%20Days-red?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Goal-Software%20Engineer-green?style=for-the-badge" />
@@ -29,7 +29,7 @@ Every solution is:
 | Folder | Status | Problems |
 |--------|--------|----------|
 | [📁 Arrays](./arrays/) | 🟢 Active | 45 solved |
-| [📁 Strings](./strings/) | ⚪ Upcoming | — |
+| [📁 Strings](./strings/) | 🟢 Active | 1 solved |
 | [📁 HashMap](./hashmap/) | ⚪ Upcoming | — |
 | [📁 Stack](./stack/) | ⚪ Upcoming | — |
 | [📁 Queue](./queue/) | ⚪ Upcoming | — |
@@ -46,7 +46,7 @@ Every solution is:
 
 ```
 Arrays           ████████████████████  45/45  🟢
-Strings          ░░░░░░░░░░░░░░░░░░░░   0/--  ⚪
+Strings          ████████████████████   1/1   🟢
 HashMap          ░░░░░░░░░░░░░░░░░░░░   0/--  ⚪
 Stack            ░░░░░░░░░░░░░░░░░░░░   0/--  ⚪
 Queue            ░░░░░░░░░░░░░░░░░░░░   0/--  ⚪
@@ -55,7 +55,7 @@ Trees            ░░░░░░░░░░░░░░░░░░░░   
 Graphs           ░░░░░░░░░░░░░░░░░░░░   0/--  ⚪
 DP               ░░░░░░░░░░░░░░░░░░░░   0/--  ⚪
 
-Total: 45 / 300+ problems  ████░░░░░░░░░░░░░░░░  15%
+Total: 47 / 300+ problems  ████░░░░░░░░░░░░░░░░  15.6%
 ```
 
 ---
