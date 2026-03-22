@@ -1,178 +1,156 @@
-<h1 align="center">🚀 DSA Java Placement Preparation</h1>
+<h1 align="center">🚀 DSA Java — Placement Preparation</h1>
 
 <p align="center">
-  <b>Cracking Coding Interviews with Consistent DSA Practice in Java</b><br>
-  Building strong problem-solving skills for product-based companies 💻
+  <b>Pattern-based DSA practice in Java for product-based company interviews</b>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/DSA%20Solved-45%2F300-blue" />
-  <img src="https://img.shields.io/badge/Language-Java-orange" />
-  <img src="https://img.shields.io/badge/Focus-Problem%20Solving-success" />
-  <img src="https://img.shields.io/badge/Goal-Software%20Engineer-green" />
+  <img src="https://img.shields.io/badge/Problems%20Solved-45%2F300-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Language-Java-orange?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Streak-10%20Days-red?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Goal-Software%20Engineer-green?style=for-the-badge" />
 </p>
 
 ---
 
-# 📌 About This Repository
+## 📌 About
 
-This repository showcases my **consistent DSA practice in Java** aimed at mastering problem-solving for **technical interviews**.
+This repo documents my **consistent DSA journey in Java** — structured around patterns, not just problems.
 
-💡 It highlights:
-- Structured learning of **DSA patterns**
-- Clean & optimized **Java implementations**
-- Strong focus on **interview preparation**
-
----
-
-# 🎯 Goals
-
-- 🚀 Solve **300+ problems**
-- 🧠 Master **core DSA patterns**
-- ⚡ Improve **speed & accuracy**
-- 💼 Crack **product-based company placements**
+Every solution is:
+- Written in clean, readable **Java**
+- Commented with **approach + complexity**
+- Grouped by **pattern** for fast revision
 
 ---
 
-# 🧠 DSA Patterns Covered
+## 📂 Repository Structure
 
-| Pattern                | Status |
-|-----------------------|--------|
-| Two Pointers          | 🟢     |
-| Sliding Window        | ⚪     |
-| Prefix Sum            | 🟢     |
-| Binary Search         | ⚪     |
-| Recursion & Backtracking | ⚪ |
-| Greedy                | 🟢     |
-| Dynamic Programming   | ⚪     |
-| Graph Algorithms      | ⚪     |
+| Folder | Status | Problems |
+|--------|--------|----------|
+| [📁 Arrays](./arrays/) | 🟢 Active | 45 solved |
+| [📁 Strings](./strings/) | ⚪ Upcoming | — |
+| [📁 HashMap](./hashmap/) | ⚪ Upcoming | — |
+| [📁 Stack](./stack/) | ⚪ Upcoming | — |
+| [📁 Queue](./queue/) | ⚪ Upcoming | — |
+| [📁 LinkedList](./linkedlist/) | ⚪ Upcoming | — |
+| [📁 Trees](./trees/) | ⚪ Upcoming | — |
+| [📁 Graphs](./graphs/) | ⚪ Upcoming | — |
+| [📁 Dynamic Programming](./dp/) | ⚪ Upcoming | — |
 
----
-
-# 📅 Daily Progress Tracker
-
-| Day   | Problem | Topic | Difficulty |
-|-------|--------|------|-----------|
-| Day 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | HashMap | Easy |
-| Day 2 | [Squares of Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/) | Two Pointers | Easy |
-| Day 3 | [Best Time to Buy & Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | Greedy | Easy |
-| Day 3 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) | HashSet | Easy |
-| Day 3 | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | Prefix + Suffix | Medium |
-| Day 3 | [Rotate Array](https://leetcode.com/problems/rotate-array/) | Reversal | Medium |
-| Day 4 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | Kadane's Algo | Medium |
-| Day 4 | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) | Hashing | Medium |
-| Day 4 | [Merge Intervals](https://leetcode.com/problems/merge-intervals/) | Sorting | Medium |
-| Day 4 | [Insert Interval](https://leetcode.com/problems/insert-interval/) | Intervals | Medium |
-| Day 5 | [3Sum](https://leetcode.com/problems/3sum/) | Two Pointers | Medium |
-| Day 5 | [4Sum](https://leetcode.com/problems/4sum/) | k-Sum | Medium |
-| Day 5 | [3Sum Closest](https://leetcode.com/problems/3sum-closest/) | Two Pointers | Medium |
-| Day 5 | [Move Zeroes](https://leetcode.com/problems/move-zeroes/) | Two Pointers | Easy |
-| Day 5 | [Find Disappeared Numbers](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/) | In-place Hashing | Easy |
-| Day 5 | [First Missing Positive](https://leetcode.com/problems/first-missing-positive/) | Cyclic Sort | Hard |
-| Day 6 | [Missing Number](https://leetcode.com/problems/missing-number/) | Math / Cyclic Sort | Easy |
-| Day 6 | [Find Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) | Floyd Cycle Detection | Medium |
-| Day 6 | [Set Mismatch](https://leetcode.com/problems/set-mismatch/) | Cyclic Sort | Easy |
-| Day 6 | [Reverse An Array](https://www.geeksforgeeks.org/problems/reverse-an-array/1) | Two Pointers | Easy |
-| Day 6 | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | Two Pointers | Easy |
-| Day 6 | [Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/) | Two Pointers | Medium |
-| Day 7 | [Check if Array is Sorted and Rotated](https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/?envType=problem-list-v2&envId=array) | Circular Array Check | Easy |
-| Day 7 | [Single Element in a Sorted Array](https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/) | Binary Search | Medium |
-| Day 7 | [Non-Decreasing Array](https://leetcode.com/problems/non-decreasing-array/) | Greedy | Medium |
-| Day 7 | [Global and Local Inversions](https://leetcode.com/problems/global-and-local-inversions/) | Greedy | Medium |
-| Day 8 | [Escape the Ghosts](https://leetcode.com/problems/escape-the-ghosts/) | Greedy | Medium |
-| Day 8 | [Maximize Distance to Closest person](https://leetcode.com/problems/maximize-distance-to-closest-person/) | Greedy | Medium |
-| Day 8 | [Peak Index in a Mountain Array](https://leetcode.com/problems/peak-index-in-a-mountain-array/) | Binary Search | Medium |
-| Day 8 | [Find Peak Element](https://leetcode.com/problems/find-peak-element/) | Binary Search | Medium |
-| Day 8 | [Find in Mountain Array](https://leetcode.com/problems/find-in-mountain-array/) | Binary Search | Hard |
-| Day 9 | [Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/) | Binary Search Answer | Medium |
-| Day 9 | [Capacity to Ship Packages Within D Days](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/) | Binary Search Answer | Medium |
-| Day 9 | [ Find the Smallest Divisor Given a Threshold](https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/) | Binary Search Answer | Medium |
-| Day 9 | [Array Subset of Another Array](https://www.geeksforgeeks.org/problems/array-subset-of-another-array2317/1) | HashMap | Easy |
-| Day 9 | [Subarray with 0 Sum](https://www.geeksforgeeks.org/problems/subarray-with-0-sum-1587115621/1) | Prefix Sum | Medium |
-| Day 9 | [Kadane's Algorithm](https://www.geeksforgeeks.org/problems/kadanes-algorithm-1587115620/1) | Kadane's Algorithm | Medium |
-| Day 9 | [Kth Smallest](https://www.geeksforgeeks.org/problems/kth-smallest-element5635/1) | Heap | Medium |
-| Day 9 | [Median Of an Array](https://www.geeksforgeeks.org/problems/find-the-median0527/1) | Sorting | Easy |
-| Day 9 | [Palindromic Array](https://www.geeksforgeeks.org/problems/palindromic-array-1587115620/1) | Number Manipulation | Easy |
-| Day 9 | [Sales by Match](https://www.hackerrank.com/challenges/sock-merchant/problem) | HashMap | Easy |
-| Day 9 | [Simple Array Sum](https://www.hackerrank.com/challenges/simple-array-sum/problem) | Basic Iteration | Easy |
-| Day 9 | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/description/) | Prefix Sum + HashMap | Medium |
-| Day 10| [Breaking The Records](https://www.hackerrank.com/contests/mountblue-technologies/challenges/breaking-best-and-worst-records) | Arrays | Easy |
-| Day 10| [Number Line Jumps](https://www.hackerrank.com/contests/mountblue-technologies/challenges/kangaroo) | Algebra | Easy |
+> 📌 Each folder has its own **README with pattern-grouped problems, approach explanations, and key formulas.**
 
 ---
 
-# 📊 Progress Stats
+## 📊 Overall Progress
 
-- ✅ Problems Solved: **45 / 300+**
-- 🔥 Current Streak: **10 Days**
-- 💻 Language: **Java**
-- 🎯 Target Role: **Software Engineer**
+```
+Arrays           ████████████████████  45/45  🟢
+Strings          ░░░░░░░░░░░░░░░░░░░░   0/--  ⚪
+HashMap          ░░░░░░░░░░░░░░░░░░░░   0/--  ⚪
+Stack            ░░░░░░░░░░░░░░░░░░░░   0/--  ⚪
+Queue            ░░░░░░░░░░░░░░░░░░░░   0/--  ⚪
+LinkedList       ░░░░░░░░░░░░░░░░░░░░   0/--  ⚪
+Trees            ░░░░░░░░░░░░░░░░░░░░   0/--  ⚪
+Graphs           ░░░░░░░░░░░░░░░░░░░░   0/--  ⚪
+DP               ░░░░░░░░░░░░░░░░░░░░   0/--  ⚪
 
----
-
-# 📂 Repository Structure
-
-- Arrays  
-- Strings  
-- HashMap  
-- Stack  
-- Queue  
-- LinkedList  
-- Trees  
-- Graphs  
-- Dynamic Programming  
-
-📌 Each folder contains:
-- Clean Java solutions  
-- Optimized approaches  
-- Well-commented code  
----
-
-# 🧩 Topic Progress
-
-| Topic               | Status        |
-|--------------------|--------------|
-| Arrays              | 🟢 Strong     |
-| Strings             | ⚪ Pending    |
-| HashMap             | 🟢 Started    |
-| Stack               | ⚪ Pending    |
-| Queue               | ⚪ Pending    |
-| LinkedList          | ⚪ Pending    |
-| Trees               | ⚪ Pending    |
-| Graphs              | ⚪ Pending    |
-| Dynamic Programming | ⚪ Pending    |
+Total: 45 / 300+ problems  ████░░░░░░░░░░░░░░░░  15%
+```
 
 ---
 
-# 🧭 Roadmap
+## 🧠 DSA Patterns Covered
 
-✔ Arrays → ✔ Hashing → ✔ Two Pointers  
-⬜ Sliding Window  
-⬜ Binary Search  
-⬜ Recursion & Backtracking  
-⬜ Trees  
-⬜ Graphs  
-⬜ Dynamic Programming  
-
----
-
-# 🏁 Final Goal
-
-> 💼 Become a **strong problem solver**  
-> 🚀 Crack **top tech companies**  
-> 🧠 Build deep **DSA intuition**
-
----
-
-# 🙌 Connect With Me
-
-- 🔗 LinkedIn: https://www.linkedin.com/in/abhishekar004  
-- 💻 GitHub: https://github.com/abhishekar004  
+| Pattern | Covered In | Status |
+|---------|-----------|--------|
+| HashMap & HashSet | Arrays | ✅ |
+| Two Pointers | Arrays | ✅ |
+| Greedy | Arrays | ✅ |
+| Prefix Sum | Arrays | ✅ |
+| Kadane's Algorithm | Arrays | ✅ |
+| Cyclic Sort | Arrays | ✅ |
+| Floyd's Cycle Detection | Arrays | ✅ |
+| Interval Merge | Arrays | ✅ |
+| Binary Search | Arrays | ✅ |
+| Binary Search on Answer | Arrays | ✅ |
+| Heap / Top K | Arrays | ✅ |
+| Sliding Window | — | 🔜 |
+| Recursion & Backtracking | — | 🔜 |
+| Dynamic Programming | — | 🔜 |
+| Graph Algorithms | — | 🔜 |
 
 ---
 
-<img src="https://leetcard.jacoblin.cool/abhishekar004?theme=dark&font=Nunito" />
+## 🗺️ Roadmap
+
+```
+✅ Phase 1 — Arrays (Done)
+   └── HashMap, Two Pointers, Greedy, Prefix Sum,
+       Kadane, Cyclic Sort, Binary Search, Intervals, Heap
+
+⬜ Phase 2 — Strings + Sliding Window
+⬜ Phase 3 — LinkedList + Stack + Queue
+⬜ Phase 4 — Trees + Recursion
+⬜ Phase 5 — Graphs + BFS/DFS
+⬜ Phase 6 — Dynamic Programming
+```
 
 ---
 
-⭐ If you like this repo, give it a star!
+## ⚡ Pattern Recognition Cheat Sheet
+
+| If you see… | Pattern |
+|-------------|---------|
+| Pair / target sum | HashMap |
+| Sorted array + pair/triplet | Two Pointers |
+| Maximum subarray | Kadane's |
+| Subarray sum = k | Prefix Sum + HashMap |
+| Numbers in range [1..n] | Cyclic Sort |
+| Duplicate, no extra space | Floyd's Cycle |
+| Overlapping ranges | Interval Merge |
+| Sorted, find element / peak | Binary Search |
+| Minimize the maximum value | Binary Search on Answer |
+| Track min/max while iterating | Greedy |
+| Top K elements | Heap |
+| Contiguous subarray, window size | Sliding Window |
+
+---
+
+## 🏢 Company Pattern Mapping
+
+| Company | Key Patterns to Focus |
+|---------|-----------------------|
+| Amazon | HashMap, Greedy, Sliding Window |
+| Google | Prefix Sum, Binary Search, Heap |
+| Microsoft | Arrays, Two Pointers, Greedy |
+| Meta | Two Pointers, HashMap, Graphs |
+| Adobe | Sorting, Intervals, Strings |
+
+---
+
+## 📈 LeetCode Stats
+
+<p align="center">
+  <img src="https://leetcard.jacoblin.cool/abhishekar004?theme=dark&font=Nunito" />
+</p>
+
+---
+
+## 🙌 Connect
+
+<p align="center">
+  <a href="https://www.linkedin.com/in/abhishekar004">
+    <img src="https://img.shields.io/badge/LinkedIn-abhishekar004-blue?style=for-the-badge&logo=linkedin" />
+  </a>
+  &nbsp;
+  <a href="https://github.com/abhishekar004">
+    <img src="https://img.shields.io/badge/GitHub-abhishekar004-black?style=for-the-badge&logo=github" />
+  </a>
+</p>
+
+---
+
+<p align="center">
+  <i>⭐ Star this repo if it helps you. Keep solving. Keep growing. 🚀</i>
+</p>
