@@ -1,317 +1,314 @@
-# 📘 Arrays Problems
-
-This folder contains **Array-based problems solved in Java** as part of my **DSA Placement Preparation**.
-
----
-
 # 🚀 📘 Arrays Mastery Notes (DSA Placement Preparation)
 
-> 💡 “Don’t just solve problems — recognize patterns instantly.”
+> 💡 **"Don’t just solve problems — recognize patterns instantly."**
 
-This repository is a **complete revision system** for:
+This is a **pattern-based DSA revision system** designed for:
 
-- ⚡ Pattern Recognition  
-- 🎯 Interview Preparation  
-- 🔁 Fast Recall  
+* ⚡ Fast pattern recognition
+* 🎯 Placement preparation
+* 🔁 Quick revision before interviews
 
 ---
 
 # 🎯 Goals
 
-- ✅ Solve 300+ DSA problems  
-- ✅ Master core patterns  
-- ✅ Crack product-based companies  
+* ✅ Solve **300+ DSA problems**
+* ✅ Master **core patterns**
+* ✅ Crack **product-based companies**
 
 ---
 
-# 🧠 How to Use
+# 🧠 How to Use This README
 
 ### 🔥 3 Modes
 
-- Learning Mode  
-- Revision Mode  
-- Interview Mode (Pattern in <30 sec)
+| Mode           | How to Use                    |
+| -------------- | ----------------------------- |
+| Learning Mode  | Solve problems + read pattern |
+| Revision Mode  | Revise patterns + formulas    |
+| Interview Mode | Identify pattern in <30 sec   |
 
 ---
 
 # 📊 Pattern Coverage
 
-| Pattern | Status |
-|--------|-------|
-| HashMap | ✅ Covered |
-| Two Pointers | ✅ Covered |
-| Greedy | ✅ Covered |
-| Prefix/Suffix | ✅ Covered |
-| Interval Problems | ✅ Covered |
-| Kadane's Algorithm | ✅ Covered |
-| Grid Hashing | ✅ Covered |
-| Sliding Window | 🔜 Upcoming |
-| Prefix Sum | 🔜 Upcoming |
+| Pattern            | Status      |
+| ------------------ | ----------- |
+| HashMap            | ✅ Covered   |
+| Two Pointers       | ✅ Covered   |
+| Greedy             | ✅ Covered   |
+| Prefix/Suffix      | ✅ Covered   |
+| Interval Problems  | ✅ Covered   |
+| Kadane's Algorithm | ✅ Covered   |
+| Grid Hashing       | ✅ Covered   |
+| Binary Search      | ✅ Covered   |
+| Prefix Sum         | ✅ Covered   |
+| Heap               | ⚡ Practiced |
+| Sliding Window     | 🔜 Upcoming |
 
 ---
 
-# 🧩 Problems Solved
+# 🧩 Problems Solved (43)
 
-| # | Problem | Platform | Pattern |
-|--|--------|----------|--------|
-| 1 | Two Sum | LeetCode #1 | HashMap |
-| 2 | Squares of Sorted Array | LC #977 | Two Pointers |
-| 3 | Buy & Sell Stock | LC #121 | Greedy |
-| 4 | Contains Duplicate | LC #217 | HashSet |
-| 5 | Product Except Self | LC #238 | Prefix/Suffix |
-| 6 | Rotate Array | LC #189 | Reversal |
-| 7 | Maximum Subarray | LC #53 | Kadane |
-| 8 | Valid Sudoku | LC #36 | Grid Hashing |
-| 9 | Merge Intervals | LC #56 | Interval |
-| 10 | Insert Interval | LC #57 | Interval |
-| 11 | 3Sum | LC #15 | Two Pointers |
-| 12 | 4Sum | LC #18 | k-Sum |
-| 13 | 3Sum Closest | LC #16 | Two Pointers |
-| 14 | Move Zeroes | LC #283 | Two Pointers |
-| 15 | Missing Numbers | LC #448 | Index Marking |
-| 16 | First Missing Positive | LC #41 | Cyclic Sort |
-| 17 | Missing Number | LC #268 | Math |
-| 18 | Find Duplicate | LC #287 | Cycle |
-| 19 | Set Mismatch | LC #645 | Cyclic |
-| 20 | Reverse Array | GFG | Two Pointers |
-| 21 | Remove Duplicates I | LC #26 | Two Pointers |
-| 22 | Remove Duplicates II | LC #80 | Two Pointers |
-| 23 | Sorted Rotated Check | LC #1752 | Circular |
-| 24 | Single Element | LC #540 | Binary Search |
-| 25 | Non-Decreasing Array | LC #665 | Greedy |
-| 26 | Global vs Local Inversion | LC #775 | Greedy |
-| 27 | Escape Ghosts | LC #789 | Greedy |
-| 28 | Max Distance | LC #849 | Greedy |
-| 29 | Peak Index | LC #852 | Binary Search |
-| 30 | Find Peak | LC #162 | Binary Search |
-| 31 | Mountain Array | LC #1095 | Binary Search |
-| 32 | Koko Bananas | LC #875 | BS Answer |
-| 33 | Ship Packages | LC #1011 | BS Answer |
-| 34 | Smallest Divisor | LC #1283 | BS Answer |
-| 35 | Array Subset | GFG | HashMap |
-| 36 | Subarray 0 Sum | GFG | Prefix |
-| 37 | Kadane (GFG) | GFG | Kadane |
-| 38 | Kth Smallest | GFG | Heap |
-| 39 | Median | GFG | Sorting |
-| 40 | Palindromic Array | GFG | Math |
-| 41 | Sock Merchant | HR | HashMap |
-| 42 | Simple Sum | HR | Basic |
-| 43 | Subarray Sum K | LC #560 | Prefix |
+| #  | Problem                 | Platform | Pattern              | Difficulty |
+| -- | ----------------------- | -------- | -------------------- | ---------- |
+| 1  | Two Sum                 | LC #1    | HashMap              | 🟢         |
+| 2  | Squares of Sorted Array | LC #977  | Two Pointers         | 🟢         |
+| 3  | Buy & Sell Stock        | LC #121  | Greedy               | 🟢         |
+| 4  | Contains Duplicate      | LC #217  | HashSet              | 🟢         |
+| 5  | Product Except Self     | LC #238  | Prefix/Suffix        | 🟠         |
+| 6  | Rotate Array            | LC #189  | Reversal             | 🟠         |
+| 7  | Maximum Subarray        | LC #53   | Kadane               | 🟢         |
+| 8  | Valid Sudoku            | LC #36   | Grid Hashing         | 🟠         |
+| 9  | Merge Intervals         | LC #56   | Interval             | 🟠         |
+| 10 | Insert Interval         | LC #57   | Interval             | 🟠         |
+| 11 | 3Sum                    | LC #15   | Two Pointers         | 🟠         |
+| 12 | 4Sum                    | LC #18   | k-Sum                | 🟠         |
+| 13 | 3Sum Closest            | LC #16   | Two Pointers         | 🟠         |
+| 14 | Move Zeroes             | LC #283  | Two Pointers         | 🟢         |
+| 15 | Missing Numbers         | LC #448  | Index Marking        | 🟢         |
+| 16 | First Missing Positive  | LC #41   | Cyclic Sort          | 🔴         |
+| 17 | Missing Number          | LC #268  | Math                 | 🟢         |
+| 18 | Find Duplicate          | LC #287  | Floyd Cycle          | 🟠         |
+| 19 | Set Mismatch            | LC #645  | Cyclic               | 🟢         |
+| 32 | Koko Bananas            | LC #875  | Binary Search        | 🟠         |
+| 33 | Ship Packages           | LC #1011 | Binary Search        | 🟠         |
+| 34 | Smallest Divisor        | LC #1283 | Binary Search        | 🟠         |
+| 35 | Array Subset            | GFG      | HashMap              | 🟢         |
+| 36 | Subarray 0 Sum          | GFG      | Prefix Sum           | 🟠         |
+| 37 | Kadane (GFG)            | GFG      | Kadane               | 🟠         |
+| 38 | Kth Smallest            | GFG      | Heap                 | 🟠         |
+| 39 | Median                  | GFG      | Sorting              | 🟢         |
+| 40 | Palindromic Array       | GFG      | Math                 | 🟢         |
+| 41 | Sock Merchant           | HR       | HashMap              | 🟢         |
+| 42 | Simple Sum              | HR       | Basic                | 🟢         |
+| 43 | Subarray Sum K          | LC #560  | Prefix Sum + HashMap | 🟠         |
 
 ---
 
-# ⚡ Pattern Recognition Cheat Sheet
+# ⚡ Pattern Recognition Cheat Sheet (🔥 MOST IMPORTANT)
 
-| If you see… | Use |
-|------------|-----|
-| Pair / target | HashMap |
-| Sorted array | Two Pointers |
-| Max sum | Kadane |
-| Subarray sum | Prefix |
-| Missing/duplicate | Cyclic |
-| Overlap | Interval |
-| Min/Max answer | Binary Search |
-
----
-
-# 🧠 Important Patterns (WITH PROBLEMS + FORMULAS)
+| If you see…                | Think Pattern |
+| -------------------------- | ------------- |
+| Pair / target              | HashMap       |
+| Sorted array               | Two Pointers  |
+| Maximum subarray           | Kadane        |
+| Subarray sum               | Prefix Sum    |
+| Missing / duplicate (1..n) | Cyclic Sort   |
+| Overlapping ranges         | Interval      |
+| Minimum valid answer       | Binary Search |
+| Kth smallest               | Heap          |
 
 ---
 
-## 1️⃣ HashMap Lookup
+# 🧠 Important Patterns (Formulas + Triggers)
 
-### 📌 Problems
-- Two Sum  
-- Array Subset  
-- Sock Merchant  
+---
 
-### 💡 Concept
-Store complement for O(1) lookup
+## 1️⃣ HashMap
 
-### 🔑 Formula
+📌 Problems: Two Sum, Subset, Sock Merchant
 
+💡 Trigger:
+
+* Fast lookup
+* Frequency
+
+🔑 Formula:
+
+```
 target - num
+```
 
+🏷 Tags: #hashmap #lookup #frequency
 
 ---
 
 ## 2️⃣ Two Pointers
 
-### 📌 Problems
-- Squares Sorted  
-- 3Sum  
-- 4Sum  
-- Move Zeroes  
-- Remove Duplicates  
+📌 Problems: 3Sum, Move Zeroes
 
-### 💡 Concept
-Use left & right on sorted array
+💡 Trigger:
 
-### 🔑 Rule
+* Sorted array
+* Pair/triplet
 
+🔑 Rule:
+
+```
 sum < target → left++
 sum > target → right--
+```
 
+🏷 Tags: #twopointers #inplace
 
 ---
 
 ## 3️⃣ Greedy
 
-### 📌 Problems
-- Buy Sell Stock  
-- Non-Decreasing Array  
-- Escape Ghosts  
-- Max Distance  
+📌 Problems: Stock, Non-Decreasing
 
-### 💡 Concept
-Make locally optimal choice
+💡 Trigger:
 
-### 🔑 Formula
+* Local optimal choice
 
+🔑 Formula:
+
+```
 profit = price - min
+```
 
-
----
-
-## 4️⃣ Prefix + Suffix
-
-### 📌 Problems
-- Product Except Self  
-
-### 🔑 Formula
-
-res[i] = left * right
-
+🏷 Tags: #greedy
 
 ---
 
-## 5️⃣ Kadane’s Algorithm
+## 4️⃣ Prefix Sum 🔥
 
-### 📌 Problems
-- Maximum Subarray  
+📌 Problems: Subarray Sum K, 0 Sum
 
-### 🔑 Formula
+💡 Trigger:
 
+* Subarray problems
+
+🔑 Formula:
+
+```
+prefix[j] - prefix[i] = k
+```
+
+🏷 Tags: #prefixsum #subarray
+
+---
+
+## 5️⃣ Kadane
+
+📌 Problems: Max Subarray
+
+🔑 Formula:
+
+```
 curr = max(num, curr + num)
-max = max(max, curr)
+```
 
+🏷 Tags: #kadane
 
 ---
 
 ## 6️⃣ Cyclic Sort
 
-### 📌 Problems
-- First Missing Positive  
-- Missing Number  
-- Set Mismatch  
+📌 Problems: Missing Number
 
-### 🔑 Formula
+🔑 Formula:
 
+```
 nums[i] → index = nums[i] - 1
+```
 
+🏷 Tags: #cyclicsort
 
 ---
 
 ## 7️⃣ Binary Search
 
-### 📌 Problems
-- Peak Element  
-- Single Element  
-- Mountain Array  
+📌 Problems: Peak, Mountain
 
-### 🔑 Rule
+🔑 Rule:
 
-mid = (low + high)/2
+```
+mid = low + (high - low)/2
+```
 
+🏷 Tags: #binarysearch
 
 ---
 
-## 8️⃣ Binary Search on Answer
+## 8️⃣ Binary Search on Answer 🔥
 
-### 📌 Problems
-- Koko Bananas  
-- Ship Packages  
-- Smallest Divisor  
+📌 Problems: Koko, Ship
 
-### 🔑 Formula
+🔑 Logic:
 
-if(valid(mid)) → left else right
+```
+if(valid(mid)) → search left
+else → right
+```
 
+🔥 Ceil Trick:
 
-### 🔥 Ceil Trick
-
+```
 (a + b - 1) / b
+```
 
-
----
-
-## 9️⃣ Prefix Sum
-
-### 📌 Problems
-- Subarray Sum K  
-- Subarray 0 Sum  
-
-### 🔑 Formula
-
-prefix[j] - prefix[i] = k
-
+🏷 Tags: #binarysearch #optimization
 
 ---
 
-## 🔟 Floyd Cycle Detection
+## 9️⃣ Heap
 
-### 📌 Problems
-- Find Duplicate  
+📌 Problems: Kth Smallest
 
-### 🔑 Formula
+💡 Trigger:
 
+* Top K
+
+🏷 Tags: #heap
+
+---
+
+## 🔟 Floyd Cycle
+
+📌 Problems: Duplicate Number
+
+🔑 Formula:
+
+```
 slow = nums[slow]
 fast = nums[nums[fast]]
+```
 
+🏷 Tags: #cycle
 
 ---
 
 # 🧪 Revision Strategy
 
-### 🔁 Level 1
-- Solve 3/day  
+### 🔁 Level 1 → Solve
 
-### 🔁 Level 2
-- Revise patterns  
+3 problems/day
 
-### 🔁 Level 3
-- Only this README  
+### 🔁 Level 2 → Patterns
+
+Revise patterns only
+
+### 🔁 Level 3 → Interview
+
+Only this README
 
 ---
 
-# 🏢 Company Focus
+# 🏢 Company Mapping
 
-### Amazon
-- Sliding Window  
-- Two Pointers  
-- Kadane  
-
-### Google
-- 3Sum / 4Sum  
-- Binary Search  
-
-### Microsoft
-- Prefix Sum  
-- Greedy  
+| Company   | Focus                           |
+| --------- | ------------------------------- |
+| Amazon    | HashMap, Sliding Window, Greedy |
+| Google    | Prefix Sum, Binary Search       |
+| Microsoft | Arrays, Greedy                  |
+| Meta      | Two Pointers                    |
+| Adobe     | Sorting                         |
 
 ---
 
 # 🎯 Final Takeaways
 
-- Arrays = Pattern Recognition  
-- Same patterns repeat  
-- Speed = Practice + Memory  
+* Arrays = Pattern Recognition
+* Same patterns repeat
+* Speed = Pattern + Practice
 
 ---
 
 # ⚡ Final Advice
 
-“If you can identify pattern in 30 sec,  
-you can solve problem in 5 minutes.”
+> “If you identify pattern in 30 sec,
+> you can solve in 5 minutes.”
 
-🚀 This README = Your Placement Weapon
+🚀 **This README = Your Placement Weapon**
