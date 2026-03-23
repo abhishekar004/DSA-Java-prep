@@ -14,13 +14,14 @@ strings/
 ├── ReverseString.java
 ├── ValidPalindrome.java
 └── LengthOfLastWord.java
+└── FindTheIndexOfFirstOccurance.java
 ```
 
 ---
 
 ## 📊 Progress
 
-**Problems Solved: 3 / 30+**
+**Problems Solved: 4 / 30+**
 
 ```
 ░░░░░░░░░░░░░░░░░░░░  ~10%
@@ -108,6 +109,23 @@ return count;
 | Reverse string / array in-place | Two Pointers (swap from ends) |
 | Check palindrome, ignore special chars | Two Pointers + skip invalid |
 | Last word / trailing spaces | Traverse from end |
+
+---
+
+pattern tip for find the index of first occurance 
+
+🧠 Pattern Tip
+
+👉 When matching substring:
+
+Only check indices where full pattern can fit
+👉 i ≤ n - m is critical rule
+
+⚙️ Approach (Short)
+Loop till n - m
+Match characters one by one
+Return index if full match
+
 
 ---
 
