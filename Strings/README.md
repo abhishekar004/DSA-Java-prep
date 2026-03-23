@@ -15,13 +15,14 @@ strings/
 ├── ValidPalindrome.java
 └── LengthOfLastWord.java
 └── FindTheIndexOfFirstOccurance.java
+└── LongestSubstringWithoutRepeatingCharacters.java
 ```
 
 ---
 
 ## 📊 Progress
 
-**Problems Solved: 4 / 30+**
+**Problems Solved: 5 / 30+**
 
 ```
 ░░░░░░░░░░░░░░░░░░░░  ~10%
@@ -125,10 +126,59 @@ Only check indices where full pattern can fit
 Loop till n - m
 Match characters one by one
 Return index if full match
+🎯 Key Insight
 
+👉 Bound your loop properly
+👉 Avoid out-of-bounds errors
+
+⚠️ Common Mistakes
+❌ Loop till n instead of n - m
+❌ Index overflow (i + j)
+❌ Missing edge cases
+🚀 Interview Tip
+
+👉 This exact bug is very common
+Fixing it = shows attention to detail
 
 ---
 
+pattern tip for longest substring without repeating characters
+
+🧠 Pattern Tip
+
+👉 When you see:
+
+“Longest substring”
+“No repeating characters”
+
+💡 Trigger:
+
+Sliding Window (expand + shrink)
+
+⚙️ Approach (Short)
+Use two pointers (left, right)
+Expand window
+If duplicate → shrink until valid
+Track max length
+🎯 Key Insight
+
+👉 Window must always be valid (no duplicates)
+👉 Use while loop to fix window
+
+⚠️ Common Mistakes
+❌ Using if instead of while
+❌ Not shrinking fully
+❌ Wrong length calculation
+🚀 Interview Tip
+
+👉 This is top 10 most asked problem
+
+Follow-up questions:
+
+At most K distinct characters
+Longest repeating replacement
+
+---
 ## 🔁 Revision Strategy
 
 | Level | What to Do |
