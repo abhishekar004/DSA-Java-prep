@@ -21,3 +21,23 @@ Swap elements
 Move inward until left < right
 
 ---
+
+🧠 Pattern Tip
+
+👉 When you see:
+
+“Ignore spaces/special characters”
+“Check palindrome”
+“Case insensitive”
+
+💡 Trigger:
+
+Two pointers + skip invalid characters
+
+⚙️ Approach (Short)
+Use two pointers (left, right)
+Skip non-alphanumeric characters
+Compare lowercase characters
+Move inward
+
+---
