@@ -1,6 +1,7 @@
 ---
 
 pattern tip for ReverseString.java
+
 🧠 Pattern Tip
 
 👉 When you see:
@@ -22,6 +23,8 @@ Move inward until left < right
 
 ---
 
+pattern tip for valid palindrome
+
 🧠 Pattern Tip
 
 👉 When you see:
@@ -39,5 +42,25 @@ Use two pointers (left, right)
 Skip non-alphanumeric characters
 Compare lowercase characters
 Move inward
+
+---
+
+pattern tip for length of last word
+
+🧠 Pattern Tip
+
+👉 When you see:
+
+“Last word / last element”
+“Ignore trailing spaces”
+
+💡 Trigger:
+
+Traverse from end instead of splitting
+
+⚙️ Approach (Short)
+Start from end of string
+Skip trailing spaces
+Count characters until space
 
 ---
