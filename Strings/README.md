@@ -20,13 +20,14 @@ strings/
 └── ValidNumber.java
 └── ValidParentheses.java
 └── ReverseStringInAString.java
+└── ReverseVowelsOfAString.java
 ```
 
 ---
 
 ## 📊 Progress
 
-**Problems Solved: 5 / 30+**
+**Problems Solved: 10 / 30+**
 
 ```
 ░░░░░░░░░░░░░░░░░░░░  ~10%
@@ -345,6 +346,42 @@ Reverse each word
 
 ---
 
+pattern tip for reverse vowels of a string
+
+🧠 Pattern Tip
+
+👉 When you see:
+
+“Reverse only specific elements”
+“Condition-based swapping”
+
+💡 Trigger:
+
+Two pointers + skip unwanted elements
+
+⚙️ Approach (Short)
+Start from both ends
+Skip non-vowels
+Swap vowels
+Move inward
+🎯 Key Insight
+
+👉 Don’t touch unnecessary elements
+👉 Only act on valid targets (vowels)
+
+⚠️ Common Mistakes
+❌ Not handling uppercase vowels
+❌ Swapping wrong indices
+❌ Not skipping properly
+🚀 Interview Tip
+
+👉 This pattern extends to:
+
+Reverse only letters
+Partition arrays
+Filter-based transformations
+
+---
 
 ## 🔁 Revision Strategy
 
