@@ -19,6 +19,7 @@ strings/
 └── StringToInteger.java
 └── ValidNumber.java
 └── ValidParentheses.java
+└── ReverseStringInAString.java
 ```
 
 ---
@@ -299,6 +300,48 @@ End: stack must be empty
 Remove minimum parentheses
 Longest valid parentheses
 Expression evaluation
+
+---
+
+pattern tip for reverse words in a string
+
+🧠 Pattern Tip
+
+👉 When you see:
+
+“Reverse words”
+“Remove extra spaces”
+
+💡 Trigger:
+
+Traverse from end instead of splitting
+
+⚙️ Approach (Short)
+Start from end
+Skip spaces
+Extract words
+Append to result
+🎯 Key Insight
+
+👉 Avoid split()
+👉 Build result manually
+
+⚠️ Common Mistakes
+❌ Using split() blindly
+❌ Extra spaces in output
+❌ Not trimming properly
+🚀 Interview Tip
+
+👉 If interviewer pushes:
+
+“Can you do it in-place?”
+
+That leads to:
+
+Reverse entire string
+Reverse each word
+
+👉 That’s next level 🔥
 
 ---
 
