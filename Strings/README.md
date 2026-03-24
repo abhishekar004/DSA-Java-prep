@@ -18,6 +18,7 @@ strings/
 └── LongestSubstringWithoutRepeatingCharacters.java
 └── StringToInteger.java
 └── ValidNumber.java
+└── ValidParentheses.java
 ```
 
 ---
@@ -260,6 +261,44 @@ Edge-case handling
 Clean logic
 
 👉 Writing this correctly = top 5% candidate
+
+---
+
+pattern tip for valid parentheses
+
+🧠 Pattern Tip
+
+👉 When you see:
+
+“Matching pairs”
+“Balanced brackets”
+“Open/close relationship”
+
+💡 Trigger:
+
+Stack (LIFO)
+
+⚙️ Approach (Short)
+Push opening brackets
+On closing → check stack top
+If mismatch → false
+End: stack must be empty
+🎯 Key Insight
+
+👉 Last opened = first closed
+👉 That’s why stack works perfectly
+
+⚠️ Common Mistakes
+❌ Not checking empty stack
+❌ Forgetting to pop
+❌ Returning true without empty stack
+🚀 Interview Tip
+
+👉 Follow-up variations:
+
+Remove minimum parentheses
+Longest valid parentheses
+Expression evaluation
 
 ---
 
