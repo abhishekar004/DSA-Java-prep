@@ -13,13 +13,13 @@ strings/
 ├── README.md
 ├── ReverseString.java
 ├── ValidPalindrome.java
-└── LengthOfLastWord.java
-└── FindTheIndexOfFirstOccurance.java
-└── LongestSubstringWithoutRepeatingCharacters.java
-└── StringToInteger.java
-└── ValidNumber.java
-└── ValidParentheses.java
-└── ReverseStringInAString.java
+├── LengthOfLastWord.java
+├── FindTheIndexOfFirstOccurance.java
+├── LongestSubstringWithoutRepeatingCharacters.java
+├── StringToInteger.java
+├── ValidNumber.java
+├── ValidParentheses.java
+├── ReverseWordsInAString.java
 └── ReverseVowelsOfAString.java
 ```
 
@@ -30,7 +30,7 @@ strings/
 **Problems Solved: 10 / 30+**
 
 ```
-░░░░░░░░░░░░░░░░░░░░  ~10%
+████░░░░░░░░░░░░░░░░  ~33%
 ```
 
 ---
@@ -58,18 +58,19 @@ strings/
 ---
 
 ### 1️⃣ Two Pointers on Strings
-> **Approach:** Place one pointer at the start and one at the end. Swap or compare characters and move inward until the pointers meet. Works in-place — no extra space needed. For palindrome checks, skip invalid characters (non-alphanumeric) and compare lowercased characters at each step.
+> **Approach:** Place one pointer at the start, one at the end. Swap or compare and move inward until they meet. Works in-place — no extra space needed. For palindrome checks, skip non-alphanumeric characters and compare lowercased chars. For vowel reversal, skip non-vowels and only swap valid targets.
 
-**Trigger:** "reverse string/array", "check palindrome", "in-place modification", "ignore spaces/special characters", "no extra space"
+**Trigger:** "reverse in-place", "check palindrome", "ignore special chars", "swap only specific elements", "no extra space"
 
 | Problem | Platform | Difficulty |
 |---------|----------|------------|
 | [Reverse String](https://leetcode.com/problems/reverse-string/) | LC #344 | 🟢 Easy |
 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | LC #125 | 🟢 Easy |
+| [Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string/) | LC #345 | 🟢 Easy |
 
 **Key Template:**
 ```java
-// Reverse String
+// Reverse String — plain swap
 int left = 0, right = s.length - 1;
 while (left < right) {
     char temp = s[left];
@@ -77,7 +78,7 @@ while (left < right) {
     s[right--] = temp;
 }
 
-// Valid Palindrome — skip non-alphanumeric
+// Valid Palindrome — skip non-alphanumeric, compare lowercased
 while (left < right) {
     while (left < right && !Character.isLetterOrDigit(s.charAt(left))) left++;
     while (left < right && !Character.isLetterOrDigit(s.charAt(right))) right--;
@@ -85,26 +86,196 @@ while (left < right) {
         return false;
     left++; right--;
 }
+
+// Reverse Vowels — skip non-vowels, swap valid targets only
+Set<Character> vowels = Set.of('a','e','i','o','u','A','E','I','O','U');
+while (left < right) {
+    while (left < right && !vowels.contains(arr[left])) left++;
+    while (left < right && !vowels.contains(arr[right])) right--;
+    char temp = arr[left]; arr[left++] = arr[right]; arr[right--] = temp;
+}
 ```
+
+⚠️ **Common Mistakes:**
+- Not handling uppercase vowels in Reverse Vowels
+- Returning `true` without fully traversing in Valid Palindrome
 
 ---
 
 ### 2️⃣ Traverse from End
-> **Approach:** Instead of splitting the string (which creates extra space and handles edge cases poorly), start from the last character and work backwards. First skip any trailing spaces, then count characters until the next space or start of string. Clean, O(n), no splits needed.
+> **Approach:** Instead of splitting the string (extra space, poor edge-case handling), start from the last character and work backwards. Skip trailing spaces first, then count until hitting a space or the start. Same idea for reversing words — extract words from end and build result manually. Avoids `split()` issues with multiple spaces.
 
-**Trigger:** "last word", "last element", "ignore trailing spaces", "traverse from end"
+**Trigger:** "last word", "ignore trailing spaces", "reverse words", "remove extra spaces", "no split"
 
 | Problem | Platform | Difficulty |
 |---------|----------|------------|
 | [Length of Last Word](https://leetcode.com/problems/length-of-last-word/) | LC #58 | 🟢 Easy |
+| [Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/) | LC #151 | 🟠 Medium |
 
 **Key Template:**
 ```java
+// Length of Last Word
 int i = s.length() - 1, count = 0;
-while (i >= 0 && s.charAt(i) == ' ') i--;   // skip trailing spaces
-while (i >= 0 && s.charAt(i) != ' ') { count++; i--; }  // count last word
+while (i >= 0 && s.charAt(i) == ' ') i--;              // skip trailing spaces
+while (i >= 0 && s.charAt(i) != ' ') { count++; i--; } // count word
 return count;
+
+// Reverse Words — extract word by word from end
+StringBuilder sb = new StringBuilder();
+int i = s.length() - 1;
+while (i >= 0) {
+    while (i >= 0 && s.charAt(i) == ' ') i--;          // skip spaces
+    int j = i;
+    while (j >= 0 && s.charAt(j) != ' ') j--;          // find word start
+    if (sb.length() > 0) sb.append(' ');
+    sb.append(s, j + 1, i + 1);
+    i = j;
+}
 ```
+
+⚠️ **Common Mistakes:**
+- Using `split()` blindly — produces empty strings with multiple spaces
+- Extra spaces leaking into output
+
+🔥 **Follow-up:** "Can you do it in-place?" → Reverse entire string first, then reverse each word individually.
+
+---
+
+### 3️⃣ Sliding Window
+> **Approach:** Use two pointers (`left`, `right`) to maintain a valid window. Expand `right` to grow, shrink from `left` when the window becomes invalid (e.g., duplicate found). Track the maximum valid window size. Always use a `while` loop to shrink — the window must be fully valid before moving on.
+
+**Trigger:** "longest substring", "no repeating characters", "at most K distinct", "contiguous window"
+
+| Problem | Platform | Difficulty |
+|---------|----------|------------|
+| [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | LC #3 | 🟠 Medium |
+
+**Key Template:**
+```java
+Map<Character, Integer> map = new HashMap<>();
+int left = 0, maxLen = 0;
+for (int right = 0; right < s.length(); right++) {
+    map.put(s.charAt(right), map.getOrDefault(s.charAt(right), 0) + 1);
+    while (map.get(s.charAt(right)) > 1) {             // window invalid — shrink
+        map.put(s.charAt(left), map.get(s.charAt(left)) - 1);
+        left++;
+    }
+    maxLen = Math.max(maxLen, right - left + 1);
+}
+return maxLen;
+```
+
+⚠️ **Common Mistakes:**
+- Using `if` instead of `while` to shrink — window may still be invalid
+- Wrong length: `right - left` instead of `right - left + 1`
+
+🔥 **Follow-ups:** At most K distinct characters · Longest repeating character replacement
+
+---
+
+### 4️⃣ String Matching
+> **Approach:** Slide the needle across the haystack. Critical rule: only check starting indices where the full pattern still fits — loop `i <= n - m`. At each index, match characters one by one with an inner loop. Return index on full match. This is the foundation of KMP and Rabin-Karp.
+
+**Trigger:** "find first occurrence", "index of substring", "pattern in string"
+
+| Problem | Platform | Difficulty |
+|---------|----------|------------|
+| [Find the Index of the First Occurrence](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/) | LC #28 | 🟢 Easy |
+
+**Key Template:**
+```java
+int n = haystack.length(), m = needle.length();
+for (int i = 0; i <= n - m; i++) {       // critical: n - m not n
+    int j = 0;
+    while (j < m && haystack.charAt(i + j) == needle.charAt(j)) j++;
+    if (j == m) return i;
+}
+return -1;
+```
+
+⚠️ **Common Mistakes:**
+- Looping till `n` instead of `n - m` → `i + j` causes index overflow
+- Missing edge case: empty needle
+
+🔥 **Interview Tip:** This exact bound bug is extremely common in interviews — fixing it correctly signals attention to detail.
+
+---
+
+### 5️⃣ Simulation / Parsing
+> **Approach:** Parse the string step by step following explicit rules. For `atoi`: skip spaces → detect sign → parse digits → check overflow **before** updating result. For `Valid Number`: traverse once with boolean flags (`seenDigit`, `seenDot`, `seenE`), applying rules per character. Key insight: reset `seenDigit = false` after `e` — digits must appear after the exponent symbol too.
+
+**Trigger:** "convert string to number", "validate format", "handle sign / spaces / overflow", "multiple validation rules"
+
+| Problem | Platform | Difficulty |
+|---------|----------|------------|
+| [String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/) | LC #8 | 🟠 Medium |
+| [Valid Number](https://leetcode.com/problems/valid-number/) | LC #65 | 🔴 Hard |
+
+**Key Template:**
+```java
+// String to Integer (atoi)
+int i = 0, sign = 1, result = 0;
+while (i < s.length() && s.charAt(i) == ' ') i++;
+if (i < s.length() && (s.charAt(i) == '+' || s.charAt(i) == '-'))
+    sign = (s.charAt(i++) == '-') ? -1 : 1;
+while (i < s.length() && Character.isDigit(s.charAt(i))) {
+    int digit = s.charAt(i++) - '0';
+    if (result > (Integer.MAX_VALUE - digit) / 10)   // overflow check BEFORE update
+        return sign == 1 ? Integer.MAX_VALUE : Integer.MIN_VALUE;
+    result = result * 10 + digit;
+}
+return sign * result;
+
+// Valid Number — flag-based state tracking
+boolean seenDigit = false, seenDot = false, seenE = false;
+for (int i = 0; i < s.length(); i++) {
+    char c = s.charAt(i);
+    if (Character.isDigit(c))           { seenDigit = true; }
+    else if (c == '.')                  { if (seenDot || seenE) return false; seenDot = true; }
+    else if (c == 'e' || c == 'E')      { if (seenE || !seenDigit) return false; seenE = true; seenDigit = false; }
+    else if (c == '+' || c == '-')      { if (i != 0 && s.charAt(i-1) != 'e' && s.charAt(i-1) != 'E') return false; }
+    else return false;
+}
+return seenDigit;
+```
+
+⚠️ **Common Mistakes:**
+- Overflow check must happen **before** `result = result * 10 + digit`
+- Forgetting to reset `seenDigit` after `e` in Valid Number
+- Allowing sign characters in the middle of the number
+
+---
+
+### 6️⃣ Stack
+> **Approach:** Use a stack (LIFO) for matching pairs. Push every opening bracket. On a closing bracket, check if the stack top is the matching opener — if not or stack is empty, return false. At the end, the stack must be empty (every opener was closed).
+
+**Trigger:** "matching pairs", "balanced brackets", "open/close relationship", "nested structure"
+
+| Problem | Platform | Difficulty |
+|---------|----------|------------|
+| [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | LC #20 | 🟢 Easy |
+
+**Key Template:**
+```java
+Deque<Character> stack = new ArrayDeque<>();
+for (char c : s.toCharArray()) {
+    if (c == '(' || c == '{' || c == '[') stack.push(c);
+    else {
+        if (stack.isEmpty()) return false;
+        char top = stack.pop();
+        if ((c == ')' && top != '(') ||
+            (c == '}' && top != '{') ||
+            (c == ']' && top != '[')) return false;
+    }
+}
+return stack.isEmpty();   // all openers must be closed
+```
+
+⚠️ **Common Mistakes:**
+- Not checking `isEmpty()` before popping
+- Returning `true` without verifying stack is empty at the end
+
+🔥 **Follow-ups:** Remove minimum invalid parentheses · Longest valid parentheses · Expression evaluation
 
 ---
 
@@ -114,272 +285,25 @@ return count;
 |-------------|---------|
 | Reverse string / array in-place | Two Pointers (swap from ends) |
 | Check palindrome, ignore special chars | Two Pointers + skip invalid |
-| Last word / trailing spaces | Traverse from end |
+| Reverse only specific elements | Two Pointers + skip unwanted |
+| Last word / trailing spaces / reverse words | Traverse from End |
+| Longest substring, no repeating / K distinct | Sliding Window |
+| Find first occurrence of pattern | String Matching (`i <= n - m`) |
+| Convert string to number, handle overflow | Simulation / Parsing |
+| Validate complex string format | State Tracking (boolean flags) |
+| Matching brackets / balanced pairs | Stack (LIFO) |
 
 ---
 
-pattern tip for find the index of first occurance 
-
-🧠 Pattern Tip
-
-👉 When matching substring:
-
-Only check indices where full pattern can fit
-👉 i ≤ n - m is critical rule
-
-⚙️ Approach (Short)
-Loop till n - m
-Match characters one by one
-Return index if full match
-🎯 Key Insight
-
-👉 Bound your loop properly
-👉 Avoid out-of-bounds errors
-
-⚠️ Common Mistakes
-❌ Loop till n instead of n - m
-❌ Index overflow (i + j)
-❌ Missing edge cases
-🚀 Interview Tip
-
-👉 This exact bug is very common
-Fixing it = shows attention to detail
-
----
-
-pattern tip for longest substring without repeating characters
-
-🧠 Pattern Tip
-
-👉 When you see:
-
-“Longest substring”
-“No repeating characters”
-
-💡 Trigger:
-
-Sliding Window (expand + shrink)
-
-⚙️ Approach (Short)
-Use two pointers (left, right)
-Expand window
-If duplicate → shrink until valid
-Track max length
-🎯 Key Insight
-
-👉 Window must always be valid (no duplicates)
-👉 Use while loop to fix window
-
-⚠️ Common Mistakes
-❌ Using if instead of while
-❌ Not shrinking fully
-❌ Wrong length calculation
-🚀 Interview Tip
-
-👉 This is top 10 most asked problem
-
-Follow-up questions:
-
-At most K distinct characters
-Longest repeating replacement
-
----
-
-pattern tip for string to integer
-
-🧠 Pattern Tip
-
-👉 When you see:
-
-“Convert string to number”
-“Ignore spaces / handle sign / overflow”
-
-💡 Trigger:
-
-Step-by-step parsing (Simulation)
-
-⚙️ Approach (Short)
-Skip spaces
-Detect sign
-Parse digits
-Check overflow before updating
-🎯 Key Insight
-
-👉 Overflow check must happen before multiplication
-
-⚠️ Common Mistakes
-❌ Ignoring overflow
-❌ Using long (not allowed in strict interviews)
-❌ Not handling sign properly
-❌ Not stopping at non-digit
-🚀 Interview Tip
-
-👉 This problem tests:
-
-Attention to detail
-Edge case handling
-Clean implementation
-
-👉 Writing this correctly = strong signal to interviewer
-
----
-
-pattern tip for valid number
-
-🧠 Pattern Tip
-
-👉 When you see:
-
-“Validate complex string format”
-“Multiple rules / conditions”
-
-💡 Trigger:
-
-State tracking using flags (simulation)
-
-⚙️ Approach (Short)
-Traverse string once
-Track:
-digit
-dot
-exponent
-Apply rules at each step
-🎯 Key Insight
-
-👉 Reset seenDigit after e
-👉 Because digits must come after exponent
-
-⚠️ Common Mistakes
-❌ Allowing multiple dots
-❌ Allowing e without digits
-❌ Not resetting digit after e
-❌ Incorrect sign placement
-🚀 Interview Tip
-
-👉 This problem tests:
-
-Precision
-Edge-case handling
-Clean logic
-
-👉 Writing this correctly = top 5% candidate
-
----
-
-pattern tip for valid parentheses
-
-🧠 Pattern Tip
-
-👉 When you see:
-
-“Matching pairs”
-“Balanced brackets”
-“Open/close relationship”
-
-💡 Trigger:
-
-Stack (LIFO)
-
-⚙️ Approach (Short)
-Push opening brackets
-On closing → check stack top
-If mismatch → false
-End: stack must be empty
-🎯 Key Insight
-
-👉 Last opened = first closed
-👉 That’s why stack works perfectly
-
-⚠️ Common Mistakes
-❌ Not checking empty stack
-❌ Forgetting to pop
-❌ Returning true without empty stack
-🚀 Interview Tip
-
-👉 Follow-up variations:
-
-Remove minimum parentheses
-Longest valid parentheses
-Expression evaluation
-
----
-
-pattern tip for reverse words in a string
-
-🧠 Pattern Tip
-
-👉 When you see:
-
-“Reverse words”
-“Remove extra spaces”
-
-💡 Trigger:
-
-Traverse from end instead of splitting
-
-⚙️ Approach (Short)
-Start from end
-Skip spaces
-Extract words
-Append to result
-🎯 Key Insight
-
-👉 Avoid split()
-👉 Build result manually
-
-⚠️ Common Mistakes
-❌ Using split() blindly
-❌ Extra spaces in output
-❌ Not trimming properly
-🚀 Interview Tip
-
-👉 If interviewer pushes:
-
-“Can you do it in-place?”
-
-That leads to:
-
-Reverse entire string
-Reverse each word
-
-👉 That’s next level 🔥
-
----
-
-pattern tip for reverse vowels of a string
-
-🧠 Pattern Tip
-
-👉 When you see:
-
-“Reverse only specific elements”
-“Condition-based swapping”
-
-💡 Trigger:
-
-Two pointers + skip unwanted elements
-
-⚙️ Approach (Short)
-Start from both ends
-Skip non-vowels
-Swap vowels
-Move inward
-🎯 Key Insight
-
-👉 Don’t touch unnecessary elements
-👉 Only act on valid targets (vowels)
-
-⚠️ Common Mistakes
-❌ Not handling uppercase vowels
-❌ Swapping wrong indices
-❌ Not skipping properly
-🚀 Interview Tip
-
-👉 This pattern extends to:
-
-Reverse only letters
-Partition arrays
-Filter-based transformations
+## 🏢 Company Pattern Mapping
+
+| Company | String Patterns Frequently Asked |
+|---------|----------------------------------|
+| Amazon | Sliding Window, HashMap, Stack |
+| Google | String Matching, Simulation, Sliding Window |
+| Microsoft | Two Pointers, Stack, Parsing |
+| Meta | Two Pointers, Sliding Window |
+| Adobe | Parsing, Stack, Simulation |
 
 ---
 
