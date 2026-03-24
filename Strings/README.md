@@ -16,6 +16,7 @@ strings/
 └── LengthOfLastWord.java
 └── FindTheIndexOfFirstOccurance.java
 └── LongestSubstringWithoutRepeatingCharacters.java
+└── StringToInteger.java
 ```
 
 ---
@@ -177,6 +178,45 @@ Follow-up questions:
 
 At most K distinct characters
 Longest repeating replacement
+
+---
+
+pattern tip for string to integer
+
+🧠 Pattern Tip
+
+👉 When you see:
+
+“Convert string to number”
+“Ignore spaces / handle sign / overflow”
+
+💡 Trigger:
+
+Step-by-step parsing (Simulation)
+
+⚙️ Approach (Short)
+Skip spaces
+Detect sign
+Parse digits
+Check overflow before updating
+🎯 Key Insight
+
+👉 Overflow check must happen before multiplication
+
+⚠️ Common Mistakes
+❌ Ignoring overflow
+❌ Using long (not allowed in strict interviews)
+❌ Not handling sign properly
+❌ Not stopping at non-digit
+🚀 Interview Tip
+
+👉 This problem tests:
+
+Attention to detail
+Edge case handling
+Clean implementation
+
+👉 Writing this correctly = strong signal to interviewer
 
 ---
 ## 🔁 Revision Strategy
