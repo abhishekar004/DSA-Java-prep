@@ -17,6 +17,7 @@ strings/
 └── FindTheIndexOfFirstOccurance.java
 └── LongestSubstringWithoutRepeatingCharacters.java
 └── StringToInteger.java
+└── ValidNumber.java
 ```
 
 ---
@@ -219,6 +220,50 @@ Clean implementation
 👉 Writing this correctly = strong signal to interviewer
 
 ---
+
+pattern tip for valid number
+
+🧠 Pattern Tip
+
+👉 When you see:
+
+“Validate complex string format”
+“Multiple rules / conditions”
+
+💡 Trigger:
+
+State tracking using flags (simulation)
+
+⚙️ Approach (Short)
+Traverse string once
+Track:
+digit
+dot
+exponent
+Apply rules at each step
+🎯 Key Insight
+
+👉 Reset seenDigit after e
+👉 Because digits must come after exponent
+
+⚠️ Common Mistakes
+❌ Allowing multiple dots
+❌ Allowing e without digits
+❌ Not resetting digit after e
+❌ Incorrect sign placement
+🚀 Interview Tip
+
+👉 This problem tests:
+
+Precision
+Edge-case handling
+Clean logic
+
+👉 Writing this correctly = top 5% candidate
+
+---
+
+
 ## 🔁 Revision Strategy
 
 | Level | What to Do |
