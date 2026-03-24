@@ -57,6 +57,7 @@ arrays/
 ├── BreakingTheRecords.java
 └── NumberLineJumps.java
 └── FindTheClosestPairFromTwoArrays.java
+└── Quicksort1-Partition.java
 ```
 
 ---
@@ -330,6 +331,47 @@ Move:
 sum > x → move left (j--)
 sum < x → move right (i++)
 
+
+---
+
+pattern tip for quicksort 1 partition 
+
+🧠 Pattern Tip
+
+👉 When you see:
+
+“Rearrange around pivot”
+“Smaller on left, larger on right”
+
+💡 Trigger:
+
+Partition logic (QuickSort foundation)
+
+⚙️ Approach (Short)
+Pick pivot (first element)
+Traverse rest:
+< pivot → left
+>= pivot → right
+Combine: left + pivot + right
+🎯 Key Insight
+
+👉 This is core of QuickSort
+👉 Master this → QuickSort becomes easy
+
+⚠️ Common Mistakes
+❌ Trying full recursion (not required)
+❌ Wrong pivot handling
+❌ Missing equal elements
+🚀 Interview Tip
+
+👉 After this, interviewer may ask:
+
+“Can you implement full QuickSort?”
+
+👉 That means:
+
+Recursion
+In-place partition (Hoare / Lomuto)
 
 ---
 
