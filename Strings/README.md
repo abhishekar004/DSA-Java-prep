@@ -20,9 +20,9 @@ strings/
 ├── ValidNumber.java
 ├── ValidParentheses.java
 ├── ReverseWordsInAString.java
-└── ReverseVowelsOfAString.java
-└── MinimumWindowSubString.java
-└── LongestPalindromicSubstring.java
+├── ReverseVowelsOfAString.java
+├── MinimumWindowSubString.java
+├── LongestPalindromicSubstring.java
 └── SuperReducedString.java
 ```
 
@@ -30,10 +30,10 @@ strings/
 
 ## 📊 Progress
 
-**Problems Solved: 10 / 30+**
+**Problems Solved: 13 / 30+**
 
 ```
-████░░░░░░░░░░░░░░░░  ~33%
+████████░░░░░░░░░░░░  ~43%
 ```
 
 ---
@@ -51,8 +51,8 @@ strings/
 | Mode | How to Use |
 |------|------------|
 | 📖 Learning Mode | Read the approach → solve the problems in that group |
-| 🔁 Revision Mode | Scan pattern triggers + formulas only |
-| ⚡ Interview Mode | Identify pattern within 30 seconds |
+| 🔁 Revision Mode | Scan pattern triggers + key templates only |
+| ⚡ Interview Mode | Cheat sheet only, identify pattern in < 30 sec |
 
 ---
 
@@ -119,17 +119,17 @@ while (left < right) {
 ```java
 // Length of Last Word
 int i = s.length() - 1, count = 0;
-while (i >= 0 && s.charAt(i) == ' ') i--;              // skip trailing spaces
-while (i >= 0 && s.charAt(i) != ' ') { count++; i--; } // count word
+while (i >= 0 && s.charAt(i) == ' ') i--;               // skip trailing spaces
+while (i >= 0 && s.charAt(i) != ' ') { count++; i--; }  // count word
 return count;
 
 // Reverse Words — extract word by word from end
 StringBuilder sb = new StringBuilder();
 int i = s.length() - 1;
 while (i >= 0) {
-    while (i >= 0 && s.charAt(i) == ' ') i--;          // skip spaces
+    while (i >= 0 && s.charAt(i) == ' ') i--;           // skip spaces
     int j = i;
-    while (j >= 0 && s.charAt(j) != ' ') j--;          // find word start
+    while (j >= 0 && s.charAt(j) != ' ') j--;           // find word start
     if (sb.length() > 0) sb.append(' ');
     sb.append(s, j + 1, i + 1);
     i = j;
@@ -137,58 +137,81 @@ while (i >= 0) {
 ```
 
 ⚠️ **Common Mistakes:**
-- Using `split()` blindly — produces empty strings with multiple spaces
+- Using `split()` blindly — produces empty strings on multiple spaces
 - Extra spaces leaking into output
 
-🔥 **Follow-up:** "Can you do it in-place?" → Reverse entire string first, then reverse each word individually.
+🔥 **Follow-up:** "Can you do it in-place?" → Reverse entire string, then reverse each word individually.
 
 ---
 
 ### 3️⃣ Sliding Window
-> **Approach:** Use two pointers (`left`, `right`) to maintain a valid window. Expand `right` to grow, shrink from `left` when the window becomes invalid (e.g., duplicate found). Track the maximum valid window size. Always use a `while` loop to shrink — the window must be fully valid before moving on.
+> **Approach:** Use two pointers (`left`, `right`) to maintain a valid window. Expand `right` to grow, shrink from `left` when the window becomes invalid. Always use `while` (not `if`) to shrink — window must be fully valid before moving on. For Minimum Window Substring, the window is valid only when `formed == required`. Update the minimum window **before** shrinking, not after.
 
-**Trigger:** "longest substring", "no repeating characters", "at most K distinct", "contiguous window"
+**Trigger:** "longest/shortest substring", "no repeating characters", "contains all characters of t", "at most K distinct", "frequency/count matters"
 
 | Problem | Platform | Difficulty |
 |---------|----------|------------|
 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | LC #3 | 🟠 Medium |
+| [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/) | LC #76 | 🔴 Hard |
 
 **Key Template:**
 ```java
+// Longest Substring Without Repeating Characters
 Map<Character, Integer> map = new HashMap<>();
 int left = 0, maxLen = 0;
 for (int right = 0; right < s.length(); right++) {
-    map.put(s.charAt(right), map.getOrDefault(s.charAt(right), 0) + 1);
-    while (map.get(s.charAt(right)) > 1) {             // window invalid — shrink
-        map.put(s.charAt(left), map.get(s.charAt(left)) - 1);
+    map.merge(s.charAt(right), 1, Integer::sum);
+    while (map.get(s.charAt(right)) > 1) {              // window invalid — shrink
+        map.merge(s.charAt(left), -1, Integer::sum);
         left++;
     }
     maxLen = Math.max(maxLen, right - left + 1);
 }
 return maxLen;
+
+// Minimum Window Substring
+Map<Character, Integer> need = new HashMap<>();
+for (char c : t.toCharArray()) need.merge(c, 1, Integer::sum);
+int required = need.size(), formed = 0, left = 0;
+int minLen = Integer.MAX_VALUE, minStart = 0;
+Map<Character, Integer> window = new HashMap<>();
+for (int right = 0; right < s.length(); right++) {
+    char c = s.charAt(right);
+    window.merge(c, 1, Integer::sum);
+    if (need.containsKey(c) && window.get(c).equals(need.get(c))) formed++;
+    while (formed == required) {                         // valid — try to shrink
+        if (right - left + 1 < minLen) { minLen = right - left + 1; minStart = left; }
+        char lc = s.charAt(left++);
+        window.merge(lc, -1, Integer::sum);
+        if (need.containsKey(lc) && window.get(lc) < need.get(lc)) formed--;
+    }
+}
+return minLen == Integer.MAX_VALUE ? "" : s.substring(minStart, minStart + minLen);
 ```
 
 ⚠️ **Common Mistakes:**
-- Using `if` instead of `while` to shrink — window may still be invalid
-- Wrong length: `right - left` instead of `right - left + 1`
+- Using `if` instead of `while` to shrink
+- Using a Set instead of frequency map (misses repeated chars in `t`)
+- Updating min window **after** shrinking — you'll miss the valid state
+- Wrong length formula: must be `right - left + 1`
 
-🔥 **Follow-ups:** At most K distinct characters · Longest repeating character replacement
+🔥 **Follow-ups:** Permutation in String · Find All Anagrams · Longest Repeating Character Replacement
 
 ---
 
-### 4️⃣ String Matching
-> **Approach:** Slide the needle across the haystack. Critical rule: only check starting indices where the full pattern still fits — loop `i <= n - m`. At each index, match characters one by one with an inner loop. Return index on full match. This is the foundation of KMP and Rabin-Karp.
+### 4️⃣ String Matching (Bounded Loop)
+> **Approach:** Slide the needle across the haystack. Critical rule: only check starting indices where the full pattern can still fit — loop bound is `i <= n - m`. At each index, match characters one by one. Return on full match. This is the foundation pattern behind KMP and Rabin-Karp.
 
 **Trigger:** "find first occurrence", "index of substring", "pattern in string"
 
 | Problem | Platform | Difficulty |
 |---------|----------|------------|
-| [Find the Index of the First Occurrence](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/) | LC #28 | 🟢 Easy |
+| [Find the Index of First Occurrence](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/) | LC #28 | 🟢 Easy |
 
 **Key Template:**
 ```java
 int n = haystack.length(), m = needle.length();
-for (int i = 0; i <= n - m; i++) {       // critical: n - m not n
+for (int i = 0; i <= n - m; i++) {       // critical: n - m, not n
     int j = 0;
     while (j < m && haystack.charAt(i + j) == needle.charAt(j)) j++;
     if (j == m) return i;
@@ -198,14 +221,51 @@ return -1;
 
 ⚠️ **Common Mistakes:**
 - Looping till `n` instead of `n - m` → `i + j` causes index overflow
-- Missing edge case: empty needle
+- Missing edge case: needle longer than haystack
 
-🔥 **Interview Tip:** This exact bound bug is extremely common in interviews — fixing it correctly signals attention to detail.
+🔥 **Interview Tip:** This exact bound bug is extremely common — fixing it signals strong attention to detail.
 
 ---
 
-### 5️⃣ Simulation / Parsing
-> **Approach:** Parse the string step by step following explicit rules. For `atoi`: skip spaces → detect sign → parse digits → check overflow **before** updating result. For `Valid Number`: traverse once with boolean flags (`seenDigit`, `seenDot`, `seenE`), applying rules per character. Key insight: reset `seenDigit = false` after `e` — digits must appear after the exponent symbol too.
+### 5️⃣ Expand Around Center
+> **Approach:** Every palindrome has a center. For each index, expand outward in both directions while characters match. Handle two cases separately: odd-length palindrome (single center `i, i`) and even-length palindrome (two-char center `i, i+1`). Track the longest palindrome seen. O(n²) — accepted in 95% of interviews.
+
+**Trigger:** "longest palindrome substring", "palindrome centered at index", "expand from center"
+
+| Problem | Platform | Difficulty |
+|---------|----------|------------|
+| [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) | LC #5 | 🟠 Medium |
+
+**Key Template:**
+```java
+String result = "";
+for (int i = 0; i < s.length(); i++) {
+    String odd  = expand(s, i, i);       // odd-length palindrome
+    String even = expand(s, i, i + 1);   // even-length palindrome
+    if (odd.length()  > result.length()) result = odd;
+    if (even.length() > result.length()) result = even;
+}
+return result;
+
+private String expand(String s, int left, int right) {
+    while (left >= 0 && right < s.length() && s.charAt(left) == s.charAt(right)) {
+        left--; right++;
+    }
+    return s.substring(left + 1, right);  // left+1, right — one step too far on both sides
+}
+```
+
+⚠️ **Common Mistakes:**
+- Checking only odd-length palindromes — misses all even-length ones
+- Wrong substring bounds after loop: use `left + 1` to `right` (not `right + 1`)
+- Using brute force O(n³)
+
+🔥 **Follow-up:** "Can you do it in O(n)?" → Manacher's Algorithm.
+
+---
+
+### 6️⃣ Simulation / Parsing
+> **Approach:** Parse the string step by step with explicit rules. For `atoi`: skip spaces → detect sign → parse digits → check overflow **before** updating result. For `Valid Number`: traverse once with boolean flags, applying rules per character. Key insight: reset `seenDigit = false` after `e` — digits must also appear after the exponent.
 
 **Trigger:** "convert string to number", "validate format", "handle sign / spaces / overflow", "multiple validation rules"
 
@@ -233,7 +293,7 @@ return sign * result;
 boolean seenDigit = false, seenDot = false, seenE = false;
 for (int i = 0; i < s.length(); i++) {
     char c = s.charAt(i);
-    if (Character.isDigit(c))           { seenDigit = true; }
+    if      (Character.isDigit(c))      { seenDigit = true; }
     else if (c == '.')                  { if (seenDot || seenE) return false; seenDot = true; }
     else if (c == 'e' || c == 'E')      { if (seenE || !seenDigit) return false; seenE = true; seenDigit = false; }
     else if (c == '+' || c == '-')      { if (i != 0 && s.charAt(i-1) != 'e' && s.charAt(i-1) != 'E') return false; }
@@ -245,21 +305,23 @@ return seenDigit;
 ⚠️ **Common Mistakes:**
 - Overflow check must happen **before** `result = result * 10 + digit`
 - Forgetting to reset `seenDigit` after `e` in Valid Number
-- Allowing sign characters in the middle of the number
+- Allowing sign characters in the middle of the string
 
 ---
 
-### 6️⃣ Stack
-> **Approach:** Use a stack (LIFO) for matching pairs. Push every opening bracket. On a closing bracket, check if the stack top is the matching opener — if not or stack is empty, return false. At the end, the stack must be empty (every opener was closed).
+### 7️⃣ Stack
+> **Approach:** Use a stack (LIFO) when characters must be matched in pairs or when removing adjacent elements can trigger chain reactions. For matching brackets: push openers, pop and verify on closers, stack must be empty at end. For adjacent duplicate removal: push characters one by one — if the top matches current, pop instead. Chain reactions are handled automatically since each removal may expose a new matching pair.
 
-**Trigger:** "matching pairs", "balanced brackets", "open/close relationship", "nested structure"
+**Trigger:** "matching pairs", "balanced brackets", "remove adjacent duplicates", "reduce until stable", "chain removal"
 
 | Problem | Platform | Difficulty |
 |---------|----------|------------|
 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | LC #20 | 🟢 Easy |
+| [Super Reduced String](https://www.hackerrank.com/challenges/reduced-string/problem) | HR | 🟢 Easy |
 
 **Key Template:**
 ```java
+// Valid Parentheses
 Deque<Character> stack = new ArrayDeque<>();
 for (char c : s.toCharArray()) {
     if (c == '(' || c == '{' || c == '[') stack.push(c);
@@ -271,151 +333,24 @@ for (char c : s.toCharArray()) {
             (c == ']' && top != '[')) return false;
     }
 }
-return stack.isEmpty();   // all openers must be closed
+return stack.isEmpty();    // all openers must be closed
+
+// Super Reduced String — push/pop adjacent duplicates
+StringBuilder stack = new StringBuilder();
+for (char c : s.toCharArray()) {
+    if (stack.length() > 0 && stack.charAt(stack.length() - 1) == c)
+        stack.deleteCharAt(stack.length() - 1);   // duplicate — pop
+    else
+        stack.append(c);                           // no duplicate — push
+}
+return stack.length() == 0 ? "Empty String" : stack.toString();
 ```
 
 ⚠️ **Common Mistakes:**
-- Not checking `isEmpty()` before popping
-- Returning `true` without verifying stack is empty at the end
+- Valid Parentheses: not checking `isEmpty()` before popping; returning `true` without verifying stack is empty
+- Super Reduced String: using nested loops O(n²); not handling chain reactions; forgetting `"Empty String"` return
 
-🔥 **Follow-ups:** Remove minimum invalid parentheses · Longest valid parentheses · Expression evaluation
-
----
-
-pattern tip for minimum window substring
-
-🧠 Pattern Tip
-
-👉 When you see:
-
-“Smallest / shortest substring”
-“Contains all characters”
-“Frequency/count matters”
-
-💡 Trigger:
-
-Sliding Window + Frequency Map
-
-⚙️ Approach (Short)
-Store required frequencies of t
-Expand window with right
-When all required chars are matched:
-shrink from left
-update minimum window
-🎯 Key Insight
-
-👉 Window becomes valid only when:
-
-formed == required
-
-That is the core condition.
-
-⚠️ Common Mistakes
-❌ Using set instead of frequency map
-❌ Not handling repeated chars in t
-❌ Shrinking too early
-❌ Forgetting to update min window before shrinking
-🚀 Interview Tip
-
-👉 This is one of the most important hard sliding window problems
-
-If you master this, you can solve:
-
-Permutation in String
-Find All Anagrams
-Smallest Distinct Window
-Longest Repeating Character Replacement
-
-
----
-pattern tip for longest palindromic substring
-
-🧠 Pattern Tip
-
-👉 When you see:
-
-“Longest palindrome substring”
-“Check palindrome around index”
-
-💡 Trigger:
-
-Expand Around Center
-
-⚙️ Approach (Short)
-For each character:
-expand for odd palindrome
-expand for even palindrome
-Keep track of longest substring
-🎯 Key Insight
-
-👉 Every palindrome has a center
-
-one center → odd length
-two centers → even length
-
-That’s the entire trick.
-
-⚠️ Common Mistakes
-❌ Checking only odd palindromes
-❌ Using brute force O(n³)
-❌ Wrong start/end calculation
-🚀 Interview Tip
-
-👉 If interviewer asks:
-
-“Can you optimize beyond O(n²)?”
-
-That leads to:
-
-Manacher’s Algorithm (O(n)) 🔥
-
-👉 But 95% of interviews accept this solution.
-
----
-pattern tip for super reduced string
-
-🧠 Pattern Tip
-
-👉 When you see:
-
-“Remove adjacent duplicates”
-“Keep reducing until stable”
-
-💡 Trigger:
-
-Stack (push-pop behavior)
-
-⚙️ Approach (Short)
-Use stack (StringBuilder)
-Traverse characters:
-If same as top → pop
-Else → push
-Return result or "Empty String"
-🎯 Key Insight
-
-👉 Removing pairs can cause new pairs to form
-
-Example:
-
-abba → aa → ""
-
-👉 That’s why stack is perfect
-
-⚠️ Common Mistakes
-❌ Using nested loops (O(n²))
-❌ Not handling chain reactions
-❌ Using recursion unnecessarily
-🚀 Interview Tip
-
-👉 This pattern appears in:
-
-Remove adjacent duplicates
-Simplify string problems
-Expression reduction
-
-👉 Always think:
-
-“Can I simulate this with a stack?”
+🔥 **Follow-ups:** Remove minimum invalid parentheses · Longest valid parentheses · Remove all adjacent duplicates II (k duplicates)
 
 ---
 
@@ -425,13 +360,16 @@ Expression reduction
 |-------------|---------|
 | Reverse string / array in-place | Two Pointers (swap from ends) |
 | Check palindrome, ignore special chars | Two Pointers + skip invalid |
-| Reverse only specific elements | Two Pointers + skip unwanted |
+| Reverse only specific elements (vowels) | Two Pointers + skip unwanted |
 | Last word / trailing spaces / reverse words | Traverse from End |
 | Longest substring, no repeating / K distinct | Sliding Window |
+| Smallest window containing all chars of t | Sliding Window + Frequency Map |
 | Find first occurrence of pattern | String Matching (`i <= n - m`) |
+| Longest palindrome substring | Expand Around Center |
 | Convert string to number, handle overflow | Simulation / Parsing |
 | Validate complex string format | State Tracking (boolean flags) |
 | Matching brackets / balanced pairs | Stack (LIFO) |
+| Remove adjacent duplicates, chain reactions | Stack (push-pop) |
 
 ---
 
