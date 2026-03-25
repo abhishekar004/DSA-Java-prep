@@ -22,6 +22,7 @@ strings/
 ├── ReverseWordsInAString.java
 └── ReverseVowelsOfAString.java
 └── MinimumWindowSubString.java
+└── LongestPalindromicSubstring.java
 ```
 
 ---
@@ -324,6 +325,50 @@ Find All Anagrams
 Smallest Distinct Window
 Longest Repeating Character Replacement
 
+
+---
+pattern tip for longest palindromic substring
+
+🧠 Pattern Tip
+
+👉 When you see:
+
+“Longest palindrome substring”
+“Check palindrome around index”
+
+💡 Trigger:
+
+Expand Around Center
+
+⚙️ Approach (Short)
+For each character:
+expand for odd palindrome
+expand for even palindrome
+Keep track of longest substring
+🎯 Key Insight
+
+👉 Every palindrome has a center
+
+one center → odd length
+two centers → even length
+
+That’s the entire trick.
+
+⚠️ Common Mistakes
+❌ Checking only odd palindromes
+❌ Using brute force O(n³)
+❌ Wrong start/end calculation
+🚀 Interview Tip
+
+👉 If interviewer asks:
+
+“Can you optimize beyond O(n²)?”
+
+That leads to:
+
+Manacher’s Algorithm (O(n)) 🔥
+
+👉 But 95% of interviews accept this solution.
 
 ---
 
