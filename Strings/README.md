@@ -21,6 +21,7 @@ strings/
 ├── ValidParentheses.java
 ├── ReverseWordsInAString.java
 └── ReverseVowelsOfAString.java
+└── MinimumWindowSubString.java
 ```
 
 ---
@@ -276,6 +277,53 @@ return stack.isEmpty();   // all openers must be closed
 - Returning `true` without verifying stack is empty at the end
 
 🔥 **Follow-ups:** Remove minimum invalid parentheses · Longest valid parentheses · Expression evaluation
+
+---
+
+pattern tip for minimum window substring
+
+🧠 Pattern Tip
+
+👉 When you see:
+
+“Smallest / shortest substring”
+“Contains all characters”
+“Frequency/count matters”
+
+💡 Trigger:
+
+Sliding Window + Frequency Map
+
+⚙️ Approach (Short)
+Store required frequencies of t
+Expand window with right
+When all required chars are matched:
+shrink from left
+update minimum window
+🎯 Key Insight
+
+👉 Window becomes valid only when:
+
+formed == required
+
+That is the core condition.
+
+⚠️ Common Mistakes
+❌ Using set instead of frequency map
+❌ Not handling repeated chars in t
+❌ Shrinking too early
+❌ Forgetting to update min window before shrinking
+🚀 Interview Tip
+
+👉 This is one of the most important hard sliding window problems
+
+If you master this, you can solve:
+
+Permutation in String
+Find All Anagrams
+Smallest Distinct Window
+Longest Repeating Character Replacement
+
 
 ---
 
