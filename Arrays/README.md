@@ -58,6 +58,7 @@ arrays/
 └── NumberLineJumps.java
 └── FindTheClosestPairFromTwoArrays.java
 └── Quicksort1-Partition.java
+└── BetweenTwoSets.java
 ```
 
 ---
@@ -372,6 +373,61 @@ Combine: left + pivot + right
 
 Recursion
 In-place partition (Hoare / Lomuto)
+
+---
+pattern tip for between two sets
+
+🧠 Pattern Tip
+
+👉 When a problem says:
+
+“All numbers in first array should divide x”
+“x should divide all numbers in second array”
+
+💡 Trigger instantly:
+
+LCM of first array + GCD of second array
+
+That’s the golden shortcut.
+
+⚙️ Approach (README-ready)
+Find LCM of array a → smallest number divisible by all elements in a
+Find GCD of array b → largest number dividing all elements in b
+Count how many multiples of LCM(a) divide GCD(b)
+🎯 Key Insight
+
+👉 Valid numbers must lie between:
+
+LCM(a)  ----->  GCD(b)
+
+And only numbers that satisfy:
+
+x % LCM(a) == 0
+GCD(b) % x == 0
+
+are valid.
+
+⚠️ Common Mistakes
+❌ Brute force checking every number from 1 to max
+❌ Forgetting to use LCM for array a
+❌ Forgetting to use GCD for array b
+❌ Using unsafe LCM formula:
+(a * b) / gcd(a, b)
+
+(can overflow)
+
+✔ Better:
+
+(a / gcd(a, b)) * b
+🚀 Interview Tip
+
+This problem teaches a very important shortcut:
+
+If multiple numbers must divide one value → think LCM
+If one value must divide multiple numbers → think GCD
+
+That one line is interview gold.
+
 
 ---
 
