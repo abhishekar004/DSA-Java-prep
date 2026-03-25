@@ -23,6 +23,7 @@ strings/
 └── ReverseVowelsOfAString.java
 └── MinimumWindowSubString.java
 └── LongestPalindromicSubstring.java
+└── SuperReducedString.java
 ```
 
 ---
@@ -369,6 +370,52 @@ That leads to:
 Manacher’s Algorithm (O(n)) 🔥
 
 👉 But 95% of interviews accept this solution.
+
+---
+pattern tip for super reduced string
+
+🧠 Pattern Tip
+
+👉 When you see:
+
+“Remove adjacent duplicates”
+“Keep reducing until stable”
+
+💡 Trigger:
+
+Stack (push-pop behavior)
+
+⚙️ Approach (Short)
+Use stack (StringBuilder)
+Traverse characters:
+If same as top → pop
+Else → push
+Return result or "Empty String"
+🎯 Key Insight
+
+👉 Removing pairs can cause new pairs to form
+
+Example:
+
+abba → aa → ""
+
+👉 That’s why stack is perfect
+
+⚠️ Common Mistakes
+❌ Using nested loops (O(n²))
+❌ Not handling chain reactions
+❌ Using recursion unnecessarily
+🚀 Interview Tip
+
+👉 This pattern appears in:
+
+Remove adjacent duplicates
+Simplify string problems
+Expression reduction
+
+👉 Always think:
+
+“Can I simulate this with a stack?”
 
 ---
 
