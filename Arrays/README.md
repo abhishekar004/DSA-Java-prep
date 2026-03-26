@@ -59,6 +59,7 @@ arrays/
 ├── FindTheClosestPairFromTwoArrays.java
 ├── Quicksort1-Partition.java
 └── BetweenTwoSets.java
+└── BillDivision.java
 ```
 
 ---
@@ -466,6 +467,43 @@ Safe LCM formula (avoids overflow):
 | [Palindromic Array](https://www.geeksforgeeks.org/problems/palindromic-array-1587115620/1) | GFG | 🟢 Easy |
 | [Simple Array Sum](https://www.hackerrank.com/challenges/simple-array-sum/problem) | HackerRank | 🟢 Easy |
 | [Number Line Jumps](https://www.hackerrank.com/contests/mountblue-technologies/challenges/kangaroo) | HackerRank | 🟢 Easy |
+
+---
+pattrn tip for bill division 
+
+🧠 Pattern Tip
+
+👉 When you see:
+
+“Exclude one element”
+“Split cost / average”
+
+💡 Trigger:
+
+Total sum – excluded element
+
+⚙️ Approach (Short)
+Compute total sum
+Subtract skipped item
+Divide by 2
+Compare with charged amount
+🎯 Key Insight
+
+👉 Only ONE item is excluded → don’t overthink
+
+⚠️ Common Mistakes
+❌ Dividing total before removing item
+❌ Wrong index handling
+❌ Printing instead of returning (platform specific)
+🚀 Interview Tip
+
+👉 This tests:
+
+Attention to detail
+Basic arithmetic logic
+
+👉 Easy problem — but mistakes = rejection
+
 
 ---
 
