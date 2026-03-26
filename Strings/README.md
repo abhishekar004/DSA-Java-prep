@@ -24,6 +24,7 @@ strings/
 ├── MinimumWindowSubString.java
 ├── LongestPalindromicSubstring.java
 └── SuperReducedString.java
+└── GroupAnagrams.java
 ```
 
 ---
@@ -351,6 +352,50 @@ return stack.length() == 0 ? "Empty String" : stack.toString();
 - Super Reduced String: using nested loops O(n²); not handling chain reactions; forgetting `"Empty String"` return
 
 🔥 **Follow-ups:** Remove minimum invalid parentheses · Longest valid parentheses · Remove all adjacent duplicates II (k duplicates)
+
+---
+pattern tip for Group anagrams
+
+🧠 Pattern Tip
+
+👉 When you see:
+
+“Group similar strings”
+“Same letters, different order”
+
+💡 Trigger:
+
+Hashing + normalized key
+
+⚙️ Approach (README-ready)
+For each string:
+count frequency of letters
+build a unique signature
+Store strings with same signature in same hash map bucket
+Return grouped values
+🎯 Key Insight
+
+👉 Anagrams have the same character frequency
+
+So instead of sorting:
+
+use frequency signature as hash key
+
+⚠️ Common Mistakes
+❌ Sorting each word without realizing optimization exists
+❌ Using mutable arrays directly as map keys
+❌ Forgetting repeated letters
+🚀 Interview Tip
+
+This problem teaches one very important rule:
+
+If order doesn’t matter, think frequency map / signature
+
+That trick appears in:
+
+Anagrams
+Sliding window character matching
+String comparison problems
 
 ---
 
