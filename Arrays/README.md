@@ -61,6 +61,7 @@ arrays/
 └── BetweenTwoSets.java
 └── BillDivision.java
 └── AVeryBigSum.java
+└── PlusMinus.java
 ```
 
 ---
@@ -541,6 +542,55 @@ Correct data type selection
 👉 Easy problem, but:
 
 ❗ Wrong data type = instant rejection
+
+---
+pattern tip for plus minus 
+
+🧠 Pattern Tip
+
+👉 When you see:
+
+“Count how many belong to each group”
+“Return ratio / percentage”
+
+💡 Trigger:
+
+Single traversal + counters
+
+⚙️ Approach (README-ready)
+Traverse the array once
+Count:
+positives
+negatives
+zeros
+Divide each count by total size
+Print with 6 decimal places
+🎯 Key Insight
+
+👉 Don’t store extra arrays
+👉 Just count directly
+
+⚠️ Common Mistakes
+❌ Integer division mistake:
+positive / n
+
+This gives wrong result if both are int
+
+✔ Correct:
+
+(double) positive / n
+❌ Wrong formatting (not printing 6 decimals)
+❌ Forgetting zero count
+🚀 Interview Tip
+
+This problem is simple, but it checks:
+
+loop control
+condition handling
+type casting
+output formatting
+
+👉 Easy problems still eliminate candidates if they get careless.
 
 ---
 
