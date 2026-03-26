@@ -60,6 +60,7 @@ arrays/
 ├── Quicksort1-Partition.java
 └── BetweenTwoSets.java
 └── BillDivision.java
+└── AVeryBigSum.java
 ```
 
 ---
@@ -504,6 +505,42 @@ Basic arithmetic logic
 
 👉 Easy problem — but mistakes = rejection
 
+---
+pattern tip for a very big sum
+
+🧠 Pattern Tip
+
+👉 When you see:
+
+“Very big numbers”
+“Sum of large values”
+
+💡 Trigger:
+
+Use long (not int)
+
+⚙️ Approach (Short)
+Initialize long total = 0
+Iterate through array
+Add each element
+🎯 Key Insight
+
+👉 Data type matters more than logic here
+
+⚠️ Common Mistakes
+❌ Using int → overflow
+❌ Ignoring constraints
+❌ Using unnecessary data structures
+🚀 Interview Tip
+
+👉 This problem tests:
+
+Attention to constraints
+Correct data type selection
+
+👉 Easy problem, but:
+
+❗ Wrong data type = instant rejection
 
 ---
 
