@@ -26,6 +26,7 @@ strings/
 └── SuperReducedString.java
 └── GroupAnagrams.java
 └── PermutationsInString.java
+└── FindAllAnagramsInAString.java
 ```
 
 ---
@@ -440,6 +441,52 @@ Find All Anagrams in a String
 Minimum Window Substring
 
 👉 Master this, and many string problems become easier.
+
+---
+pattern tip for find all anagrams in a string
+
+🧠 Pattern Tip
+
+👉 When you see:
+
+“Find all substrings matching pattern”
+“Permutation / anagram inside string”
+
+💡 Trigger:
+
+Fixed-size Sliding Window + Frequency Count
+
+⚙️ Approach (README-ready)
+Build frequency count of pattern p
+Create a window of same size in s
+Slide the window one character at a time:
+add new char
+remove old char
+If frequencies match → store index
+🎯 Key Insight
+
+👉 Anagram means:
+
+same character counts
+
+Not same order.
+
+⚠️ Common Mistakes
+❌ Sorting every substring
+❌ Rebuilding frequency array for each window
+❌ Forgetting final window check
+❌ Off-by-one errors in sliding
+🚀 Interview Tip
+
+This is part of one important interview family:
+
+Permutation in String
+Find All Anagrams
+Minimum Window Substring
+
+👉 If you master one, you should immediately recognize the others.
+
+That’s exactly what you’re doing now.
 
 ---
 
