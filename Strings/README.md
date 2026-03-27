@@ -25,6 +25,7 @@ strings/
 ├── LongestPalindromicSubstring.java
 └── SuperReducedString.java
 └── GroupAnagrams.java
+└── PermutationsInString.java
 ```
 
 ---
@@ -396,6 +397,49 @@ That trick appears in:
 Anagrams
 Sliding window character matching
 String comparison problems
+
+---
+pattern tip for permutations in string 
+
+🧠 Pattern Tip
+
+👉 When you see:
+
+“Check if substring is permutation/anagram”
+“Window size fixed”
+
+💡 Trigger:
+
+Fixed-size Sliding Window + Frequency Array
+
+⚙️ Approach (README-ready)
+Count frequency of s1
+Create first window of same size in s2
+Slide the window:
+add new character
+remove old character
+If counts match → permutation exists
+🎯 Key Insight
+
+👉 A permutation means:
+
+same character frequencies
+
+Not same order.
+
+⚠️ Common Mistakes
+❌ Sorting every window → too slow
+❌ Forgetting to remove left char
+❌ Rechecking full map inefficiently
+🚀 Interview Tip
+
+This is one of the most important bridges between:
+
+Group Anagrams
+Find All Anagrams in a String
+Minimum Window Substring
+
+👉 Master this, and many string problems become easier.
 
 ---
 
