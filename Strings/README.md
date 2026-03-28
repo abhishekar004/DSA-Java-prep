@@ -27,6 +27,7 @@ strings/
 └── GroupAnagrams.java
 └── PermutationsInString.java
 └── FindAllAnagramsInAString.java
+└── RegularExpression.java
 ```
 
 ---
@@ -487,6 +488,55 @@ Minimum Window Substring
 👉 If you master one, you should immediately recognize the others.
 
 That’s exactly what you’re doing now.
+
+---
+pattern tip for regular expression
+
+🧠 Pattern Tip
+
+👉 When you see:
+
+Pattern matching with rules (*, ., etc.)
+Choices (take / skip / repeat)
+
+💡 Trigger:
+
+DP with states (i, j)
+
+⚙️ Approach (README-ready)
+Define state:
+dp[i][j] = s[i:] matches p[j:]
+If next char is *:
+skip pattern → solve(i, j+2)
+use pattern → solve(i+1, j)
+Else:
+match current char and move forward
+🎯 Key Insight
+
+👉 * gives two choices:
+
+ignore it
+use it repeatedly
+
+That’s the entire trick.
+
+⚠️ Common Mistakes
+❌ Not handling * properly
+❌ Forgetting zero occurrence case
+❌ Missing memoization → exponential time
+❌ Confusing full match vs partial match
+🚀 Interview Tip
+
+This problem tests:
+
+Recursion thinking
+State definition
+DP optimization
+
+👉 If you solve this cleanly:
+
+You’re in top 5–10% candidates
+
 
 ---
 
