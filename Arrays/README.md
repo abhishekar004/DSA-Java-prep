@@ -63,6 +63,7 @@ arrays/
 └── AVeryBigSum.java
 └── PlusMinus.java
 └── SubarrayDivision.java
+└── MigratoryBirds.java
 ```
 
 ---
@@ -634,6 +635,46 @@ Anagram / permutation window problems
 👉 If you recognize “fixed length”, you should immediately think:
 
 Sliding Window
+
+---
+pattern tip for migratory birds
+
+🧠 Pattern Tip
+
+👉 When you see:
+
+“Most frequent element”
+“Count occurrences”
+“Small fixed range of values”
+
+💡 Trigger:
+
+Frequency Array
+
+⚙️ Approach (README-ready)
+Create frequency array
+Count each bird type
+Find the type with highest count
+If tie occurs, smaller ID wins automatically
+🎯 Key Insight
+
+👉 Since bird IDs are limited (1 to 5),
+you don’t need a HashMap.
+
+👉 Array is faster and cleaner.
+
+⚠️ Common Mistakes
+❌ Using nested loops to count frequency
+❌ Using HashMap unnecessarily for small fixed range
+❌ Mishandling tie condition
+🚀 Interview Tip
+
+This teaches an important rule:
+
+If values are from a small known range
+use an array instead of HashMap
+
+That is a powerful optimization trick.
 
 ---
 
