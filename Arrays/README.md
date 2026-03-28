@@ -62,6 +62,7 @@ arrays/
 └── BillDivision.java
 └── AVeryBigSum.java
 └── PlusMinus.java
+└── SubarrayDivision.java
 ```
 
 ---
@@ -591,6 +592,48 @@ type casting
 output formatting
 
 👉 Easy problems still eliminate candidates if they get careless.
+
+---
+
+pattern tip for subarray division
+
+🧠 Pattern Tip
+
+👉 When you see:
+
+“Contiguous subarray”
+“Fixed length”
+“Find sum/count”
+
+💡 Trigger:
+
+Fixed-size Sliding Window
+
+⚙️ Approach (README-ready)
+Maintain a window of size m
+Keep track of its sum
+When window size exceeds m, remove left element
+If sum equals d, increment answer
+🎯 Key Insight
+
+👉 Don’t recompute subarray sum every time
+👉 Reuse previous window sum efficiently
+
+⚠️ Common Mistakes
+❌ Using nested loops to calculate every subarray sum
+❌ Forgetting window size check
+❌ Not removing left element when window grows
+🚀 Interview Tip
+
+This is a foundation problem for:
+
+Maximum sum subarray of size K
+First negative in every window
+Anagram / permutation window problems
+
+👉 If you recognize “fixed length”, you should immediately think:
+
+Sliding Window
 
 ---
 
