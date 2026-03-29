@@ -28,6 +28,8 @@ strings/
 └── PermutationsInString.java
 └── FindAllAnagramsInAString.java
 └── RegularExpression.java
+└── SubstringWithConcatenationOfAllWords.java
+
 ```
 
 ---
@@ -537,6 +539,47 @@ DP optimization
 
 You’re in top 5–10% candidates
 
+---
+pattern tip for substring with concatenation of all words
+
+🧠 Pattern Tip
+
+👉 When you see:
+
+“Concatenation of words”
+“All words same length”
+“Need exact frequency matching”
+
+💡 Trigger:
+
+Sliding Window with chunked movement
+
+⚙️ Approach (README-ready)
+Build frequency map of words
+Since all words have same length, process string in chunks
+Try each possible starting offset
+Maintain sliding window of words
+If window matches required frequencies → store index
+🎯 Key Insight
+
+👉 Don’t move one character at a time
+👉 Move wordLen characters at a time
+
+That is the core trick.
+
+⚠️ Common Mistakes
+❌ Brute force checking every substring
+❌ Ignoring duplicate words
+❌ Not handling multiple offsets
+❌ Reset logic mistakes after invalid word
+🚀 Interview Tip
+
+This problem is important because it teaches:
+
+Sometimes sliding window does not move by 1
+it moves by logical chunk size
+
+That’s a very powerful advanced insight.
 
 ---
 
