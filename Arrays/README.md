@@ -1,8 +1,8 @@
 # 📘 Arrays — DSA Placement Preparation
 
-> 💡 **"Don't just solve problems — recognize patterns instantly."**
-
-A **pattern-based DSA revision system** for fast pattern recognition, placement prep, and quick interview revision.
+> ⚡ **"If you identify the pattern in 30 seconds, you can solve it in 5 minutes."**
+>
+> A **pattern-based DSA revision system** built for fast pattern recognition, placement prep, and high-pressure interview revision.
 
 ---
 
@@ -11,91 +11,141 @@ A **pattern-based DSA revision system** for fast pattern recognition, placement 
 ```
 arrays/
 ├── README.md
-├── TwoSum.java
-├── SquaresOfSortedArray.java
-├── BestTimeToBuyAndSellStock.java
-├── ContainsDuplicate.java
-├── ProductOfArrayExceptSelf.java
-├── RotateArray.java
-├── MaximumSubarray.java
-├── ValidSudoku.java
-├── MergeIntervals.java
-├── InsertInterval.java
-├── ThreeSum.java
-├── FourSum.java
-├── ThreeSumClosest.java
-├── MoveZeroes.java
-├── FindDisappearedNumbers.java
-├── FirstMissingPositive.java
-├── MissingNumber.java
-├── FindDuplicateNumber.java
-├── SetMismatch.java
-├── ReverseAnArray.java
-├── RemoveDuplicatesI.java
-├── RemoveDuplicatesII.java
-├── CheckIfSortedAndRotated.java
-├── SingleElementInSortedArray.java
-├── NonDecreasingArray.java
-├── GlobalAndLocalInversions.java
-├── EscapeTheGhosts.java
-├── MaximizeDistanceToClosestPerson.java
-├── PeakIndexInMountainArray.java
-├── FindPeakElement.java
-├── FindInMountainArray.java
-├── KokoEatingBananas.java
-├── CapacityToShipPackages.java
-├── SmallestDivisor.java
-├── ArraySubset.java
-├── SubarrayWithZeroSum.java
-├── KadanesAlgorithm.java
-├── KthSmallest.java
-├── MedianOfArray.java
-├── PalindromicArray.java
-├── SalesByMatch.java
-├── SimpleArraySum.java
-├── SubarraySumEqualsK.java
-├── BreakingTheRecords.java
-├── NumberLineJumps.java
-├── FindTheClosestPairFromTwoArrays.java
-├── Quicksort1-Partition.java
-└── BetweenTwoSets.java
-└── BillDivision.java
-└── AVeryBigSum.java
-└── PlusMinus.java
-└── SubarrayDivision.java
-└── MigratoryBirds.java
+├── HashMap/
+│   ├── TwoSum.java
+│   ├── ContainsDuplicate.java
+│   ├── ArraySubset.java
+│   └── SalesByMatch.java
+├── TwoPointers/
+│   ├── SquaresOfSortedArray.java
+│   ├── MoveZeroes.java
+│   ├── RemoveDuplicatesI.java
+│   ├── RemoveDuplicatesII.java
+│   ├── ThreeSum.java
+│   ├── ThreeSumClosest.java
+│   ├── FourSum.java
+│   ├── ReverseAnArray.java
+│   └── FindTheClosestPairFromTwoArrays.java
+├── Greedy/
+│   ├── BestTimeToBuyAndSellStock.java
+│   ├── NonDecreasingArray.java
+│   ├── GlobalAndLocalInversions.java
+│   ├── EscapeTheGhosts.java
+│   ├── MaximizeDistanceToClosestPerson.java
+│   └── BreakingTheRecords.java
+├── PrefixSum/
+│   ├── ProductOfArrayExceptSelf.java
+│   ├── SubarrayWithZeroSum.java
+│   └── SubarraySumEqualsK.java
+├── Kadane/
+│   ├── MaximumSubarray.java
+│   └── KadanesAlgorithm.java
+├── CyclicSort/
+│   ├── FindDisappearedNumbers.java
+│   ├── MissingNumber.java
+│   ├── SetMismatch.java
+│   └── FirstMissingPositive.java
+├── FloydCycle/
+│   └── FindDuplicateNumber.java
+├── Intervals/
+│   ├── MergeIntervals.java
+│   └── InsertInterval.java
+├── BinarySearch/
+│   ├── CheckIfSortedAndRotated.java
+│   ├── SingleElementInSortedArray.java
+│   ├── PeakIndexInMountainArray.java
+│   ├── FindPeakElement.java
+│   └── FindInMountainArray.java
+├── BinarySearchOnAnswer/
+│   ├── KokoEatingBananas.java
+│   ├── CapacityToShipPackages.java
+│   └── SmallestDivisor.java
+├── Heap/
+│   ├── KthSmallest.java
+│   └── MedianOfArray.java
+├── SlidingWindow/
+│   └── SubarrayDivision.java
+├── Partition/
+│   └── Quicksort1-Partition.java
+├── Math/
+│   ├── RotateArray.java
+│   ├── ValidSudoku.java
+│   ├── PalindromicArray.java
+│   ├── NumberLineJumps.java
+│   ├── BetweenTwoSets.java
+│   ├── MissingNumber.java (XOR variant)
+│   ├── SimpleArraySum.java
+│   ├── AVeryBigSum.java
+│   ├── PlusMinus.java
+│   ├── BillDivision.java
+│   ├── MigratoryBirds.java
+│   └── FindPeakElement.java
+└── Misc/
+    └── SubarrayDivision.java
 ```
 
 ---
 
-## 🎯 Progress
+## 🎯 Progress Tracker
 
 **Problems Solved: 48 / 300**
 
 ```
-████░░░░░░░░░░░░░░░░  16%
+████░░░░░░░░░░░░░░░░  16%  [48 / 300]
 ```
+
+| Pattern | Solved | Target |
+|---------|--------|--------|
+| HashMap | 4 | 20 |
+| Two Pointers | 9 | 25 |
+| Greedy | 6 | 20 |
+| Prefix Sum | 3 | 15 |
+| Kadane's | 2 | 10 |
+| Cyclic Sort | 4 | 10 |
+| Floyd Cycle | 1 | 5 |
+| Intervals | 2 | 10 |
+| Binary Search | 5 | 20 |
+| Binary Search on Answer | 3 | 15 |
+| Heap | 1 | 10 |
+| Sliding Window | 1 | 20 |
+| Partition | 1 | 10 |
+| Math / LCM+GCD | 1 | 10 |
+| Math & Sorting | 5 | 30 |
+| Frequency Array | 1 | 10 |
+| Miscellaneous | 4 | 10 |
 
 ---
 
 ## ⚡ Pattern Recognition Cheat Sheet
 
-| If you see… | Think Pattern |
-|-------------|---------------|
+> 🔑 **Master this table. In an interview, identify the pattern first — then code.**
+
+| Trigger (What You See in the Problem) | Pattern to Apply |
+|---------------------------------------|-----------------|
 | Pair / target sum | HashMap |
-| Sorted array, pair/triplet | Two Pointers |
+| Frequency count, fast lookup | HashMap |
+| Sorted array + pair / triplet | Two Pointers |
 | Two sorted arrays, closest sum | Two Pointers (opposite ends) |
-| Maximum subarray | Kadane's Algorithm |
+| In-place rearrangement | Two Pointers |
+| Maximize profit, track running min/max | Greedy |
+| Locally optimal = globally optimal | Greedy |
 | Subarray sum = k | Prefix Sum + HashMap |
-| Missing / duplicate in 1..n | Cyclic Sort |
+| Range sum query | Prefix Sum |
+| Zero-sum subarray | Prefix Sum + HashMap |
+| Maximum subarray (contiguous) | Kadane's Algorithm |
+| Missing / duplicate in [1..n] | Cyclic Sort |
+| Find duplicate without extra space | Floyd Cycle Detection |
 | Overlapping ranges | Interval Merge |
-| Minimum valid answer | Binary Search on Answer |
-| Top K elements | Heap |
-| Duplicate with O(1) space | Floyd Cycle Detection |
-| Local max in sorted-ish array | Binary Search |
-| Track running min/max | Greedy |
+| Sorted array, find element or peak | Binary Search |
+| "Minimize the maximum" / threshold condition | Binary Search on Answer |
+| Top K / Kth smallest / largest | Heap |
+| Fixed-size window, contiguous subarray | Sliding Window |
+| Variable-size window (shrink/expand) | Sliding Window |
 | Rearrange around pivot | Partition (QuickSort) |
-| All of A divides x, x divides all of B | LCM + GCD |
+| All of A divides X, X divides all of B | LCM + GCD |
+| Count occurrences in small fixed range | Frequency Array |
+| Sum of large numbers, big constraints | Use `long`, check overflow |
+| Exclude one element, split cost | Total Sum − Excluded Element |
 
 ---
 
@@ -105,11 +155,11 @@ arrays/
 
 ### 1️⃣ HashMap
 
-> **Approach:** Use a hash map for O(1) lookups. Store elements you've seen and check if the complement or match already exists. Great for frequency counting and pair detection.
+> **Core Idea:** Trade space for speed. Use a hash map for O(1) lookups to detect pairs, complements, or frequencies in a single pass instead of nested loops.
 
-**Trigger:** "find pair", "frequency", "duplicate check", "fast lookup"
+**Trigger keywords:** "find pair", "target sum", "frequency", "duplicate check", "fast lookup"
 
-**Key formula:** `target - num` → check if result is in map
+**Key insight:** `target - num` → check if result already exists in map
 
 | Problem | Platform | Difficulty |
 |---------|----------|------------|
@@ -121,34 +171,35 @@ arrays/
 **Key Template:**
 ```java
 Map<Integer, Integer> map = new HashMap<>();
-for (int num : nums) {
-    if (map.containsKey(target - num)) return new int[]{map.get(target - num), i};
-    map.put(num, i);
+for (int i = 0; i < nums.length; i++) {
+    int complement = target - nums[i];
+    if (map.containsKey(complement)) return new int[]{map.get(complement), i};
+    map.put(nums[i], i);
 }
 ```
 
 ⚠️ **Common Mistakes:**
-- Putting `num` in the map **before** checking for complement — causes same element to be used twice
-- Using a HashSet when index is also needed (Two Sum requires index, not just existence)
-- Not handling duplicates in frequency problems (use `getOrDefault`, not `containsKey` alone)
+- Putting `num` into the map **before** checking for complement — causes the same element to be used twice
+- Using a HashSet when index is needed (Two Sum requires indices, not just existence)
+- Not using `getOrDefault` when counting frequencies (causes NPE or wrong counts)
 
 🔥 **Interview Tips:**
-- If brute force is O(n²), always ask: "Can I use a HashMap to reduce lookup to O(1)?"
+- If brute force is O(n²), ask: "Can I use a HashMap to reduce lookup to O(1)?"
 - Follow-up: "What if the array is sorted?" → Two Pointers is better (O(1) space)
-- Follow-up: "What if there are multiple pairs?" → collect all results, don't return early
+- Follow-up: "What if there are multiple valid pairs?" → collect all, don't return early
 
 ---
 
 ### 2️⃣ Two Pointers
 
-> **Approach:** Use left and right pointers on a sorted array and move them based on whether the current sum is too small or too large. Also used for in-place operations like removing duplicates or moving zeroes. For two sorted arrays with a target sum, start `i` at the beginning of arr1 and `j` at the end of arr2 — move them toward each other based on whether the sum is above or below the target.
+> **Core Idea:** Use left and right pointers on a sorted (or partitioned) array, moving them toward each other based on whether the current sum is too small or too large. Also handles in-place operations like removing duplicates or moving zeroes without extra space.
 
-**Trigger:** "sorted array + pair/triplet", "in-place partition", "two sorted arrays + closest sum"
+**Trigger keywords:** "sorted array + pair/triplet", "in-place", "two sorted arrays + closest sum", "remove/rearrange in-place"
 
 **Key rule:**
-```java
-sum < target → left++ (or i++)
-sum > target → right-- (or j--)
+```
+sum < target  →  left++    (need bigger value)
+sum > target  →  right--   (need smaller value)
 ```
 
 | Problem | Platform | Difficulty |
@@ -163,41 +214,64 @@ sum > target → right-- (or j--)
 | [Reverse An Array](https://www.geeksforgeeks.org/problems/reverse-an-array/1) | GFG | 🟢 Easy |
 | [Find the Closest Pair from Two Arrays](https://www.geeksforgeeks.org/given-two-sorted-arrays-number-x-find-pair-whose-sum-closest-x/) | GFG | 🟠 Medium |
 
-**Key Template:**
+**Key Template — Closest pair from two sorted arrays:**
 ```java
-// Closest pair from two sorted arrays
 int i = 0, j = arr2.length - 1;
 while (i < arr1.length && j >= 0) {
     int sum = arr1[i] + arr2[j];
-    // update closest pair
-    if (sum < x) i++;
-    else j--;
+    // update closest pair here
+    if (sum < x) i++;       // need bigger value
+    else         j--;       // need smaller value
+}
+```
+
+**Key Template — 3Sum (fix + two pointers):**
+```java
+Arrays.sort(nums);
+for (int k = 0; k < nums.length - 2; k++) {
+    if (k > 0 && nums[k] == nums[k - 1]) continue; // skip outer duplicates
+    int left = k + 1, right = nums.length - 1;
+    while (left < right) {
+        int sum = nums[k] + nums[left] + nums[right];
+        if (sum == 0) {
+            result.add(Arrays.asList(nums[k], nums[left], nums[right]));
+            while (left < right && nums[left] == nums[left + 1]) left++;   // skip inner dupes
+            while (left < right && nums[right] == nums[right - 1]) right--;
+            left++; right--;
+        } else if (sum < 0) left++;
+        else right--;
+    }
 }
 ```
 
 ⚠️ **Common Mistakes:**
-- Not sorting before applying two pointers — the entire pattern breaks on unsorted input
-- Moving the wrong pointer on equal sums
+- Applying two pointers on an unsorted array — the pattern breaks entirely without sorting
 - Not skipping duplicates in 3Sum/4Sum — produces duplicate triplets in output
-- Using nested loops when two pointers already gives O(n)
+- Moving the wrong pointer when `sum == target`
+- Using nested loops when two pointers already achieves O(n)
 
 🔥 **Interview Tips:**
-- Always clarify: "Is the array sorted?" If not, sort it first and state the O(n log n) overhead
-- For 3Sum: fix one element with a loop, then apply two pointers on the rest — reduces O(n³) → O(n²)
-- Follow-up for Remove Duplicates II: "What if at most K duplicates are allowed?" → generalize with a count variable
+- Always ask: "Is the array sorted?" If not, sort it first and acknowledge the O(n log n) overhead
+- For 3Sum: fix one element with a for loop, run two pointers on the rest → O(n³) becomes O(n²)
+- Generalization for Remove Duplicates II: "What if at most K duplicates allowed?" → use a count variable
 
 ---
 
 ### 3️⃣ Greedy
 
-> **Approach:** Make the locally optimal choice at each step. Track a running minimum or maximum while iterating — no need to look back. The decision at each step is final.
+> **Core Idea:** Make the locally optimal choice at each step with no backtracking. Track a running minimum or maximum while iterating — the decision at each index is final and never revisited.
 
-**Trigger:** "maximize profit", "track min/max", "locally optimal", "no backtracking"
+**Trigger keywords:** "maximize profit", "minimize cost", "track running min/max", "locally optimal"
 
-**Key formula:**
+**Key insight:** If the best local choice never invalidates the global optimum → greedy works.
+
 ```java
-profit = currentPrice - minPriceSeen;
-update min/max dynamically on each iteration
+// Pattern: running min + max profit
+int minPrice = nums[0], maxProfit = 0;
+for (int price : nums) {
+    maxProfit = Math.max(maxProfit, price - minPrice);
+    minPrice  = Math.min(minPrice, price);
+}
 ```
 
 | Problem | Platform | Difficulty |
@@ -210,25 +284,25 @@ update min/max dynamically on each iteration
 | [Breaking The Records](https://www.hackerrank.com/contests/mountblue-technologies/challenges/breaking-best-and-worst-records) | HackerRank | 🟢 Easy |
 
 ⚠️ **Common Mistakes:**
-- Initializing min/max as 0 instead of `nums[0]` — breaks for all-negative arrays
-- Trying DP when greedy is sufficient — if local optimum always leads to global optimum, greedy is enough
-- Not recognizing greedy applicability — if you catch yourself building a table, ask "is a running variable enough?"
+- Initializing `min = 0` instead of `nums[0]` — breaks for all-negative arrays
+- Reaching for DP when greedy suffices — if a running variable is enough, don't build a table
+- Not recognizing greedy applicability — ask "Is there any reason to revisit a past decision?"
 
 🔥 **Interview Tips:**
-- Greedy works when: making the best local choice never invalidates a better global choice
-- Prove it: "At each step I pick X because choosing anything else can only make things worse"
-- Follow-up for Stock: "What if you can buy and sell multiple times?" → add profit whenever `price[i] > price[i-1]`
+- Prove greedy correctness: "At each step I pick X because any other choice can only make things worse"
+- Follow-up for Stock I: "What if you can buy/sell multiple times?" → add profit whenever `price[i] > price[i-1]`
+- For Non-Decreasing Array: consider how modifying `nums[i-1]` vs `nums[i]` affects future elements
 
 ---
 
 ### 4️⃣ Prefix Sum
 
-> **Approach:** Precompute cumulative sums so any subarray sum `[i..j]` = `prefix[j] - prefix[i-1]` in O(1). Pair with a HashMap to find subarrays with a target sum in a single pass.
+> **Core Idea:** Precompute cumulative sums so any subarray sum `[i..j] = prefix[j] - prefix[i-1]` in O(1). Combine with a HashMap to find subarrays with a target sum in a single pass.
 
-**Trigger:** "subarray sum", "range sum query", "sum equals k", "zero sum subarray"
+**Trigger keywords:** "subarray sum = k", "range sum query", "zero-sum subarray", "product except self"
 
 **Key formula:**
-```java
+```
 prefix[j] - prefix[i] = k
 → check if (prefix[j] - k) exists in map
 ```
@@ -239,29 +313,41 @@ prefix[j] - prefix[i] = k
 | [Subarray with 0 Sum](https://www.geeksforgeeks.org/problems/subarray-with-0-sum-1587115621/1) | GFG | 🟠 Medium |
 | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/) | LC #560 | 🟠 Medium |
 
+**Key Template:**
+```java
+Map<Integer, Integer> map = new HashMap<>();
+map.put(0, 1);  // ← CRITICAL: handles subarrays starting at index 0
+int sum = 0, count = 0;
+for (int num : nums) {
+    sum += num;
+    count += map.getOrDefault(sum - k, 0);
+    map.put(sum, map.getOrDefault(sum, 0) + 1);
+}
+```
+
 ⚠️ **Common Mistakes:**
-- Forgetting to initialize map with `{0: 1}` — misses subarrays starting from index 0
+- Forgetting `map.put(0, 1)` — misses subarrays that start from index 0
 - Off-by-one: `prefix[j] - prefix[i]` covers `[i+1..j]`, not `[i..j]`
-- Building the actual prefix array when just a running sum variable suffices
-- Not handling negative numbers — prefix sum still works, but sliding window does NOT for negatives
+- Building a full prefix array when a running sum variable is sufficient
+- Applying sliding window for negative numbers — sliding window requires non-negative; prefix sum handles negatives fine
 
 🔥 **Interview Tips:**
-- The map initialization `{0: 1}` is the most commonly forgotten line — mention it explicitly
-- For Product Except Self: "Can you do it without division and in O(1) extra space?" → left-pass × right-pass in-place
-- Follow-up: "What if the array has negative numbers?" → prefix sum handles it; sliding window does not
+- The `map.put(0, 1)` line is the most commonly forgotten part — say it aloud during interviews
+- For Product Except Self: left-pass stores prefix products, right-pass multiplies in-place → O(1) extra space
+- Follow-up: "What if the array has negatives?" → Prefix sum works; sliding window does not
 
 ---
 
 ### 5️⃣ Kadane's Algorithm
 
-> **Approach:** Track the maximum subarray sum ending at each index. At each step, decide whether to extend the current subarray or start fresh from the current element. One pass, O(n).
+> **Core Idea:** At each index, decide whether to extend the running subarray or start fresh. One variable tracks the best ending here; another tracks the global best. One pass, O(n), O(1) space.
 
-**Trigger:** "maximum subarray", "contiguous subarray", "largest sum"
+**Trigger keywords:** "maximum subarray", "contiguous subarray with largest sum", "max sum"
 
 **Key formula:**
 ```java
-curr = Math.max(num, curr + num);
-result = Math.max(result, curr);
+curr   = Math.max(num, curr + num);   // extend or restart
+result = Math.max(result, curr);       // update global max
 ```
 
 | Problem | Platform | Difficulty |
@@ -269,18 +355,39 @@ result = Math.max(result, curr);
 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | LC #53 | 🟢 Easy |
 | [Kadane's Algorithm](https://www.geeksforgeeks.org/problems/kadanes-algorithm-1587115620/1) | GFG | 🟠 Medium |
 
+**Key Template:**
+```java
+int curr = nums[0], result = nums[0];
+for (int i = 1; i < nums.length; i++) {
+    curr   = Math.max(nums[i], curr + nums[i]);
+    result = Math.max(result, curr);
+}
+return result;
+```
+
+⚠️ **Common Mistakes:**
+- Initializing `curr = 0` and `result = 0` — fails when all elements are negative
+- Confusing "subarray" (contiguous) with "subsequence" (non-contiguous) — Kadane's is for subarrays only
+- Not returning the index boundaries when asked to also return the actual subarray
+
+🔥 **Interview Tips:**
+- Always initialize `curr` and `result` from `nums[0]`, not 0
+- Follow-up: "What if you need to return the subarray itself?" → track `start`, `end`, `tempStart`
+- Follow-up: "What if the array wraps around (circular)?" → max of standard Kadane + (totalSum - minSubarray)
+
 ---
 
 ### 6️⃣ Cyclic Sort
 
-> **Approach:** For arrays with elements in range [1..n], place each element at its correct index (`index = value - 1`). After one pass, any index where `nums[i] != i + 1` reveals a missing or duplicate number.
+> **Core Idea:** For arrays where elements are in range [1..n], place each element at its correct index (`index = value - 1`) by swapping. After one pass, any index where `nums[i] != i + 1` reveals a missing or duplicate.
 
-**Trigger:** "missing number", "duplicate in [1..n]", "numbers in known range"
+**Trigger keywords:** "missing number in [1..n]", "find duplicate in [1..n]", "numbers in known range"
 
 **Key formula:**
 ```java
-correct index = nums[i] - 1
-swap nums[i] with nums[correct index] until nums[i] is in place
+int correctIdx = nums[i] - 1;
+if (nums[i] != nums[correctIdx]) swap(nums, i, correctIdx);
+else i++;
 ```
 
 | Problem | Platform | Difficulty |
@@ -290,37 +397,85 @@ swap nums[i] with nums[correct index] until nums[i] is in place
 | [Set Mismatch](https://leetcode.com/problems/set-mismatch/) | LC #645 | 🟢 Easy |
 | [First Missing Positive](https://leetcode.com/problems/first-missing-positive/) | LC #41 | 🔴 Hard |
 
+**Key Template:**
+```java
+// Phase 1: sort cyclically
+int i = 0;
+while (i < nums.length) {
+    int correctIdx = nums[i] - 1;
+    if (correctIdx >= 0 && correctIdx < nums.length && nums[i] != nums[correctIdx])
+        swap(nums, i, correctIdx);
+    else i++;
+}
+
+// Phase 2: detect anomaly
+for (int j = 0; j < nums.length; j++) {
+    if (nums[j] != j + 1) return j + 1; // missing number
+}
+```
+
+⚠️ **Common Mistakes:**
+- Forgetting to guard against out-of-range values (First Missing Positive has values outside [1..n])
+- Infinite loop: not incrementing `i` when `nums[i] == nums[correctIdx]` (duplicate case)
+- Confusing the two phases — sort first, then scan for anomaly
+
+🔥 **Interview Tips:**
+- Cyclic Sort is O(n) time and O(1) space — always mention this
+- Works only when the value range is known and bounded
+- Follow-up: "What if the range is [0..n]?" → adjust `correctIdx = nums[i]`
+
 ---
 
-### 7️⃣ Floyd Cycle Detection
+### 7️⃣ Floyd's Cycle Detection
 
-> **Approach:** Treat the array as a linked list where `nums[i]` is a pointer. Use slow (1 step) and fast (2 steps) pointers — when they meet, reset slow to the start and advance both one step at a time to find the cycle entry point (the duplicate).
+> **Core Idea:** Treat the array as an implicit linked list where `nums[i]` is a "next pointer". Slow pointer moves 1 step, fast moves 2. When they meet, reset slow to start and move both 1 step — where they meet again is the duplicate (cycle entry point).
 
-**Trigger:** "find duplicate without extra space", "array as implicit linked list"
+**Trigger keywords:** "find duplicate without extra space", "O(1) space, no modification", "array as linked list"
 
 **Key formula:**
 ```java
-slow = nums[slow];
-fast = nums[nums[fast]];
-// after meeting → reset slow = 0, move both one step until equal
+// Phase 1: detect cycle
+int slow = nums[0], fast = nums[0];
+do {
+    slow = nums[slow];
+    fast = nums[nums[fast]];
+} while (slow != fast);
+
+// Phase 2: find entry (duplicate)
+slow = nums[0];
+while (slow != fast) {
+    slow = nums[slow];
+    fast = nums[fast];
+}
+return slow;
 ```
 
 | Problem | Platform | Difficulty |
 |---------|----------|------------|
 | [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) | LC #287 | 🟠 Medium |
 
+⚠️ **Common Mistakes:**
+- Starting both pointers at index 0 vs `nums[0]` — the linked list starts at `nums[0]`
+- Forgetting Phase 2 and returning the meeting point from Phase 1 (that's not the duplicate)
+- Trying cyclic sort when the problem forbids array modification
+
+🔥 **Interview Tips:**
+- Constraint: "cannot modify the array, O(1) extra space" → this is the pattern
+- Without these constraints, cyclic sort or a HashSet would be simpler alternatives
+- This is based on Floyd's algorithm from linked list cycle detection — say so in the interview
+
 ---
 
 ### 8️⃣ Interval Problems
 
-> **Approach:** Sort intervals by start time. Merge when the current interval's start ≤ previous end. For insertion, handle three phases: intervals strictly before, overlapping (merge all), and after the new interval.
+> **Core Idea:** Sort intervals by start time. Merge when the current interval overlaps the last merged one (start ≤ prev end). For insertion, handle three distinct phases: intervals strictly before the new one, all overlapping intervals (merge), then intervals strictly after.
 
-**Trigger:** "overlapping ranges", "merge intervals", "insert interval"
+**Trigger keywords:** "overlapping ranges", "merge intervals", "insert interval", "meeting rooms"
 
 **Key rule:**
 ```java
-if curr.start <= prev.end → merge: end = max(prev.end, curr.end)
-else → no overlap, add prev to result
+if (curr.start <= prev.end)  →  merge: end = Math.max(prev.end, curr.end)
+else                         →  no overlap, add prev to result
 ```
 
 | Problem | Platform | Difficulty |
@@ -328,19 +483,49 @@ else → no overlap, add prev to result
 | [Merge Intervals](https://leetcode.com/problems/merge-intervals/) | LC #56 | 🟠 Medium |
 | [Insert Interval](https://leetcode.com/problems/insert-interval/) | LC #57 | 🟠 Medium |
 
+**Key Template — Merge Intervals:**
+```java
+Arrays.sort(intervals, (a, b) -> a[0] - b[0]);
+List<int[]> result = new ArrayList<>();
+result.add(intervals[0]);
+for (int i = 1; i < intervals.length; i++) {
+    int[] last = result.get(result.size() - 1);
+    if (intervals[i][0] <= last[1])
+        last[1] = Math.max(last[1], intervals[i][1]); // merge
+    else
+        result.add(intervals[i]);                     // no overlap
+}
+```
+
+⚠️ **Common Mistakes:**
+- Not sorting before merging — the algorithm only works on sorted intervals
+- Taking `min` instead of `max` of the end boundary during merge
+- For Insert Interval: handling the three phases with a single loop without clearly separating them
+
+🔥 **Interview Tips:**
+- Insert Interval (LC #57) doesn't require re-sorting since input is already sorted
+- Follow-up: "What's the minimum number of meeting rooms needed?" → count max overlapping intervals with a sorted events approach
+
 ---
 
 ### 9️⃣ Binary Search
 
-> **Approach:** On a sorted or partially sorted array, eliminate half the search space each step. For mountain arrays, compare `mid` with its neighbors to decide which side the peak is on. Always use `mid = low + (high - low) / 2` to avoid overflow.
+> **Core Idea:** On a sorted or partially sorted array, eliminate half the search space at each step. For mountain arrays, compare `mid` with neighbors to determine which slope you're on. Always use `mid = low + (high - low) / 2` to avoid integer overflow.
 
-**Trigger:** "sorted array", "find element", "peak element", "mountain array"
+**Trigger keywords:** "sorted array", "find element", "peak element", "O(log n) search"
 
-**Key formula:**
+**Key formulas:**
 ```java
-mid = low + (high - low) / 2;   // avoids integer overflow
-if (arr[mid] < arr[mid + 1]) low = mid + 1;   // ascending side
-else high = mid;                               // descending / peak side
+mid = low + (high - low) / 2;             // always use this — avoids overflow
+
+// Standard binary search
+if (arr[mid] == target) return mid;
+else if (arr[mid] < target) low = mid + 1;
+else high = mid - 1;
+
+// Peak element (mountain)
+if (arr[mid] < arr[mid + 1]) low = mid + 1;   // ascending slope → peak is right
+else high = mid;                               // descending / at peak → go left
 ```
 
 | Problem | Platform | Difficulty |
@@ -351,21 +536,36 @@ else high = mid;                               // descending / peak side
 | [Find Peak Element](https://leetcode.com/problems/find-peak-element/) | LC #162 | 🟠 Medium |
 | [Find in Mountain Array](https://leetcode.com/problems/find-in-mountain-array/) | LC #1095 | 🔴 Hard |
 
+⚠️ **Common Mistakes:**
+- Using `low + high / 2` instead of `low + (high - low) / 2` — integer overflow for large inputs
+- Wrong loop condition: `low < high` vs `low <= high` depends on whether mid is a valid answer
+- For Single Element: missing the parity trick — pairs break after the missing element shifts indices
+
+🔥 **Interview Tips:**
+- Any time you need O(log n) on a sorted structure, say "binary search" immediately
+- For rotated sorted arrays, binary search still works — one half is always normally sorted
+- Find in Mountain Array (Hard): 3-phase binary search — find peak, then search each slope separately
+
 ---
 
 ### 🔟 Binary Search on Answer
 
-> **Approach:** When asked for the "minimum valid X" over a range, binary search on the answer space (not the array index). Write an `isValid(mid)` helper — if valid, search left for something smaller; if not, search right.
+> **Core Idea:** When asked for the "minimum valid X" over a range, binary search on the *answer space* rather than array indices. Write an `isValid(mid)` predicate — if valid, try smaller (`high = mid - 1`); if not, try larger (`low = mid + 1`).
 
-**Trigger:** "minimize the maximum", "minimum feasible value", "threshold condition"
+**Trigger keywords:** "minimize the maximum", "minimum feasible threshold", "at most K", "ship within D days"
 
 **Key logic:**
 ```java
-if (isValid(mid)) high = mid - 1;   // try smaller answer
-else              low  = mid + 1;   // need larger answer
+int low = minPossible, high = maxPossible;
+while (low <= high) {
+    int mid = low + (high - low) / 2;
+    if (isValid(mid)) high = mid - 1;  // valid → try smaller
+    else              low  = mid + 1;  // invalid → need larger
+}
+return low;  // smallest valid answer
 
-// Ceiling division trick
-int ceil = (a + b - 1) / b;
+// Ceiling division (used inside isValid):
+int chunks = (a + b - 1) / b;
 ```
 
 | Problem | Platform | Difficulty |
@@ -374,45 +574,123 @@ int ceil = (a + b - 1) / b;
 | [Capacity to Ship Packages Within D Days](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/) | LC #1011 | 🟠 Medium |
 | [Find the Smallest Divisor Given a Threshold](https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/) | LC #1283 | 🟠 Medium |
 
+⚠️ **Common Mistakes:**
+- Setting wrong search bounds: `low` should be the minimum possible answer, `high` the maximum
+- Wrong direction: if `isValid(mid)` is true, you want *smaller* → `high = mid - 1`
+- Integer division in `isValid` — always use ceiling: `(a + b - 1) / b`
+
+🔥 **Interview Tips:**
+- These three problems are nearly identical in structure — recognize the template and write `isValid` first
+- The search space is always `[1..max(array)]` or similar — state this clearly
+- Follow-up: "Why binary search and not linear scan?" → O(n log n) vs O(n × max)
+
 ---
 
 ### 1️⃣1️⃣ Heap
 
-> **Approach:** Use a min-heap or max-heap to efficiently access the Kth smallest or largest element. Building a heap is O(n); each extraction is O(log n) — better than sorting the full array at O(n log n).
+> **Core Idea:** Use a min-heap to maintain the K largest elements seen so far. After processing all elements, `heap.peek()` is the Kth largest. Building the heap is O(n); each operation is O(log K).
 
-**Trigger:** "Top K", "Kth smallest/largest", "K closest"
+**Trigger keywords:** "Top K", "Kth smallest / largest", "K closest", "streaming data"
 
 | Problem | Platform | Difficulty |
 |---------|----------|------------|
 | [Kth Smallest Element](https://www.geeksforgeeks.org/problems/kth-smallest-element5635/1) | GFG | 🟠 Medium |
+| [Median of an Array](https://www.geeksforgeeks.org/problems/find-the-median0527/1) | GFG | 🟢 Easy |
 
-**Key Template:**
+**Key Template — Kth Largest (min-heap of size K):**
 ```java
 PriorityQueue<Integer> minHeap = new PriorityQueue<>();
 for (int num : nums) {
     minHeap.offer(num);
-    if (minHeap.size() > k) minHeap.poll();
+    if (minHeap.size() > k) minHeap.poll(); // remove smallest
 }
-return minHeap.peek();
+return minHeap.peek(); // Kth largest
 ```
+
+**Key Template — Kth Smallest (max-heap of size K):**
+```java
+PriorityQueue<Integer> maxHeap = new PriorityQueue<>(Collections.reverseOrder());
+for (int num : nums) {
+    maxHeap.offer(num);
+    if (maxHeap.size() > k) maxHeap.poll(); // remove largest
+}
+return maxHeap.peek(); // Kth smallest
+```
+
+⚠️ **Common Mistakes:**
+- Using a max-heap for Kth largest (use min-heap instead — it evicts the smallest, keeping the K largest)
+- Sorting the full array at O(n log n) when a heap gives O(n log K) — faster when K << n
+- For median: forgetting the two-heap approach (max-heap for lower half + min-heap for upper half)
+
+🔥 **Interview Tips:**
+- State complexity: O(n log K) time, O(K) space — better than sort when K is small
+- Median of a stream: maintain max-heap (lower) and min-heap (upper); balance sizes after each insertion
+- Quick Select (O(n) average) is another alternative for Kth smallest on a static array
 
 ---
 
-### 1️⃣2️⃣ Partition (QuickSort Foundation)
+### 1️⃣2️⃣ Sliding Window
 
-> **Approach:** Pick a pivot (typically the first element). Traverse the rest of the array — elements smaller than the pivot go left, elements larger go right. Combine as `left + pivot + right`. This one-pass rearrangement is the core of QuickSort and the basis for QuickSelect (finding Kth element in O(n) average).
+> **Core Idea:** Maintain a window over the array, expanding the right edge and shrinking the left edge based on a condition. For fixed-size windows: move both edges together. For variable-size: expand right freely, contract left only when the window violates the constraint.
 
-**Trigger:** "rearrange around pivot", "smaller on left larger on right", "partition array"
+**Trigger keywords:** "contiguous subarray", "fixed window size", "maximum/minimum of subarray length K", "all characters in window"
 
-**Key logic:**
+**Fixed Window Template:**
 ```java
-// Lomuto partition scheme
+int windowSum = 0, maxSum = 0;
+for (int i = 0; i < nums.length; i++) {
+    windowSum += nums[i];
+    if (i >= k) windowSum -= nums[i - k];  // shrink left
+    if (i >= k - 1) maxSum = Math.max(maxSum, windowSum);
+}
+```
+
+**Variable Window Template:**
+```java
+int left = 0, result = 0;
+for (int right = 0; right < nums.length; right++) {
+    // expand window by including nums[right]
+    while (/* window violates condition */) {
+        // shrink window from left
+        left++;
+    }
+    result = Math.max(result, right - left + 1);
+}
+```
+
+| Problem | Platform | Difficulty |
+|---------|----------|------------|
+| [Subarray Division](https://www.hackerrank.com/challenges/the-birthday-bar/problem) | HackerRank | 🟢 Easy |
+
+⚠️ **Common Mistakes:**
+- Using nested loops to recompute subarray sums — always reuse the previous window's sum
+- Applying sliding window to arrays with negative numbers — only valid for non-negative values (use prefix sum instead)
+- For variable window: not moving `left` past `right` — window size can be 0
+
+🔥 **Interview Tips:**
+- Sliding Window is a foundation for: Longest Substring Without Repeating Characters, Max Sum Subarray of Size K, Minimum Window Substring
+- "Fixed length" in the problem → immediately think fixed sliding window
+- "At most K distinct" or "at least" → variable window
+
+---
+
+### 1️⃣3️⃣ Partition (QuickSort Foundation)
+
+> **Core Idea:** Pick a pivot, traverse the rest of the array, and rearrange so all elements smaller than the pivot go left and larger go right. This one-pass rearrangement is the foundation of QuickSort and QuickSelect (Kth element in O(n) average).
+
+**Trigger keywords:** "rearrange around pivot", "smaller on left, larger on right", "partition array"
+
+**Lomuto Partition Scheme:**
+```java
 int pivot = nums[high], i = low - 1;
 for (int j = low; j < high; j++) {
-    if (nums[j] <= pivot) swap(nums, ++i, j);
+    if (nums[j] <= pivot) {
+        i++;
+        swap(nums, i, j);
+    }
 }
 swap(nums, i + 1, high);
-return i + 1;   // pivot's final index
+return i + 1;   // pivot's final sorted index
 ```
 
 | Problem | Platform | Difficulty |
@@ -420,28 +698,31 @@ return i + 1;   // pivot's final index
 | [Quicksort 1 - Partition](https://www.hackerrank.com/challenges/quicksort1/problem) | HackerRank | 🟢 Easy |
 
 ⚠️ **Common Mistakes:**
-- Trying to write full recursive QuickSort when only partition is asked
-- Wrong pivot placement — equal elements must be handled
-- Missing elements when boundary conditions are off
+- Attempting full recursive QuickSort when only the partition step is requested
+- Placing equal elements incorrectly — they can go on either side with Lomuto, but be consistent
+- Off-by-one in boundary conditions leading to missed elements
 
-🔥 **Follow-up:** "Can you implement full QuickSort?" → recurse on left and right subarrays using in-place Hoare or Lomuto partition.
+🔥 **Interview Tips:**
+- Follow-up: "Implement full QuickSort" → recurse on `[low..pivotIdx-1]` and `[pivotIdx+1..high]`
+- QuickSelect uses this partition to find the Kth smallest in O(n) average without full sorting
+- Hoare partition is faster in practice but trickier to implement — know both exist
 
 ---
 
-### 1️⃣3️⃣ Math — LCM & GCD
+### 1️⃣4️⃣ Math — LCM & GCD
 
-> **Approach:** When all elements of array A must divide X, and X must divide all elements of array B, the valid X values are multiples of `LCM(A)` that also divide `GCD(B)`. So compute `LCM(A)` and `GCD(B)`, then count how many multiples of `LCM(A)` divide `GCD(B)`. Use the safe LCM formula `(a / gcd(a, b)) * b` to avoid overflow.
+> **Core Idea:** When all elements of array A must divide X, and X must divide all elements of array B, valid X values are multiples of `LCM(A)` that also divide `GCD(B)`. Count multiples of LCM(A) in the range [LCM(A), GCD(B)].
 
-**Trigger:** "all of A divides X", "X divides all of B", "numbers between two sets", "divisibility condition on two arrays"
+**Trigger keywords:** "all of A divides X", "X divides all of B", "numbers between two sets", "divisibility on two arrays"
 
 **Key insight:**
 ```
 Valid X must satisfy:
-  X % LCM(A) == 0        (X is divisible by all elements of A)
-  GCD(B) % X == 0        (X divides all elements of B)
+    X % LCM(A) == 0          ← X is divisible by every element in A
+    GCD(B) % X  == 0          ← X divides every element in B
 
 Safe LCM formula (avoids overflow):
-  lcm(a, b) = (a / gcd(a, b)) * b
+    lcm(a, b) = (a / gcd(a, b)) * b
 ```
 
 | Problem | Platform | Difficulty |
@@ -449,259 +730,160 @@ Safe LCM formula (avoids overflow):
 | [Between Two Sets](https://www.hackerrank.com/challenges/between-two-sets/problem) | HackerRank | 🟢 Easy |
 
 ⚠️ **Common Mistakes:**
-- Brute forcing every number from 1 to max instead of using LCM/GCD
-- Using `(a * b) / gcd(a, b)` for LCM — overflows for large inputs
-- Forgetting that valid X must lie between `LCM(A)` and `GCD(B)` in value
+- Brute forcing every number from 1 to max — correct but O(max × n), inefficient
+- Using `(a * b) / gcd(a, b)` for LCM — overflows for large inputs; divide first, then multiply
+- Missing that X must be ≥ LCM(A) and ≤ GCD(B)
 
 🔥 **Interview Gold:**
-> "If multiple numbers must divide one value → think LCM.
-> If one value must divide multiple numbers → think GCD."
+> "Multiple numbers must all divide X → think **LCM**."
+> "X must divide multiple numbers → think **GCD**."
 
 ---
 
-### 1️⃣4️⃣ Math & Sorting
+### 1️⃣5️⃣ Frequency Array
 
-> **Approach:** Use mathematical properties (sum formula, algebra) or sort + index tricks. Fast to implement and often the cleanest solution for well-defined numeric problems.
+> **Core Idea:** When values are from a small, known range, use an array indexed by value instead of a HashMap. Faster due to cache locality and simpler to implement.
+
+**Trigger keywords:** "most frequent element", "count occurrences", "values in fixed range [1..5]", "small distinct values"
+
+**Key Template:**
+```java
+int[] freq = new int[maxVal + 1];
+for (int x : arr) freq[x]++;
+
+// Find max frequency
+int maxFreq = 0, result = -1;
+for (int i = 1; i <= maxVal; i++) {
+    if (freq[i] > maxFreq) {    // strict > ensures smallest ID wins ties
+        maxFreq = freq[i];
+        result = i;
+    }
+}
+```
 
 | Problem | Platform | Difficulty |
 |---------|----------|------------|
+| [Migratory Birds](https://www.hackerrank.com/challenges/migratory-birds/problem) | HackerRank | 🟢 Easy |
+
+⚠️ **Common Mistakes:**
+- Using `>=` instead of `>` in the max-frequency check — causes largest ID to win ties instead of smallest
+- Using a HashMap unnecessarily when the range is small and fixed
+- Allocating the array with the wrong size (off by one — use `maxVal + 1`)
+
+🔥 **Interview Tips:**
+- Rule: if values are from a small fixed range → array is faster than HashMap
+- This principle extends to Counting Sort (O(n + k) vs O(n log n) for comparison sort)
+- If the range is unknown or large → use HashMap
+
+---
+
+### 1️⃣6️⃣ Miscellaneous Math Patterns
+
+> **Core Idea:** Several HackerRank-style problems test basic programming fundamentals: correct data types, careful arithmetic, output formatting, and edge-case handling. These aren't algorithmic puzzles but elimination filters — small mistakes cost candidates.
+
+---
+
+#### 💰 Bill Division (Exclude One Element)
+
+**Trigger:** "Exclude one item", "split cost", "divide bill fairly"
+
+```java
+// Pattern: total sum - excluded element, then compare
+int total = 0;
+for (int item : bill) total += item;
+int fairShare = (total - bill[k]) / 2;
+System.out.println(charged == fairShare ? "Bon Appetit" : charged - fairShare);
+```
+
+⚠️ **Mistakes:** Dividing total before removing the item. Wrong index handling.
+
+---
+
+#### 🔢 A Very Big Sum (Data Type Overflow)
+
+**Trigger:** "Very large numbers", "sum of big values", "n up to 10^10"
+
+```java
+long total = 0L;           // ALWAYS use long, never int
+for (long num : arr) total += num;
+```
+
+⚠️ **Mistake:** Using `int` → silent overflow gives wrong answer with no error.
+
+**Rule:** Check constraints. If values can exceed ~2 billion, use `long`.
+
+---
+
+#### ➕➖ Plus Minus (Ratio / Percentage)
+
+**Trigger:** "Count how many belong to each group", "return ratio", "proportion"
+
+```java
+int pos = 0, neg = 0, zer = 0;
+for (int x : arr) {
+    if (x > 0) pos++;
+    else if (x < 0) neg++;
+    else zer++;
+}
+System.out.printf("%.6f%n", (double) pos / arr.length);
+System.out.printf("%.6f%n", (double) neg / arr.length);
+System.out.printf("%.6f%n", (double) zer / arr.length);
+```
+
+⚠️ **Mistakes:** Integer division (`pos / n` instead of `(double) pos / n`). Missing zero count. Wrong decimal formatting.
+
+---
+
+| Problem | Platform | Difficulty |
+|---------|----------|------------|
+| [Bill Division](https://www.hackerrank.com/challenges/bon-appetit/problem) | HackerRank | 🟢 Easy |
+| [A Very Big Sum](https://www.hackerrank.com/challenges/a-very-big-sum/problem) | HackerRank | 🟢 Easy |
+| [Plus Minus](https://www.hackerrank.com/challenges/plus-minus/problem) | HackerRank | 🟢 Easy |
+| [Simple Array Sum](https://www.hackerrank.com/challenges/simple-array-sum/problem) | HackerRank | 🟢 Easy |
+| [Number Line Jumps](https://www.hackerrank.com/challenges/kangaroo/problem) | HackerRank | 🟢 Easy |
 | [Rotate Array](https://leetcode.com/problems/rotate-array/) | LC #189 | 🟠 Medium |
 | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) | LC #36 | 🟠 Medium |
-| [Median of an Array](https://www.geeksforgeeks.org/problems/find-the-median0527/1) | GFG | 🟢 Easy |
 | [Palindromic Array](https://www.geeksforgeeks.org/problems/palindromic-array-1587115620/1) | GFG | 🟢 Easy |
-| [Simple Array Sum](https://www.hackerrank.com/challenges/simple-array-sum/problem) | HackerRank | 🟢 Easy |
-| [Number Line Jumps](https://www.hackerrank.com/contests/mountblue-technologies/challenges/kangaroo) | HackerRank | 🟢 Easy |
-
----
-pattrn tip for bill division 
-
-🧠 Pattern Tip
-
-👉 When you see:
-
-“Exclude one element”
-“Split cost / average”
-
-💡 Trigger:
-
-Total sum – excluded element
-
-⚙️ Approach (Short)
-Compute total sum
-Subtract skipped item
-Divide by 2
-Compare with charged amount
-🎯 Key Insight
-
-👉 Only ONE item is excluded → don’t overthink
-
-⚠️ Common Mistakes
-❌ Dividing total before removing item
-❌ Wrong index handling
-❌ Printing instead of returning (platform specific)
-🚀 Interview Tip
-
-👉 This tests:
-
-Attention to detail
-Basic arithmetic logic
-
-👉 Easy problem — but mistakes = rejection
-
----
-pattern tip for a very big sum
-
-🧠 Pattern Tip
-
-👉 When you see:
-
-“Very big numbers”
-“Sum of large values”
-
-💡 Trigger:
-
-Use long (not int)
-
-⚙️ Approach (Short)
-Initialize long total = 0
-Iterate through array
-Add each element
-🎯 Key Insight
-
-👉 Data type matters more than logic here
-
-⚠️ Common Mistakes
-❌ Using int → overflow
-❌ Ignoring constraints
-❌ Using unnecessary data structures
-🚀 Interview Tip
-
-👉 This problem tests:
-
-Attention to constraints
-Correct data type selection
-
-👉 Easy problem, but:
-
-❗ Wrong data type = instant rejection
-
----
-pattern tip for plus minus 
-
-🧠 Pattern Tip
-
-👉 When you see:
-
-“Count how many belong to each group”
-“Return ratio / percentage”
-
-💡 Trigger:
-
-Single traversal + counters
-
-⚙️ Approach (README-ready)
-Traverse the array once
-Count:
-positives
-negatives
-zeros
-Divide each count by total size
-Print with 6 decimal places
-🎯 Key Insight
-
-👉 Don’t store extra arrays
-👉 Just count directly
-
-⚠️ Common Mistakes
-❌ Integer division mistake:
-positive / n
-
-This gives wrong result if both are int
-
-✔ Correct:
-
-(double) positive / n
-❌ Wrong formatting (not printing 6 decimals)
-❌ Forgetting zero count
-🚀 Interview Tip
-
-This problem is simple, but it checks:
-
-loop control
-condition handling
-type casting
-output formatting
-
-👉 Easy problems still eliminate candidates if they get careless.
 
 ---
 
-pattern tip for subarray division
+## 🏢 Company Pattern Mapping
 
-🧠 Pattern Tip
-
-👉 When you see:
-
-“Contiguous subarray”
-“Fixed length”
-“Find sum/count”
-
-💡 Trigger:
-
-Fixed-size Sliding Window
-
-⚙️ Approach (README-ready)
-Maintain a window of size m
-Keep track of its sum
-When window size exceeds m, remove left element
-If sum equals d, increment answer
-🎯 Key Insight
-
-👉 Don’t recompute subarray sum every time
-👉 Reuse previous window sum efficiently
-
-⚠️ Common Mistakes
-❌ Using nested loops to calculate every subarray sum
-❌ Forgetting window size check
-❌ Not removing left element when window grows
-🚀 Interview Tip
-
-This is a foundation problem for:
-
-Maximum sum subarray of size K
-First negative in every window
-Anagram / permutation window problems
-
-👉 If you recognize “fixed length”, you should immediately think:
-
-Sliding Window
-
----
-pattern tip for migratory birds
-
-🧠 Pattern Tip
-
-👉 When you see:
-
-“Most frequent element”
-“Count occurrences”
-“Small fixed range of values”
-
-💡 Trigger:
-
-Frequency Array
-
-⚙️ Approach (README-ready)
-Create frequency array
-Count each bird type
-Find the type with highest count
-If tie occurs, smaller ID wins automatically
-🎯 Key Insight
-
-👉 Since bird IDs are limited (1 to 5),
-you don’t need a HashMap.
-
-👉 Array is faster and cleaner.
-
-⚠️ Common Mistakes
-❌ Using nested loops to count frequency
-❌ Using HashMap unnecessarily for small fixed range
-❌ Mishandling tie condition
-🚀 Interview Tip
-
-This teaches an important rule:
-
-If values are from a small known range
-use an array instead of HashMap
-
-That is a powerful optimization trick.
-
----
-
-## 🏢 Company Mapping
-
-| Company | Focus Patterns |
-|---------|----------------|
-| Amazon | HashMap, Sliding Window, Greedy |
-| Google | Prefix Sum, Binary Search, Two Pointers |
-| Microsoft | Arrays, Greedy, Intervals |
-| Meta | Two Pointers, Cyclic Sort |
-| Adobe | Sorting, Math |
+| Company | Primary Patterns | High-Frequency Topics |
+|---------|-----------------|----------------------|
+| **Amazon** | HashMap, Sliding Window, Greedy | Two Sum, Stock problems, Max Subarray |
+| **Google** | Prefix Sum, Binary Search, Two Pointers | Subarray Sum, Mountain Array, 3Sum |
+| **Microsoft** | Arrays, Greedy, Intervals | Merge Intervals, Non-Decreasing Array |
+| **Meta** | Two Pointers, Cyclic Sort | Remove Duplicates, Missing Number |
+| **Adobe** | Sorting, Math, Heap | Kth Smallest, Median, Rotate Array |
+| **Flipkart** | Greedy, Binary Search | Kadane's, Product Except Self |
 
 ---
 
 ## 🔁 Revision Strategy
 
-| Mode | How to Use |
-|------|------------|
-| 📖 Learn | Solve problems + study the pattern approach |
-| 🔁 Revise | Re-read pattern sections + formulas only |
-| ⚡ Interview | Identify pattern from cheat sheet in under 30 sec |
+| Mode | When to Use | How |
+|------|-------------|-----|
+| 📖 **Learn** | First time seeing a pattern | Solve problems + study approach, templates, mistakes |
+| 🔁 **Revise** | Day before interview | Re-read Pattern Recognition Cheat Sheet + key templates only |
+| ⚡ **Interview** | During the interview | Identify pattern from table in ≤30 sec, then code the template |
 
-**Daily target:** 3 problems/day — focus on one pattern group at a time
+**Daily target:** 3 problems/day — one pattern group at a time. Don't jump between patterns.
+
+**Weekly review:** Re-attempt problems you found hard, without looking at notes. Timed: 20 minutes per problem.
 
 ---
 
-> ⚡ **"If you identify the pattern in 30 seconds, you can solve it in 5 minutes."**
+## 📊 Pattern Difficulty Distribution
+
+```
+Easy   ████████████░░░░  ~45%  (build speed + confidence)
+Medium ██████████████░░  ~48%  (core interview problems)
+Hard   ██░░░░░░░░░░░░░░   ~7%  (differentiation problems)
+```
+
+---
+
+> 🚀 **Arrays = Pattern Recognition. The same ~15 patterns repeat across 300+ problems.**
 >
-> 🚀 Arrays = Pattern Recognition. Same patterns repeat. Speed = Pattern + Practice.
+> ⚡ **Speed = Pattern Recognition + Practice. If you spot the pattern in 30 seconds, you can code it in 5 minutes.**
