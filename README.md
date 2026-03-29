@@ -5,9 +5,9 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Problems%20Solved-47%2F300-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Problems%20Solved-66%2F300-blue?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Language-Java-orange?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Streak-10%20Days-red?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Streak-Active-red?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Goal-Software%20Engineer-green?style=for-the-badge" />
 </p>
 
@@ -19,43 +19,45 @@ This repo documents my **consistent DSA journey in Java** — structured around 
 
 Every solution is:
 - Written in clean, readable **Java**
-- Commented with **approach + complexity**
-- Grouped by **pattern** for fast revision
+- Commented with **approach + time/space complexity**
+- Grouped by **pattern** for fast interview revision
+
+> 💡 **Core philosophy:** Don't grind problems blindly. Recognize the pattern in 30 seconds, solve in 5 minutes.
 
 ---
 
 ## 📂 Repository Structure
 
-| Folder | Status | Problems |
-|--------|--------|----------|
-| [📁 Arrays](./arrays/) | 🟢 Active | 45 solved |
-| [📁 Strings](./strings/) | 🟢 Active | 1 solved |
-| [📁 HashMap](./hashmap/) | ⚪ Upcoming | — |
-| [📁 Stack](./stack/) | ⚪ Upcoming | — |
-| [📁 Queue](./queue/) | ⚪ Upcoming | — |
-| [📁 LinkedList](./linkedlist/) | ⚪ Upcoming | — |
-| [📁 Trees](./trees/) | ⚪ Upcoming | — |
-| [📁 Graphs](./graphs/) | ⚪ Upcoming | — |
-| [📁 Dynamic Programming](./dp/) | ⚪ Upcoming | — |
+| Folder | Status | Problems Solved | Patterns Covered |
+|--------|--------|-----------------|-----------------|
+| [📁 Arrays](./arrays/) | 🟢 Active | 48 | HashMap, Two Pointers, Greedy, Prefix Sum, Kadane's, Cyclic Sort, Floyd Cycle, Intervals, Binary Search, Binary Search on Answer, Heap, Partition, LCM+GCD |
+| [📁 Strings](./strings/) | 🟢 Active | 18 | Two Pointers, Traverse from End, Sliding Window, Fixed Window, HashMap Grouping, String Matching, Expand Around Center, Simulation, Stack, DP |
+| [📁 HashMap](./hashmap/) | ⚪ Upcoming | — | — |
+| [📁 Stack](./stack/) | ⚪ Upcoming | — | — |
+| [📁 Queue](./queue/) | ⚪ Upcoming | — | — |
+| [📁 LinkedList](./linkedlist/) | ⚪ Upcoming | — | — |
+| [📁 Trees](./trees/) | ⚪ Upcoming | — | — |
+| [📁 Graphs](./graphs/) | ⚪ Upcoming | — | — |
+| [📁 Dynamic Programming](./dp/) | ⚪ Upcoming | — | — |
 
-> 📌 Each folder has its own **README with pattern-grouped problems, approach explanations, and key formulas.**
+> 📌 Each folder has its own **README with pattern-grouped problems, approach explanations, key templates, and common mistakes.**
 
 ---
 
 ## 📊 Overall Progress
 
 ```
-Arrays           ████████████████████  45/45  🟢
-Strings          ████████████████████   1/1   🟢
-HashMap          ░░░░░░░░░░░░░░░░░░░░   0/--  ⚪
-Stack            ░░░░░░░░░░░░░░░░░░░░   0/--  ⚪
-Queue            ░░░░░░░░░░░░░░░░░░░░   0/--  ⚪
-LinkedList       ░░░░░░░░░░░░░░░░░░░░   0/--  ⚪
-Trees            ░░░░░░░░░░░░░░░░░░░░   0/--  ⚪
-Graphs           ░░░░░░░░░░░░░░░░░░░░   0/--  ⚪
-DP               ░░░░░░░░░░░░░░░░░░░░   0/--  ⚪
+Arrays           ████████████████░░░░  48/300  🟢 Active
+Strings          ████████████░░░░░░░░  18/30+  🟢 Active
+HashMap          ░░░░░░░░░░░░░░░░░░░░   0/--   ⚪ Upcoming
+Stack            ░░░░░░░░░░░░░░░░░░░░   0/--   ⚪ Upcoming
+Queue            ░░░░░░░░░░░░░░░░░░░░   0/--   ⚪ Upcoming
+LinkedList       ░░░░░░░░░░░░░░░░░░░░   0/--   ⚪ Upcoming
+Trees            ░░░░░░░░░░░░░░░░░░░░   0/--   ⚪ Upcoming
+Graphs           ░░░░░░░░░░░░░░░░░░░░   0/--   ⚪ Upcoming
+DP               ░░░░░░░░░░░░░░░░░░░░   0/--   ⚪ Upcoming
 
-Total: 47 / 300+ problems  ████░░░░░░░░░░░░░░░░  15.6%
+Total: 66 / 300+ problems  ████░░░░░░░░░░░░░░░░  22%
 ```
 
 ---
@@ -63,9 +65,9 @@ Total: 47 / 300+ problems  ████░░░░░░░░░░░░░�
 ## 🧠 DSA Patterns Covered
 
 | Pattern | Covered In | Status |
-|---------|-----------|--------|
-| HashMap & HashSet | Arrays | ✅ |
-| Two Pointers | Arrays | ✅ |
+|---------|------------|--------|
+| HashMap & HashSet | Arrays, Strings | ✅ |
+| Two Pointers | Arrays, Strings | ✅ |
 | Greedy | Arrays | ✅ |
 | Prefix Sum | Arrays | ✅ |
 | Kadane's Algorithm | Arrays | ✅ |
@@ -75,57 +77,108 @@ Total: 47 / 300+ problems  ████░░░░░░░░░░░░░�
 | Binary Search | Arrays | ✅ |
 | Binary Search on Answer | Arrays | ✅ |
 | Heap / Top K | Arrays | ✅ |
-| Sliding Window | — | 🔜 |
+| Partition (QuickSort) | Arrays | ✅ |
+| LCM & GCD | Arrays | ✅ |
+| Sliding Window | Strings | ✅ |
+| Fixed-Size Sliding Window | Strings | ✅ |
+| Expand Around Center | Strings | ✅ |
+| Simulation / Parsing | Strings | ✅ |
+| Stack (bracket matching, chain removal) | Strings | ✅ |
+| DP on Strings | Strings | ✅ |
 | Recursion & Backtracking | — | 🔜 |
-| Dynamic Programming | — | 🔜 |
+| Linked List (Fast/Slow Pointers) | — | 🔜 |
+| BFS / DFS on Trees | — | 🔜 |
 | Graph Algorithms | — | 🔜 |
+| Advanced DP (2D, Knapsack) | — | 🔜 |
 
 ---
 
 ## 🗺️ Roadmap
 
 ```
-✅ Phase 1 — Arrays (Done)
-   └── HashMap, Two Pointers, Greedy, Prefix Sum,
-       Kadane, Cyclic Sort, Binary Search, Intervals, Heap
+✅ Phase 1 — Arrays
+   └── HashMap · Two Pointers · Greedy · Prefix Sum · Kadane's
+       Cyclic Sort · Floyd Cycle · Binary Search · Intervals · Heap
+       Partition · LCM+GCD · Frequency Array · Sliding Window basics
 
-⬜ Phase 2 — Strings + Sliding Window
+✅ Phase 2 — Strings
+   └── Two Pointers · Traverse from End · Sliding Window · Fixed Window
+       HashMap Grouping · String Matching · Expand Around Center
+       Simulation/Parsing · Stack · DP on Strings
+
 ⬜ Phase 3 — LinkedList + Stack + Queue
+   └── Fast/Slow Pointers · Reverse · Merge · Monotonic Stack · Deque
+
 ⬜ Phase 4 — Trees + Recursion
+   └── DFS · BFS · Level Order · Path Sum · LCA · BST operations
+
 ⬜ Phase 5 — Graphs + BFS/DFS
+   └── Topological Sort · Union-Find · Dijkstra · Cycle Detection
+
 ⬜ Phase 6 — Dynamic Programming
+   └── 1D DP · 2D DP · Knapsack · LCS · Edit Distance · Palindrome DP
 ```
 
 ---
 
-## ⚡ Pattern Recognition Cheat Sheet
+## ⚡ Master Pattern Recognition Cheat Sheet
 
-| If you see… | Pattern |
-|-------------|---------|
+> 🔑 **In an interview, identify the pattern first — then code.**
+
+### Arrays & General
+
+| Trigger (What You See) | Pattern |
+|------------------------|---------|
 | Pair / target sum | HashMap |
-| Sorted array + pair/triplet | Two Pointers |
-| Maximum subarray | Kadane's |
+| Frequency count, fast lookup | HashMap |
+| Sorted array + pair or triplet | Two Pointers |
+| Two sorted arrays, closest sum | Two Pointers (opposite ends) |
+| Maximize profit, track running min/max | Greedy |
+| Maximum contiguous subarray | Kadane's Algorithm |
 | Subarray sum = k | Prefix Sum + HashMap |
-| Numbers in range [1..n] | Cyclic Sort |
-| Duplicate, no extra space | Floyd's Cycle |
+| Zero-sum subarray | Prefix Sum + HashMap |
+| Missing / duplicate in [1..n] | Cyclic Sort |
+| Find duplicate, no extra space, no modify | Floyd's Cycle Detection |
 | Overlapping ranges | Interval Merge |
-| Sorted, find element / peak | Binary Search |
-| Minimize the maximum value | Binary Search on Answer |
-| Track min/max while iterating | Greedy |
-| Top K elements | Heap |
-| Contiguous subarray, window size | Sliding Window |
+| Sorted array, find element or peak | Binary Search |
+| Minimize the maximum / threshold | Binary Search on Answer |
+| Top K / Kth smallest / largest | Heap |
+| Rearrange around pivot | Partition (QuickSort) |
+| All of A divides X, X divides all of B | LCM + GCD |
+| Count in small fixed range | Frequency Array |
+| Contiguous subarray, fixed window size | Sliding Window |
+
+### Strings
+
+| Trigger (What You See) | Pattern |
+|------------------------|---------|
+| Reverse string in-place | Two Pointers (swap from ends) |
+| Check palindrome, ignore special chars | Two Pointers + skip invalid |
+| Last word / reverse words / trailing spaces | Traverse from End |
+| Longest substring, no repeating chars | Sliding Window (variable) |
+| Smallest window with all chars of t | Sliding Window + Frequency Map |
+| Permutation of pattern / all anagrams | Fixed-Size Window + `int[26]` |
+| Concatenation of equal-length words | Fixed-Size Window (chunked) |
+| Group strings by same characters | HashMap Grouping (signature key) |
+| Find first occurrence of pattern | String Matching (`i <= n - m`) |
+| Longest palindromic substring | Expand Around Center |
+| String to integer / validate format | Simulation / Parsing |
+| Matching brackets / balanced pairs | Stack |
+| Remove adjacent duplicates, chain reactions | Stack (push-pop) |
+| Pattern with `*` or `.` wildcards | DP on Strings |
 
 ---
 
 ## 🏢 Company Pattern Mapping
 
-| Company | Key Patterns to Focus |
-|---------|-----------------------|
-| Amazon | HashMap, Greedy, Sliding Window |
-| Google | Prefix Sum, Binary Search, Heap |
-| Microsoft | Arrays, Two Pointers, Greedy |
-| Meta | Two Pointers, HashMap, Graphs |
-| Adobe | Sorting, Intervals, Strings |
+| Company | Primary Patterns | Must-Know Problems |
+|---------|-----------------|-------------------|
+| **Amazon** | HashMap, Greedy, Sliding Window | Two Sum, Best Time to Buy Stock, Longest Substring |
+| **Google** | Prefix Sum, Binary Search, DP | Subarray Sum = K, Min Window Substring, Regex Matching |
+| **Microsoft** | Arrays, Two Pointers, Intervals | Merge Intervals, Valid Palindrome, 3Sum |
+| **Meta** | Two Pointers, HashMap, Graphs | Remove Duplicates, Group Anagrams, Find All Anagrams |
+| **Adobe** | Sorting, Strings, Simulation | Valid Number, Longest Palindrome, atoi |
+| **Flipkart** | Greedy, Binary Search, Kadane's | Product Except Self, Koko Bananas, Max Subarray |
 
 ---
 
@@ -134,6 +187,20 @@ Total: 47 / 300+ problems  ████░░░░░░░░░░░░░�
 <p align="center">
   <img src="https://leetcard.jacoblin.cool/abhishekar004?theme=dark&font=Nunito" />
 </p>
+
+---
+
+## 🔁 How to Use This Repo
+
+| Mode | What to Do |
+|------|------------|
+| 📖 **Learn** | Open the topic folder → read the pattern README → solve problems group by group |
+| 🔁 **Revise** | Read only the cheat sheet above + key templates in each folder README |
+| ⚡ **Interview Prep** | Cheat sheet only — identify pattern in ≤ 30 seconds, then code from template |
+
+**Daily target:** 3 problems/day — one pattern group at a time. Don't jump between topics.
+
+**Weekly review:** Re-attempt hard problems without notes. Timed: 20 minutes each.
 
 ---
 
