@@ -84,13 +84,15 @@ arrays/
 │  └── SubarrayDivision.java
 ├── Matrix Traversal/
 │   └── DiagonalDifference.java
+├── Array Traversal/
+│   └── BirthdayCakeCandles.java
 ```
 
 ---
 
 ## 🎯 Progress Tracker
 
-**Problems Solved: 49 / 300**
+**Problems Solved: 45 / 300**
 
 ```
 ████░░░░░░░░░░░░░░░░  16%  [48 / 300]
@@ -877,6 +879,50 @@ diagonals
 borders
 matrix patterns
 spiral traversal
+
+---
+
+pattern tip for birthday cake candles
+
+🧠 Pattern Tip
+
+👉 When you see:
+
+“Largest / maximum element”
+“Count how many times max appears”
+
+💡 Trigger:
+
+Track max + count together
+
+⚙️ Approach (README-ready)
+Traverse the array once
+Maintain:
+current maximum height
+count of max height
+If new max found → reset count
+If same max found → increment count
+🎯 Key Insight
+
+👉 You don’t need to count all values
+👉 Only care about the maximum
+
+⚠️ Common Mistakes
+❌ Using HashMap unnecessarily
+❌ Sorting the array (extra work)
+❌ Forgetting to reset count when new max appears
+🚀 Interview Tip
+
+This teaches a very important interview rule:
+
+If problem asks only about max/min and count,
+don’t store everything.
+
+That mindset saves both:
+
+space
+complexity
+code clutter
 
 ---
 
