@@ -81,14 +81,16 @@ arrays/
 │   ├── MigratoryBirds.java
 │   └── FindPeakElement.java
 └── Misc/
-    └── SubarrayDivision.java
+│  └── SubarrayDivision.java
+├── Matrix Traversal/
+│   └── DiagonalDifference.java
 ```
 
 ---
 
 ## 🎯 Progress Tracker
 
-**Problems Solved: 48 / 300**
+**Problems Solved: 49 / 300**
 
 ```
 ████░░░░░░░░░░░░░░░░  16%  [48 / 300]
@@ -831,6 +833,50 @@ System.out.printf("%.6f%n", (double) zer / arr.length);
 ```
 
 ⚠️ **Mistakes:** Integer division (`pos / n` instead of `(double) pos / n`). Missing zero count. Wrong decimal formatting.
+
+---
+
+pattern tip for diagonal difference 
+
+🧠 Pattern Tip
+
+👉 When you see:
+
+“Square matrix”
+“Main diagonal / secondary diagonal”
+
+💡 Trigger:
+
+Index-based matrix traversal
+
+⚙️ Approach (README-ready)
+Traverse each row once
+Add:
+primary diagonal → arr[i][i]
+secondary diagonal → arr[i][n - 1 - i]
+Return absolute difference
+🎯 Key Insight
+
+👉 You don’t need to scan the full matrix
+👉 Diagonal indices are directly computable
+
+⚠️ Common Mistakes
+❌ Looping over every matrix cell
+❌ Wrong secondary diagonal index
+❌ Forgetting absolute difference
+🚀 Interview Tip
+
+This teaches an important matrix rule:
+
+If positions follow a formula,
+don’t traverse everything — compute directly.
+
+That mindset helps in:
+
+diagonals
+borders
+matrix patterns
+spiral traversal
 
 ---
 
