@@ -80,6 +80,7 @@ arrays/
 │   ├── BillDivision.java
 │   ├── MigratoryBirds.java
 │   └── FindPeakElement.java
+│   └── GradingStudents.java
 └── Misc/
 │  └── SubarrayDivision.java
 ├── Matrix Traversal/
@@ -92,7 +93,7 @@ arrays/
 
 ## 🎯 Progress Tracker
 
-**Problems Solved: 45 / 300**
+**Problems Solved: 46 / 300**
 
 ```
 ████░░░░░░░░░░░░░░░░  16%  [48 / 300]
@@ -923,6 +924,54 @@ That mindset saves both:
 space
 complexity
 code clutter
+
+---
+pattern tip for grading students
+
+🧠 Pattern Tip
+
+👉 When you see:
+
+“Round to nearest multiple”
+“Special condition based rounding”
+
+💡 Trigger:
+
+Math formula + conditional check
+
+⚙️ Approach (README-ready)
+If grade is below 38 → leave it unchanged
+Otherwise:
+find next multiple of 5
+if difference is less than 3 → round up
+else keep original grade
+🎯 Key Insight
+
+👉 Don’t manually check +1, +2
+
+Instead:
+
+directly compute the next multiple of 5
+
+That’s cleaner and scalable.
+
+⚠️ Common Mistakes
+❌ Rounding grades below 38
+❌ Manual hardcoding (+1, +2)
+❌ Wrong multiple-of-5 calculation
+🚀 Interview Tip
+
+This problem teaches a good habit:
+
+If logic involves “next multiple / next valid number”
+use a formula, not trial-and-error checks.
+
+That makes code:
+
+cleaner
+shorter
+easier to explain
+
 
 ---
 
