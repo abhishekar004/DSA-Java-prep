@@ -82,6 +82,7 @@ arrays/
 │   └── FindPeakElement.java
 │   └── GradingStudents.java
 │   └── DrawingBook.java
+│   └── DivisionSumPairs.java
 └── Misc/
 │  └── SubarrayDivision.java
 ├── Matrix Traversal/
@@ -94,7 +95,7 @@ arrays/
 
 ## 🎯 Progress Tracker
 
-**Problems Solved: 47 / 300**
+**Problems Solved: 48 / 300**
 
 ```
 ████░░░░░░░░░░░░░░░░  16%  [48 / 300]
@@ -1019,6 +1020,54 @@ And that’s a huge interview win.
 
 
 ---
+pattern tip for division sum pairs
+
+🧠 Pattern Tip
+
+👉 When you see:
+
+“Count pairs”
+“Condition based on divisibility”
+“Sum divisible by k”
+
+💡 Trigger:
+
+Remainders / Modular Arithmetic
+
+⚙️ Approach (README-ready)
+Track frequency of remainders modulo k
+For each number:
+compute remainder rem
+find required partner remainder:
+(k - rem) % k
+Add previously seen count of that remainder
+Update current remainder frequency
+🎯 Key Insight
+
+👉 Instead of checking all pairs directly,
+check only whether their remainders complement each other.
+
+That’s the entire trick.
+
+⚠️ Common Mistakes
+❌ Using nested loops (O(n²))
+❌ Forgetting % k remainder logic
+❌ Mishandling remainder 0 case
+🚀 Interview Tip
+
+This problem teaches a powerful interview shortcut:
+
+If divisibility is involved,
+think in terms of remainders, not raw values.
+
+This idea appears in:
+
+pair sum divisible by k
+subarray sum divisible by k
+modulo hashing problems
+
+---
+
 | Problem | Platform | Difficulty |
 |---------|----------|------------|
 | [Bill Division](https://www.hackerrank.com/challenges/bon-appetit/problem) | HackerRank | 🟢 Easy |
