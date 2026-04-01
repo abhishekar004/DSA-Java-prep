@@ -81,6 +81,7 @@ arrays/
 │   ├── MigratoryBirds.java
 │   └── FindPeakElement.java
 │   └── GradingStudents.java
+│   └── DrawingBook.java
 └── Misc/
 │  └── SubarrayDivision.java
 ├── Matrix Traversal/
@@ -93,7 +94,7 @@ arrays/
 
 ## 🎯 Progress Tracker
 
-**Problems Solved: 46 / 300**
+**Problems Solved: 47 / 300**
 
 ```
 ████░░░░░░░░░░░░░░░░  16%  [48 / 300]
@@ -974,7 +975,50 @@ easier to explain
 
 
 ---
+pattern tip for drawing book 
 
+🧠 Pattern Tip
+
+👉 When you see:
+
+“Minimum moves/turns”
+“Can start from both ends”
+
+💡 Trigger:
+
+Compute both directions mathematically
+
+⚙️ Approach (README-ready)
+Compute page turns from front:
+p / 2
+Compute page turns from back:
+(n / 2) - (p / 2)
+Return the smaller one
+🎯 Key Insight
+
+👉 Every page turn flips 2 pages, not 1
+
+That’s the whole trick.
+
+⚠️ Common Mistakes
+❌ Simulating turns one by one
+❌ Forgetting each turn covers 2 pages
+❌ Wrong back-turn formula
+🚀 Interview Tip
+
+This problem teaches an important habit:
+
+Before coding simulation,
+ask: Can I derive a formula?
+
+That often reduces:
+
+O(n) → O(1)
+
+And that’s a huge interview win.
+
+
+---
 | Problem | Platform | Difficulty |
 |---------|----------|------------|
 | [Bill Division](https://www.hackerrank.com/challenges/bon-appetit/problem) | HackerRank | 🟢 Easy |
