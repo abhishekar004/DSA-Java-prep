@@ -5,9 +5,9 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Problems%20Solved-66%2F300-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Problems%20Solved-75%2F300-blue?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Language-Java-orange?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Streak-Active-red?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Patterns%20Mastered-24-purple?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Goal-Software%20Engineer-green?style=for-the-badge" />
 </p>
 
@@ -30,8 +30,8 @@ Every solution is:
 
 | Folder | Status | Problems Solved | Patterns Covered |
 |--------|--------|-----------------|-----------------|
-| [📁 Arrays](./arrays/) | 🟢 Active | 48 | HashMap, Two Pointers, Greedy, Prefix Sum, Kadane's, Cyclic Sort, Floyd Cycle, Intervals, Binary Search, Binary Search on Answer, Heap, Partition, LCM+GCD |
-| [📁 Strings](./strings/) | 🟢 Active | 18 | Two Pointers, Traverse from End, Sliding Window, Fixed Window, HashMap Grouping, String Matching, Expand Around Center, Simulation, Stack, DP |
+| [📁 Arrays](./arrays/) | 🟢 Active | 57 | HashMap, Two Pointers, Greedy, Prefix Sum, Kadane's, Cyclic Sort, Floyd Cycle, Intervals, Binary Search, Binary Search on Answer, Heap, Sliding Window, Partition, LCM+GCD, Frequency Array, Matrix Traversal, Array Traversal, Modular Arithmetic, Conditional Math |
+| [📁 Strings](./strings/) | 🟢 Active | 18 | Two Pointers, Traverse from End, Sliding Window, Fixed Window, HashMap Grouping, String Matching, Expand Around Center, Simulation, Stack, DP on Strings |
 | [📁 HashMap](./hashmap/) | ⚪ Upcoming | — | — |
 | [📁 Stack](./stack/) | ⚪ Upcoming | — | — |
 | [📁 Queue](./queue/) | ⚪ Upcoming | — | — |
@@ -47,7 +47,7 @@ Every solution is:
 ## 📊 Overall Progress
 
 ```
-Arrays           ████████████████░░░░  48/300  🟢 Active
+Arrays           ████████████████████  57/--   🟢 Active
 Strings          ████████████░░░░░░░░  18/30+  🟢 Active
 HashMap          ░░░░░░░░░░░░░░░░░░░░   0/--   ⚪ Upcoming
 Stack            ░░░░░░░░░░░░░░░░░░░░   0/--   ⚪ Upcoming
@@ -57,7 +57,7 @@ Trees            ░░░░░░░░░░░░░░░░░░░░   
 Graphs           ░░░░░░░░░░░░░░░░░░░░   0/--   ⚪ Upcoming
 DP               ░░░░░░░░░░░░░░░░░░░░   0/--   ⚪ Upcoming
 
-Total: 66 / 300+ problems  ████░░░░░░░░░░░░░░░░  22%
+Total: 75 / 300+ problems  █████░░░░░░░░░░░░░░░  25%
 ```
 
 ---
@@ -77,9 +77,14 @@ Total: 66 / 300+ problems  ████░░░░░░░░░░░░░�
 | Binary Search | Arrays | ✅ |
 | Binary Search on Answer | Arrays | ✅ |
 | Heap / Top K | Arrays | ✅ |
+| Sliding Window | Arrays, Strings | ✅ |
 | Partition (QuickSort) | Arrays | ✅ |
 | LCM & GCD | Arrays | ✅ |
-| Sliding Window | Strings | ✅ |
+| Frequency Array | Arrays | ✅ |
+| Matrix Traversal | Arrays | ✅ |
+| Array Traversal — Max + Count | Arrays | ✅ |
+| Modular Arithmetic | Arrays | ✅ |
+| Conditional Math / Formula Derivation | Arrays | ✅ |
 | Fixed-Size Sliding Window | Strings | ✅ |
 | Expand Around Center | Strings | ✅ |
 | Simulation / Parsing | Strings | ✅ |
@@ -99,7 +104,8 @@ Total: 66 / 300+ problems  ████░░░░░░░░░░░░░�
 ✅ Phase 1 — Arrays
    └── HashMap · Two Pointers · Greedy · Prefix Sum · Kadane's
        Cyclic Sort · Floyd Cycle · Binary Search · Intervals · Heap
-       Partition · LCM+GCD · Frequency Array · Sliding Window basics
+       Sliding Window · Partition · LCM+GCD · Frequency Array
+       Matrix Traversal · Array Traversal · Modular Arithmetic · Conditional Math
 
 ✅ Phase 2 — Strings
    └── Two Pointers · Traverse from End · Sliding Window · Fixed Window
@@ -143,10 +149,16 @@ Total: 66 / 300+ problems  ████░░░░░░░░░░░░░�
 | Sorted array, find element or peak | Binary Search |
 | Minimize the maximum / threshold | Binary Search on Answer |
 | Top K / Kth smallest / largest | Heap |
+| Contiguous subarray, fixed window size | Sliding Window |
 | Rearrange around pivot | Partition (QuickSort) |
 | All of A divides X, X divides all of B | LCM + GCD |
-| Count in small fixed range | Frequency Array |
-| Contiguous subarray, fixed window size | Sliding Window |
+| Count occurrences in small fixed range | Frequency Array |
+| Square matrix, main + secondary diagonal | Matrix Traversal (index formula) |
+| Largest element + count of occurrences | Array Traversal — Max + Count |
+| Sum of all except one, min/max contribution | Total Sum ± min/max |
+| Count pairs with sum divisible by k | Modular Arithmetic (remainders) |
+| Round to nearest multiple, conditional rounding | Conditional Math (formula) |
+| Minimum turns, can start from either end | Compute both directions, take min |
 
 ### Strings
 
