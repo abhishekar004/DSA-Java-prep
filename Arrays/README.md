@@ -89,13 +89,14 @@ arrays/
 │   └── DiagonalDifference.java
 ├── Array Traversal/
 │   └── BirthdayCakeCandles.java
+│   └── MiniMaxSum.java
 ```
 
 ---
 
 ## 🎯 Progress Tracker
 
-**Problems Solved: 48 / 300**
+**Problems Solved: 49 / 300**
 
 ```
 ████░░░░░░░░░░░░░░░░  16%  [48 / 300]
@@ -1065,6 +1066,51 @@ This idea appears in:
 pair sum divisible by k
 subarray sum divisible by k
 modulo hashing problems
+
+---
+pattern tip for mini max sum 
+
+🧠 Pattern Tip
+
+👉 When you see:
+
+“Find min/max possible sum”
+“Exclude one element”
+“Pick all except one”
+
+💡 Trigger:
+
+Total sum ± min/max tracking
+
+⚙️ Approach (README-ready)
+Compute total sum of array
+Find minimum and maximum element
+Minimum possible sum = total − maximum element
+Maximum possible sum = total − minimum element
+🎯 Key Insight
+
+👉 Instead of summing 4 elements repeatedly,
+sum all 5 once, then subtract one element.
+
+That’s the whole trick.
+
+⚠️ Common Mistakes
+❌ Sorting unnecessarily
+❌ Using int for total sum (overflow risk)
+❌ Recomputing sums multiple times
+🚀 Interview Tip
+
+This problem teaches a powerful shortcut:
+
+If you need “sum of all except one element”,
+compute total once and subtract.
+
+That pattern appears in:
+
+prefix/suffix problems
+array optimization problems
+max/min contribution questions
+
 
 ---
 
