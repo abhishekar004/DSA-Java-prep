@@ -126,3 +126,49 @@ always try to solve without extra space.
 That shows strong optimization thinking.
 
 ---
+pattern tip for linked list cycle
+
+🧠 Pattern Tip
+
+👉 When you see:
+
+“Cycle in linked list”
+“Loop detection”
+“Repeated traversal”
+
+💡 Trigger:
+
+Fast & Slow Pointers
+
+⚙️ Approach (README-ready)
+Initialize two pointers:
+slow = head
+fast = head
+Move:
+slow by 1
+fast by 2
+If they meet → cycle exists
+If fast reaches null → no cycle
+🎯 Key Insight
+
+👉 In a cycle,
+a faster pointer must eventually catch a slower pointer.
+
+That’s the entire mathematical trick.
+
+⚠️ Common Mistakes
+❌ Forgetting fast.next != null
+❌ Using extra HashSet unnecessarily
+❌ Comparing values instead of nodes
+🚀 Interview Tip
+
+This pattern is the base for many problems:
+
+Find middle of linked list
+Detect cycle start
+Happy Number
+Palindrome Linked List
+
+👉 Master this once, reuse everywhere.
+
+---
