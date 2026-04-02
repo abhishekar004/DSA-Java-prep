@@ -38,6 +38,7 @@ strings/
 ├── Stack/
 │   ├── ValidParentheses.java
 │   └── SuperReducedString.java
+│   └── LongestValidParentheses.java
 |── DynamicProgramming/
 |   └── RegularExpression.java
 └── String Manipulation/
@@ -49,10 +50,10 @@ strings/
 
 ## 📊 Progress Tracker
 
-**Problems Solved: 21 / 30+**
+**Problems Solved: 22 / 30+**
 
 ```
-████████████░░░░░░░░  ~66%  [21 / 30+]
+████████████░░░░░░░░  ~66%  [22 / 30+]
 ```
 
 | Pattern | Solved | Target | Status |
@@ -783,6 +784,61 @@ rotational indexing problems
 😎 Iron Man: Clean character math
 ⚡ Thor: Strong wrap-around handling
 🕷️ Spidey: % 26 saved the day again
+
+---
+pattern tip for longest valid parentheses
+
+🧠 Pattern Tip
+
+👉 When you see:
+
+“Longest valid bracket substring”
+“Need boundary tracking”
+“Matching parentheses with indices”
+
+💡 Trigger:
+
+Stack of indices
+
+⚙️ Approach (README-ready)
+Push -1 initially as base index
+Traverse string:
+if '(' → push index
+if ')' → pop stack
+If stack becomes empty:
+push current index as new invalid boundary
+Else:
+valid length = i - stack.peek()
+Track maximum length
+🎯 Key Insight
+
+👉 Store indices, not characters.
+
+Because:
+
+we need substring length, not just matching.
+
+⚠️ Common Mistakes
+❌ Using stack of characters instead of indices
+❌ Forgetting initial -1
+❌ Not resetting boundary when stack becomes empty
+🚀 Interview Tip
+
+This problem teaches a very important trick:
+
+Sometimes stack is not for values —
+it’s for positions
+
+That appears in:
+
+parentheses problems
+histogram problems
+monotonic stack problems
+🧠 FINAL VERDICT
+
+😎 Iron Man: Excellent stack logic
+⚡ Thor: Strong boundary handling
+🕷️ Spidey: That -1 base trick is chef’s kiss
 
 ---
 ## 🏢 Company Pattern Mapping
