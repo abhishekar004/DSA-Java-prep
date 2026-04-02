@@ -46,16 +46,17 @@ strings/
 |   └── CaesarCipher.java
 └── Greedy/
     └── RomanToInteger.java
+    └── IntegerToRoman.java
 ```
 
 ---
 
 ## 📊 Progress Tracker
 
-**Problems Solved: 23 / 30+**
+**Problems Solved: 24 / 30+**
 
 ```
-████████████░░░░░░░░  ~66%  [23 / 30+]
+████████████░░░░░░░░  ~66%  [24 / 30+]
 ```
 
 | Pattern | Solved | Target | Status |
@@ -892,6 +893,60 @@ compression / token parsing
 😎 Iron Man: Excellent bug fix and strong logic
 ⚡ Thor: Clean greedy parsing
 🕷️ Spidey: -2 * prevVal = beautiful recovery move
+
+
+---
+pattern tip for integer to roman
+
+🧠 Pattern Tip
+
+👉 When you see:
+
+“Build representation from value”
+“Use largest valid chunk first”
+
+💡 Trigger:
+
+Greedy construction
+
+⚙️ Approach (README-ready)
+Store Roman numeral values and symbols in descending order
+Traverse the values:
+while current value can fit into number:
+append symbol
+subtract value
+Continue until number becomes 0
+🎯 Key Insight
+
+👉 Roman numerals are built from fixed valid pieces
+
+So:
+
+always take the largest valid Roman chunk first
+
+⚠️ Common Mistakes
+❌ Forgetting subtractive cases like IV, IX, CM
+❌ Trying to manually build each digit without mapping
+❌ Wrong order of Roman values
+🚀 Interview Tip
+
+This is a classic greedy problem.
+
+It teaches:
+
+If the representation system has valid blocks,
+try consuming the largest block first.
+
+That appears in:
+
+coin change style problems
+interval greedy
+encoding problems
+🧠 FINAL VERDICT
+
+😎 Iron Man: Clean greedy construction
+⚡ Thor: Strong handling of subtractive forms
+🕷️ Spidey: Roman boss fight cleared
 
 
 ---
