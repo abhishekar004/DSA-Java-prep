@@ -38,18 +38,20 @@ strings/
 ├── Stack/
 │   ├── ValidParentheses.java
 │   └── SuperReducedString.java
-└── DynamicProgramming/
-    └── RegularExpression.java
+|── DynamicProgramming/
+|   └── RegularExpression.java
+└── String Manipulation/
+    └── TimeConversion.java
 ```
 
 ---
 
 ## 📊 Progress Tracker
 
-**Problems Solved: 19 / 30+**
+**Problems Solved: 20 / 30+**
 
 ```
-████████████░░░░░░░░  ~60%  [19 / 30+]
+████████████░░░░░░░░  ~66%  [20 / 30+]
 ```
 
 | Pattern | Solved | Target | Status |
@@ -686,10 +688,51 @@ stock profit problems
 bracket matching
 path simulations
 
+---
+pattern tip for time conversion 
 
+🧠 Pattern Tip
+
+👉 When you see:
+
+“Convert one format to another”
+“Special edge cases like 12 AM / 12 PM”
+
+💡 Trigger:
+
+String Parsing + Conditional Handling
+
+⚙️ Approach (README-ready)
+Extract:
+hour
+AM/PM suffix
+remaining time
+Apply rules:
+12 AM → 00
+12 PM → 12
+PM (except 12) → add 12
+Rebuild final string
+🎯 Key Insight
+
+👉 The only tricky part is:
+
+12 AM and 12 PM
+
+That’s where most mistakes happen.
+
+⚠️ Common Mistakes
+❌ Forgetting leading zero (01 vs 1)
+❌ Mishandling 12 AM
+❌ Adding 12 to 12 PM incorrectly
+🚀 Interview Tip
+
+This problem teaches:
+
+Even simple logic problems can fail because of formatting details
+
+That matters a lot in interviews and coding platforms.
 
 ---
-
 ## 🏢 Company Pattern Mapping
 
 | Company | Primary Patterns | High-Frequency Problems |
