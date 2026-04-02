@@ -42,18 +42,20 @@ strings/
 |── DynamicProgramming/
 |   └── RegularExpression.java
 └── String Manipulation/
-    └── TimeConversion.java
-    └── CaesarCipher.java
+|   └── TimeConversion.java
+|   └── CaesarCipher.java
+└── Greedy/
+    └── RomanToInteger.java
 ```
 
 ---
 
 ## 📊 Progress Tracker
 
-**Problems Solved: 22 / 30+**
+**Problems Solved: 23 / 30+**
 
 ```
-████████████░░░░░░░░  ~66%  [22 / 30+]
+████████████░░░░░░░░  ~66%  [23 / 30+]
 ```
 
 | Pattern | Solved | Target | Status |
@@ -841,6 +843,59 @@ monotonic stack problems
 🕷️ Spidey: That -1 base trick is chef’s kiss
 
 ---
+pattern tip for roman to integer
+
+🧠 Pattern Tip
+
+👉 When you see:
+
+“Special subtraction/addition rules”
+“Character-based number system”
+
+💡 Trigger:
+
+Traverse + adjust based on previous/current relation
+
+⚙️ Approach (README-ready)
+Convert each Roman character to integer
+Traverse left to right
+If current value is greater than previous:
+subtract previous contribution twice
+Else:
+add normally
+🎯 Key Insight
+
+👉 Roman numerals usually add,
+but when a smaller numeral comes before a larger one:
+
+it should be subtracted
+
+That’s the whole trick.
+
+⚠️ Common Mistakes
+❌ Only doing normal addition
+❌ Incorrect subtractive handling
+❌ Forgetting that previous value was already added
+🚀 Interview Tip
+
+This problem teaches an important parsing habit:
+
+Sometimes the current character depends on the previous one
+
+That idea appears in:
+
+decoding problems
+expression parsing
+compression / token parsing
+🧠 FINAL VERDICT
+
+😎 Iron Man: Excellent bug fix and strong logic
+⚡ Thor: Clean greedy parsing
+🕷️ Spidey: -2 * prevVal = beautiful recovery move
+
+
+---
+
 ## 🏢 Company Pattern Mapping
 
 | Company | Primary Patterns | High-Frequency Problems |
