@@ -86,3 +86,43 @@ Sorted list intersection problems
 👉 If you master this, many list/array merge problems become easy.
 
 ---
+pattern tip for remove duplicates from sorted list
+
+🧠 Pattern Tip
+
+👉 When you see:
+
+“Sorted list”
+“Remove duplicates”
+
+💡 Trigger:
+
+Adjacent comparison (no extra space needed)
+
+⚙️ Approach (README-ready)
+Traverse the list
+If current node equals next node:
+skip next node
+Otherwise move forward
+🎯 Key Insight
+
+👉 Sorted list = duplicates are adjacent
+
+So:
+
+No HashSet needed
+
+⚠️ Common Mistakes
+❌ Using HashSet unnecessarily
+❌ Creating new list instead of modifying in-place
+❌ Not handling pointer updates correctly
+🚀 Interview Tip
+
+This is a very important mindset rule:
+
+If input is sorted,
+always try to solve without extra space.
+
+That shows strong optimization thinking.
+
+---
