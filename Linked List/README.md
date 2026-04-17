@@ -406,6 +406,58 @@ Remove multiple nodes
 🕷️ Spidey: Clean one-pass swing — perfect execution
 
 ---
+pattern tip for swap nodes in pairs 
+
+🧠 Pattern Tip
+
+👉 When you see:
+
+“Swap nodes”
+“Pairs / groups”
+“Don’t modify values”
+
+💡 Trigger:
+
+Pointer Rewiring
+
+⚙️ Approach (README-ready)
+Create dummy node
+Use prev pointer
+For each pair:
+Identify first & second
+Rewire pointers to swap
+Move prev forward
+Return dummy.next
+🎯 Key Insight
+
+👉 Always save nodes before modifying links
+
+Otherwise → list breaks 💀
+
+⚠️ Common Mistakes
+
+❌ Swapping values instead of nodes
+❌ Losing next reference
+❌ Incorrect loop condition
+❌ Moving prev incorrectly
+
+🚀 Interview Tip
+
+👉 Follow-up variations:
+
+Swap nodes in k-group (harder version)
+Reverse nodes in k-group (LeetCode 25 🔥)
+
+👉 This problem is the foundation for those
+
+🧠 FINAL VERDICT
+
+😎 Iron Man: Clean pointer choreography
+⚡ Thor: Strong structural control
+🕷️ Spidey: Smooth pair swaps — no web breaks
+
+
+---
 
 ## 🏢 Company Pattern Mapping
 
