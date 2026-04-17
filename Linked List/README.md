@@ -357,6 +357,55 @@ Return result
 🕷️ Spidey: Smooth split → flip → compare combo
 
 ---
+pattern tip for remove nth node from end of the list
+
+🧠 Pattern Tip
+
+👉 When you see:
+
+“Nth from end”
+“Single pass required”
+
+💡 Trigger:
+
+Fast-Slow Pointer Gap
+
+⚙️ Approach (README-ready)
+Create dummy node
+Move fast pointer n+1 steps
+Move both pointers together
+When fast reaches null → slow is before target
+Delete node
+Return dummy.next
+🎯 Key Insight
+
+👉 Maintain a fixed gap of n nodes
+
+That’s the trick.
+
+⚠️ Common Mistakes
+
+❌ Moving fast only n steps (off-by-one bug)
+❌ Not using dummy (fails for head removal)
+❌ Null pointer errors
+❌ Losing reference during deletion
+
+🚀 Interview Tip
+
+👉 Follow-up variation:
+
+Remove kth node from start and end simultaneously
+Remove multiple nodes
+
+👉 Same pattern applies
+
+🧠 FINAL VERDICT
+
+😎 Iron Man: Precise pointer gap control
+⚡ Thor: Strong edge-case handling via dummy
+🕷️ Spidey: Clean one-pass swing — perfect execution
+
+---
 
 ## 🏢 Company Pattern Mapping
 
