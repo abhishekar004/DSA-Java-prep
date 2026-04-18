@@ -32,10 +32,10 @@ linkedlist/
 
 ## 🎯 Progress Tracker
 
-**Problems Solved: 6 / 50+**
+**Problems Solved: 10 / 50+**
 
 ```
-██░░░░░░░░░░░░░░░░░░  10%  [6 / 50+]
+██░░░░░░░░░░░░░░░░░░  10%  [10 / 50+]
 ```
 
 | Pattern | Solved | Target |
