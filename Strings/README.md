@@ -48,16 +48,17 @@ strings/
     ├── RomanToInteger.java
     ├── IntegerToRoman.java
     └── MarsExploration.java
+├── CamelCase.java
 ```
 
 ---
 
 ## 📊 Progress Tracker
 
-**Problems Solved: 25 / 30+**
+**Problems Solved: 26 / 30+**
 
 ```
-████████████░░░░░░░░  ~66%  [25 / 30+]
+████████████░░░░░░░░  ~66%  [26 / 30+]
 ```
 
 | Pattern | Solved | Target | Status |
@@ -863,6 +864,53 @@ return changes;
 - Integer to Roman: state "I'm using a greedy approach — always pick the largest valid symbol" before coding
 - Roman to Integer: traversing right-to-left with `curr < prev` is cleaner than alternating left-to-right subtractive checks
 - Mars Exploration: the `i % 3` insight is the entire problem — recognize cyclic patterns and use modulo
+
+---
+pattern tip for camelcase 
+
+🧠 Pattern Tip
+
+👉 When you see:
+
+“Count words in formatted string”
+“camelCase / PascalCase”
+
+💡 Trigger:
+
+Count uppercase transitions
+
+⚙️ Approach (README-ready)
+Initialize word count = 1
+Traverse string
+Increment count for each uppercase letter
+Return total count
+🎯 Key Insight
+
+👉 Uppercase letters = word boundaries
+
+⚠️ Common Mistakes
+
+❌ Forgetting to add first word
+❌ Not handling empty string
+❌ Using complex parsing unnecessarily
+
+🚀 Interview Tip
+
+👉 Similar variations:
+
+Count words in PascalCase
+Detect naming conventions
+String parsing problems
+
+👉 Always think:
+
+Transitions define structure
+🧠 FINAL VERDICT
+
+😎 Iron Man: Minimal code, maximum clarity
+⚡ Thor: Strong correctness, handles all cases
+🕷️ Spidey: Smooth scan — quick win problem
+
 
 ---
 
