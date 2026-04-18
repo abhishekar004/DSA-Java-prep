@@ -47,6 +47,7 @@ arrays/
 │   └── FirstMissingPositive.java
 ├── FloydCycle/
 │   └── FindDuplicateNumber.java
+│   └── FindTheDuplicateNumber.java
 ├── Intervals/
 │   ├── MergeIntervals.java
 │   └── InsertInterval.java
@@ -92,10 +93,10 @@ arrays/
 
 ## 🎯 Progress Tracker
 
-**Problems Solved: 57 / 300**
+**Problems Solved: 60 / 300**
 
 ```
-████░░░░░░░░░░░░░░░░  19%  [57 / 300]
+████░░░░░░░░░░░░░░░░  19%  [60 / 300]
 ```
 
 | Pattern | Solved | Target |
