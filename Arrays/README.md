@@ -88,16 +88,17 @@ arrays/
     ├── DrawingBook.java
     └── DivisionSumPairs.java
 │---├── ElectronicsShop.java
+│---├── JumpingOnTheClouds:Revisited.java
 ```
 
 ---
 
 ## 🎯 Progress Tracker
 
-**Problems Solved: 60 / 300**
+**Problems Solved: 62 / 300**
 
 ```
-████░░░░░░░░░░░░░░░░  19%  [60 / 300]
+████░░░░░░░░░░░░░░░░  19%  [62 / 300]
 ```
 
 | Pattern | Solved | Target |
@@ -989,6 +990,54 @@ Sort + Two Pointers = Optimization
 😎 Iron Man: Efficient and elegant optimization
 ⚡ Thor: Strong control over pointer movement
 🕷️ Spidey: Smooth traversal — no wasted moves
+
+---
+pattern tip for jumping on the clouds : revisted
+
+🧠 Pattern Tip
+
+👉 When you see:
+
+“Circular movement”
+“Wrap-around index”
+
+💡 Trigger:
+
+Modulo traversal
+
+⚙️ Approach (README-ready)
+Start from index 0
+Use (i + k) % n for movement
+Deduct energy per jump
+Apply penalty for special condition
+Stop when back to start
+🎯 Key Insight
+
+👉 Modulo = circular behavior
+
+⚠️ Common Mistakes
+
+❌ Forgetting modulo
+❌ Using wrong loop (while instead of do-while)
+❌ Missing thundercloud penalty
+❌ Infinite loop
+
+🚀 Interview Tip
+
+👉 Similar problems:
+
+Circular queue
+Rotating arrays
+Josephus problem
+
+👉 Always think:
+
+(i + step) % n
+🧠 FINAL VERDICT
+
+😎 Iron Man: Elegant circular logic
+⚡ Thor: Strong simulation accuracy
+🕷️ Spidey: Smooth jumps — perfect landing back to 0
 
 ---
 
