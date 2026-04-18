@@ -87,6 +87,7 @@ arrays/
     ├── GradingStudents.java
     ├── DrawingBook.java
     └── DivisionSumPairs.java
+│   ├── ElectronicsShop.java
 ```
 
 ---
@@ -933,6 +934,61 @@ System.out.printf("%.6f%n", (double) zer / arr.length);
 ```
 
 ⚠️ **Mistake:** Integer division — `pos / n` instead of `(double) pos / n`.
+
+---
+pattern tip for electronics shop 
+
+🧠 Pattern Tip
+
+👉 When you see:
+
+“Two arrays”
+“Find max/min under constraint”
+“Choose one from each”
+
+💡 Trigger:
+
+Sort + Two Pointers
+
+⚙️ Approach (README-ready)
+Sort both arrays
+Initialize two pointers:
+Start of one array
+End of another
+Calculate sum
+Adjust pointers:
+If too large → decrease
+If valid → try increasing
+Track best result
+🎯 Key Insight
+
+👉 Sorting enables directional movement
+
+Without sorting → no pointer logic possible
+
+⚠️ Common Mistakes
+
+❌ Using brute force (O(n*m))
+❌ Not tracking max valid value
+❌ Wrong pointer movement
+❌ Missing edge case (-1)
+
+🚀 Interview Tip
+
+👉 This pattern appears in:
+
+Two sum (sorted version)
+Pair sum closest to target
+Triplet problems
+
+👉 Always think:
+
+Sort + Two Pointers = Optimization
+🧠 FINAL VERDICT
+
+😎 Iron Man: Efficient and elegant optimization
+⚡ Thor: Strong control over pointer movement
+🕷️ Spidey: Smooth traversal — no wasted moves
 
 ---
 
