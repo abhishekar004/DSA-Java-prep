@@ -16,10 +16,16 @@ linkedlist/
 ├── TwoPointerMerge/
 │   ├── MergeTwoSortedLists.java
 │   └── RemoveDuplicatesFromSortedList.java
-└── FastSlowPointers/
-    ├── LinkedListCycle.java
-    └── MiddleOfLinkedList.java
-_______ RemoveLinkedListElements.java
+├── FastSlowPointers/
+│   ├── LinkedListCycle.java
+│   ├── MiddleOfLinkedList.java
+│   ├── PalindromeLinkedList.java
+│   └── RemoveNthNodeFromEnd.java
+├── DummyNode/
+│   ├── RemoveLinkedListElements.java
+│   └── SwapNodesInPairs.java
+└── TwoPointerSync/
+    └── IntersectionOfTwoLinkedLists.java
 ```
 
 ---
@@ -38,6 +44,7 @@ _______ RemoveLinkedListElements.java
 | Two Pointer Merge | 2 | 10 |
 | Fast & Slow Pointers | 2 | 15 |
 | Dummy Node | 0 | 10 |
+| Two Pointer Sync | 0 | 5 |
 | Recursion on Lists | 0 | 5 |
 | In-place Modification | 0 | 10 |
 
@@ -60,7 +67,10 @@ _______ RemoveLinkedListElements.java
 | Reorder list (first, last, second, second-last) | Fast & Slow + Reversal |
 | Add two numbers stored as linked lists | Reversal + carry tracking |
 | Merge K sorted lists | Two Pointer Merge + Heap |
-| Remove Nth node from end | Fast & Slow Pointers (gap of N) |
+| Remove Nth node from end | Fast & Slow Pointers (gap of N+1) |
+| Delete nodes matching a value, head may change | Dummy Node + prev/curr pointers |
+| Find intersection of two lists, no extra space | Two Pointers + Head Switching |
+| Swap adjacent pairs without modifying values | Pointer Rewiring + Dummy Node |
 
 ---
 
@@ -158,12 +168,14 @@ return head;
 
 > **Core Idea:** Use two pointers moving at different speeds — slow moves 1 step, fast moves 2. Because fast travels twice as far, when fast reaches the end, slow is at the middle. In a cycle, fast must eventually lap slow and they will meet. The same speed-gap principle finds the kth node from the end when you start fast k steps ahead.
 
-**Trigger keywords:** "detect cycle", "find middle", "split list", "kth from end", "loop detection", "half traversal"
+**Trigger keywords:** "detect cycle", "find middle", "split list", "kth from end", "loop detection", "half traversal", "palindrome list", "Nth from end"
 
 | Problem | Platform | Difficulty |
 |---------|----------|------------|
 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) | LC #141 | 🟢 Easy |
 | [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/) | LC #876 | 🟢 Easy |
+| [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/) | LC #234 | 🟢 Easy |
+| [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | LC #19 | 🟠 Medium |
 
 **Key Template — Cycle Detection:**
 ```java
@@ -186,276 +198,186 @@ while (fast != null && fast.next != null) {
 return slow;   // for even-length list: returns the second middle node
 ```
 
+**Key Template — Palindrome Linked List:**
+```java
+// Step 1: find middle
+ListNode slow = head, fast = head;
+while (fast != null && fast.next != null) {
+    slow = slow.next;
+    fast = fast.next.next;
+}
+// Step 2: reverse second half
+ListNode prev = null, curr = slow;
+while (curr != null) {
+    ListNode next = curr.next;
+    curr.next = prev;
+    prev = curr;
+    curr = next;
+}
+// Step 3: compare both halves
+ListNode left = head, right = prev;
+while (right != null) {
+    if (left.val != right.val) return false;
+    left = left.next;
+    right = right.next;
+}
+return true;
+```
+
+> 🧠 **Pattern Tip — Palindrome Linked List**
+>
+> You don't need extra memory — just reverse the second half and compare. Find the middle with fast/slow, reverse from there, then walk both halves inward simultaneously.
+>
+> ⚠️ Common Mistakes: Not handling odd length (slow lands on the true middle — reversing from `slow` works for both odd and even) · Reversing the entire list unnecessarily · Forgetting null checks
+>
+> 🚀 **Follow-up often asked:** "Can you restore the list after checking?" → Yes — reverse the second half again after comparison.
+
+**Key Template — Remove Nth Node From End:**
+```java
+ListNode dummy = new ListNode(0);
+dummy.next = head;
+ListNode fast = dummy, slow = dummy;
+// Move fast n+1 steps ahead so slow stops BEFORE the target
+for (int i = 0; i <= n; i++) fast = fast.next;
+while (fast != null) {
+    slow = slow.next;
+    fast = fast.next;
+}
+slow.next = slow.next.next;   // delete the nth node from end
+return dummy.next;
+```
+
+> 🧠 **Pattern Tip — Remove Nth Node From End**
+>
+> Maintain a fixed gap of `n+1` nodes between fast and slow (not `n`). This ensures slow stops **before** the target node, giving you the `prev` pointer needed to delete it cleanly. The dummy node handles the edge case where the head itself is the target.
+>
+> ⚠️ Common Mistakes: Moving fast only `n` steps — off-by-one puts slow on the node to delete, not before it · Skipping the dummy — fails when `n` equals the list length (head removal)
+>
+> 🚀 **Follow-up:** Remove kth from start and end simultaneously → same gap pattern, two passes.
+
 ⚠️ **Common Mistakes:**
 - Checking only `fast != null` without `fast.next != null` — `fast.next.next` throws NullPointerException
-- Comparing node **values** instead of node **references** — two different nodes can have the same value
+- Comparing node **values** instead of node **references** for cycle detection — two nodes can share a value
 - Using a HashSet for cycle detection — fast/slow is O(1) space, always preferred
-- Middle: wrong loop condition causes slow to land one node off for even-length lists
 - Middle: forgetting even vs odd behavior — for even length, this returns the **second** middle node
 
 🔥 **Interview Tips:**
 - Always check **both** `fast != null && fast.next != null` — missing either causes NPE
-- Compare **node references** (`slow == fast`), never values (`slow.val == fast.val`)
-- This pattern is the base for: Find Cycle Start · Happy Number · Palindrome Linked List · Remove Nth From End
+- Compare **node references** (`slow == fast`), never values (`slow.val == fast.val`) for cycle detection
 - Follow-up: "Find where the cycle starts?" → after meeting, reset slow to head; move both 1 step at a time until they meet — that's the cycle entry point
-- Follow-up: "Find kth node from end?" → advance fast k steps first, then move both 1 step until fast reaches null — slow is at the answer
 
 ---
-pattern tip for remove linked list elements
 
-🧠 Pattern Tip
+### 4️⃣ Dummy Node
 
-👉 When you see:
+> **Core Idea:** When deletions can affect the head, or when you're building a new list node by node, prepend a dummy node so every real node (including head) has a predecessor. This eliminates special-case null checks for the head and lets `prev` always point to a valid node. Return `dummy.next` as the result head.
 
-“Delete nodes from linked list”
-“Head might change”
+**Trigger keywords:** "delete nodes matching a value", "head might change", "remove elements", "swap pairs", "don't modify values"
 
-💡 Trigger:
+| Problem | Platform | Difficulty |
+|---------|----------|------------|
+| [Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/) | LC #203 | 🟢 Easy |
+| [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/) | LC #24 | 🟠 Medium |
 
-Dummy node
+**Key Template — Remove Linked List Elements:**
+```java
+ListNode dummy = new ListNode(0);
+dummy.next = head;
+ListNode prev = dummy, curr = head;
+while (curr != null) {
+    if (curr.val == val) {
+        prev.next = curr.next;   // skip target node
+    } else {
+        prev = curr;             // only advance prev if NOT deleting
+    }
+    curr = curr.next;
+}
+return dummy.next;
+```
 
-⚙️ Approach (README-ready)
-Create dummy node pointing to head
-Use:
-prev → previous valid node
-curr → current node
-If current node value matches target:
-skip it
-Else:
-move prev forward
-Return dummy.next
-🎯 Key Insight
+> 🧠 **Pattern Tip — Remove Linked List Elements**
+>
+> The dummy node removes the headache of "what if head itself needs deletion?" — every node including head now has a predecessor in `prev`. Key rule: only advance `prev` when you did **not** delete the current node.
+>
+> ⚠️ Common Mistakes: Moving `prev` even after deletion — breaks the chain · Losing `curr.next` reference before unlinking · Missing the dummy — fails on head deletion
+>
+> 🚀 This dummy + prev/curr pattern appears in: Remove Duplicates II · Partition List · Delete Nodes by Condition · Reverse Sublist — if deletion is involved, reach for dummy first.
 
-👉 Dummy node removes the headache of:
+**Key Template — Swap Nodes in Pairs:**
+```java
+ListNode dummy = new ListNode(0);
+dummy.next = head;
+ListNode prev = dummy;
+while (prev.next != null && prev.next.next != null) {
+    ListNode first  = prev.next;
+    ListNode second = prev.next.next;
+    // Rewire in strict order: first → after second, second → first, prev → second
+    first.next  = second.next;
+    second.next = first;
+    prev.next   = second;
+    // Advance past the swapped pair
+    prev = first;
+}
+return dummy.next;
+```
 
-“What if head itself needs deletion?”
+> 🧠 **Pattern Tip — Swap Nodes in Pairs**
+>
+> Always save node references **before** modifying links — otherwise the list breaks mid-swap. The order of the three rewiring steps is strict: connect `first` to what follows `second`, point `second` back to `first`, then attach `prev` to `second`. After swapping, `first` is now the second node — advance `prev` to `first`.
+>
+> ⚠️ Common Mistakes: Swapping values instead of nodes (interviewers specifically test for this) · Wrong rewiring order — list corrupts silently · Moving `prev` to `second` after the swap instead of `first`
+>
+> 🚀 **Follow-up:** Reverse Nodes in K-Group (LC #25) — this problem is the direct foundation for that harder variant. Master the 3-step rewiring here first.
 
-That’s why it’s so useful.
+⚠️ **Common Mistakes:**
+- Not using a dummy node when head itself could be deleted or moved
+- Advancing `prev` unconditionally — only move `prev` when no deletion or swap happened at `curr`
+- Modifying node values instead of rewiring pointers — interviewers specifically test pointer manipulation
 
-⚠️ Common Mistakes
-❌ Not handling head deletion
-❌ Moving prev even after deletion
-❌ Losing links while skipping nodes
-🚀 Interview Tip
-
-This pattern appears in many linked list problems:
-
-Remove duplicates
-Partition list
-Delete nodes by condition
-Reverse sublist
-
-👉 If deletion is involved, think:
-
-Dummy node first
-
-🧠 FINAL VERDICT
-
-😎 Iron Man: Clean and reliable pointer logic
-⚡ Thor: Strong deletion handling
-🕷️ Spidey: Dummy node saved the day again
-
-
----
-pattern tip for intersection of two linkedlists 
-
-🧠 Pattern Tip
-
-👉 When you see:
-
-“Find intersection”
-“Two linked lists”
-“No modification allowed”
-
-💡 Trigger:
-
-Two pointers + switching heads
-
-⚙️ Approach (README-ready)
-Initialize two pointers for both lists
-Traverse both lists
-When a pointer reaches end, redirect it to other list
-Continue until both pointers meet
-Return meeting point
-🎯 Key Insight
-
-👉 Both pointers travel equal total distance
-
-That’s why no length calculation is needed.
-
-⚠️ Common Mistakes
-
-❌ Using extra space (HashSet unnecessarily)
-❌ Calculating lengths with multiple passes
-❌ Wrong loop condition (p1 != null && p2 != null)
-❌ Comparing values instead of nodes
-
-👉 Important:
-
-p1 == p2   // compare nodes, NOT values
-🚀 Interview Tip
-
-This exact trick appears in:
-
-Cycle detection variations
-Linked list merging logic
-Pointer synchronization problems
-
-👉 Learn this deeply — it's reusable.
-
-🧠 FINAL VERDICT
-
-😎 Iron Man: Minimal code, maximum intelligence
-⚡ Thor: Strong logic, no wasted operations
-🕷️ Spidey: Smooth pointer swing — perfect landing
+🔥 **Interview Tips:**
+- Any problem where the head might change → use dummy node immediately, no hesitation
+- For Swap Nodes in Pairs: write out the three pointer assignments on paper before coding — the order is strict
+- The dummy node + prev/curr pattern is reused across 6+ linked list problems — internalize it as a single unit
 
 ---
-pattern tip for palindrome linked list
 
-🧠 Pattern Tip
+### 5️⃣ Two Pointer Sync (Head Switching)
 
-👉 When you see:
+> **Core Idea:** When two lists have different lengths but you need their pointers to arrive at the same node simultaneously, redirect each pointer to the **other list's head** when it reaches null. After at most one switch each, both pointers will have traveled `len(A) + len(B)` total steps — guaranteeing they meet at the intersection (or both reach null if no intersection exists).
 
-“Check palindrome”
-“Linked list”
-“No extra space”
+**Trigger keywords:** "find intersection", "two linked lists", "no extra space", "no length calculation", "pointer sync"
 
-💡 Trigger:
+| Problem | Platform | Difficulty |
+|---------|----------|------------|
+| [Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/) | LC #160 | 🟢 Easy |
 
-Fast/Slow + Reverse
+**Key Template:**
+```java
+ListNode p1 = headA, p2 = headB;
+while (p1 != p2) {
+    p1 = (p1 == null) ? headB : p1.next;  // redirect to other list at end
+    p2 = (p2 == null) ? headA : p2.next;
+}
+return p1;   // either the intersection node, or null (no intersection)
+```
 
-⚙️ Approach (README-ready)
-Use slow & fast pointer to find middle
-If odd length → skip middle
-Reverse second half
-Compare both halves
-Return result
-🎯 Key Insight
+> 🧠 **Pattern Tip — Intersection of Two Linked Lists**
+>
+> Both pointers travel equal total distance (`len(A) + len(B)`) regardless of where the intersection is — so they must arrive at the same node simultaneously. No length calculation needed, no extra space, no multiple passes.
+>
+> ⚠️ Common Mistakes: Using a HashSet — wastes O(n) space · Wrong loop condition (`p1 != null && p2 != null` exits too early, use `p1 != p2`) · Comparing values instead of node references
+>
+> 🚀 The key insight — **equalize total traversal distance** — is deeply reusable. It appears in: cycle detection variations · linked list merging · pointer synchronization problems.
 
-👉 You don’t need extra memory
-👉 Just reverse half and compare
+⚠️ **Common Mistakes:**
+- Comparing `p1.val == p2.val` instead of `p1 == p2` — value equality is wrong; you need the same node object
+- Loop condition `p1 != null && p2 != null` — exits before pointers can sync; always use `p1 != p2`
+- Forgetting that if there's no intersection both pointers reach `null` simultaneously — the loop terminates correctly
 
-⚠️ Common Mistakes
-
-❌ Not handling odd length properly
-❌ Reversing entire list (wasteful)
-❌ Using extra space unnecessarily
-❌ Forgetting null checks
-
-🚀 Interview Tip
-
-👉 Follow-up question often asked:
-
-“Can you restore the list after checking?”
-
-✔ Yes — reverse second half again
-
-🧠 FINAL VERDICT
-
-😎 Iron Man: Clean modular design (separate reverse method)
-⚡ Thor: Strong pointer control, no mistakes
-🕷️ Spidey: Smooth split → flip → compare combo
-
----
-pattern tip for remove nth node from end of the list
-
-🧠 Pattern Tip
-
-👉 When you see:
-
-“Nth from end”
-“Single pass required”
-
-💡 Trigger:
-
-Fast-Slow Pointer Gap
-
-⚙️ Approach (README-ready)
-Create dummy node
-Move fast pointer n+1 steps
-Move both pointers together
-When fast reaches null → slow is before target
-Delete node
-Return dummy.next
-🎯 Key Insight
-
-👉 Maintain a fixed gap of n nodes
-
-That’s the trick.
-
-⚠️ Common Mistakes
-
-❌ Moving fast only n steps (off-by-one bug)
-❌ Not using dummy (fails for head removal)
-❌ Null pointer errors
-❌ Losing reference during deletion
-
-🚀 Interview Tip
-
-👉 Follow-up variation:
-
-Remove kth node from start and end simultaneously
-Remove multiple nodes
-
-👉 Same pattern applies
-
-🧠 FINAL VERDICT
-
-😎 Iron Man: Precise pointer gap control
-⚡ Thor: Strong edge-case handling via dummy
-🕷️ Spidey: Clean one-pass swing — perfect execution
-
----
-pattern tip for swap nodes in pairs 
-
-🧠 Pattern Tip
-
-👉 When you see:
-
-“Swap nodes”
-“Pairs / groups”
-“Don’t modify values”
-
-💡 Trigger:
-
-Pointer Rewiring
-
-⚙️ Approach (README-ready)
-Create dummy node
-Use prev pointer
-For each pair:
-Identify first & second
-Rewire pointers to swap
-Move prev forward
-Return dummy.next
-🎯 Key Insight
-
-👉 Always save nodes before modifying links
-
-Otherwise → list breaks 💀
-
-⚠️ Common Mistakes
-
-❌ Swapping values instead of nodes
-❌ Losing next reference
-❌ Incorrect loop condition
-❌ Moving prev incorrectly
-
-🚀 Interview Tip
-
-👉 Follow-up variations:
-
-Swap nodes in k-group (harder version)
-Reverse nodes in k-group (LeetCode 25 🔥)
-
-👉 This problem is the foundation for those
-
-🧠 FINAL VERDICT
-
-😎 Iron Man: Clean pointer choreography
-⚡ Thor: Strong structural control
-🕷️ Spidey: Smooth pair swaps — no web breaks
-
+🔥 **Interview Tips:**
+- State the insight before coding: "Both pointers travel `len(A) + len(B)` total — they must meet at the intersection"
+- This is O(m + n) time, O(1) space — optimal and elegant enough to impress interviewers
+- Follow-up: "What if lists are circular?" → combine with cycle detection (Floyd's algorithm)
 
 ---
 
@@ -489,10 +411,10 @@ Reverse nodes in k-group (LeetCode 25 🔥)
 
 ```
 ⬜ Reversal II      — Reverse Linked List II · Reverse Nodes in K-Group
-⬜ Dummy Node       — Remove Nth From End · Swap Nodes in Pairs
-⬜ Fast & Slow II   — Find Cycle Start · Palindrome Linked List · Reorder List
+⬜ Fast & Slow II   — Find Cycle Start · Happy Number · Reorder List
 ⬜ Merge Advanced   — Merge K Sorted Lists · Sort List
 ⬜ Recursion        — Add Two Numbers · Flatten Multilevel List
+⬜ In-place Mod     — Rotate List · Partition List
 ```
 
 ---
