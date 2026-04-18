@@ -1,129 +1,177 @@
-# 🔤 Strings Mastery — DSA Placement Preparation
+# ⚔️ STRINGS MASTERY — DSA PLACEMENT ARSENAL
 
-> ⚡ **"If you identify the pattern in 30 seconds, you can solve it in 5 minutes."**
->
-> A **pattern-based DSA revision system** built for fast pattern recognition, placement prep, and high-pressure interview revision.
+```
+╔══════════════════════════════════════════════════════════════════════════╗
+║  "If you identify the pattern in 30 seconds, you solve it in 5 minutes" ║
+║                                                                          ║
+║         PATTERN × PRACTICE = PLACEMENT                                  ║
+╚══════════════════════════════════════════════════════════════════════════╝
+```
+
+> 🎯 **Mission:** Recognize any string problem's pattern in ≤30 seconds.  
+> 🔥 **Weapon:** 10 patterns. 30+ problems. Zero panic.  
+> 🏆 **Target:** Product-based company — SDE-1/SDE-2 offer.
 
 ---
 
-## 📁 Folder Structure
+## 📁 Repository Structure
 
 ```
 strings/
-├── README.md
+├── README.md                           ← YOU ARE HERE
+│
 ├── TwoPointers/
-│   ├── ReverseString.java
-│   ├── ValidPalindrome.java
-│   └── ReverseVowelsOfAString.java
+│   ├── ReverseString.java              ✅
+│   ├── ValidPalindrome.java            ✅
+│   └── ReverseVowelsOfAString.java     ✅
+│
 ├── TraverseFromEnd/
-│   ├── LengthOfLastWord.java
-│   └── ReverseWordsInAString.java
+│   ├── LengthOfLastWord.java           ✅
+│   └── ReverseWordsInAString.java      ✅
+│
 ├── SlidingWindow/
-│   ├── LongestSubstringWithoutRepeatingCharacters.java
-│   └── MinimumWindowSubString.java
+│   ├── LongestSubstringWithoutRepeatingCharacters.java  ✅
+│   └── MinimumWindowSubString.java     ✅
+│
 ├── FixedWindow/
-│   ├── PermutationsInString.java
-│   ├── FindAllAnagramsInAString.java
-│   └── SubstringWithConcatenationOfAllWords.java
+│   ├── PermutationsInString.java       ✅
+│   ├── FindAllAnagramsInAString.java   ✅
+│   └── SubstringWithConcatenationOfAllWords.java  ✅
+│
 ├── HashMapGrouping/
-│   └── GroupAnagrams.java
+│   └── GroupAnagrams.java              ✅
+│
 ├── StringMatching/
-│   └── FindTheIndexOfFirstOccurance.java
+│   └── FindTheIndexOfFirstOccurance.java  ✅
+│
 ├── ExpandAroundCenter/
-│   └── LongestPalindromicSubstring.java
+│   └── LongestPalindromicSubstring.java   ✅
+│
 ├── Simulation/
-│   ├── StringToInteger.java
-│   └── ValidNumber.java
-│   └── CountingValleys.java
+│   ├── StringToInteger.java            ✅
+│   ├── ValidNumber.java                ✅
+│   └── CountingValleys.java            ✅
+│
 ├── Stack/
-│   ├── ValidParentheses.java
-│   └── SuperReducedString.java
-│   └── LongestValidParentheses.java
-|── DynamicProgramming/
-|   └── RegularExpression.java
-└── String Manipulation/
-|   └── TimeConversion.java
-|   └── CaesarCipher.java
+│   ├── ValidParentheses.java           ✅
+│   ├── SuperReducedString.java         ✅
+│   └── LongestValidParentheses.java    ✅
+│
+├── DynamicProgramming/
+│   └── RegularExpression.java          ✅
+│
+├── StringManipulation/
+│   ├── TimeConversion.java             ✅
+│   └── CaesarCipher.java               ✅
+│
 └── Greedy/
-    └── RomanToInteger.java
-    └── IntegerToRoman.java
+    ├── RomanToInteger.java             ✅
+    └── IntegerToRoman.java             ✅
 ```
 
 ---
 
-## 📊 Progress Tracker
-
-**Problems Solved: 24 / 30+**
+## 📊 War Dashboard
 
 ```
-████████████░░░░░░░░  ~66%  [24 / 30+]
+OVERALL PROGRESS
+████████████░░░░░░░░  24 / 30+  [~66%]  🔥 KEEP GRINDING
+
+┌─────────────────────────────────┬────────┬────────┬──────────────────┐
+│ Pattern                         │ Solved │ Target │ Status           │
+├─────────────────────────────────┼────────┼────────┼──────────────────┤
+│ Two Pointers                    │   3    │   5    │ 🟡 In Progress   │
+│ Traverse from End               │   2    │   3    │ 🟡 In Progress   │
+│ Sliding Window (Variable)       │   2    │   5    │ 🟡 In Progress   │
+│ Fixed-Size Sliding Window       │   3    │   5    │ 🟡 In Progress   │
+│ HashMap Grouping                │   1    │   3    │ 🔴 Needs Work    │
+│ String Matching                 │   1    │   3    │ 🔴 Needs Work    │
+│ Expand Around Center            │   1    │   3    │ 🔴 Needs Work    │
+│ Simulation / Parsing            │   2    │   4    │ 🔴 Needs Work    │
+│ Stack                           │   2    │   4    │ 🟡 In Progress   │
+│ Dynamic Programming             │   1    │   3    │ 🔴 Needs Work    │
+└─────────────────────────────────┴────────┴────────┴──────────────────┘
 ```
 
-| Pattern | Solved | Target | Status |
-|---------|--------|--------|--------|
-| Two Pointers | 3 | 5 | 🟡 In Progress |
-| Traverse from End | 2 | 3 | 🟡 In Progress |
-| Sliding Window | 2 | 5 | 🟡 In Progress |
-| Fixed-Size Sliding Window | 3 | 5 | 🟡 In Progress |
-| HashMap Grouping | 1 | 3 | 🔴 Needs Work |
-| String Matching | 1 | 3 | 🔴 Needs Work |
-| Expand Around Center | 1 | 3 | 🔴 Needs Work |
-| Simulation / Parsing | 2 | 4 | 🔴 Needs Work |
-| Stack | 2 | 4 | 🟡 In Progress |
-| Dynamic Programming | 1 | 3 | 🔴 Needs Work |
-
----
-
-## 🎯 Goals
-
+### 🏁 Completion Goals
 - ✅ Master all **10 core string patterns**
 - ⬜ Solve **30+ string problems**
-- ⬜ Crack **product-based company** interviews
+- ⬜ Crack **product-based company** interview
 
 ---
 
-## ⚡ Pattern Recognition Cheat Sheet
+## ⚡ PATTERN RECOGNITION — MASTER CHEAT SHEET
 
-> 🔑 **Read this before every mock interview. Identify the pattern first — then code.**
+> 🧠 **Read this before every mock. Identify the pattern FIRST — then open your editor.**
 
-| Trigger (What You See in the Problem) | Pattern |
-|---------------------------------------|---------|
-| Reverse string / array in-place | Two Pointers (swap from ends) |
-| Check palindrome, ignore special chars | Two Pointers + skip invalid |
-| Reverse only specific elements (vowels) | Two Pointers + skip unwanted |
-| Last word / trailing spaces / reverse words | Traverse from End |
-| Longest/shortest substring, no repeating chars | Sliding Window (variable) |
-| Smallest window containing all chars of `t` | Sliding Window + Frequency Map |
-| Check if permutation exists / find all anagrams | Fixed-Size Window + `int[26]` |
-| Concatenation of equal-length words in string | Fixed-Size Window (chunked by wordLen) |
-| Group strings by same characters | HashMap Grouping (signature key) |
-| Find first occurrence of pattern | String Matching (`i <= n - m` bound) |
-| Longest palindrome substring | Expand Around Center |
-| Convert string to integer, handle edge cases | Simulation / Parsing |
-| Validate complex string format (number, email) | State Tracking (boolean flags) |
-| Matching brackets / balanced pairs | Stack (LIFO) |
-| Remove adjacent duplicates, chain reactions | Stack (push-pop) |
-| Pattern matching with `*` or `.` wildcards | DP on Strings (2D memoization) |
+```
+╔══════════════════════════════════════════════════════════════════════════════════╗
+║                      🔍 WHAT YOU SEE → 💡 WHAT YOU USE                         ║
+╠══════════════════════════════════════════════════════════════════════════════════╣
+║  Reverse in-place / Check palindrome / Swap specific chars    → Two Pointers    ║
+║  Last word / Trailing spaces / Reverse words without split()  → Traverse End    ║
+║  Longest/shortest window / No repeat / At most K distinct     → Sliding Window  ║
+║  Permutation exists / All anagrams / Fixed pattern length     → Fixed Window    ║
+║  Group by same letters / Canonical form / Bucket strings      → HashMap Group   ║
+║  Find first occurrence / Needle in haystack                   → String Match    ║
+║  Longest palindrome substring / Expand from i                 → EAC             ║
+║  String → number / Validate format / Sign + overflow          → Simulation      ║
+║  Balanced brackets / Remove adjacent dupes / Chain collapse   → Stack           ║
+║  Wildcard matching / Choices at each char / Full string match → DP              ║
+╚══════════════════════════════════════════════════════════════════════════════════╝
+```
+
+| Trigger Phrase (in the problem) | Pattern |
+|----------------------------------|---------|
+| `"reverse in-place"` / `"no extra space"` | Two Pointers (swap from ends) |
+| `"check palindrome"` / `"ignore special chars"` | Two Pointers + skip invalid |
+| `"reverse only vowels"` / `"swap specific elements"` | Two Pointers + skip unwanted |
+| `"last word"` / `"trailing spaces"` / `"no split()"` | Traverse from End |
+| `"longest substring"` / `"no repeating characters"` | Sliding Window (variable) |
+| `"smallest window containing all chars"` | Sliding Window + Frequency Map |
+| `"permutation exists"` / `"all anagram positions"` | Fixed-Size Window + `int[26]` |
+| `"concatenation of all words"` | Fixed Window (chunked by `wordLen`) |
+| `"group strings by same characters"` | HashMap Grouping (signature key) |
+| `"find first occurrence"` / `"strStr"` | String Matching (`i <= n-m` bound) |
+| `"longest palindrome substring"` | Expand Around Center |
+| `"string to integer"` / `"handle sign/overflow"` | Simulation / Parsing |
+| `"validate number format"` / `"multiple rules per char"` | State Tracking (boolean flags) |
+| `"balanced brackets"` / `"matching pairs"` | Stack (LIFO) |
+| `"remove adjacent duplicates"` / `"chain reactions"` | Stack (push-pop) |
+| `"pattern with * or . wildcards"` / `"full match"` | DP (2D memoization) |
+| `"track up/down movement"` / `"count state changes"` | Simulation (state variable) |
+| `"shift characters"` / `"rotate alphabet"` / `"wrap around"` | Character arithmetic + mod |
+| `"repeating string pattern"` / `"compare expected vs actual"` | Modulo-based matching |
+| `"build number from Roman"` / `"subtraction rule"` | Greedy traversal |
 
 ---
 
-## 🧩 Problems — Grouped by Pattern
+## 🧩 PATTERNS — DEEP DIVE
 
 ---
 
-### 1️⃣ Two Pointers on Strings
+### 1️⃣ TWO POINTERS ON STRINGS
 
-> **Core Idea:** Place one pointer at the start, one at the end. Compare or swap and move inward until they meet. Works in-place — O(1) space. For palindrome checks, skip non-alphanumeric characters. For vowel reversal, skip non-vowels and swap only at valid targets.
+```
+PATTERN TYPE:   In-place comparison / swap from both ends
+TIME:           O(n)
+SPACE:          O(1)
+DIFFICULTY:     🟢 Easy — but follow-ups can be Medium
+```
 
-**Trigger keywords:** "reverse in-place", "check palindrome", "ignore special chars", "swap only specific elements", "no extra space"
+**Core Idea:** One pointer at start, one at end. Compare or swap, move inward until they meet.  
+For palindrome checks → skip non-alphanumeric chars.  
+For vowel reversal → skip non-vowels and swap only at valid targets.
 
-| Problem | Platform | Difficulty |
-|---------|----------|------------|
-| [Reverse String](https://leetcode.com/problems/reverse-string/) | LC #344 | 🟢 Easy |
-| [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | LC #125 | 🟢 Easy |
-| [Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string/) | LC #345 | 🟢 Easy |
+**Trigger keywords:** `"reverse in-place"` · `"check palindrome"` · `"ignore special chars"` · `"swap only specific elements"` · `"no extra space"`
 
-**Key Template — Reverse String:**
+| Problem | Platform | Difficulty | Link |
+|---------|----------|------------|------|
+| Reverse String | LC #344 | 🟢 Easy | [→](https://leetcode.com/problems/reverse-string/) |
+| Valid Palindrome | LC #125 | 🟢 Easy | [→](https://leetcode.com/problems/valid-palindrome/) |
+| Reverse Vowels of a String | LC #345 | 🟢 Easy | [→](https://leetcode.com/problems/reverse-vowels-of-a-string/) |
+
+**Template — Reverse String:**
 ```java
 int left = 0, right = s.length - 1;
 while (left < right) {
@@ -133,7 +181,7 @@ while (left < right) {
 }
 ```
 
-**Key Template — Valid Palindrome (skip non-alphanumeric):**
+**Template — Valid Palindrome (skip non-alphanumeric):**
 ```java
 int left = 0, right = s.length() - 1;
 while (left < right) {
@@ -146,7 +194,7 @@ while (left < right) {
 return true;
 ```
 
-**Key Template — Reverse Vowels:**
+**Template — Reverse Vowels:**
 ```java
 Set<Character> vowels = Set.of('a','e','i','o','u','A','E','I','O','U');
 char[] arr = s.toCharArray();
@@ -159,31 +207,38 @@ while (left < right) {
 return new String(arr);
 ```
 
-⚠️ **Common Mistakes:**
-- Not including uppercase vowels in the vowel Set — `'A','E','I','O','U'` must be present
-- Returning `true` early in Valid Palindrome before fully traversing both sides
-- Creating a new array in Reverse String instead of modifying in-place — violates the constraint
-- Forgetting to do both `left++` and `right--` after a valid swap
+> ⚠️ **Landmines:**
+> - Missing uppercase vowels in the Set → `'A','E','I','O','U'` must be present
+> - Returning `true` early before fully traversing in Valid Palindrome
+> - Forgetting `left++` AND `right--` after each swap
+> - Creating new array in Reverse String — violates the in-place constraint
 
-🔥 **Interview Tips:**
-- Valid Palindrome is a warm-up — expect follow-up: "Valid Palindrome II" (allow at most one deletion)
-- For Reverse Vowels: "Can you do it without a Set?" → `"aeiouAEIOU".indexOf(c) >= 0` works
-- Two Pointers on strings: anytime you need to compare or swap from both ends simultaneously
+> 🔥 **Interview Edge:**
+> - Valid Palindrome is a warm-up → expect follow-up: **Valid Palindrome II** (allow one deletion)
+> - "Can you avoid a Set?" → `"aeiouAEIOU".indexOf(c) >= 0` works
+> - Pattern hint: any time you compare or swap from both ends *simultaneously* → two pointers
 
 ---
 
-### 2️⃣ Traverse from End
+### 2️⃣ TRAVERSE FROM END
 
-> **Core Idea:** Instead of splitting the string with `split()` (which creates extra arrays and chokes on multiple spaces), start from the last character and work backwards. Skip trailing spaces first, then count or extract until hitting a space or the start.
+```
+PATTERN TYPE:   Backward traversal to avoid split() overhead
+TIME:           O(n)
+SPACE:          O(1) or O(n) for output
+DIFFICULTY:     🟢–🟠 Easy to Medium
+```
 
-**Trigger keywords:** "last word", "ignore trailing spaces", "reverse words", "remove extra spaces", "avoid split()"
+**Core Idea:** Start from the last character. Skip trailing spaces, then extract backwards. Avoids `split()` which chokes on multiple spaces and creates extra arrays.
 
-| Problem | Platform | Difficulty |
-|---------|----------|------------|
-| [Length of Last Word](https://leetcode.com/problems/length-of-last-word/) | LC #58 | 🟢 Easy |
-| [Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/) | LC #151 | 🟠 Medium |
+**Trigger keywords:** `"last word"` · `"ignore trailing spaces"` · `"reverse words"` · `"remove extra spaces"` · `"avoid split()"`
 
-**Key Template — Length of Last Word:**
+| Problem | Platform | Difficulty | Link |
+|---------|----------|------------|------|
+| Length of Last Word | LC #58 | 🟢 Easy | [→](https://leetcode.com/problems/length-of-last-word/) |
+| Reverse Words in a String | LC #151 | 🟠 Medium | [→](https://leetcode.com/problems/reverse-words-in-a-string/) |
+
+**Template — Length of Last Word:**
 ```java
 int i = s.length() - 1, count = 0;
 while (i >= 0 && s.charAt(i) == ' ') i--;               // skip trailing spaces
@@ -191,7 +246,7 @@ while (i >= 0 && s.charAt(i) != ' ') { count++; i--; }  // count the word
 return count;
 ```
 
-**Key Template — Reverse Words (no split, extract from end):**
+**Template — Reverse Words (extract from end, no split):**
 ```java
 StringBuilder sb = new StringBuilder();
 int i = s.length() - 1;
@@ -208,36 +263,43 @@ while (i >= 0) {
 return sb.toString();
 ```
 
-⚠️ **Common Mistakes:**
-- Using `split(" ")` — produces empty strings `""` between consecutive spaces
-- `split("\\s+")` fixes multiple spaces but still uses O(n) extra space — mention the trade-off
-- Forgetting to add a space separator *between* words (not before the first or after the last)
-- Appending the wrong substring bounds — `s.substring(j + 1, i + 1)` is `[j+1, i]` inclusive
+> ⚠️ **Landmines:**
+> - `split(" ")` → produces empty strings `""` between consecutive spaces
+> - `split("\\s+")` handles spaces but still O(n) extra space — mention the trade-off
+> - Adding space *before* the first word or *after* the last word
+> - Wrong bounds: `s.substring(j + 1, i + 1)` is `[j+1, i]` inclusive — draw it out
 
-🔥 **Interview Tips:**
-- When using `split("\\s+")`, explicitly mention it handles multiple spaces — but it uses extra space
-- Follow-up: "Can you do it in-place?" → Reverse entire string, then reverse each word individually — O(1) space
+> 🔥 **Interview Edge:**
+> - If using `split("\\s+")`, explicitly say it handles multiple spaces — shows awareness
+> - Follow-up: "In-place?" → reverse entire string → reverse each word individually → O(1) space
 
 ---
 
-### 3️⃣ Sliding Window (Variable Size)
+### 3️⃣ SLIDING WINDOW — VARIABLE SIZE
 
-> **Core Idea:** Use `left` and `right` pointers to maintain a valid window. Expand `right` to grow the window; shrink from `left` when the window becomes invalid. Always use `while` (not `if`) to shrink — the window must be fully valid after contracting. Update the result **before** shrinking, not after.
+```
+PATTERN TYPE:   Dynamic window with expand/contract
+TIME:           O(n)
+SPACE:          O(k) — where k is charset size
+DIFFICULTY:     🟠 Medium / 🔴 Hard
+```
 
-**Trigger keywords:** "longest/shortest substring", "no repeating characters", "contains all chars of t", "at most K distinct", "frequency matters"
+**Core Idea:** Expand `right` to grow; shrink from `left` when invalid. Always use `while` (not `if`) to shrink. Update result *inside* the valid window, not after leaving it.
 
-| Problem | Platform | Difficulty |
-|---------|----------|------------|
-| [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | LC #3 | 🟠 Medium |
-| [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/) | LC #76 | 🔴 Hard |
+**Trigger keywords:** `"longest/shortest substring"` · `"no repeating characters"` · `"contains all chars of t"` · `"at most K distinct"` · `"frequency matters"`
 
-**Key Template — Longest Substring Without Repeating Characters:**
+| Problem | Platform | Difficulty | Link |
+|---------|----------|------------|------|
+| Longest Substring Without Repeating Characters | LC #3 | 🟠 Medium | [→](https://leetcode.com/problems/longest-substring-without-repeating-characters/) |
+| Minimum Window Substring | LC #76 | 🔴 Hard | [→](https://leetcode.com/problems/minimum-window-substring/) |
+
+**Template — Longest Substring Without Repeating Characters:**
 ```java
 Map<Character, Integer> freq = new HashMap<>();
 int left = 0, maxLen = 0;
 for (int right = 0; right < s.length(); right++) {
     freq.merge(s.charAt(right), 1, Integer::sum);
-    while (freq.get(s.charAt(right)) > 1) {             // window invalid — shrink
+    while (freq.get(s.charAt(right)) > 1) {             // window invalid → shrink
         freq.merge(s.charAt(left), -1, Integer::sum);
         left++;
     }
@@ -246,7 +308,7 @@ for (int right = 0; right < s.length(); right++) {
 return maxLen;
 ```
 
-**Key Template — Minimum Window Substring:**
+**Template — Minimum Window Substring:**
 ```java
 Map<Character, Integer> need = new HashMap<>();
 for (char c : t.toCharArray()) need.merge(c, 1, Integer::sum);
@@ -260,7 +322,7 @@ for (int right = 0; right < s.length(); right++) {
     window.merge(c, 1, Integer::sum);
     if (need.containsKey(c) && window.get(c).equals(need.get(c))) formed++;
 
-    while (formed == required) {                         // valid window — try to shrink
+    while (formed == required) {                         // valid → try to shrink
         if (right - left + 1 < minLen) {
             minLen = right - left + 1;
             minStart = left;
@@ -273,33 +335,40 @@ for (int right = 0; right < s.length(); right++) {
 return minLen == Integer.MAX_VALUE ? "" : s.substring(minStart, minStart + minLen);
 ```
 
-⚠️ **Common Mistakes:**
-- Using `if` instead of `while` to shrink — window may still be invalid after one shrink step
-- Using a `Set` instead of a frequency map — can't handle repeated characters in `t`
-- Recording the minimum window **after** shrinking — you've already missed the valid state
-- Window length formula: it's `right - left + 1`, not `right - left`
+> ⚠️ **Landmines:**
+> - `if` instead of `while` to shrink → window may still be invalid
+> - `Set` instead of frequency map → can't handle repeated chars in `t`
+> - Recording minimum *after* shrinking → missed the valid state
+> - Window length is `right - left + 1`, NOT `right - left`
 
-🔥 **Interview Tips:**
-- Longest Substring Without Repeating Characters is a top-10 most asked problem — code it from memory in under 3 minutes
-- For Minimum Window: walk through the `formed == required` condition out loud — interviewers love seeing this reasoning
-- Follow-up: "What if only lowercase letters?" → replace `HashMap` with `int[26]` for O(1) constant factor improvement
-- This pattern extends to: Permutation in String · Find All Anagrams · Longest Repeating Character Replacement
+> 🔥 **Interview Edge:**
+> - LC #3 is top-10 most asked — code from memory in under 3 minutes
+> - Walk through the `formed == required` condition out loud — interviewers love the reasoning
+> - Follow-up: "Only lowercase?" → swap `HashMap` with `int[26]` for constant-factor win
+> - This pattern extends directly to: Permutation in String · Find All Anagrams · Longest Repeating Char Replacement
 
 ---
 
-### 4️⃣ Fixed-Size Sliding Window + Frequency Map
+### 4️⃣ FIXED-SIZE SLIDING WINDOW + FREQUENCY MAP
 
-> **Core Idea:** When the window size is fixed (equal to pattern length), slide it one character at a time — add the new right character, remove the old left character. Compare `int[26]` frequency arrays with `Arrays.equals` instead of sorting — O(26) = O(1). For Concatenation of Words, all words are equal length, so move by `wordLen` chunks and try all `wordLen` starting offsets.
+```
+PATTERN TYPE:   Constant-size window, slide one step at a time
+TIME:           O(n)
+SPACE:          O(1) — int[26] is constant
+DIFFICULTY:     🟠 Medium / 🔴 Hard
+```
 
-**Trigger keywords:** "permutation of pattern", "all anagrams", "fixed window", "concatenation of all words", "word-chunk sliding"
+**Core Idea:** Window size is fixed (= pattern length). Add the new right char, remove the old left char. Compare `int[26]` arrays with `Arrays.equals` — O(26) = O(1). For Concatenation, window moves by `wordLen` chunks across all `wordLen` offsets.
 
-| Problem | Platform | Difficulty |
-|---------|----------|------------|
-| [Permutation in String](https://leetcode.com/problems/permutation-in-string/) | LC #567 | 🟠 Medium |
-| [Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/) | LC #438 | 🟠 Medium |
-| [Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words/) | LC #30 | 🔴 Hard |
+**Trigger keywords:** `"permutation of pattern"` · `"all anagrams"` · `"fixed window"` · `"concatenation of all words"` · `"word-chunk sliding"`
 
-**Key Template — Permutation in String / Find All Anagrams:**
+| Problem | Platform | Difficulty | Link |
+|---------|----------|------------|------|
+| Permutation in String | LC #567 | 🟠 Medium | [→](https://leetcode.com/problems/permutation-in-string/) |
+| Find All Anagrams in a String | LC #438 | 🟠 Medium | [→](https://leetcode.com/problems/find-all-anagrams-in-a-string/) |
+| Substring with Concatenation of All Words | LC #30 | 🔴 Hard | [→](https://leetcode.com/problems/substring-with-concatenation-of-all-words/) |
+
+**Template — Permutation in String / Find All Anagrams:**
 ```java
 int[] pCount = new int[26], wCount = new int[26];
 for (char c : p.toCharArray()) pCount[c - 'a']++;
@@ -315,7 +384,7 @@ for (int i = 0; i < s.length(); i++) {
 return result;  // for Permutation in String: return !result.isEmpty()
 ```
 
-**Key Template — Substring with Concatenation of All Words:**
+**Template — Substring with Concatenation of All Words:**
 ```java
 int wordLen = words[0].length(), totalWords = words.length;
 Map<String, Integer> need = new HashMap<>();
@@ -330,46 +399,53 @@ for (int offset = 0; offset < wordLen; offset++) {         // try each alignment
         if (need.containsKey(word)) {
             window.merge(word, 1, Integer::sum);
             count++;
-            while (window.get(word) > need.get(word)) {    // excess — shrink left
+            while (window.get(word) > need.get(word)) {    // excess → shrink left
                 String lw = s.substring(left, left + wordLen);
                 window.merge(lw, -1, Integer::sum);
                 count--; left += wordLen;
             }
             if (count == totalWords) result.add(left);
         } else {
-            window.clear(); count = 0; left = right + wordLen; // invalid word — reset
+            window.clear(); count = 0; left = right + wordLen; // invalid → reset
         }
     }
 }
 return result;
 ```
 
-⚠️ **Common Mistakes:**
-- Sorting every window — O(n × m log m) instead of O(n) with frequency array
-- Forgetting to remove the left character as the window slides
-- For Concatenation: moving 1 character at a time instead of `wordLen` — misses valid alignments
-- For Concatenation: not trying all `wordLen` starting offsets — misses results at non-zero alignments
-- Not handling duplicate words in the word list (need frequency map, not set)
+> ⚠️ **Landmines:**
+> - Sorting every window → O(n × m log m) instead of O(n)
+> - Forgetting to remove the left char as window slides
+> - Moving 1 char at a time in Concatenation → misses valid alignments
+> - Not trying all `wordLen` starting offsets
+> - Using a Set for word list → breaks on duplicate words
 
-🔥 **Interview Tips:**
-- `Arrays.equals(int[], int[])` on a size-26 array is O(26) = O(1) — state this explicitly to the interviewer
-- Permutation in String and Find All Anagrams are the same problem — one returns `bool`, the other returns indices
-- For Concatenation: key insight is "all words are the same length, so I can treat each chunk as a unit and slide by `wordLen`" — say this before writing code
-- Progression: Permutation in String → Find All Anagrams → Minimum Window Substring (each relaxes one constraint)
+> 🔥 **Interview Edge:**
+> - State explicitly: "`Arrays.equals` on size-26 array is O(26) = O(1)"
+> - LC #567 and LC #438 are literally the same problem — one returns `bool`, one returns indices
+> - Concatenation key insight: *"All words are same length, so I treat each chunk as a unit and slide by `wordLen`"* — say this before coding
+> - Progression: Permutation in String → Find All Anagrams → Minimum Window Substring
 
 ---
 
-### 5️⃣ HashMap Grouping (Signature Key)
+### 5️⃣ HASHMAP GROUPING — SIGNATURE KEY
 
-> **Core Idea:** Build a unique signature for each string — either sort its characters or build a frequency count string — and use that as a HashMap key. All strings that share a signature are anagrams. Group them into the same bucket with `computeIfAbsent`.
+```
+PATTERN TYPE:   Canonical form → bucket by key
+TIME:           O(n × m log m) sorted / O(n × m) freq signature
+SPACE:          O(n × m)
+DIFFICULTY:     🟠 Medium
+```
 
-**Trigger keywords:** "group similar strings", "same letters different order", "anagram grouping", "normalize and bucket"
+**Core Idea:** Build a unique signature per string — sorted chars or frequency count string — use it as HashMap key. All strings with same signature are anagrams. Use `computeIfAbsent` to group.
 
-| Problem | Platform | Difficulty |
-|---------|----------|------------|
-| [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | LC #49 | 🟠 Medium |
+**Trigger keywords:** `"group similar strings"` · `"same letters different order"` · `"anagram grouping"` · `"normalize and bucket"`
 
-**Key Template — Sorted Key (simpler, O(m log m) per string):**
+| Problem | Platform | Difficulty | Link |
+|---------|----------|------------|------|
+| Group Anagrams | LC #49 | 🟠 Medium | [→](https://leetcode.com/problems/group-anagrams/) |
+
+**Template — Sorted Key (simpler):**
 ```java
 Map<String, List<String>> map = new HashMap<>();
 for (String s : strs) {
@@ -381,7 +457,7 @@ for (String s : strs) {
 return new ArrayList<>(map.values());
 ```
 
-**Key Template — Frequency Signature Key (faster, O(m) per string):**
+**Template — Frequency Signature Key (faster, O(m) per string):**
 ```java
 Map<String, List<String>> map = new HashMap<>();
 for (String s : strs) {
@@ -394,35 +470,42 @@ for (String s : strs) {
 return new ArrayList<>(map.values());
 ```
 
-⚠️ **Common Mistakes:**
-- Using `int[]` directly as a map key — arrays use reference equality in Java, not value equality; always convert to String
-- Using `map.put(key, new ArrayList<>())` instead of `computeIfAbsent` — overwrites existing groups
-- Building the frequency signature without a delimiter (e.g., `"12"` is ambiguous: is it `[1,2]` or `[12,0]`?) — always use `'#'` as separator
-- Sorting without realizing the frequency signature is a faster alternative
+> ⚠️ **Landmines:**
+> - Using `int[]` directly as map key → arrays use reference equality, not value equality
+> - `map.put(key, new ArrayList<>())` instead of `computeIfAbsent` → overwrites existing groups
+> - Frequency signature without delimiter → `"12"` is ambiguous: `[1,2]` or `[12,0]`? Always use `'#'`
+> - Not knowing the faster alternative exists
 
-🔥 **Interview Tips:**
-- Always offer both approaches and explain the trade-off: "Sorted key is simpler but O(m log m); frequency signature is O(m)"
-- The `computeIfAbsent` pattern is idiomatic Java for "get or create" — use it over a manual null-check
-- This signature technique generalizes: wherever order doesn't matter, compute a canonical form and group by it
-- Follow-up: "What if strings can have uppercase or digits?" → extend frequency array or use a HashMap for counts
+> 🔥 **Interview Edge:**
+> - Always offer both approaches: "Sorted key is simpler but O(m log m); frequency signature is O(m)"
+> - `computeIfAbsent` is idiomatic Java for "get or create" — use it over manual null-check
+> - Generalizes: wherever order doesn't matter, compute canonical form and group by it
+> - Follow-up: "Strings with uppercase or digits?" → extend freq array or use `HashMap<Character, Integer>`
 
 ---
 
-### 6️⃣ String Matching (Bounded Loop)
+### 6️⃣ STRING MATCHING — BOUNDED LOOP
 
-> **Core Idea:** Slide the needle across the haystack one index at a time. The critical rule: only start checks at indices where the full pattern can still fit — loop bound is `i <= n - m`, not `i < n`. At each start index, compare characters one by one and return on a full match.
+```
+PATTERN TYPE:   Slide needle across haystack with safe bounds
+TIME:           O(n × m) naive / O(n) KMP
+SPACE:          O(1)
+DIFFICULTY:     🟢 Easy — but bound is critical
+```
 
-**Trigger keywords:** "find first occurrence", "index of substring", "pattern in string", "strStr"
+**Core Idea:** Slide needle one index at a time. Critical rule: loop only while full pattern can still fit — `i <= n - m`, not `i < n`. At each start, compare char by char and return on full match.
 
-| Problem | Platform | Difficulty |
-|---------|----------|------------|
-| [Find the Index of First Occurrence](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/) | LC #28 | 🟢 Easy |
+**Trigger keywords:** `"find first occurrence"` · `"index of substring"` · `"pattern in string"` · `"strStr"`
 
-**Key Template:**
+| Problem | Platform | Difficulty | Link |
+|---------|----------|------------|------|
+| Find the Index of First Occurrence | LC #28 | 🟢 Easy | [→](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/) |
+
+**Template:**
 ```java
 int n = haystack.length(), m = needle.length();
 if (m == 0) return 0;                    // edge case: empty needle
-for (int i = 0; i <= n - m; i++) {      // CRITICAL: n - m, not n
+for (int i = 0; i <= n - m; i++) {      // ← CRITICAL: n - m, not n
     int j = 0;
     while (j < m && haystack.charAt(i + j) == needle.charAt(j)) j++;
     if (j == m) return i;               // full match found
@@ -430,29 +513,36 @@ for (int i = 0; i <= n - m; i++) {      // CRITICAL: n - m, not n
 return -1;
 ```
 
-⚠️ **Common Mistakes:**
-- Looping to `i < n` instead of `i <= n - m` — accessing `haystack.charAt(i + j)` causes `StringIndexOutOfBoundsException`
-- Missing the edge case where `needle` is longer than `haystack` (returns -1 immediately since `n - m < 0`)
-- Not handling empty needle — LeetCode convention returns 0; confirm with interviewer
+> ⚠️ **Landmines:**
+> - `i < n` instead of `i <= n - m` → `StringIndexOutOfBoundsException` at the edge
+> - Missing case where `needle.length() > haystack.length()` (returns -1 since `n - m < 0`)
+> - Forgetting empty needle edge case — confirm convention with interviewer
 
-🔥 **Interview Tips:**
-- The `n - m` bound is the most common off-by-one mistake in string matching — fixing it proactively signals strong attention to detail
-- Always ask: "Can the needle be empty?" — different platforms have different conventions
-- Follow-up: "Can you do it in O(n)?" → KMP algorithm. You don't need to implement it live — just name it and describe the key idea (failure function avoids restarting from scratch)
+> 🔥 **Interview Edge:**
+> - The `n - m` bound is the most common off-by-one mistake in string matching — fixing proactively signals precision
+> - Always ask: "Can needle be empty?" — different platforms have different conventions
+> - Follow-up O(n) solution: **KMP algorithm** — name it and describe: "failure function avoids restarting from scratch"
 
 ---
 
-### 7️⃣ Expand Around Center
+### 7️⃣ EXPAND AROUND CENTER
 
-> **Core Idea:** Every palindrome has a center. For each index, expand outward while characters match. Handle two cases: odd-length palindromes (center at `i`) and even-length palindromes (center between `i` and `i+1`). Track the longest seen. O(n²) time, O(1) space — accepted in 95%+ of interviews.
+```
+PATTERN TYPE:   Grow palindrome outward from each center
+TIME:           O(n²)
+SPACE:          O(1)
+DIFFICULTY:     🟠 Medium
+```
 
-**Trigger keywords:** "longest palindrome substring", "palindrome centered at index", "expand from center"
+**Core Idea:** Every palindrome has a center. Expand outward while characters match. Handle TWO cases: odd-length (center at `i`) and even-length (center between `i` and `i+1`). O(n²) time, O(1) space — accepted in 95%+ of interviews.
 
-| Problem | Platform | Difficulty |
-|---------|----------|------------|
-| [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) | LC #5 | 🟠 Medium |
+**Trigger keywords:** `"longest palindrome substring"` · `"palindrome centered at index"` · `"expand from center"`
 
-**Key Template:**
+| Problem | Platform | Difficulty | Link |
+|---------|----------|------------|------|
+| Longest Palindromic Substring | LC #5 | 🟠 Medium | [→](https://leetcode.com/problems/longest-palindromic-substring/) |
+
+**Template:**
 ```java
 String result = "";
 for (int i = 0; i < s.length(); i++) {
@@ -467,37 +557,45 @@ private String expand(String s, int left, int right) {
     while (left >= 0 && right < s.length() && s.charAt(left) == s.charAt(right)) {
         left--; right++;
     }
-    // left and right are one step too far — adjust
+    // left/right are one step too far after the loop
     return s.substring(left + 1, right);
 }
 ```
 
-⚠️ **Common Mistakes:**
-- Handling only odd-length palindromes — misses all even-length ones like `"abba"` or `"cbbd"`
-- Wrong substring bounds after the expand loop: use `left + 1` to `right` (exclusive) — not `right + 1`
-- Brute force O(n³): checking all substrings and validating each separately — never do this
-- Returning the length instead of the actual substring when the problem asks for the string
+> ⚠️ **Landmines:**
+> - Handling only odd-length palindromes → misses all even-length ones like `"abba"`, `"cbbd"`
+> - Wrong bounds after expand: use `left + 1` to `right` exclusive — not `right + 1`
+> - Brute force O(n³): checking all substrings and validating each → never do this
+> - Returning length instead of substring when problem asks for the actual string
 
-🔥 **Interview Tips:**
-- Always handle both odd and even cases explicitly — forgetting even-length palindromes loses you the problem
-- State complexity upfront: "O(n²) time, O(1) space — optimal for most interviews. Manacher's gives O(n) if needed"
-- Follow-up: "Count all palindromic substrings" (LC #647) → same expand logic, count instead of tracking max
-- Follow-up: "O(n) solution?" → Manacher's Algorithm — naming and describing it (virtual center trick) is usually enough
+> 🔥 **Interview Edge:**
+> - Always handle both odd AND even cases explicitly — forgetting even = losing the problem
+> - State complexity upfront: *"O(n²) time, O(1) space — optimal for most interviews. Manacher's gives O(n) if needed"*
+> - Follow-up: **Count All Palindromic Substrings** (LC #647) → same logic, count instead of max
+> - Follow-up O(n): **Manacher's Algorithm** — virtual center trick; naming + describing it is usually sufficient
 
 ---
 
-### 8️⃣ Simulation / Parsing
+### 8️⃣ SIMULATION / PARSING
 
-> **Core Idea:** Parse the string step by step with explicit, ordered rules. For `atoi`: skip whitespace → detect sign → parse digits → check overflow **before** updating (not after). For `Valid Number`: one pass with boolean flags per state. Key subtlety: reset `seenDigit = false` after `e/E` — digits must also appear in the exponent part.
+```
+PATTERN TYPE:   Step-by-step rule execution with state tracking
+TIME:           O(n)
+SPACE:          O(1)
+DIFFICULTY:     🟠 Medium / 🔴 Hard
+```
 
-**Trigger keywords:** "convert string to number", "validate format", "handle sign/spaces/overflow", "multiple validation rules per character"
+**Core Idea:** Parse with explicit ordered rules. For `atoi`: skip spaces → detect sign → parse digits → check overflow *before* updating. For Valid Number: one pass, boolean flags per state. Key: reset `seenDigit = false` after `e/E`.
 
-| Problem | Platform | Difficulty |
-|---------|----------|------------|
-| [String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/) | LC #8 | 🟠 Medium |
-| [Valid Number](https://leetcode.com/problems/valid-number/) | LC #65 | 🔴 Hard |
+**Trigger keywords:** `"convert string to number"` · `"validate format"` · `"handle sign/spaces/overflow"` · `"multiple rules per character"`
 
-**Key Template — String to Integer (atoi):**
+| Problem | Platform | Difficulty | Link |
+|---------|----------|------------|------|
+| String to Integer (atoi) | LC #8 | 🟠 Medium | [→](https://leetcode.com/problems/string-to-integer-atoi/) |
+| Valid Number | LC #65 | 🔴 Hard | [→](https://leetcode.com/problems/valid-number/) |
+| Counting Valleys | HackerRank | 🟢 Easy | [→](https://www.hackerrank.com/challenges/counting-valleys/problem) |
+
+**Template — atoi:**
 ```java
 int i = 0, sign = 1, result = 0;
 // Step 1: skip leading spaces
@@ -508,14 +606,14 @@ if (i < s.length() && (s.charAt(i) == '+' || s.charAt(i) == '-'))
 // Step 3: parse digits — overflow check BEFORE updating
 while (i < s.length() && Character.isDigit(s.charAt(i))) {
     int digit = s.charAt(i++) - '0';
-    if (result > (Integer.MAX_VALUE - digit) / 10)      // check BEFORE update
+    if (result > (Integer.MAX_VALUE - digit) / 10)      // ← check BEFORE update
         return sign == 1 ? Integer.MAX_VALUE : Integer.MIN_VALUE;
     result = result * 10 + digit;
 }
 return sign * result;
 ```
 
-**Key Template — Valid Number (flag-based state tracking):**
+**Template — Valid Number (flag-based):**
 ```java
 boolean seenDigit = false, seenDot = false, seenE = false;
 for (int i = 0; i < s.length(); i++) {
@@ -529,34 +627,53 @@ for (int i = 0; i < s.length(); i++) {
 return seenDigit;
 ```
 
-**Edge cases to test for Valid Number:** `"."`, `"1."`, `".1"`, `"1e2"`, `"1e+2"`, `"+.8"`, `"1e"`, `"e3"`
+**Edge cases for Valid Number:** `"."` · `"1."` · `".1"` · `"1e2"` · `"1e+2"` · `"+.8"` · `"1e"` · `"e3"`
 
-⚠️ **Common Mistakes:**
-- Overflow check must happen **before** `result = result * 10 + digit` — checking after is too late
-- Not resetting `seenDigit = false` after `e/E` in Valid Number — `"1e"` would incorrectly return true
-- Allowing sign characters in the middle: `"1+2"` must be rejected — sign only valid at index 0 or after `e/E`
-- Not handling the case where `s` is entirely spaces (returns 0)
+**Template — Counting Valleys (state variable):**
+```java
+int level = 0, valleys = 0;
+for (char c : path.toCharArray()) {
+    if (c == 'U') level++;
+    else          level--;
+    if (level == 0 && c == 'D') valleys++;  // returned to sea level from below
+}
+return valleys;
+```
 
-🔥 **Interview Tips:**
-- For `atoi`: walk through each step out loud — "skip spaces → detect sign → parse digits → overflow check before update"
-- Overflow check formula: `result > (Integer.MAX_VALUE - digit) / 10` — derive this live by rearranging `result * 10 + digit > MAX`
-- Valid Number is Hard due to edge cases, not algorithm — list all edge cases first, then code
-- `atoi` is a common warm-up question; getting the overflow check right immediately signals experience
+> ⚠️ **Landmines:**
+> - Overflow check *after* `result = result * 10 + digit` → too late, already overflowed
+> - NOT resetting `seenDigit = false` after `e/E` → `"1e"` incorrectly returns `true`
+> - Allowing sign in the middle: `"1+2"` must be rejected
+> - Counting valley start instead of end (count when returning to level 0, not when going below)
+
+> 🔥 **Interview Edge:**
+> - For `atoi`: walk each step out loud — "skip spaces → detect sign → parse digits → overflow check before update"
+> - Overflow formula: `result > (MAX - digit) / 10` — derive live by rearranging `result * 10 + digit > MAX`
+> - Valid Number is Hard due to edge cases, not the algorithm — list all edge cases first
+> - State machine pattern: track up/down transitions → stock profit, bracket matching, path simulations
 
 ---
 
-### 9️⃣ Stack
+### 9️⃣ STACK
 
-> **Core Idea:** Use a stack (LIFO) when characters must be matched in pairs or when removing adjacent duplicates can trigger chain reactions. For brackets: push openers, pop and verify on closers, stack must be empty at end. For adjacent duplicate removal: if the stack top matches the current character, pop instead of push — chain reactions are handled automatically.
+```
+PATTERN TYPE:   LIFO matching / adjacent deduplication
+TIME:           O(n)
+SPACE:          O(n)
+DIFFICULTY:     🟢–🔴 Easy to Hard
+```
 
-**Trigger keywords:** "matching pairs", "balanced brackets", "remove adjacent duplicates", "reduce until stable", "chain removal"
+**Core Idea:** Push openers, pop and verify on closers; stack must be empty at end. For adjacent deduplication: if top matches current char, pop instead of push — chain reactions are handled automatically.
 
-| Problem | Platform | Difficulty |
-|---------|----------|------------|
-| [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | LC #20 | 🟢 Easy |
-| [Super Reduced String](https://www.hackerrank.com/challenges/reduced-string/problem) | HackerRank | 🟢 Easy |
+**Trigger keywords:** `"matching pairs"` · `"balanced brackets"` · `"remove adjacent duplicates"` · `"reduce until stable"` · `"chain removal"` · `"boundary tracking"`
 
-**Key Template — Valid Parentheses:**
+| Problem | Platform | Difficulty | Link |
+|---------|----------|------------|------|
+| Valid Parentheses | LC #20 | 🟢 Easy | [→](https://leetcode.com/problems/valid-parentheses/) |
+| Super Reduced String | HackerRank | 🟢 Easy | [→](https://www.hackerrank.com/challenges/reduced-string/problem) |
+| Longest Valid Parentheses | LC #32 | 🔴 Hard | [→](https://leetcode.com/problems/longest-valid-parentheses/) |
+
+**Template — Valid Parentheses:**
 ```java
 Deque<Character> stack = new ArrayDeque<>();
 for (char c : s.toCharArray()) {
@@ -573,43 +690,69 @@ for (char c : s.toCharArray()) {
 return stack.isEmpty();    // ← critical: all openers must be matched
 ```
 
-**Key Template — Super Reduced String (adjacent duplicate removal):**
+**Template — Super Reduced String (adjacent duplicate removal):**
 ```java
 StringBuilder stack = new StringBuilder();
 for (char c : s.toCharArray()) {
     if (stack.length() > 0 && stack.charAt(stack.length() - 1) == c)
-        stack.deleteCharAt(stack.length() - 1);  // duplicate — pop
+        stack.deleteCharAt(stack.length() - 1);  // duplicate → pop
     else
-        stack.append(c);                          // no duplicate — push
+        stack.append(c);                          // no duplicate → push
 }
 return stack.length() == 0 ? "Empty String" : stack.toString();
 ```
 
-⚠️ **Common Mistakes:**
-- Valid Parentheses: not checking `isEmpty()` before `pop()` — throws `NoSuchElementException`
-- Valid Parentheses: returning `true` without verifying `stack.isEmpty()` at the end — unmatched openers pass incorrectly
-- Super Reduced String: using nested loops O(n²) — single-pass stack handles chain reactions naturally
-- Super Reduced String: forgetting to return `"Empty String"` when the stack is empty at the end
+**Template — Longest Valid Parentheses (index stack):**
+```java
+Deque<Integer> stack = new ArrayDeque<>();
+stack.push(-1);                                  // base boundary index
+int maxLen = 0;
+for (int i = 0; i < s.length(); i++) {
+    if (s.charAt(i) == '(') {
+        stack.push(i);                           // push index of '('
+    } else {
+        stack.pop();
+        if (stack.isEmpty()) stack.push(i);      // new invalid boundary
+        else maxLen = Math.max(maxLen, i - stack.peek());
+    }
+}
+return maxLen;
+```
 
-🔥 **Interview Tips:**
-- Valid Parentheses is one of the most common entry-level questions — solve it in under 2 minutes
-- The `stack.isEmpty()` check at the end is the line most candidates forget under pressure — state it explicitly
-- For Super Reduced String: explain why the stack handles chain reactions: "removing `'aa'` exposes new adjacents — the stack top always holds the last unmatched character, so chains resolve naturally"
-- Follow-ups: Remove Minimum Invalid Parentheses · Longest Valid Parentheses · Expression Evaluation · Remove All Adjacent Duplicates II (k occurrences)
+> ⚠️ **Landmines:**
+> - Not checking `isEmpty()` before `pop()` → `NoSuchElementException`
+> - Returning `true` without verifying `stack.isEmpty()` at end → unmatched openers pass
+> - Super Reduced: nested loops O(n²) → single-pass stack handles chains in O(n)
+> - Longest Valid: using stack of chars instead of indices → can't compute length
+> - Forgetting initial `-1` in Longest Valid → first valid run has no anchor
+
+> 🔥 **Interview Edge:**
+> - Valid Parentheses in under 2 minutes — the `stack.isEmpty()` at the end is what candidates forget under pressure
+> - Super Reduced: *"Removing `'aa'` exposes new adjacents — the stack top always holds the last unmatched char, so chains resolve naturally"*
+> - Longest Valid Parentheses key insight: *"Store indices, not characters — we need length, not matching"*
+> - `-1` base trick in Longest Valid = chef's kiss 🤌
+> - Follow-ups: Remove Minimum Invalid Parentheses · Expression Evaluation · Remove All Adjacent Duplicates II (k occurrences)
 
 ---
 
-### 🔟 Dynamic Programming on Strings
+### 🔟 DYNAMIC PROGRAMMING ON STRINGS
 
-> **Core Idea:** When a string problem involves a choice at each character (match, skip, or repeat), define a 2D DP state `dp(i, j)` = "does `s[i:]` match `p[j:]`?". For regex `*`: two branches — skip the pair entirely (`dp(i, j+2)`) or use it to match the current character and advance only `i` (`dp(i+1, j)`). Memoize to avoid exponential recomputation.
+```
+PATTERN TYPE:   2D DP state over two string indices
+TIME:           O(m × n)
+SPACE:          O(m × n) or O(n) optimized
+DIFFICULTY:     🔴 Hard
+```
 
-**Trigger keywords:** "pattern matching with rules", "`*` or `.` wildcards", "choices at each step (take/skip/repeat)", "full string match required"
+**Core Idea:** When a string problem has choices at each character (match, skip, repeat), define `dp(i, j)` = "does `s[i:]` match `p[j:]`?". For `*`: two branches — skip pair entirely (`dp(i, j+2)`) OR use it to match current char and advance only `i` (`dp(i+1, j)`). Memoize.
 
-| Problem | Platform | Difficulty |
-|---------|----------|------------|
-| [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/) | LC #10 | 🔴 Hard |
+**Trigger keywords:** `"pattern matching with rules"` · `"* or . wildcards"` · `"choices at each char"` · `"full string match required"`
 
-**Key Template — Top-Down DP with Memoization:**
+| Problem | Platform | Difficulty | Link |
+|---------|----------|------------|------|
+| Regular Expression Matching | LC #10 | 🔴 Hard | [→](https://leetcode.com/problems/regular-expression-matching/) |
+
+**Template — Top-Down DP with Memoization:**
 ```java
 Map<String, Boolean> memo = new HashMap<>();
 
@@ -627,416 +770,231 @@ private boolean dp(String s, String p, int i, int j) {
 
     boolean result;
     if (j + 1 < p.length() && p.charAt(j + 1) == '*') {
-        result = dp(s, p, i, j + 2)                          // zero occurrences: skip pair
-              || (firstMatch && dp(s, p, i + 1, j));         // one+ occurrences: advance s only
+        result = dp(s, p, i, j + 2)                          // zero: skip pair
+              || (firstMatch && dp(s, p, i + 1, j));         // one+: advance s only
     } else {
-        result = firstMatch && dp(s, p, i + 1, j + 1);       // normal match: advance both
+        result = firstMatch && dp(s, p, i + 1, j + 1);       // normal: advance both
     }
     memo.put(key, result);
     return result;
 }
 ```
 
-**States to trace through for clarity:** `s = "aab"`, `p = "c*a*b"` — trace the `*` zero-occurrence branch skipping `"c*"` and `"a*"`.
+**Trace this to build intuition:** `s = "aab"`, `p = "c*a*b"` → `*` zero-occurrence branch skips `"c*"` and `"a*"`
 
-⚠️ **Common Mistakes:**
-- Not handling the `*` zero-occurrence branch (`dp(i, j+2)`) — the pattern can skip the `x*` pair entirely
-- Missing memoization — leads to exponential time O(2^(m+n)) instead of O(m×n)
-- Confusing full match (entire `s` must match) with substring match (partial is OK)
-- Not checking `firstMatch` before the "use `*`" branch — `*` can only repeat a matching character
+> ⚠️ **Landmines:**
+> - Missing `*` zero-occurrence branch (`dp(i, j+2)`) → pattern can never skip `x*` pair
+> - No memoization → exponential O(2^(m+n)) instead of O(m×n)
+> - Confusing full match vs substring match
+> - Not checking `firstMatch` before the "use `*`" branch → `*` can only repeat a match
 
-🔥 **Interview Tips:**
-- Define your state out loud first: "`dp(i, j)` = does `s[i:]` match `p[j:]`?" — this alone demonstrates strong problem framing
-- The two `*` branches are the core of the problem — state them explicitly: "zero occurrences: skip the pair. One or more: advance `s`, stay on `p`"
-- If asked for bottom-up DP: build the 2D table from the ends of both strings backwards
-- Solving this cleanly puts you in the top 5–10% of candidates — most people skip it or attempt brute force
-
----
-pattern tip for counting valleys
-
-🧠 Pattern Tip
-
-👉 When you see:
-
-“Track movement up/down”
-“Count events based on state”
-
-💡 Trigger:
-
-Simulation with state variable
-
-⚙️ Approach (README-ready)
-Initialize level = 0
-Traverse path:
-'U' → level++
-'D' → level--
-If level becomes 0 after 'U' → valley completed
-🎯 Key Insight
-
-👉 A valley is counted when:
-
-you return to sea level from below
-
-⚠️ Common Mistakes
-❌ Counting valley start instead of end
-❌ Not tracking level correctly
-❌ Using extra data structures unnecessarily
-🚀 Interview Tip
-
-This problem teaches:
-
-Track state transitions, not just values
-
-That idea appears in:
-
-stock profit problems
-bracket matching
-path simulations
+> 🔥 **Interview Edge:**
+> - Define state out loud first: *"`dp(i, j)` = does `s[i:]` match `p[j:]`?"* — this alone shows strong problem framing
+> - Two `*` branches explicitly: *"Zero occurrences: skip the pair. One or more: advance `s`, stay on `p`"*
+> - Bottom-up DP: build 2D table from the ends of both strings backwards
+> - Solving this cleanly puts you in **top 5–10% of candidates** — most skip it or brute-force it
 
 ---
-pattern tip for time conversion 
 
-🧠 Pattern Tip
-
-👉 When you see:
-
-“Convert one format to another”
-“Special edge cases like 12 AM / 12 PM”
-
-💡 Trigger:
-
-String Parsing + Conditional Handling
-
-⚙️ Approach (README-ready)
-Extract:
-hour
-AM/PM suffix
-remaining time
-Apply rules:
-12 AM → 00
-12 PM → 12
-PM (except 12) → add 12
-Rebuild final string
-🎯 Key Insight
-
-👉 The only tricky part is:
-
-12 AM and 12 PM
-
-That’s where most mistakes happen.
-
-⚠️ Common Mistakes
-❌ Forgetting leading zero (01 vs 1)
-❌ Mishandling 12 AM
-❌ Adding 12 to 12 PM incorrectly
-🚀 Interview Tip
-
-This problem teaches:
-
-Even simple logic problems can fail because of formatting details
-
-That matters a lot in interviews and coding platforms.
-
----
-pattern tip for caesar cipher 
-
-🧠 Pattern Tip
-
-👉 When you see:
-
-“Shift characters”
-“Rotate alphabet”
-“Wrap around z → a”
-
-💡 Trigger:
-
-Character arithmetic + modulo
-
-⚙️ Approach (README-ready)
-Reduce shift value:
-k = k % 26
-Traverse each character:
-if lowercase → rotate within 'a' to 'z'
-if uppercase → rotate within 'A' to 'Z'
-else keep unchanged
-🎯 Key Insight
-
-👉 Convert letters into 0–25 positions, shift them, then convert back.
-
-That’s the entire trick.
-
-⚠️ Common Mistakes
-❌ Forgetting k % 26
-❌ Not handling uppercase separately
-❌ Modifying special characters unnecessarily
-❌ Wrong wrap-around logic
-🚀 Interview Tip
-
-This problem teaches a useful pattern:
-
-When letters wrap cyclically,
-think modulo arithmetic
-
-That applies to:
-
-cipher problems
-circular arrays
-rotational indexing problems
-🧠 FINAL VERDICT
-
-😎 Iron Man: Clean character math
-⚡ Thor: Strong wrap-around handling
-🕷️ Spidey: % 26 saved the day again
-
----
-pattern tip for longest valid parentheses
-
-🧠 Pattern Tip
-
-👉 When you see:
-
-“Longest valid bracket substring”
-“Need boundary tracking”
-“Matching parentheses with indices”
-
-💡 Trigger:
-
-Stack of indices
-
-⚙️ Approach (README-ready)
-Push -1 initially as base index
-Traverse string:
-if '(' → push index
-if ')' → pop stack
-If stack becomes empty:
-push current index as new invalid boundary
-Else:
-valid length = i - stack.peek()
-Track maximum length
-🎯 Key Insight
-
-👉 Store indices, not characters.
-
-Because:
-
-we need substring length, not just matching.
-
-⚠️ Common Mistakes
-❌ Using stack of characters instead of indices
-❌ Forgetting initial -1
-❌ Not resetting boundary when stack becomes empty
-🚀 Interview Tip
-
-This problem teaches a very important trick:
-
-Sometimes stack is not for values —
-it’s for positions
-
-That appears in:
-
-parentheses problems
-histogram problems
-monotonic stack problems
-🧠 FINAL VERDICT
-
-😎 Iron Man: Excellent stack logic
-⚡ Thor: Strong boundary handling
-🕷️ Spidey: That -1 base trick is chef’s kiss
-
----
-pattern tip for roman to integer
-
-🧠 Pattern Tip
-
-👉 When you see:
-
-“Special subtraction/addition rules”
-“Character-based number system”
-
-💡 Trigger:
-
-Traverse + adjust based on previous/current relation
-
-⚙️ Approach (README-ready)
-Convert each Roman character to integer
-Traverse left to right
-If current value is greater than previous:
-subtract previous contribution twice
-Else:
-add normally
-🎯 Key Insight
-
-👉 Roman numerals usually add,
-but when a smaller numeral comes before a larger one:
-
-it should be subtracted
-
-That’s the whole trick.
-
-⚠️ Common Mistakes
-❌ Only doing normal addition
-❌ Incorrect subtractive handling
-❌ Forgetting that previous value was already added
-🚀 Interview Tip
-
-This problem teaches an important parsing habit:
-
-Sometimes the current character depends on the previous one
-
-That idea appears in:
-
-decoding problems
-expression parsing
-compression / token parsing
-🧠 FINAL VERDICT
-
-😎 Iron Man: Excellent bug fix and strong logic
-⚡ Thor: Clean greedy parsing
-🕷️ Spidey: -2 * prevVal = beautiful recovery move
-
-
----
-pattern tip for integer to roman
-
-🧠 Pattern Tip
-
-👉 When you see:
-
-“Build representation from value”
-“Use largest valid chunk first”
-
-💡 Trigger:
-
-Greedy construction
-
-⚙️ Approach (README-ready)
-Store Roman numeral values and symbols in descending order
-Traverse the values:
-while current value can fit into number:
-append symbol
-subtract value
-Continue until number becomes 0
-🎯 Key Insight
-
-👉 Roman numerals are built from fixed valid pieces
-
-So:
-
-always take the largest valid Roman chunk first
-
-⚠️ Common Mistakes
-❌ Forgetting subtractive cases like IV, IX, CM
-❌ Trying to manually build each digit without mapping
-❌ Wrong order of Roman values
-🚀 Interview Tip
-
-This is a classic greedy problem.
-
-It teaches:
-
-If the representation system has valid blocks,
-try consuming the largest block first.
-
-That appears in:
-
-coin change style problems
-interval greedy
-encoding problems
-🧠 FINAL VERDICT
-
-😎 Iron Man: Clean greedy construction
-⚡ Thor: Strong handling of subtractive forms
-🕷️ Spidey: Roman boss fight cleared
-
-
----
-pattern tip for mars exploration problem - hackerrank
-
-🧠 Pattern Tip
-
-👉 When you see:
-
-“Repeating string pattern”
-“Compare expected vs actual”
-
-💡 Trigger:
-
-Modulo-based pattern matching
-
-⚙️ Approach (README-ready)
-Define base pattern ("SOS")
-Loop through string
-Use i % pattern_length to get expected char
-Compare with actual character
-Count mismatches
-🎯 Key Insight
-
-👉 You don’t need to build the full expected string
-
-Just reuse pattern using modulo.
-
-⚠️ Common Mistakes
-
-❌ Building large expected string
-❌ Using substring comparisons
-❌ Wrong modulo indexing
-❌ Off-by-one errors
-
-🚀 Interview Tip
-
-👉 This pattern appears in:
-
-Cyclic string problems
-Rotation checks
-Pattern repetition validation
-
-👉 Always think:
-
-pattern[i % k]
-🧠 FINAL VERDICT
-
-😎 Iron Man: Clean, minimal, scalable logic
-⚡ Thor: Strong correctness, no wasted operations
-🕷️ Spidey: Simple swing using modulo — perfect landing
-
----
-
-## 🏢 Company Pattern Mapping
-
-| Company | Primary Patterns | High-Frequency Problems |
-|---------|-----------------|------------------------|
-| **Amazon** | Sliding Window, HashMap, Stack | Longest Substring, Group Anagrams, Valid Parentheses |
-| **Google** | DP, String Matching, Sliding Window | Regex Matching, Min Window Substring, Longest Palindrome |
-| **Microsoft** | Two Pointers, Stack, Parsing | Valid Palindrome, Valid Parentheses, atoi |
-| **Meta** | Two Pointers, Sliding Window, Anagram patterns | Reverse Vowels, Find All Anagrams, Permutation in String |
-| **Adobe** | Parsing, Stack, Simulation | Valid Number, Super Reduced String, atoi |
-
----
-
-## 🔁 Revision Strategy
-
-| Mode | When to Use | How |
-|------|-------------|-----|
-| 📖 **Learn** | First time seeing a pattern | Read approach + template → solve all problems in that group |
-| 🔁 **Revise** | Day before interview | Read only pattern triggers + key templates — skip explanations |
-| ⚡ **Interview** | During the interview | Cheat sheet only — identify pattern in ≤ 30 sec, then code the template |
-
-**Daily target:** 2–3 problems per day, one pattern group at a time. Don't mix patterns in the same session.
-
-**Weekly review:** Re-attempt problems marked hard without notes. Timed: 20 minutes per problem.
-
----
-
-## 📊 Pattern Difficulty Distribution
+### 1️⃣1️⃣ STRING MANIPULATION + CHARACTER ARITHMETIC
 
 ```
-Easy   ████████░░░░░░░░  ~30%  (build speed and baseline fluency)
-Medium ████████████░░░░  ~50%  (core placement interview problems)
-Hard   ████░░░░░░░░░░░░  ~20%  (differentiation — top-tier companies)
+PATTERN TYPE:   Format conversion / character-level math
+TIME:           O(n)
+SPACE:          O(n) for output
+DIFFICULTY:     🟢 Easy (but edge-case heavy)
+```
+
+**Core Idea:** Convert characters to 0–25 positions, apply arithmetic/rules, convert back. For format conversion, handle special edge cases explicitly before the general rule.
+
+| Problem | Platform | Pattern | Link |
+|---------|----------|---------|------|
+| Time Conversion | HackerRank | String Parsing + Conditional | [→](https://www.hackerrank.com/challenges/time-conversion/problem) |
+| Caesar Cipher | HackerRank | Character Arithmetic + Modulo | [→](https://www.hackerrank.com/challenges/caesar-cipher-1/problem) |
+
+**Template — Time Conversion:**
+```java
+// Extract parts
+int hour = Integer.parseInt(s.substring(0, 2));
+String rest = s.substring(2, 8);   // ":MM:SS"
+String period = s.substring(8);    // "AM" or "PM"
+
+// Apply rules (handle 12 AM/PM edge cases first)
+if (period.equals("AM") && hour == 12) hour = 0;
+else if (period.equals("PM") && hour != 12) hour += 12;
+
+return String.format("%02d%s", hour, rest);  // %02d ensures leading zero
+```
+
+**Template — Caesar Cipher:**
+```java
+k = k % 26;   // reduce large shifts
+StringBuilder result = new StringBuilder();
+for (char c : s.toCharArray()) {
+    if (Character.isLowerCase(c))
+        result.append((char) ('a' + (c - 'a' + k) % 26));
+    else if (Character.isUpperCase(c))
+        result.append((char) ('A' + (c - 'A' + k) % 26));
+    else
+        result.append(c);   // special chars unchanged
+}
+return result.toString();
+```
+
+> ⚠️ **Landmines:**
+> - Caesar: forgetting `k % 26` → wrong output for `k >= 26`
+> - Caesar: not handling uppercase separately → wrong wrapping
+> - Caesar: modifying special characters → violates constraint
+> - Time: forgetting `%02d` format → `"01:00:00"` becomes `"1:00:00"`
+> - Time: `12 AM → 00` and `12 PM → 12` are the ONLY special cases — get these right
+
+> 🔥 **Interview Edge:**
+> - Caesar Cipher teaches cyclical rotation: *"Convert to 0–25, shift, mod, convert back"* — this exact idea appears in circular arrays and rotational indexing
+> - Time Conversion teaches: *"Even simple logic fails on formatting details"* — signal attention to edge cases
+
+---
+
+### 1️⃣2️⃣ GREEDY CONSTRUCTION
+
+```
+PATTERN TYPE:   Consume largest valid chunk greedily
+TIME:           O(n)
+SPACE:          O(n) for output
+DIFFICULTY:     🟢 Easy / 🟠 Medium
+```
+
+**Core Idea:** When the representation has valid fixed blocks, always take the largest valid one first. For Roman numerals: build lookup table in descending order, consume while value fits.
+
+| Problem | Platform | Difficulty | Link |
+|---------|----------|------------|------|
+| Roman to Integer | LC #13 | 🟢 Easy | [→](https://leetcode.com/problems/roman-to-integer/) |
+| Integer to Roman | LC #12 | 🟠 Medium | [→](https://leetcode.com/problems/integer-to-roman/) |
+
+**Template — Roman to Integer:**
+```java
+Map<Character, Integer> map = Map.of(
+    'I',1, 'V',5, 'X',10, 'L',50, 'C',100, 'D',500, 'M',1000
+);
+int result = 0, prev = 0;
+for (int i = s.length() - 1; i >= 0; i--) {
+    int curr = map.get(s.charAt(i));
+    result += (curr < prev) ? -curr : curr;  // subtract if smaller precedes larger
+    prev = curr;
+}
+return result;
+```
+
+**Template — Integer to Roman:**
+```java
+int[] values  = {1000,900,500,400,100,90,50,40,10,9,5,4,1};
+String[] syms = {"M","CM","D","CD","C","XC","L","XL","X","IX","V","IV","I"};
+StringBuilder result = new StringBuilder();
+for (int i = 0; i < values.length; i++) {
+    while (num >= values[i]) {              // consume as many times as value fits
+        result.append(syms[i]);
+        num -= values[i];
+    }
+}
+return result.toString();
+```
+
+> ⚠️ **Landmines:**
+> - Roman to Int: only adding → misses subtractive cases like IV, IX, CM
+> - Roman to Int: previous was already added — recovery is `-2 * prev + curr`... or just traverse right-to-left
+> - Integer to Roman: forgetting subtractive forms (IV=4, IX=9, XL=40, XC=90, CD=400, CM=900)
+> - Wrong order in values array → greedy fails
+
+> 🔥 **Interview Edge:**
+> - Roman to Int right-to-left traversal eliminates the awkward lookahead entirely
+> - Integer to Roman is classic greedy: *"If representation has valid blocks, consume the largest first"* → applies to coin change style problems too
+
+---
+
+### 🌐 BONUS: MODULO-BASED PATTERN MATCHING
+
+```
+PATTERN TYPE:   Cyclic string validation without string construction
+TIME:           O(n)
+SPACE:          O(1)
+```
+
+**Core Idea:** Don't build the full expected string. Use `i % pattern_length` to get the expected character at each position.
+
+**Template — Mars Exploration / Cyclic Comparison:**
+```java
+String pattern = "SOS";
+int count = 0;
+for (int i = 0; i < s.length(); i++) {
+    if (s.charAt(i) != pattern.charAt(i % pattern.length())) count++;
+}
+return count;
+```
+
+> 🔥 **Key insight:** `pattern[i % k]` generalizes to any cyclic string problem, rotation check, and pattern repetition validation.
+
+---
+
+## 🏢 Company Pattern Intelligence
+
+```
+┌─────────────┬──────────────────────────────────┬────────────────────────────────────────────┐
+│ Company     │ Primary Patterns                 │ High-Frequency Problems                    │
+├─────────────┼──────────────────────────────────┼────────────────────────────────────────────┤
+│ 🛒 Amazon   │ Sliding Window, HashMap, Stack   │ Longest Substring, Group Anagrams, Valid ∂ │
+│ 🔍 Google   │ DP, String Matching, Sliding Win │ Regex Matching, Min Window, Longest Palindrome │
+│ 🪟 Microsoft │ Two Pointers, Stack, Parsing     │ Valid Palindrome, Valid Parentheses, atoi  │
+│ 📘 Meta     │ Two Pointers, Sliding Win, Anagram│ Reverse Vowels, Find All Anagrams, Perm   │
+│ 🎨 Adobe    │ Parsing, Stack, Simulation       │ Valid Number, Super Reduced, atoi          │
+└─────────────┴──────────────────────────────────┴────────────────────────────────────────────┘
 ```
 
 ---
 
-> 🚀 **Strings = Pattern Recognition. The same 10 patterns repeat across 30+ problems.**
+## 🔁 Revision Battle Plan
+
+| Mode | When | Execution |
+|------|------|-----------|
+| 📖 **Learn** | First encounter | Read approach + template → solve all problems in that group |
+| 🔁 **Revise** | Night before interview | Pattern triggers + key templates ONLY — skip explanations |
+| ⚡ **Crunch** | Day of interview | Cheat sheet only — pattern in ≤30s → template → code |
+
+**Daily target:** 2–3 problems · one pattern at a time · never mix patterns in same session
+
+**Weekly review:** Re-attempt hard problems without notes · Timed: 20 min/problem
+
+---
+
+## 📊 Difficulty Distribution
+
+```
+Distribution (30+ problems target):
+
+Easy    ████████░░░░░░░░░░░░  ~30%  Build speed and baseline fluency
+Medium  ████████████░░░░░░░░  ~50%  Core placement interview range
+Hard    ████░░░░░░░░░░░░░░░░  ~20%  Differentiation — top-tier companies
+```
+
+---
+
+## 🧠 The 10-Pattern Quick-Fire Reference
+
+```
+1.  TWO POINTERS         →  Reverse / Palindrome check / Swap specific chars
+2.  TRAVERSE FROM END    →  Last word / Reverse words / No split()
+3.  SLIDING WINDOW       →  Longest/shortest substring / Frequency control
+4.  FIXED WINDOW         →  Permutation / All anagrams / Concatenation
+5.  HASHMAP GROUPING     →  Group anagrams / Canonical key / Bucket by signature
+6.  STRING MATCHING      →  First occurrence / i <= n-m bound / Strstr
+7.  EXPAND AROUND CENTER →  Longest palindrome / Odd + Even cases
+8.  SIMULATION           →  atoi / Valid number / Counting valleys / State flags
+9.  STACK                →  Balanced brackets / Adjacent dedupe / Index boundaries
+10. DP ON STRINGS        →  Wildcard matching / 2D dp(i,j) / Choices at each char
+```
+
+---
+
+> 🔥 **String problems are pattern problems in disguise.**
 >
-> ⚡ **Speed = Pattern + Practice. Spot the trigger → recall the template → code with confidence.**
+> 💪 **The moment you see the trigger, you already know the template.**
+>
+> ⚡ **Spot. Template. Code. Win.**
