@@ -87,7 +87,7 @@ arrays/
     ├── GradingStudents.java
     ├── DrawingBook.java
     └── DivisionSumPairs.java
-│   ├── ElectronicsShop.java
+│---├── ElectronicsShop.java
 ```
 
 ---
