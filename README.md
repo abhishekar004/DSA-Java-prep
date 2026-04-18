@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Problems%20Solved-99%2F300-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Problems%20Solved-95%2F300-blue?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Language-Java-orange?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Patterns%20Mastered-30-purple?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Goal-Software%20Engineer-green?style=for-the-badge" />
