@@ -5,9 +5,9 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Problems%20Solved-75%2F300-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Problems%20Solved-99%2F300-blue?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Language-Java-orange?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Patterns%20Mastered-24-purple?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Patterns%20Mastered-30-purple?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Goal-Software%20Engineer-green?style=for-the-badge" />
 </p>
 
@@ -31,11 +31,11 @@ Every solution is:
 | Folder | Status | Problems Solved | Patterns Covered |
 |--------|--------|-----------------|-----------------|
 | [📁 Arrays](./arrays/) | 🟢 Active | 57 | HashMap, Two Pointers, Greedy, Prefix Sum, Kadane's, Cyclic Sort, Floyd Cycle, Intervals, Binary Search, Binary Search on Answer, Heap, Sliding Window, Partition, LCM+GCD, Frequency Array, Matrix Traversal, Array Traversal, Modular Arithmetic, Conditional Math |
-| [📁 Strings](./strings/) | 🟢 Active | 18 | Two Pointers, Traverse from End, Sliding Window, Fixed Window, HashMap Grouping, String Matching, Expand Around Center, Simulation, Stack, DP on Strings |
+| [📁 Strings](./strings/) | 🟢 Active | 24 | Two Pointers, Traverse from End, Sliding Window, Fixed Window, HashMap Grouping, String Matching, Expand Around Center, Simulation, Stack, DP on Strings, String Manipulation, Greedy |
+| [📁 LinkedList](./linkedlist/) | 🟢 Active | 6 | Reversal, Two Pointer Merge, Fast & Slow Pointers, Dummy Node, Two Pointer Sync |
 | [📁 HashMap](./hashmap/) | ⚪ Upcoming | — | — |
 | [📁 Stack](./stack/) | ⚪ Upcoming | — | — |
 | [📁 Queue](./queue/) | ⚪ Upcoming | — | — |
-| [📁 LinkedList](./linkedlist/) | ⚪ Upcoming | — | — |
 | [📁 Trees](./trees/) | ⚪ Upcoming | — | — |
 | [📁 Graphs](./graphs/) | ⚪ Upcoming | — | — |
 | [📁 Dynamic Programming](./dp/) | ⚪ Upcoming | — | — |
@@ -48,16 +48,16 @@ Every solution is:
 
 ```
 Arrays           ████████████████████  57/--   🟢 Active
-Strings          ████████████░░░░░░░░  18/30+  🟢 Active
+Strings          ████████████████░░░░  24/30+  🟢 Active
+LinkedList       ██░░░░░░░░░░░░░░░░░░   6/50+  🟢 Active
 HashMap          ░░░░░░░░░░░░░░░░░░░░   0/--   ⚪ Upcoming
 Stack            ░░░░░░░░░░░░░░░░░░░░   0/--   ⚪ Upcoming
 Queue            ░░░░░░░░░░░░░░░░░░░░   0/--   ⚪ Upcoming
-LinkedList       ░░░░░░░░░░░░░░░░░░░░   0/--   ⚪ Upcoming
 Trees            ░░░░░░░░░░░░░░░░░░░░   0/--   ⚪ Upcoming
 Graphs           ░░░░░░░░░░░░░░░░░░░░   0/--   ⚪ Upcoming
 DP               ░░░░░░░░░░░░░░░░░░░░   0/--   ⚪ Upcoming
 
-Total: 75 / 300+ problems  █████░░░░░░░░░░░░░░░  25%
+Total: 87 / 300+ problems  ██████░░░░░░░░░░░░░░  29%
 ```
 
 ---
@@ -68,7 +68,7 @@ Total: 75 / 300+ problems  █████░░░░░░░░░░░░�
 |---------|------------|--------|
 | HashMap & HashSet | Arrays, Strings | ✅ |
 | Two Pointers | Arrays, Strings | ✅ |
-| Greedy | Arrays | ✅ |
+| Greedy | Arrays, Strings | ✅ |
 | Prefix Sum | Arrays | ✅ |
 | Kadane's Algorithm | Arrays | ✅ |
 | Cyclic Sort | Arrays | ✅ |
@@ -90,8 +90,13 @@ Total: 75 / 300+ problems  █████░░░░░░░░░░░░�
 | Simulation / Parsing | Strings | ✅ |
 | Stack (bracket matching, chain removal) | Strings | ✅ |
 | DP on Strings | Strings | ✅ |
+| String Manipulation | Strings | ✅ |
+| Reversal (Linked List) | LinkedList | ✅ |
+| Fast & Slow Pointers | LinkedList | ✅ |
+| Two Pointer Merge | LinkedList | ✅ |
+| Dummy Node | LinkedList | ✅ |
+| Two Pointer Sync | LinkedList | ✅ |
 | Recursion & Backtracking | — | 🔜 |
-| Linked List (Fast/Slow Pointers) | — | 🔜 |
 | BFS / DFS on Trees | — | 🔜 |
 | Graph Algorithms | — | 🔜 |
 | Advanced DP (2D, Knapsack) | — | 🔜 |
@@ -110,18 +115,23 @@ Total: 75 / 300+ problems  █████░░░░░░░░░░░░�
 ✅ Phase 2 — Strings
    └── Two Pointers · Traverse from End · Sliding Window · Fixed Window
        HashMap Grouping · String Matching · Expand Around Center
-       Simulation/Parsing · Stack · DP on Strings
+       Simulation/Parsing · Stack · DP on Strings · String Manipulation · Greedy
 
-⬜ Phase 3 — LinkedList + Stack + Queue
-   └── Fast/Slow Pointers · Reverse · Merge · Monotonic Stack · Deque
+🟢 Phase 3 — LinkedList (In Progress)
+   └── ✅ Reversal · ✅ Two Pointer Merge · ✅ Fast/Slow Pointers
+       ✅ Dummy Node · ✅ Two Pointer Sync
+       ⬜ Reversal II · ⬜ Fast/Slow Advanced · ⬜ Merge Advanced · ⬜ Recursion on Lists
 
-⬜ Phase 4 — Trees + Recursion
+⬜ Phase 4 — Stack + Queue
+   └── Monotonic Stack · Deque · Expression Evaluation · Sliding Window Maximum
+
+⬜ Phase 5 — Trees + Recursion
    └── DFS · BFS · Level Order · Path Sum · LCA · BST operations
 
-⬜ Phase 5 — Graphs + BFS/DFS
+⬜ Phase 6 — Graphs + BFS/DFS
    └── Topological Sort · Union-Find · Dijkstra · Cycle Detection
 
-⬜ Phase 6 — Dynamic Programming
+⬜ Phase 7 — Dynamic Programming
    └── 1D DP · 2D DP · Knapsack · LCS · Edit Distance · Palindrome DP
 ```
 
@@ -175,9 +185,29 @@ Total: 75 / 300+ problems  █████░░░░░░░░░░░░�
 | Find first occurrence of pattern | String Matching (`i <= n - m`) |
 | Longest palindromic substring | Expand Around Center |
 | String to integer / validate format | Simulation / Parsing |
+| Track movement up/down, count transitions | Simulation with state variable |
+| Convert one format to another, edge cases | String Parsing + Conditional Handling |
+| Shift/rotate characters cyclically | Character Arithmetic + Modulo |
+| Longest valid bracket substring | Stack of Indices |
+| Character number system with subtraction rules | Greedy (largest chunk first) |
+| Repeating pattern, compare expected vs actual | Modulo-based Pattern Matching |
 | Matching brackets / balanced pairs | Stack |
 | Remove adjacent duplicates, chain reactions | Stack (push-pop) |
 | Pattern with `*` or `.` wildcards | DP on Strings |
+
+### Linked Lists
+
+| Trigger (What You See) | Pattern |
+|------------------------|---------|
+| Reverse entire list / modify next pointers | Three-Pointer Reversal |
+| Merge two sorted lists, pick smaller each step | Two Pointer Merge + Dummy Node |
+| Remove duplicates from sorted list | Adjacent Comparison (no extra space) |
+| Detect cycle / find middle / kth from end | Fast & Slow Pointers |
+| Check if linked list is a palindrome | Fast & Slow + Reversal |
+| Remove Nth node from end | Fast & Slow (gap of N+1) + Dummy |
+| Delete nodes matching a value, head may change | Dummy Node + prev/curr pointers |
+| Swap adjacent pairs without modifying values | Pointer Rewiring + Dummy Node |
+| Find intersection of two lists, no extra space | Two Pointers + Head Switching |
 
 ---
 
