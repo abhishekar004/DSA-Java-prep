@@ -89,16 +89,17 @@ arrays/
     └── DivisionSumPairs.java
 │---├── ElectronicsShop.java
 │---├── JumpingOnTheClouds:Revisited.java
+│---├── MarcsCakewalk.java
 ```
 
 ---
 
 ## 🎯 Progress Tracker
 
-**Problems Solved: 62 / 300**
+**Problems Solved: 63 / 300**
 
 ```
-████░░░░░░░░░░░░░░░░  19%  [62 / 300]
+████░░░░░░░░░░░░░░░░  19%  [63 / 300]
 ```
 
 | Pattern | Solved | Target |
@@ -1038,6 +1039,51 @@ Josephus problem
 😎 Iron Man: Elegant circular logic
 ⚡ Thor: Strong simulation accuracy
 🕷️ Spidey: Smooth jumps — perfect landing back to 0
+
+---
+pattern tip for marc's cakewalk
+
+🧠 Pattern Tip
+
+👉 When you see:
+
+“Minimize cost”
+“Weights increasing exponentially”
+
+💡 Trigger:
+
+Greedy + Sort Descending
+
+⚙️ Approach (README-ready)
+Sort array in descending order
+Loop through elements
+Multiply each by 2
+i
+Sum up result
+🎯 Key Insight
+
+👉 Bigger values should get smaller multipliers
+
+⚠️ Common Mistakes
+
+❌ Using ascending sort
+❌ Using Math.pow() (precision issue)
+❌ Integer overflow
+❌ Wrong order of multiplication
+
+🚀 Interview Tip
+
+👉 Always prefer:
+
+1 << i   // over Math.pow(2, i)
+
+👉 This is a low-level optimization interviewers love
+
+🧠 FINAL VERDICT
+
+😎 Iron Man: Smart greedy logic, but upgraded with bit shift
+⚡ Thor: Strong optimization awareness
+🕷️ Spidey: Clean execution — just needed sharper tool
 
 ---
 
