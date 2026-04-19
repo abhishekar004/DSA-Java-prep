@@ -1,3 +1,5 @@
+pattern tip for viral advertising
+
 🧠 Pattern Tip
 
 👉 When you see:
@@ -46,3 +48,56 @@ State → Update → Repeat
 😎 Iron Man: Clean and efficient simulation
 ⚡ Thor: Strong control of state transitions
 🕷️ Spidey: Smooth daily progression — no bugs
+
+---
+
+pattern tip for game of stones 
+
+🧠 Pattern Tip
+
+👉 When you see:
+
+“Two-player game”
+“Optimal play”
+“Winning / losing positions”
+
+💡 Trigger:
+
+Game Theory + Pattern Recognition
+
+⚙️ Approach (README-ready)
+Analyze small values manually
+Identify repeating pattern
+Use modulo to detect losing states
+Return result accordingly
+🎯 Key Insight
+
+👉 Not all problems need simulation
+
+Sometimes → pattern is the solution
+
+⚠️ Common Mistakes
+
+❌ Using recursion/DP unnecessarily
+❌ Not spotting pattern
+❌ Wrong modulo base
+❌ Overthinking
+
+🚀 Interview Tip
+
+👉 Similar problems:
+
+Nim Game
+Divisor Game
+Take-away games
+
+👉 Always think:
+
+Winning vs Losing states
+🧠 FINAL VERDICT
+
+😎 Iron Man: Brilliant use of pattern → zero overhead
+⚡ Thor: Strong logic, no wasted computation
+🕷️ Spidey: Quick pattern catch — instant win
+
+---
